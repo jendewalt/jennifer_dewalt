@@ -19,3 +19,6 @@
 
 # Ignore DS_store files
 .DS_Store
+
+# Ignore all of the config directory
+#/config
