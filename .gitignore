@@ -21,4 +21,4 @@
 .DS_Store
 
 # Ignore all of the config directory
-#/config
+/config
