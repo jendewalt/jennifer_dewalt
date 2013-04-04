@@ -1,0 +1,72 @@
+body {
+	background: #fff18e;
+}
+
+#button_container {
+	text-align: center;
+	margin: 100px auto;
+}
+
+#button {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 32px;
+	padding: 15px 30px;
+	background: #bc1939;
+	color: #f9fafa;
+	text-decoration: none;
+	border-top: 1px solid #c94660;
+	border-left: 1px solid #c94660;
+
+	text-shadow: 1px 2px 0 #831127;
+
+	box-shadow: 1px 0 0 #831127,   0 1px 0 #831127, 
+				2px 1px 0 #831127, 1px 2px 0 #831127,
+				3px 2px 0 #831127, 2px 3px 0 #831127,
+				4px 3px 0 #831127, 3px 4px 0 #831127,
+				4px 4px 2px #000;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	padding: 20px 40px;
+	display: inline-block;
+	background: rgba(0,0,0,0.1)
+}
+
+footer a:link {
+	font-family: Arial, sans-serif;
+	color: #5f5f5f;
+	letter-spacing: 2px;
+	font-size: 13px;
+	margin-right: 15px;
+	padding-left: 5px;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #7ccd24;
+}
+
+footer a:visited {
+	color: #4f4f4f;
+}
+
+#box_1 {
+	border-left: 13px solid #ff9933; 
+}
+
+#box_2 {
+	border-left: 13px solid #8b00e0; 
+}
+
+
+
+
+
+
+
+
+
+
+
