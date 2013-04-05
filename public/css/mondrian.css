@@ -1,7 +1,7 @@
 html,
 body {
 	height: 100%;
-	background: #aaa;
+	background-color: #aaa;
 }
 
 #container {
@@ -25,7 +25,7 @@ body {
 }
 
 #workspace {
-	background: #ffffe0;
+	background-color: #ffffe0;
 	width: 850px;
 	margin: 0 auto;
 	padding: 40px 40px;
@@ -52,19 +52,19 @@ body {
 }
 
 #red {
-	background: #cc0000;
+	background-color: #cc0000;
 }
 
 #yellow {
-	background: #ffec00;
+	background-color: #ffec00;
 }
 
 #blue {
-	background: #0000cc;
+	background-color: #0000cc;
 }
 
 #white {
-	background: white;
+	background-color: white;
 }
 
 #row_1 {
@@ -88,27 +88,27 @@ body {
 	width: 130px;
 	height: 100px;
 	border-right: 10px solid black;
-	background: white;
+	background-color: white;
 }
 #row_1_box_2 {
 	float: left;
 	width: 300px;
 	height: 100px;
 	border-right: 10px solid black;
-	background: white;
+	background-color: white;
 }
 #row_1_box_3 {
 	float: left;
 	width: 90px;
 	height: 100px;
 	border-right: 10px solid black;
-	background: white;
+	background-color: white;
 }
 #row_1_box_4 {
 	float: right;
 	width: 150px;
 	height: 100px;
-	background: white;
+	background-color: white;
 }
 
 #row_2_box_1 {
@@ -117,27 +117,27 @@ body {
 	height: 170px;
 	border-right: 10px solid black;
 	border-bottom: 10px solid black;
-	background: white;
+	background-color: white;
 }
 #row_2_box_2 {
 	float: left;
 	width: 300px;
 	height: 170px;
 	border-right: 10px solid black;
-	background: white;
+	background-color: white;
 }
 #row_2_box_3 {
 	float: left;
 	width: 90px;
 	height: 170px;
 	border-right: 10px solid black;
-	background: white;
+	background-color: white;
 }
 #row_2_box_4 {
 	float: right;
 	width: 150px;
 	height: 170px;
-	background: white;
+	background-color: white;
 }
 
 #row_3_box_1 {
@@ -145,27 +145,27 @@ body {
 	width: 130px;
 	height: 80px;
 	border-right: 10px solid black;
-	background: white;
+	background-color: white;
 }
 #row_3_box_2 {
 	float: left;
 	width: 300px;
 	height: 80px;
 	border-right: 10px solid black;
-	background: white;
+	background-color: white;
 }
 #row_3_box_3 {
 	float: left;
 	width: 90px;
 	height: 80px;
 	border-right: 10px solid black;
-	background: white;
+	background-color: white;
 }
 #row_3_box_4 {
 	float: right;
 	width: 150px;
 	height: 80px;
-	background: white;
+	background-color: white;
 }
 
 #row_4_box_1 {
@@ -173,27 +173,27 @@ body {
 	width: 130px;
 	height: 120px;
 	border-right: 10px solid black;
-	background: white;
+	background-color: white;
 }
 #row_4_box_2 {
 	float: left;
 	width: 300px;
 	height: 120px;
 	border-right: 10px solid black;
-	background: white;
+	background-color: white;
 }
 #row_4_box_3 {
 	float: left;
 	width: 90px;
 	height: 120px;
 	border-right: 10px solid black;
-	background: white;
+	background-color: white;
 }
 #row_4_box_4 {
 	float: right;
 	width: 150px;
 	height: 120px;
-	background: white;
+	background-color: white;
 }
 
 .clear {
@@ -205,7 +205,7 @@ footer {
 	position: absolute;
 	bottom: 0;
 	padding: 20px 40px;
-	background: rgba(0,0,0,0.1)
+	background-color: rgba(0,0,0,0.1)
 }
 
 footer a:link {
