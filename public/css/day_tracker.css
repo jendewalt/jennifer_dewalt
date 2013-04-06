@@ -1,0 +1,124 @@
+html,
+body {
+	height: 100%;
+	font-family: Arial, sans-serif;
+	letter-spacing: 2px;
+	color: #333;
+	text-align: center;
+	background-color: #f6f8f8;
+}
+
+#tab_container {
+	width: 700px;
+	margin: 0 auto;
+}
+
+.tab {
+	position: relative;
+	float: left;
+	background-color: #F1C40F;
+	height: 100px;
+	width: 100px;
+}
+
+.day {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	font-size: 22px;
+	color: #f39c12;
+}
+
+#today {
+	height: 300px;
+	background-color: #16A085;
+
+	box-shadow: -3px 0 0 rgba(0,0,0,0.3);
+	
+}
+
+#today .day {
+	font-size: 38px;
+	font-weight: bold;
+	color: #f6f8f8;
+	text-shadow: -3px 3px 0 rgba(0,0,0,0.3);
+}
+
+.clear {
+	clear: both;
+}
+
+#message{
+	padding: 50px;
+	font-size: 40px;
+	color: #f6f8f8;
+	background-color: #16A085;
+	text-shadow: -3px 3px 0 rgba(0,0,0,0.3);
+
+	box-shadow: 0 3px 0 rgba(0,0,0,0.3);
+
+}
+
+#wrap {
+	min-height: 100%;
+}
+
+#main {
+	overflow: auto;
+	padding-bottom: 50px;
+	height: 500px;
+}
+
+footer {
+	position: relative;
+	margin-top: -50px;
+	height: 50px;
+	padding-left: 30px;
+	clear: both;
+}
+
+footer a:link {
+	float: left;
+	padding: 10px;
+	font-family: Arial, sans-serif;
+	color: #f6f8f8;
+	letter-spacing: 2px;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #7ccd24;
+}
+
+footer a:visited {
+	color: #f6f8f8;
+}
+
+#home {
+	background-color: #2980B9;
+	margin-right: 10px;
+	box-shadow: -3px 3px 0 rgba(0,0,0,0.3);
+
+}
+
+#blog {
+	background-color: #8E44AD;
+	margin-right: 10px;
+	box-shadow: -3px 3px 0 rgba(0,0,0,0.3);
+
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
