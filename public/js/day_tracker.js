@@ -1,13 +1,14 @@
 $(document).ready(function () {
-	var d = new Date()
-		day = d.getDate()
-		msg = ["Sunday Funday!",
+	var d = new Date();
+	var	day = d.getDate();
+	var	msg = ["",
 			   "Back to the grind!",
 			   "Oh. It's Tuesday.",
 			   "Boom! Wednesday!",
 			   "Thirsty Thursday, yo!",
 			   "It's Friday! We should be kickin' it!",
-			   "Paaarrrtttyyy!"]
+			   "Paaarrrtttyyy!",
+			   "Sunday Funday!"]
 
 	$('#' + day).attr('id', 'today');
 	$("#message").text(msg[day]);
