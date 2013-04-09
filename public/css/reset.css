@@ -22,7 +22,13 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 :focus {
 	outline: 0;
 }
+html {
+	position: relative;
+	height: 100%;
+}
 body {
+	position: relative;
+	min-height: 100%;
 	line-height: 1;
 	color: black;
 	background: white;
