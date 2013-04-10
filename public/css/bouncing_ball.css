@@ -1,0 +1,202 @@
+body {
+  width: 900px;
+  margin: 0 auto;
+  overflow: scroll;
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+h2{
+  font-size: 22px;
+}
+
+h3 {
+  margin-bottom: 40px; 
+}
+
+a:link {
+  color: #329999;
+  text-decoration: none;
+}
+a:visited {
+  color: #329999;
+  text-decoration: none;
+}
+a:hover {
+  color: #80007f;
+  text-decoration: none;
+}
+
+#container_main {
+  position: relative;
+}
+
+#content_wrap {
+  width: 900px;
+  min-height: 650px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+#container_left {
+  float: left;
+  width: 300px;
+}
+
+#container_right {
+  float: right;
+  width: 600px;
+}
+
+#title {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#message_container{
+  display: none;
+  position: absolute;
+  left: 300px;
+  width: 600px;
+  
+  padding-top: 300px;
+  text-align: center;
+}
+
+#replay {
+  display: none;
+}
+
+#ball_container {
+  ;
+}
+
+#ball {
+  height: 120px;
+  width: 120px;
+  background-color: #329999;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 50%;
+
+  -webkit-animation: bounce 12s infinite;
+  -moz-animation: bounce 12s infinite;
+  -o-animation: bounce 12s infinite;
+  animation: bounce 12s infinite;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  text-align: left;
+  background-color: #329999;
+}
+
+#footer_links {
+  margin: 17px;
+}
+
+footer a:link {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Animation Keyframes */
+
+@-webkit-keyframes bounce {
+0%   {margin-top: 0px; -webkit-animation-timing-function: ease-in;}
+11%  {width: 120px;}
+12%  {margin-top: 500px; width: 135px; -webkit-animation-timing-function: ease-out;}
+13%  {width: 120px;}
+25%  {margin-top: 0px; -webkit-animation-timing-function: ease-in;}
+36%  {width: 120px;}
+37%  {margin-top: 500px; width: 135px; -webkit-animation-timing-function: ease-out;}
+38%  {width: 120px;}
+49%  {margin-top: 0px; -webkit-animation-timing-function: ease-in;}
+60%  {width: 120px;}
+61%  {margin-top: 500px; width: 135px; -webkit-animation-timing-function: ease-out;}
+62%  {width: 120px;}
+75%  {margin-top: 0px; -webkit-animation-timing-function: ease-in;}
+86%  {width: 120px;}
+87%  {margin-top: 500px; width: 135px; -webkit-animation-timing-function: ease-out;}
+88%  {width: 120px;}
+100% {margin-top: 0px; -webkit-animation-timing-function: ease-in;}
+}
+
+@-moz-keyframes bounce {
+0%   {margin-top: 0px; -moz-animation-timing-function: ease-in;}
+11%  {width: 120px;}
+12%  {margin-top: 500px; width: 135px; -moz-animation-timing-function: ease-out;}
+13%  {width: 120px;}
+25%  {margin-top: 0px; -moz-animation-timing-function: ease-in;}
+36%  {width: 120px;}
+37%  {margin-top: 500px; width: 135px; -moz-animation-timing-function: ease-out;}
+38%  {width: 120px;}
+49%  {margin-top: 0px; -moz-animation-timing-function: ease-in;}
+60%  {width: 120px;}
+61%  {margin-top: 500px; width: 135px; -moz-animation-timing-function: ease-out;}
+62%  {width: 120px;}
+75%  {margin-top: 0px; -moz-animation-timing-function: ease-in;}
+86%  {width: 120px;}
+87%  {margin-top: 500px; width: 135px; -moz-animation-timing-function: ease-out;}
+88%  {width: 120px;}
+100% {margin-top: 0px; -moz-animation-timing-function: ease-in;}
+}
+
+@-o-keyframes bounce {
+0%   {margin-top: 0px; -o-animation-timing-function: ease-in;}
+11%  {width: 120px;}
+12%  {margin-top: 500px; width: 135px; -o-animation-timing-function: ease-out;}
+13%  {width: 120px;}
+25%  {margin-top: 0px; -o-animation-timing-function: ease-in;}
+36%  {width: 120px;}
+37%  {margin-top: 500px; width: 135px; -o-animation-timing-function: ease-out;}
+38%  {width: 120px;}
+49%  {margin-top: 0px; -o-animation-timing-function: ease-in;}
+60%  {width: 120px;}
+61%  {margin-top: 500px; width: 135px; -o-animation-timing-function: ease-out;}
+62%  {width: 120px;}
+75%  {margin-top: 0px; -o-animation-timing-function: ease-in;}
+86%  {width: 120px;}
+87%  {margin-top: 500px; width: 135px; -o-animation-timing-function: ease-out;}
+88%  {width: 120px;}
+100% {margin-top: 0px; -o-animation-timing-function: ease-in;}
+}
+
+@keyframes bounce {
+0%   {margin-top: 0px; animation-timing-function: ease-in;}
+11%  {width: 120px;}
+12%  {margin-top: 500px; width: 135px; animation-timing-function: ease-out;}
+13%  {width: 120px;}
+25%  {margin-top: 0px; animation-timing-function: ease-in;}
+36%  {width: 120px;}
+37%  {margin-top: 500px; width: 135px; animation-timing-function: ease-out;}
+38%  {width: 120px;}
+49%  {margin-top: 0px; animation-timing-function: ease-in;}
+60%  {width: 120px;}
+61%  {margin-top: 500px; width: 135px; animation-timing-function: ease-out;}
+62%  {width: 120px;}
+75%  {margin-top: 0px; animation-timing-function: ease-in;}
+86%  {width: 120px;}
+87%  {margin-top: 500px; width: 135px; animation-timing-function: ease-out;}
+88%  {width: 120px;}
+100% {margin-top: 0px; animation-timing-function: ease-in;}
+}
+
+
+
+
+
+

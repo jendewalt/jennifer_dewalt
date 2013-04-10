@@ -24,7 +24,7 @@ $(document).ready(function () {
 
 	});
 
-	$('.text_shadow').on('click', function () {
+	$('.text_shadow').on('click', function (event) {
 
 		var current = $(this).css('text-shadow');
 
@@ -35,6 +35,7 @@ $(document).ready(function () {
 		var newBlur = parseInt(blur) + 1; 
 		var newVert = parseInt(vert) + 1; 
 			
+		event.stopPropagation();
 		$(this).css('text-shadow', 'rgb(-1, 1, 0) 1px ' + newVert + 'px ' + newBlur + 'px');
 
 	});
