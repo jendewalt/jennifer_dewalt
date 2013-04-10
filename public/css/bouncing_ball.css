@@ -109,6 +109,11 @@ footer a:link {
   color: #fff;
 }
 
+footer a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
 .clear {
   clear: both;
 }
