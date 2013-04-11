@@ -1,0 +1,405 @@
+body {
+	background-color: white;
+}
+
+#wrap {
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 50px;	
+}
+
+#container {
+	position: relative;
+	height: 600px;
+	width: 900px;
+}
+
+.sushi_box {
+	position: absolute;
+	cursor: pointer;
+}
+
+#fancy_roll {
+	bottom: 0;
+	right: 20px;
+}
+
+#seaweed {
+	top: 50px;
+	left: 50px;
+}
+
+#roll1 {
+	top: 60px;
+	left: 720px;
+}
+
+#pinkfish {
+	top: 270px;
+	left: 50px;
+}
+
+#shrimp2 {
+	top: 200px;
+	left: 380px;
+}
+
+#eel2 {
+	top: 50px;
+	left: 350px;
+}
+
+#rolls {
+	top: 320px;
+	left: 380px;
+}
+
+#sake {
+	top: 230px;
+	left: 700px;
+}
+
+#masago {
+	bottom: 10px;
+	left: 50px;
+}
+
+#whitefish {
+	bottom: 10px;
+	left: 350px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+	background: rgba(0,0,0,0.1);
+}
+
+footer a:link {
+	position: absolute;
+	font-family: Arial, sans-serif;
+	color: #5f5f5f;
+	letter-spacing: 2px;
+	font-size: 14px;
+	top: 18px;
+	padding-left: 5px;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #7ccd24;
+}
+
+
+footer a:visited {
+	color: #4f4f4f;
+}
+
+#home {
+	left: 30px;
+	border-left: 13px solid #ff9933; 
+}
+
+#blog {
+	left: 120px;
+	border-left: 13px solid #8b00e0; 
+}
+
+
+
+.shake {
+	-webkit-animation: shake 1s 2;
+	-moz-animation: shake 1s 2;
+	-ms-animation: shake 1s 2;
+	animation: shake 1s 2;
+}
+.hop {
+	-webkit-animation: hop 2s;
+	-moz-animation: hop 2s;
+	-ms-animation: hop 2s;
+	animation: hop 2s;
+}
+.spin {
+	-webkit-animation: spin 2s;
+	-moz-animation: spin 2s;
+	-ms-animation: spin 2s;
+	animation: spin 2s;
+}
+.grow {
+	z-index: 30;
+	-webkit-animation: grow 2s;
+	-moz-animation: grow 2s;
+	-ms-animation: grow 2s;
+	animation: grow 2s;
+}
+.hooray {
+	z-index: 20;
+	-webkit-animation: hooray 2s;
+	-moz-animation: hooray 2s;
+	-ms-animation: hooray 2s;
+	animation: hooray 2s;
+}
+
+/* Webkit Animations */
+
+@-webkit-keyframes shake {
+	0%, 100% {-webkit-transform: translateX(0);}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {-webkit-transform: translateX(-20px);}
+	10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {-webkit-transform: translateX(20px);}
+}
+
+@-webkit-keyframes hop {
+	0% {-webkit-transform: translateX(0);}
+	12% {-webkit-transform: translateY(-100px) rotate(-20deg);}
+	25% {-webkit-transform: translateX(-20px);}
+	37% {-webkit-transform: translateY(-100px) rotate(20deg);}
+	50% {-webkit-transform: translateX(20px);}
+	62% {-webkit-transform: translateY(-100px) rotate(-20deg);}
+	75% {-webkit-transform: translateX(-20px);}
+	87% {-webkit-transform: translateY(-100px) rotate(20deg);}
+	100% {-webkit-transform: translateX(0);}
+}
+
+@-webkit-keyframes spin {
+	0% {-webkit-transform: rotate(0deg)}
+	8% {-webkit-transform: rotate(-50deg)}
+	12% {-webkit-transform: rotate(-50deg) }
+	100% {-webkit-transform: rotate(3600deg)}
+}
+
+@-webkit-keyframes grow {
+	0% { -webkit-transform: scale(1); }
+	75% { -webkit-transform: scale(2.5); }
+	90% { -webkit-transform: scale(0.6); }
+	93% { -webkit-transform: scale(1.4); }
+	95% { -webkit-transform: scale(0.8); }
+	97% { -webkit-transform: scale(1.2); }
+	100% { -webkit-transform: scale(1); }
+}
+
+@-webkit-keyframes hooray {
+	0% {-webkit-transform: translateX(0) translateY(0) scale(1, 1);}
+	10% {-webkit-transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	20% {-webkit-transform: translateX(0) translateY(0) scale(.7, .7);}
+	30% {-webkit-transform: translateX(-60px) translateY(-60px) scale(1.5, 1.5);}
+	40% {-webkit-transform: translateX(0) translateY(0) scale(.7, .7);}
+	50% {-webkit-transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	60% {-webkit-transform: translateX(0) translateY(0) scale(.7, .7);}
+	70% {-webkit-transform: translateX(-60px) translateY(-60px) scale(1.5, 1.5);}	
+	80% {-webkit-transform: translateX(0) translateY(0) scale(.7, .7);}
+	90% {-webkit-transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	100% {-webkit-transform: translateX(0) translateY(0) scale(1, 1);}
+}
+
+/* Moz Animations */
+
+@-moz-keyframes shake {
+	0%, 100% {-moz-transform: translateX(0);}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {-moz-transform: translateX(-20px);}
+	10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {-moz-transform: translateX(20px);}
+}
+
+@-moz-keyframes hop {
+	0% {-moz-transform: translateX(0);}
+	12% {-moz-transform: translateY(-100px) rotate(-20deg);}
+	25% {-moz-transform: translateX(-20px);}
+	37% {-moz-transform: translateY(-100px) rotate(20deg);}
+	50% {-moz-transform: translateX(20px);}
+	62% {-moz-transform: translateY(-100px) rotate(-20deg);}
+	75% {-moz-transform: translateX(-20px);}
+	87% {-moz-transform: translateY(-100px) rotate(20deg);}
+	100% {-moz-transform: translateX(0);}
+}
+
+@-moz-keyframes spin {
+	0% {-moz-transform: rotate(0deg)}
+	8% {-moz-transform: rotate(-50deg)}
+	12% {-moz-transform: rotate(-50deg) }
+	100% {-moz-transform: rotate(3600deg)}
+}
+
+@-moz-keyframes grow {
+	0% { -moz-transform: scale(1); }
+	75% { -moz-transform: scale(2.5); }
+	90% { -moz-transform: scale(0.6); }
+	93% { -moz-transform: scale(1.4); }
+	95% { -moz-transform: scale(0.8); }
+	97% { -moz-transform: scale(1.2); }
+	100% { -moz-transform: scale(1); }
+}
+
+@-moz-keyframes hooray {
+	0% {-moz-transform: translateX(0) translateY(0) scale(1, 1);}
+	10% {-moz-transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	20% {-moz-transform: translateX(0) translateY(0) scale(.7, .7);}
+	30% {-moz-transform: translateX(-60px) translateY(-60px) scale(1.5, 1.5);}
+	40% {-moz-transform: translateX(0) translateY(0) scale(.7, .7);}
+	50% {-moz-transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	60% {-moz-transform: translateX(0) translateY(0) scale(.7, .7);}
+	70% {-moz-transform: translateX(-60px) translateY(-60px) scale(1.5, 1.5);}	
+	80% {-moz-transform: translateX(0) translateY(0) scale(.7, .7);}
+	90% {-moz-transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	100% {-moz-transform: translateX(0) translateY(0) scale(1, 1);}
+}
+
+/* Opera Animations */
+
+@-o-keyframes shake {
+	0%, 100% {-o-transform: translateX(0);}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {-o-transform: translateX(-20px);}
+	10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {-o-transform: translateX(20px);}
+}
+
+@-o-keyframes hop {
+	0% {-o-transform: translateX(0);}
+	12% {-o-transform: translateY(-100px) rotate(-20deg);}
+	25% {-o-transform: translateX(-20px);}
+	37% {-o-transform: translateY(-100px) rotate(20deg);}
+	50% {-o-transform: translateX(20px);}
+	62% {-o-transform: translateY(-100px) rotate(-20deg);}
+	75% {-o-transform: translateX(-20px);}
+	87% {-o-transform: translateY(-100px) rotate(20deg);}
+	100% {-o-transform: translateX(0);}
+}
+
+@-o-keyframes spin {
+	0% {-o-transform: rotate(0deg)}
+	8% {-o-transform: rotate(-50deg)}
+	12% {-o-transform: rotate(-50deg) }
+	100% {-o-transform: rotate(3600deg)}
+}
+
+@-o-keyframes grow {
+	0% { -o-transform: scale(1); }
+	75% { -o-transform: scale(2.5); }
+	90% { -o-transform: scale(0.6); }
+	93% { -o-transform: scale(1.4); }
+	95% { -o-transform: scale(0.8); }
+	97% { -o-transform: scale(1.2); }
+	100% { -o-transform: scale(1); }
+}
+
+@-o-keyframes hooray {
+	0% {-o-transform: translateX(0) translateY(0) scale(1, 1);}
+	10% {-o-transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	20% {-o-transform: translateX(0) translateY(0) scale(.7, .7);}
+	30% {-o-transform: translateX(-60px) translateY(-60px) scale(1.5, 1.5);}
+	40% {-o-transform: translateX(0) translateY(0) scale(.7, .7);}
+	50% {-o-transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	60% {-o-transform: translateX(0) translateY(0) scale(.7, .7);}
+	70% {-o-transform: translateX(-60px) translateY(-60px) scale(1.5, 1.5);}	
+	80% {-o-transform: translateX(0) translateY(0) scale(.7, .7);}
+	90% {-o-transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	100% {-o-transform: translateX(0) translateY(0) scale(1, 1);}
+}
+
+/* MS Animations */
+
+@-ms-keyframes shake {
+	0%, 100% {-ms-transform: translateX(0);}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {-ms-transform: translateX(-20px);}
+	10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {-ms-transform: translateX(20px);}
+
+@-ms-keyframes hop {
+	0% {-ms-transform: translateX(0);}
+	12% {-ms-transform: translateY(-100px) rotate(-20deg);}
+	25% {-ms-transform: translateX(-20px);}
+	37% {-ms-transform: translateY(-100px) rotate(20deg);}
+	50% {-ms-transform: translateX(20px);}
+	62% {-ms-transform: translateY(-100px) rotate(-20deg);}
+	75% {-ms-transform: translateX(-20px);}
+	87% {-ms-transform: translateY(-100px) rotate(20deg);}
+	100% {-ms-transform: translateX(0);}
+}
+
+@-ms-keyframes spin {
+	0% {-ms-transform: rotate(0deg)}
+	8% {-ms-transform: rotate(-50deg)}
+	12% {-ms-transform: rotate(-50deg) }
+	100% {-ms-transform: rotate(3600deg)}
+}
+
+@-ms-keyframes grow {
+	0% { -ms-transform: scale(1); }
+	75% { -ms-transform: scale(2.5); }
+	90% { -ms-transform: scale(0.6); }
+	93% { -ms-transform: scale(1.4); }
+	95% { -ms-transform: scale(0.8); }
+	97% { -ms-transform: scale(1.2); }
+	100% { -ms-transform: scale(1); }
+}
+
+@-ms-keyframes hooray {
+	0% {-ms-transform: translateX(0) translateY(0) scale(1, 1);}
+	10% {-ms-transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	20% {-ms-transform: translateX(0) translateY(0) scale(.7, .7);}
+	30% {-ms-transform: translateX(-60px) translateY(-60px) scale(1.5, 1.5);}
+	40% {-ms-transform: translateX(0) translateY(0) scale(.7, .7);}
+	50% {-ms-transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	60% {-ms-transform: translateX(0) translateY(0) scale(.7, .7);}
+	70% {-ms-transform: translateX(-60px) translateY(-60px) scale(1.5, 1.5);}	
+	80% {-ms-transform: translateX(0) translateY(0) scale(.7, .7);}
+	90% {-ms-transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	100% {-ms-transform: translateX(0) translateY(0) scale(1, 1);}
+}
+
+/* Arbitrary Animations */
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {transform: translateX(-20px);}
+	10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {transform: translateX(20px);}
+}
+
+@keyframes hop {
+	0% {transform: translateX(0);}
+	12% {transform: translateY(-100px) rotate(-20deg);}
+	25% {transform: translateX(-20px);}
+	37% {transform: translateY(-100px) rotate(20deg);}
+	50% {transform: translateX(20px);}
+	62% {transform: translateY(-100px) rotate(-20deg);}
+	75% {transform: translateX(-20px);}
+	87% {transform: translateY(-100px) rotate(20deg);}
+	100% {transform: translateX(0);}
+}
+
+@keyframes spin {
+	0% {transform: rotate(0deg)}
+	8% {transform: rotate(-50deg)}
+	12% {transform: rotate(-50deg) }
+	100% {transform: rotate(3600deg)}
+}
+
+@keyframes grow {
+    0% { transform: scale(1); }
+	75% { transform: scale(2.5); }
+	90% { transform: scale(0.6); }
+	93% { transform: scale(1.4); }
+	95% { transform: scale(0.8); }
+	97% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
+
+@keyframes hooray {
+	0% {transform: translateX(0) translateY(0) scale(1, 1);}
+	10% {transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	20% {transform: translateX(0) translateY(0) scale(.7, .7);}
+	30% {transform: translateX(-60px) translateY(-60px) scale(1.5, 1.5);}
+	40% {transform: translateX(0) translateY(0) scale(.7, .7);}
+	50% {transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	60% {transform: translateX(0) translateY(0) scale(.7, .7);}
+	70% {transform: translateX(-60px) translateY(-60px) scale(1.5, 1.5);}	
+	80% {transform: translateX(0) translateY(0) scale(.7, .7);}
+	90% {transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
+	100% {transform: translateX(0) translateY(0) scale(1, 1);}
+}
+
+
+
+
+
+
