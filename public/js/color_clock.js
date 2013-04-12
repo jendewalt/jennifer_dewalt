@@ -5,6 +5,7 @@ $(document).ready(function () {
 		var hour =  now.getHours();
 		var min =  now.getMinutes();
 		var sec =  now.getSeconds();
+		var color = timeColor(hour, min, sec);
 		
 		if (hour > 12) {
 			hour = hour - 12;
@@ -13,8 +14,6 @@ $(document).ready(function () {
 		hour = formatTime(hour);
 		min = formatTime(min);
 		sec = formatTime(sec);
-
-		color = timeColor(hour, min, sec);
 
 		$('#cur_hour').text(hour);
 		$('#cur_min').text(min);
