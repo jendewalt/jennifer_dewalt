@@ -1,0 +1,115 @@
+body {
+	min-height: 100%;
+	position: relative;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	background-color: #000;
+	color: white;
+}
+
+h1 {
+	font-size: 40px;
+	padding: 60px 0;
+	text-shadow: -1px -1px 1px rgba(0,0,0,0.6);
+}
+
+#wrap {
+	padding-bottom: 58px;
+	height: 600px;	
+}
+
+#container {
+	position: relative;
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.ticker {
+	position: relative;
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+	display: inline-block;
+	font-size: 130px;
+}
+
+.colon {
+	display: inline-block;
+	font-size: 150px;
+	margin: -20px;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.off {
+	position: absolute;
+	top: 0;
+	color: rgba(255,255,255,0.1);
+	opacity: 0.6;
+	z-index: 1;
+}
+
+.time {
+	right: 0;
+}
+
+.current {
+	position: relative;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+	z-index: 10;
+}
+
+#color_ticker {
+	position: absolute;
+	left: 116px;
+}
+
+.color {
+	left: 0;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 58px;
+}
+
+#links {
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px 20px;
+	border-radius: 20px 20px 0 0;
+}
+
+a:link {
+	text-decoration: none;
+	color: #fff;
+}
+a:hover {
+	color: #066591;
+}
+a:visited {
+	color: #fff;
+}
+
+#home {
+	float: left;
+}
+
+#blog {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+
+
+
+
+
