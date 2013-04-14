@@ -13,7 +13,9 @@ header {
 }
 
 #container {
-     padding-bottom: 58px;
+	width: 916px;
+	margin: 0 auto;
+    padding-bottom: 58px;
 }
 
 .player {
@@ -33,8 +35,8 @@ header {
 }
 
 .title {
-	padding: 10px;
-	margin: 12px;
+	padding: 10px 0;
+	margin: 12px 0;
 	border-bottom: 1px solid #00ACE9;
 	color: #d11250;
 }
@@ -52,6 +54,7 @@ header {
 	font-size: 18px;
 	background-color: #00ACE9;
 	color: #1d113b;
+	cursor: pointer;
 }
 
 .button:active {
@@ -64,9 +67,9 @@ header {
 
 .shake {
 	-webkit-animation: shake 1.5s;
-	-moz-animation: shake 2.1s;
-	-ms-animation: shake 2.1s;
-	animation: shake 2.1s;
+	-moz-animation: shake 1.5s;
+	-ms-animation: shake 1.5s;
+	animation: shake 1.5s;
 }
 
 footer {
@@ -91,6 +94,10 @@ footer {
 
 #links_container a:hover {
 	color: #008f68;
+}
+
+#links_container a:visited {
+	color: #d11250;
 }
 
 

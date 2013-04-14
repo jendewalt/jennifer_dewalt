@@ -3,67 +3,63 @@ $(document).ready(function () {
 	var rock = "images/rock.png"
 	var paper = "images/paper.png"
 	var scissors = "images/scissors.png"
-	var hands = [rock, paper, scissors]
+	var hands = {rock: rock, paper: paper, scissors: scissors}
+	var choices = ['rock', 'paper', 'scissors'];
+	var userChoice, compChoice;
 
-	$('.button').on('click', function () {
+	$('.button').on('click', start);
+
+	function start() {
+		$('.button').off('click');
+		
+		userChoice = this.id;
+		compChoice = choices[Math.floor(Math.random()*3)];
+
 		$('#right_hand').attr('src', "images/right_fist.png");
 		$('#left_hand').attr('src', "images/left_fist.png");
-
-		var userChoice = this.id;
-		var compChoice = hands[Math.floor(Math.random()*3)];
-
-			$('#score_container').text('3');
-			$('.hand_container').addClass('shake');
-			
-			countDown();
-
-			setTimeout(function() {
-
-				$('.hand_container').removeClass('shake');
-
-				$('#score_container').text('Shoot!');
-				
-				if (userChoice == "rock") {
-					userChoice = rock; 
-					$('#right_hand').attr('src', rock);
-				};
-				if (userChoice == "paper") {
-					userChoice = paper;
-					$('#right_hand').attr('src', paper);
-				};
-				if (userChoice == "scissors") {
-					userChoice = scissors;
-					$('#right_hand').attr('src', scissors);
-				};
-
-				$('#left_hand').attr('src', compChoice);
-
-				setTimeout(function() {
-					if ( userChoice == compChoice ) {
-						$('#score_container').text('Tie!');
-					} else if ( userChoice == rock && compChoice == scissors || userChoice == paper && compChoice == rock || userChoice == scissors && compChoice == paper ) {
-						$('#score_container').text('You Win!');
-					} else {
-						$('#score_container').text('You Lose!');
-					};
-
-				}, 400)
-
-			}, 1500);
-
-	});
+		countDown();
+	};
 
 	function countDown() {
 		var i = 3;
 
-		var timerId = setInterval(function() {
-			i--
+		count();
+
+		function count() {
+			$('.hand_container').addClass('shake');
 			$('#score_container').text(i);
+			
 
-			if (i == 1) {
-				clearInterval(timerId);
+			if (i == 0) {
+				displayResults(); 
+			} else {
+				i -= 1;
+				setTimeout(count, 500);
 			}
+		}
+	};
 
-		}, 500);
-	}
+	function displayResults() {
+
+		$('.hand_container').removeClass('shake');
+
+		$('#score_container').text('Shoot!');
+		
+		$('#right_hand').attr('src', hands[userChoice]);		
+		$('#left_hand').attr('src', hands[compChoice]);
+
+		setTimeout(function() {
+			console.log(userChoice + ', ' + compChoice)
+
+			if ( userChoice == compChoice ) {
+				$('#score_container').text('Tie!');
+			} else if ( (userChoice == 'rock' && compChoice == 'scissors') || (userChoice == 'paper' && compChoice == 'rock') || (userChoice == 'scissors' && compChoice == 'paper') ) {
+				$('#score_container').text('You Win!');
+			} else {
+				$('#score_container').text('You Lose!');
+			};
+
+			$('.button').on('click', start);
+		}, 400);
+	};
 });
