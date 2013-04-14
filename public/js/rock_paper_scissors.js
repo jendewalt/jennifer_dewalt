@@ -15,8 +15,9 @@ $(document).ready(function () {
 		userChoice = this.id;
 		compChoice = choices[Math.floor(Math.random()*3)];
 
-		$('#right_hand').attr('src', "images/right_fist.png");
-		$('#left_hand').attr('src', "images/left_fist.png");
+		$('.result').hide();
+		$('.fist').show();
+
 		countDown();
 	};
 
@@ -45,8 +46,9 @@ $(document).ready(function () {
 
 		$('#score_container').text('Shoot!');
 		
-		$('#right_hand').attr('src', hands[userChoice]);		
-		$('#left_hand').attr('src', hands[compChoice]);
+		$('.fist').hide();
+		$('.result.right.' + userChoice).show();
+		$('.result.left.' + compChoice).show();
 
 		setTimeout(function() {
 			console.log(userChoice + ', ' + compChoice)
