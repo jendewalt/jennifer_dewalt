@@ -23,7 +23,7 @@ $(document).ready(function () {
 	$('form').on('submit', function (event) {
 		event.preventDefault();
 
-		var bad_habit = $('#bad_habit').val();
+		var bad_habit = $('#bad_habit').val().replace(/^\s+|\s+$/g, '');
 
 			if (bad_habit == '') {
 				bad_habit = "don't fill in forms"
