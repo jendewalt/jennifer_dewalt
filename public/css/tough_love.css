@@ -1,0 +1,86 @@
+body {
+    font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+    background-color: #f6f6ec;
+    color: #1d113b;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 2;
+}
+
+#container {
+    padding-bottom: 36px;
+    text-align: center;
+}
+
+#text_container {
+	padding: 80px 50px;
+	height: 250px;
+}
+
+input {
+	-webkit-appearance: none;
+	border-radius: 3px;
+	box-shadow: none;
+	border: none;
+	margin-bottom: 50px; 
+}
+
+#bad_habit {
+	width: 350px;
+	height: 30px;
+	font-size: 16px;
+	vertical-align: middle;
+	padding: 3px;
+	border: 1px solid rgba(0,0,0,0.3);
+}
+
+#bad_habit:focus {
+	border: 1px solid rgba(209,18,80, 0.3);
+}
+
+#submit_btn {
+	height: 38px;
+	width: 100px;
+	padding: 0;
+	font-size: 16px;
+	color: #f6f6e8;
+	background-color: #d11250;
+	letter-spacing: 1px; 
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+#submit_btn:active {
+	background-color: #ba1047;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+}
+
+#links_contianer {
+	text-align: center;
+	background-color: rgba(0,0,0,0.2);
+	padding: 10px 0;
+}
+
+a {
+	text-decoration: none;
+	margin: 0 10px;
+	color: #d11250;
+}
+a:visited {
+	color: #d11250;
+}
+a:hover {
+	color: #0c758b;
+}
+
+
+
