@@ -1,0 +1,73 @@
+body {
+     font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+     background-color: black;
+     font-size: 14px;
+     overflow: hidden;
+}
+
+#container {
+     padding-bottom: 100px;
+}
+
+.spot {
+     position: absolute;
+     border-radius: 50%;
+     box-shadow: 0 0 5px rgba(255,255,255,0.8);
+
+     -webkit-animation: pulse 2s infinite;
+     -moz-animation: none;
+     -o-animation: pulse 2s infinite;
+     -ms-animation: pulse 2s infinite;
+     animation: none;
+}
+}
+header {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     height: 100px;
+}
+
+#links_container {
+     padding: 20px 20px;
+     text-align: right;
+     z-index: 100;
+}
+
+a {
+     text-decoration: none;
+     margin-right: 15px;
+     color: #b3b0cf;
+}
+
+a:visited {
+     color: #b3b0cf;
+}
+
+a:hover {
+     color: #bdcfb0;
+     text-shadow: 0 0 1px rgba(255,255,255,0.8);
+}
+
+@-webkit-keyframes pulse {
+     0%, 100% {-webkit-transform: scale(1);}
+     25%, 75% {-webkit-transform: scale(1.08);}
+     50% {-webkit-transform: scale(0.92);}
+}
+@-moz-keyframes pulse {
+     ;
+}
+@-o-keyframes pulse {
+     0%, 100% {-o-transform: scale(1);}
+     25%, 75% {-o-transform: scale(1.08);}
+     50% {-o-transform: scale(0.92);}
+}
+@-ms-keyframes pulse {
+     0%, 100% {-ms-transform: scale(1);}
+     25%, 75% {-ms-transform: scale(1.08);}
+     50% {-ms-transform: scale(0.92);}
+}
+@keyframes pulse {
+     ;
+}
