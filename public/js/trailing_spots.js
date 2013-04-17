@@ -20,10 +20,6 @@ $(document).ready(function () {
 		moveDiv("#spot"+i, randomInt(8, 50));
 	}	
 
-	for (var i = 0; i < 20; i++) {
-		moveDiv("#spot"+i, randomInt(8, 50));
-	}	
-
 	function randomInt(min, max) {
 		return Math.floor(Math.random() * (max - min + 1) + min);
 	}
