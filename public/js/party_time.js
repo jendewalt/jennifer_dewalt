@@ -33,6 +33,7 @@ $(document).ready(function () {
 			var millionMin    = (new Date(bday.getTime() + 60000000000));
 			var tenMillionMin  = (new Date(bday.getTime() + 600000000000));
 			var fiftyMillionMin = (new Date(bday.getTime() + 3000000000000));
+			var onBillionSec = (new Date(bday.getTime() + 1000000000000));
 
 			if (today.getMonth() == bday.getMonth() && today.getDate() == bday.getDate()) {
 				$('.party').text("Today's your birthday?! PARTY TIME!");
@@ -99,6 +100,11 @@ $(document).ready(function () {
 				$(".bdays.50mil").text("Your fifty millionth minute was " + fiftyMillionMin.toDateString());			
 			}
 
+			if (today <= onBillionSec) {
+				$(".bdays.1bil").text("Your one billionth second is " + onBillionSec.toDateString());
+			} else {
+				$(".bdays.1bil").text("Your one billionth second was " + onBillionSec.toDateString());			
+			}
 
 
 			function getAge() {
