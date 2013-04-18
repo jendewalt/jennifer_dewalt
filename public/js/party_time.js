@@ -3,16 +3,32 @@ $(document).ready(function () {
 		event.preventDefault();
 
 		var months = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ];
+		var year
+		var month
+		var day
+		var birthday
 
 		if ( $('#bday').val() == 0 ) {
 			$('.party').text('No Birthday? No Parties for You!');
 		} else { 
-			var birthday  = $('#bday').val().split('-'); //[ year, month, day ]
+
+			var birthday  = $('#bday').val();
+				if (birthday.indexOf("/") >= 0) {
+					birthday = birthday.split('/');   //[ month, day, year]
+					var year  = birthday[2];
+					var month = (birthday[0])-1;
+					var day   = birthday[1];
+					
+				} else {
+					birthday = birthday.split('-');   //[ year, month, day ]
+					var year  = birthday[0];
+					var month = (birthday[1])-1;
+					var day   = birthday[2];
+					console.log(year, month, day)
+				} 
+
 			var birthtime = $('#btime').val().split(':');
 
-			var year  = birthday[0];
-			var month = (birthday[1])-1;
-			var day   = birthday[2];
 			var hour  = birthtime[0];
 			var min   = birthtime[1];
 			var bday  = new Date(year, month, day);
@@ -24,7 +40,13 @@ $(document).ready(function () {
 				btime = bday;
 			}
 
-			var age           = getAge();
+			var age   = today.getFullYear() - year;
+
+			if (today.getMonth() < month || (today.getMonth() == month && today.getDate() < day)) {
+				age--;
+			}
+
+			// var age           = getAge();
 			var ageInDays     = Math.floor((today - bday) / (24 * 60 * 60 * 1000));
 			var ageInMins     = Math.floor((today - btime) / ( 60 * 1000));
 			var tenKDay       = (new Date(bday.getTime() + 86400000 * 10000));
