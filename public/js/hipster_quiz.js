@@ -5,11 +5,11 @@ $(document).ready(function () {
 		var total = getScore();
 		var message;
 		
-		if (total < 52*1/4) {
+		if (total < 42*1/4) {
 			message = "You're definitely not an SF hipster.";
-		} else if (total < 52*1/2) {
+		} else if (total < 42*1/2) {
 			message = "You might be an SF hipster.";
-		} else if (total < 52*3/4) {
+		} else if (total < 42*3/4) {
 			message = "You're most likely an SF hipster.";
 		} else {
 			message = "You're a Super SF Hipster!";
