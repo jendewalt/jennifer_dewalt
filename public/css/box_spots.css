@@ -1,0 +1,154 @@
+body {
+	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    background-color: black;
+    overflow: scroll;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 18px;
+}
+
+#links_container {
+    padding: 20px 20px;
+    text-align: right;
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: #b3b0cf;
+}
+
+a:visited {
+    color: #b3b0cf;
+}
+
+a:hover {
+    color: #bdcfb0;
+}
+
+#container {
+    padding-bottom: 18px;
+}
+
+.drop {
+	position: absolute;
+	/*border-radius: 50%;*/
+	-webkit-animation: grow 2s;
+}
+
+.color0 {
+	height: 50px;
+	width: 50px;
+}
+.color1 {
+	height: 10px;
+	width: 10px;
+}
+.color2 {
+	height: 20px;
+	width: 20px;
+}
+.color3 {
+	height: 5px;
+	width: 5px;
+}
+.color4 {
+	height: 30px;
+	width: 30px;
+}
+.color5 {
+	height: 15px;
+	width: 15px;
+}
+
+.color6 {
+	height: 50px;
+	width: 50px;
+}
+.color7 {
+	height: 10px;
+	width: 10px;
+}
+.color8 {
+	height: 20px;
+	width: 20px;
+}
+.color9 {
+	height: 5px;
+	width: 5px;
+}
+.color10 {
+	height: 30px;
+	width: 30px;
+}
+.color11 {
+	height: 15px;
+	width: 15px;
+}
+
+.color12 {
+	height: 50px;
+	width: 50px;
+}
+.color13 {
+	height: 10px;
+	width: 10px;
+}
+.color14 {
+	height: 20px;
+	width: 20px;
+}
+.color15 {
+	height: 5px;
+	width: 5px;
+}
+.color16 {
+	height: 30px;
+	width: 30px;
+}
+.color17 {
+	height: 15px;
+	width: 15px;
+}
+
+.color18 {
+	height: 50px;
+	width: 50px;
+}
+.color19 {
+	height: 10px;
+	width: 10px;
+}
+.color20 {
+	height: 20px;
+	width: 20px;
+}
+
+
+@-webkit-keyframes grow {
+	0% { -webkit-transform: scale(1); opacity: 1;}
+	
+	100% { -webkit-transform: scale(5); opacity: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
