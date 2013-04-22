@@ -7,7 +7,7 @@ $(document).ready(function () {
 		var text = $('textarea').val();
 		var y = 0;
 
-		if (text == '') {
+		if (text.replace(/^\s+|\s+$/g, '') == '') {
 			text = 'You should probably enter some text next time.'
 		}
 
