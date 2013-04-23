@@ -1,0 +1,286 @@
+body {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: #f3b34e;
+}
+
+h1 {
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	padding: 12px 15px;
+	margin: 0 10px;
+	font-size: 18px;
+	color: white;
+	background-color: #2800ff;
+}
+
+#modal {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #f3b34e;
+}
+
+#modal h1 {
+	margin-top: 200px;
+}
+
+#container {
+	padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.start {
+	float: left;
+	background-color: red;
+	border-radius: 50% 0 0 50%;
+}
+
+.path {
+	float: left;
+}
+
+.end {
+	float: right;
+	background-color: #2e58ff;
+	border-radius: 0 50% 50% 0;
+}
+
+.game_container {
+	margin: auto;	
+}
+
+#game_container_lvl1 {
+	width: 400px;
+}
+
+.lvl1 {
+	height: 50px;
+}
+
+.start.lvl1 {
+	width: 50px;
+}
+
+.path.lvl1 {
+	width: 300px;
+	background-color: #fff;
+}
+
+.end.lvl1 {
+	width: 50px;
+}
+
+#game_container_lvl2 {
+	width: 700px;
+}
+
+.lvl2 {
+	height: 40px;
+}
+
+.start.lvl2 {
+	width: 50px;
+}
+
+.path.lvl2 {
+	width: 600px;
+	background-color: #fff;
+}
+
+.end.lvl2 {
+	width: 50px;
+}
+
+#game_container_lvl3 {
+	width: 800px;
+}
+
+.lvl3 {
+	height: 20px;
+}
+
+.start.lvl3 {
+	width: 30px;
+}
+
+.path.lvl3 {
+	width: 740px;
+	background-color: #fff;
+}
+
+.end.lvl3 {
+	width: 30px;
+}
+
+#game_container_lvl4 {
+	width: 700px;
+}
+
+.lvl4 {
+	height: 10px;
+}
+
+.start.lvl4 {
+	width: 20px;
+}
+
+.path.lvl4 {
+	width: 660px;
+	background-color: #fff;
+}
+
+.end.lvl4 {
+	width: 20px;
+}
+
+#game_container_lvl5 {
+	width: 500px;
+}
+
+.lvl5 {
+	height: 15px;
+}
+
+.start.lvl5 {
+	width: 20px;
+}
+
+.path.lvl5 {
+	width: 460px;
+}
+
+.end.lvl5 {
+	width: 20px;
+}
+
+#game_container_lvl6 {
+	width: 700px;
+}
+
+.lvl6 {
+	height: 10px;
+}
+
+.start.lvl6 {
+	width: 20px;
+}
+
+.path.lvl6 {
+	width: 660px;
+}
+
+.end.lvl6 {
+	width: 20px;
+}
+
+#game_container_lvl7 {
+	width: 500px;
+	cursor: none;
+}
+
+.lvl7 {
+	height: 20px;
+}
+
+.start.lvl7 {
+	width: 20px;
+}
+
+.path.lvl7 {
+	width: 460px;
+	background-color: #fff;
+}
+
+.end.lvl7 {
+	width: 20px;
+}
+
+#game_container_lvl8 {
+	width: 500px;
+	cursor: none;
+}
+
+.lvl8 {
+	height: 10px;
+}
+
+.start.lvl8 {
+	width: 20px;
+}
+
+.path.lvl8 {
+	width: 460px;
+	background-color: #fff;
+}
+
+.end.lvl8 {
+	width: 20px;
+}
+
+#game_container_lvl9 {
+	width: 700px;
+	cursor: none;
+}
+.lvl9 {
+	height: 5px;
+}
+
+.start.lvl9 {
+	width: 15px;
+}
+
+.path.lvl9 {
+	width: 670px;
+}
+
+.end.lvl9 {
+	width: 15px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+	background-color: orange;
+}
+
+#links_container {
+	padding: 10px;
+}
+
+#links_container a {
+	margin: 0 10px;
+	color: #fff;
+}
+
+#links_container a:visited {
+	color: #fff;
+}
+
+#links_container a:hover {
+	color: #f37712;
+}
+
+
+.clear {
+	clear: both;
+}
