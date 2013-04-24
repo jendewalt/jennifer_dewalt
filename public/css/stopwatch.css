@@ -1,0 +1,169 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	background-color: #090014;
+	color: #4c5262;
+}
+
+header {
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	padding: 15px 20px;
+}
+
+#title {
+	float: left;
+	font-size: 24px;
+	letter-spacing: 20px;
+}
+
+#links_container {
+	float: right;
+}
+#links_container a {
+	margin: 0 10px;
+	font-size: 18px;
+	letter-spacing: 5px;
+	text-decoration: none;
+	color: #4c5262;
+}
+#links_container a:visited {
+	color: #4c5262;
+}
+#links_container a:hover {
+	color: #9db5f4;
+}
+
+#container {
+	color: #9db5f4;
+}
+
+#clock {
+	margin: 100px 0 60px;
+}
+
+.time_unit {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+}
+
+.colon {
+	display: inline-block;
+	font-size: 140px;
+	text-shadow: 0 0 8px rgba(255,255,255,0.7);
+}
+
+.digit {
+	position: relative;
+	display: inline-block;
+	margin: 0 10px;
+	height: 134px;
+	width: 70px;
+}
+
+.hor {
+	position: absolute;
+	width: 38px;
+	height: 14px;
+	left: 16px;
+	background-color: #9db5f4;
+	box-shadow: 0 0 8px rgba(255,255,255,0.7);
+}
+
+.hor.top {
+	top: 3px;
+
+}
+
+.hor.mid {
+	top: 60px;
+}
+
+.hor.bottom {
+	bottom: 3px;
+}
+
+.ver {
+	position: absolute;
+	height: 42px;
+	width: 14px;
+	background-color: #9db5f4;
+	box-shadow: 0 0 8px rgba(255,255,255,0.8);
+}
+
+.left {
+	left: 0;
+}
+.right {
+	right: 0;
+}
+
+.ver.top {
+	top: 18px;
+}
+
+.ver.bottom {
+	bottom: 18px;
+}
+
+.tri_left {
+	position: absolute;
+	left: -7px;
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-right: 7px solid #9db5f4;
+	border-bottom: 7px solid transparent;
+}
+
+.tri_right {
+	position: absolute;
+	right: -7px;
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-left: 7px solid #9db5f4;
+	border-bottom: 7px solid transparent;
+}
+
+.tri_bottom {
+	position: absolute;
+	bottom: -7px;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #9db5f4;
+}
+
+.tri_top {
+	position: absolute;
+	top: -7px;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #9db5f4;
+}
+
+button {
+	height: 40px;
+	width: 120px;
+	margin: 10px;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	border: none;
+	color: #2a2d36;
+	background-color: #b0b5c2;
+	cursor: pointer;
+}
+
+button:disabled {
+	color: #949bac;
+}
+
+.clear {
+	clear: both;
+}
