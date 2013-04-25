@@ -11,7 +11,7 @@ $(document).ready(function (){
 		})
 	}
 
-	$('body').on('mousedown', function () {
+	$('body').on('click', function () {
 		$('textarea').focus();
 	});
 
