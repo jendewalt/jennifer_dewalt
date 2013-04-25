@@ -1,7 +1,17 @@
 $(document).ready(function (){
 	$('textarea').focus();
 
-	$('body').on('click', function () {
+	if (navigator.userAgent.indexOf('Mobile') !=-1) {
+		$('#start').text('Tap "Start" to start typing and see a visual representation of how long your email is!')
+		$('#prompt_container').append('<button>Start</button>');
+		$('button').on('click', function () {
+			$('#prompt_container').fadeOut('slow');
+			$('textarea').focus();
+			$('textarea').css('text-align', 'left');
+		})
+	}
+
+	$('body').on('mousedown', function () {
 		$('textarea').focus();
 	});
 
