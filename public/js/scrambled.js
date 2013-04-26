@@ -83,7 +83,7 @@ $(document).ready(function () {
 
 		$.ajax({
 			type: 'GET',
-			url: 'words.txt',
+			url: 'words.html',
 			async: false,
 			success: function (data) {
 				array = data.split("\n");
