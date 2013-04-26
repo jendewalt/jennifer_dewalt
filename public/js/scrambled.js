@@ -37,14 +37,14 @@ $(document).ready(function () {
 		} else {
 			chances--;
 			if (chances == 1 ) {
-				var message = 'Incorrect! 1 chance left.';
+				var message = 'Incorrect! 1 chance left';
 			} else if (chances <= 0) {
 				var message = 'Incorrect! You are out of chances';
 				$('#word').text('The word was ' + word);
 				$('.button').attr('disabled', 'disabled');
 	
 			} else {
-				var message = 'Incorrect! ' + chances + ' chances left.';
+				var message = 'Incorrect! ' + chances + ' chances left';
 			}
 
 			$('#message').text(message);
