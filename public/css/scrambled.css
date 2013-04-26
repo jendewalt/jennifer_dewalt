@@ -1,0 +1,155 @@
+body {
+	font-family: "Avenir", Futura, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: #d2fffa;
+    letter-spacing: 1px;
+    color: #343d3d;
+}
+
+header {
+	margin-bottom: 30px;
+	padding: 15px 20px;
+	background-color: #fafafa; 
+	border-bottom: 5px solid #009786;
+}
+
+#title {
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #282f2f;
+}
+
+#links_container {
+	float: right;
+}
+
+#links_container a {
+	text-decoration: none;
+	color: #282f2f;
+	margin-left: 10px;
+}
+
+#links_container a:visited {
+	text-decoration: none;
+	color: #282f2f;
+	margin-left: 10px;
+}
+
+#links_container a:hover {
+	text-decoration: none;
+	color: #2200cc;
+	margin-left: 10px;
+}
+
+#container {
+    padding-bottom: 30px;
+}
+
+#message_container {
+	width: 700px;
+	height: 150px;
+	margin: 0 auto;
+	font-size: 24px;
+	line-height: 2;
+}
+
+#message {
+	;
+}
+
+#start {
+	width: 200px;
+	margin: 80px auto;
+	padding: 10px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	border-radius: 5px;
+	background-color: #009786;
+	color: white;
+	cursor: pointer;
+}
+
+#game_container {
+	display: none;
+	width: 700px;
+	margin: 0px auto;
+}
+
+#score_container {
+	float: right;
+	width: 200px;
+	height: 30px;
+	border-radius: 5px 5px 0 0;
+	background-color: #cc0018;
+	color: white;
+}
+
+#score {
+	margin-top: 10px;
+	font-size: 18px;
+
+}
+
+#letters {
+	padding: 30px 0;
+	margin-bottom: 100px;
+	font-size: 30px;
+	letter-spacing: 20px;
+	border-radius: 5px 0 5px 5px;
+	background-color: #cc0018;
+	color: white;
+}
+
+input {
+	border: none;
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	vertical-align: top;
+
+}
+
+#guess {
+	width: 584px;
+	padding: 0 8px;
+	font-size: 24px;
+	background-color: rgba(255,255,255,0.9);
+	color: #343d3d;
+	border-radius: 5px 0 0 5px;
+}
+
+.button {
+	width: 100px;
+	height: 50px;
+	margin-left: -10px; 
+	font-size: 16px;
+	background-color: #009786;
+	color: white;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
