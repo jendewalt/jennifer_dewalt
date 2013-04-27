@@ -62,7 +62,7 @@ $(document).ready(function () {
 
 	function playSound(color) {
 		var url = color + '.mp3'
-  		document.getElementById('sound').innerHTML="<embed src='audio/"+url+"' type='audio/mp3' hidden=true autostart=true loop=false>";
+  		document.getElementById('sound').innerHTML="<audio autoplay><source src='audio/" + url + "' type='audio/mpeg'></audio>";
 	}
 
 	function lightPad(color) {
