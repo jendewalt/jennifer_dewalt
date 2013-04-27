@@ -171,6 +171,7 @@ footer {
 }
 
 #links_container a:link {
+	margin-right: 10px;
 	text-decoration: none;
 	color: #757474;
 }

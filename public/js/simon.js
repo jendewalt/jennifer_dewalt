@@ -61,8 +61,8 @@ $(document).ready(function () {
 	};
 
 	function playSound(color) {
-		var url = color + '.mp3'
-  		document.getElementById('sound').innerHTML="<audio autoplay><source src='audio/" + url + "' type='audio/mpeg'></audio>";
+		var url = color + '.wav'
+  		document.getElementById('sound').innerHTML="<audio autoplay><source src='audio/" + url + "' type='audio/wav'></audio>";
 	}
 
 	function lightPad(color) {
