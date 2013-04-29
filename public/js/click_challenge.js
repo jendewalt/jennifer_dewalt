@@ -11,6 +11,7 @@ $(document).ready(function () {
 
 	$('#start').on('click', function () {
 		var clicks = 0;
+		$('body').css('cursor', 'pointer');
 		$('body').disableSelection();
 
 		$('#modal').hide();
@@ -28,6 +29,7 @@ $(document).ready(function () {
 			var cpsStr = 'clicks';
 			var clickStr = 'clicks';
 
+			$('body').css('cursor', 'auto');
 			$('h1').text('Time\'s Up!');
 
 			if (clicks == 1) {
@@ -39,7 +41,8 @@ $(document).ready(function () {
 				cpsStr = 'click'
 			}
 			$('#cps').text('That\'s ' + cps + ' ' + cpsStr + ' per second!');
-			$('h3').text('Try Again?');
+			$('h3').html('<a href="click_challenge.html">Try Again?</a>');
+			$('button').hide();
 			$('#modal').show();
 
 			$('.spinner').removeClass('spinner_animate');

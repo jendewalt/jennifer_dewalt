@@ -26,7 +26,7 @@ h2 {
 }
 
 h3 {
-	margin-top: 100px;
+	margin: 100px 200px 0;
 	font-size: 20px;
 }
 
@@ -39,6 +39,7 @@ button {
 	background-color: #E74C3C;
 	color: #ECF0F1;
 	text-decoration: none;
+  cursor: pointer;
 }
 
 #container {
@@ -134,17 +135,17 @@ footer {
 	padding: 20px;
 }
 
-#links_container a {
+a {
 	margin: 0 10px;
 	font-size: 18px;
 	color: #132537;
 	text-decoration: none;
 }
 
-#links_container a:visited{
+a:visited{
 	color: #132537;
 }
-#links_container a:hover{
+a:hover{
 	color: #30d3d9;
 }
 
