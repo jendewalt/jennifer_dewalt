@@ -1,0 +1,187 @@
+body {
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: #a5a4ab;
+}
+
+header {
+	padding: 20px;
+	color: #8C8B92;
+	text-shadow: -1px -1px rgba(0,0,0,0.3), 1px 1px rgba(255,255,255,0.2);
+}
+
+#title {
+	float: left;
+	font-size: 24px;
+}
+
+#links_container {
+	float: right;
+}
+
+a {
+	margin-left: 15px;
+	text-decoration: none;
+	text-shadow: -1px -1px rgba(0,0,0,0.3), 1px 1px rgba(255,255,255,0.2);
+	color: #8C8B92;
+}
+
+a:visited {
+	color: #8C8B92;
+}
+
+a:hover {
+	color: #D9D8DF;
+	text-shadow: 1px 1px rgba(0,0,0,0.3), -1px -1px rgba(255,255,255,0.2);
+}
+
+#container {
+	padding-top: 40px;
+}
+
+#ball_container {
+    font-family: Geneva, Tahoma, Verdana, sans-serif;
+	position: relative;
+	height: 400px;
+	width: 400px;
+	margin: auto;
+	border-radius: 50%;
+	background-color: #0f0f0f;
+}
+
+#ball {
+	height: 400px;
+	width: 400px;
+	border-radius: 50%;
+	box-shadow: inset -50px -50px 40px rgba(0,0,0,0.5);
+	
+	background-color: #0f0f0f;
+	background: -webkit-radial-gradient(80px 40px, circle, rgba(255,255,255,0.3), transparent 70%);
+	background: -moz-radial-gradient(80px 40px, circle, rgba(255,255,255,0.3), transparent 70%);
+	background: -o-radial-gradient(80px 40px, circle, rgba(255,255,255,0.3), transparent 70%);
+	background: -ms-radial-gradient(80px 40px, circle, rgba(255,255,255,0.3), transparent 70%);
+	background: radial-gradient(80px 40px, circle, rgba(255,255,255,0.3), transparent 70%);
+
+
+}
+
+#answer_container {
+	position: absolute;
+	top: 90px;
+	left: 90px;
+	height: 220px;
+	width: 220px;
+	text-align: center;
+}
+
+#viewport_rim {
+	position: absolute;
+	height: 180px;
+	width: 180px;
+	border-radius: 50%;
+	border: 20px solid #000;
+	z-index: 20;
+
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(30,87,153,0)), color-stop(1%,rgba(29,85,150,0)), color-stop(34%,rgba(4,3,43,0.38)), color-stop(87%,rgba(4,3,43,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(30,87,153,0) 0%,rgba(29,85,150,0) 1%,rgba(4,3,43,0.38) 34%,rgba(4,3,43,1) 87%); 
+	background: -moz-radial-gradient(center, ellipse cover, rgba(30,87,153,0) 0%, rgba(29,85,150,0) 1%, rgba(4,3,43,0.38) 34%, rgba(4,3,43,1) 87%); 
+	background: -ms-radial-gradient(center, ellipse cover, rgba(30,87,153,0) 0%,rgba(29,85,150,0) 1%,rgba(4,3,43,0.38) 34%,rgba(4,3,43,1) 87%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(30,87,153,0) 0%,rgba(29,85,150,0) 1%,rgba(4,3,43,0.38) 34%,rgba(4,3,43,1) 87%); 
+	background: radial-gradient(ellipse at center, rgba(30,87,153,0) 0%,rgba(29,85,150,0) 1%,rgba(4,3,43,0.38) 34%,rgba(4,3,43,1) 87%); 
+}
+
+#eight_logo {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-color: #fff;
+	z-index: 30;
+}
+
+#eight {
+	padding-top: 12px;
+	font-size: 175px;
+	font-weight: bold;
+}
+
+#viewport {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-color: #010008 ;
+}
+
+#tile {
+	position: absolute;
+	bottom: -10px;
+	left: 4px;
+	width: 0;
+	height: 0;
+	border-left: 96px solid transparent;
+	border-right: 96px solid transparent;
+	border-top: 160px solid #2f29f2;
+}
+
+#answer {
+	position: absolute;
+	top: 65px;
+	left: 48px;
+	width: 104px;
+	font-size: 16px;
+	line-height: 1.7;
+	text-align: center;
+	color: #fff;
+}
+
+form {
+	display: block;
+	margin-top: 70px ;
+	height: 50px;
+}
+
+#text_box {
+	width: 500px;
+	height: 30px;
+	margin: 0;
+	padding: 0 10px;
+	font-size: 18px;
+	border-radius: none;
+	border: 1px solid rgba(0,0,0,0.4);
+	border-right: 1px solid rgba(255,255,255,0.3);
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.3) inset;
+	background-color: #D8D7DE;
+	vertical-align: top;
+}
+
+#button {
+	height: 32px;
+	padding: 0 20px;
+	font-size: 18px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-top: 1px solid rgba(255,255,255,0.3);
+	border-left: 1px solid rgba(255,255,255,0.3);
+	border-radius: none;
+	background-color: #110bc1;
+	color: #D8D7DE;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+#button:active {
+	background-color: #00008E;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+.clear {
+	clear: both;
+}
