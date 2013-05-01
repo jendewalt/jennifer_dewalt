@@ -317,7 +317,11 @@ body {
 	border:20px solid #70737d;
 	border-width: 0 0 20px 25px ;
 	border-radius: 85px/70px;
-	c
+	-webkit-animation: tail_flick 11s;	
+	-moz-animation: tail_flick 11s;	
+	-ms-animation: tail_flick 11s;	
+	-o-animation: tail_flick 11s;	
+	-animation: tail_flick 11s;	
 }
 
 footer {
