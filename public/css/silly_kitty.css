@@ -1,0 +1,652 @@
+body {
+    background-color: #ff983d;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    color: #57565e;
+    letter-spacing: 2px;
+}
+
+#container {
+	position: relative;
+	width: 650px;
+	margin: auto;
+	padding-top: 100px;
+    padding-bottom: 38px;
+}
+
+#food_container {
+	position: absolute;
+	top: 100px;
+	left: 75px;
+	height: 20px;
+}
+
+#fish_text {
+	display: inline-block;
+	margin: 2px 12px 0;
+	color: rgba(0,0,0,0.6);
+	vertical-align: top;
+}
+
+
+.food {
+	display: inline-block;
+	height: 20px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: #2492b3;
+	z-index: 200;
+	cursor: pointer;
+	-webkit-animation: swim 1.5s;
+	-moz-animation: swim 1.5s;
+	-ms-animation: swim 1.5s;
+	-o-animation: swim 1.5s;
+	-animation: swim 1.5s;
+}
+/* Make fish eye */
+.food:before {
+	position: absolute;
+	content: "";
+	top: 5px;
+	right: 5px;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	background-color: #202123;
+}
+/* Make fish tail */
+.food:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: -5px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 20px solid #2492b3;
+	border-bottom: 10px solid transparent;
+}
+
+#text_bubble {
+   position: absolute;
+   right: 0;
+   width: 200px;
+   height: 150px;
+   background: white;
+   border-radius: 50%;
+   text-align: center;
+}
+#text_bubble:before {
+   content:"";
+   position: absolute;
+   right: 178px;
+   top: 128px;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background-color: white;
+}
+#text_bubble:after{
+   content:"";
+   position: absolute;
+   right: 210px;
+   top: 160px;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   background-color: white;
+}
+
+#text_bubble p {
+	padding-top: 57px;
+	font-size: 36px;
+}
+
+#kitty_container {
+	position: relative;
+	width: 200px;
+	height: 400px;
+	margin: 120px auto 0;
+}
+
+.purr {
+	-webkit-animation: purr 1s 2;
+	-moz-animation: purr 1s 2;
+	-ms-animation: purr 1s 2;
+	-o-animation: purr 1s 2;
+	-animation: purr 1s 2;
+}
+
+.ear {
+	position: absolute;
+	width: 0; 
+  	height: 0; 
+  	border-bottom: 120px solid #70737d; 
+  	border-left: 60px solid transparent; 
+  	border-right: 60px solid transparent;
+  	cursor: pointer;
+}
+#left_ear {
+	left: 0px;
+	transform: rotate(-12deg);
+	-ms-transform: rotate(-12deg);
+	-webkit-transform: rotate(-12deg);
+}
+#right_ear {
+	right: 0px;
+	transform: rotate(12deg);
+	-ms-transform: rotate(12deg);
+	-webkit-transform: rotate(12deg);
+
+	-webkit-animation: twitch 8s infinite ;
+	-moz-animation: twitch 8s infinite ;
+	-ms-animation: twitch 8s infinite ;
+	-o-animation: twitch 8s infinite ;
+	-animation: twitch 8s infinite ;
+}
+
+.head {
+	position: absolute;
+	top: 50px;
+	height: 180px;
+	width: 200px;
+	border-radius: 50%;
+	background-color: #70737d;
+	cursor: pointer;
+}
+
+.blink {
+	-webkit-animation: blink 15s infinite;
+	-moz-animation: blink 15s infinite;
+	-ms-animation: blink 15s infinite;
+	-o-animation: blink 15s infinite;
+	-animation: blink 15s infinite;
+}
+.eat_eyes {
+	-webkit-animation: eat_eyes 0.8s;
+	-moz-animation: eat_eyes 0.8s;
+	-ms-animation: eat_eyes 0.8s;
+	-o-animation: eat_eyes 0.8s;
+	-animation: eat_eyes 0.8s;
+}
+
+.eye {
+	position: absolute;
+	top: 50px;
+	height: 60px;
+	width: 60px;
+	background-color: white;
+	border-radius: 50%;
+}
+#left_eye{
+	left: 20px;
+}
+#right_eye{
+	right: 20px;
+}
+.pupil {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	height: 30px;
+	width: 30px;
+	background-color: #202123;
+	border-radius: 50%;
+	z-index: 10;
+}
+
+#nose_container {
+	position: absolute;
+	top: 110px;
+	width: 200px;
+}
+
+.eat_nose {
+	-webkit-animation: eat_nose 0.8s;	
+	-moz-animation: eat_nose 0.8s;	
+	-ms-animation: eat_nose 0.8s;	
+	-o-animation: eat_nose 0.8s;	
+	-animation: eat_nose 0.8s;	
+}
+
+.nose {
+	position: absolute;
+	top: 20px;
+	left: 94px;
+	height: 8px;
+	width: 12px;
+	background-color: #e8a29c;
+	border-radius: 50%;
+	z-index: 3;
+}
+
+.whiskers {
+	position: absolute;
+	z-index: 2;
+}
+
+#left_whiskers {
+	left: 20px;
+}
+#right_whiskers {
+	right: 20px;
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+
+.whisker {
+	height: 2px;
+	width: 50px;
+	margin: 10px;
+	background-color: #202123;
+}
+
+.w1 {
+	transform: rotate(12deg);
+	-ms-transform: rotate(12deg);
+	-webkit-transform: rotate(12deg);
+}
+
+.w3 {
+	transform: rotate(-12deg);
+	-ms-transform: rotate(-12deg);
+	-webkit-transform: rotate(-12deg);
+}
+
+.body {
+	position: absolute;
+	top: 160px;
+	left: 30px;
+	height: 180px;
+	width: 140px;
+	background-color: #70737d;
+	border-radius: 50% 50% 50% 50% / 70% 70% 40% 40%;
+	z-index: 0;
+}
+
+.paw {
+	position: absolute;
+	bottom: 55px;
+	height: 20px;
+	width: 30px;
+	background-color: #fff8f2;
+	border-radius: 50% 50% 30% 30%;
+	z-index: 100;
+	cursor: pointer;
+}
+#left_paw {
+	left: 70px;
+}
+#right_paw {
+	right: 70px;
+}
+
+.paw_lick {
+	-webkit-animation: paw 1.5s;
+	-moz-animation: paw 1.5s;
+	-ms-animation: paw 1.5s;
+	-o-animation: paw 1.5s;
+	-animation: paw 1.5s;
+}
+
+.mouth {
+	position: absolute;
+	left: 94px;
+	top: 150px;
+	height: 3px;
+	width: 12px;
+	background-color: #202123;
+	border-radius: 50%;
+	z-index: 5;
+}
+.eat_mouth {
+	-webkit-animation: eat_mouth 0.8s;	
+	-moz-animation: eat_mouth 0.8s;	
+	-ms-animation: eat_mouth 0.8s;	
+	-o-animation: eat_mouth 0.8s;	
+	-animation: eat_mouth 0.8s;	
+}
+
+.tail {
+	position: absolute;
+	bottom: -45px;
+	left: -10px;
+	width: 140px;
+	height: 110px;
+	background-color: transparent;
+	border:20px solid #70737d;
+	border-width: 0 0 20px 25px ;
+	border-radius: 85px/70px;
+	c
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 38px;
+}
+
+#links_container {
+	padding: 10px 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #175e73;
+	margin-right: 10px;
+}
+
+a:visited {
+	color: #175e73;
+}
+a:hover {
+	color: #2badd4;
+}
+
+
+@-webkit-keyframes twitch {
+	0% { -webkit-transform: rotate(12deg); }
+	9% { -webkit-transform: rotate(12deg); }
+	10%, 12%, 14% { -webkit-transform: rotate(15deg); }
+	11%, 13%, 15% { -webkit-transform: rotate(12deg); }
+	100% { -webkit-transform: rotate(12deg); }
+}
+@-webkit-keyframes tail_flick {
+	0% { -webkit-transform: rotate(0deg); }
+	79% { -webkit-transform: rotate(0deg); }
+	80%, 85%, 90% { -webkit-transform: rotate(-5deg); }
+	83%, 88%, 93% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(0deg); }
+}
+
+@-webkit-keyframes eat_mouth {
+	0% {  }
+	50% { top: 75px; left: 50px; height: 100px; width: 100px; border-radius: 50%; background-color: #ab0014;}
+	0% { }
+}
+
+@-webkit-keyframes eat_nose {
+	0% {  }
+	50% { top: 45px;}
+	0% { }
+}
+
+@-webkit-keyframes eat_eyes {
+	0% {-webkit-transform: scale(1,1);}
+	50% {-webkit-transform: scale(1,0); top: 10px;}
+	51% {-webkit-transform: scale(1,0); top: 10px;}
+	100% {-webkit-transform: scale(1,1);}
+}
+
+@-webkit-keyframes blink {
+	0% {-webkit-transform: scale(1,1);}
+	49% {-webkit-transform: scale(1,1);}
+	50% {-webkit-transform: scale(1,0);}
+	51% {-webkit-transform: scale(1,0);}
+	52% {-webkit-transform: scale(1,1);}
+	53% {-webkit-transform: scale(1,1);}
+	54% {-webkit-transform: scale(1,0);}
+	55% {-webkit-transform: scale(1,0);}
+	56% {-webkit-transform: scale(1,1);}
+	100% {-webkit-transform: scale(1,1);}
+}
+
+@-webkit-keyframes purr {
+	0% {-webkit-transform: translate(0);}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {-webkit-transform: translate(0px, 0);}
+	10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%  {-webkit-transform: translate(-1px, 0);}
+	100% {-webkit-transform: translate(0);}
+}
+
+@-webkit-keyframes paw {
+	0% {-webkit-transform: translateY(0);}
+	30%, 50%, 70% {-webkit-transform: translateY(-135px);}
+	40%, 60%, 80% {-webkit-transform: translateY(-120px);}
+	100% {-webkit-transform: translateY(0);}
+}
+/* Moz */
+@-moz-keyframes twitch {
+	0% { -moz-transform: rotate(12deg); }
+	9% { -moz-transform: rotate(12deg); }
+	10%, 12%, 14% { -moz-transform: rotate(15deg); }
+	11%, 13%, 15% { -moz-transform: rotate(12deg); }
+	100% { -moz-transform: rotate(12deg); }
+}
+@-moz-keyframes tail_flick {
+	0% { -moz-transform: rotate(0deg); }
+	79% { -moz-transform: rotate(0deg); }
+	80%, 85%, 90% { -moz-transform: rotate(-5deg); }
+	83%, 88%, 93% { -moz-transform: rotate(0deg); }
+	100% { -moz-transform: rotate(0deg); }
+}
+
+@-moz-keyframes eat_mouth {
+	0% {  }
+	50% { top: 75px; left: 50px; height: 100px; width: 100px; border-radius: 50%; background-color: #ab0014;}
+	0% { }
+}
+
+@-moz-keyframes eat_nose {
+	0% {  }
+	50% { top: 45px;}
+	0% { }
+}
+
+@-moz-keyframes eat_eyes {
+	0% {-moz-transform: scale(1,1);}
+	50% {-moz-transform: scale(1,0); top: 10px;}
+	51% {-moz-transform: scale(1,0); top: 10px;}
+	100% {-moz-transform: scale(1,1);}
+}
+
+@-moz-keyframes blink {
+	0% {-moz-transform: scale(1,1);}
+	49% {-moz-transform: scale(1,1);}
+	50% {-moz-transform: scale(1,0);}
+	51% {-moz-transform: scale(1,0);}
+	52% {-moz-transform: scale(1,1);}
+	53% {-moz-transform: scale(1,1);}
+	54% {-moz-transform: scale(1,0);}
+	55% {-moz-transform: scale(1,0);}
+	56% {-moz-transform: scale(1,1);}
+	100% {-moz-transform: scale(1,1);}
+}
+
+@-moz-keyframes purr {
+	0% {-moz-transform: translate(0);}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {-moz-transform: translate(0px, 0);}
+	10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%  {-moz-transform: translate(-1px, 0);}
+	100% {-moz-transform: translate(0);}
+}
+
+@-moz-keyframes paw {
+	0% {-moz-transform: translateY(0);}
+	30%, 50%, 70% {-moz-transform: translateY(-135px);}
+	40%, 60%, 80% {-moz-transform: translateY(-120px);}
+	100% {-moz-transform: translateY(0);}
+}
+/* Opera */
+@-o-keyframes twitch {
+	0% { -o-transform: rotate(12deg); }
+	9% { -o-transform: rotate(12deg); }
+	10%, 12%, 14% { -o-transform: rotate(15deg); }
+	11%, 13%, 15% { -o-transform: rotate(12deg); }
+	100% { -o-transform: rotate(12deg); }
+}
+@-o-keyframes tail_flick {
+	0% { -o-transform: rotate(0deg); }
+	79% { -o-transform: rotate(0deg); }
+	80%, 85%, 90% { -o-transform: rotate(-5deg); }
+	83%, 88%, 93% { -o-transform: rotate(0deg); }
+	100% { -o-transform: rotate(0deg); }
+}
+
+@-o-keyframes eat_mouth {
+	0% {  }
+	50% { top: 75px; left: 50px; height: 100px; width: 100px; border-radius: 50%; background-color: #ab0014;}
+	0% { }
+}
+
+@-o-keyframes eat_nose {
+	0% {  }
+	50% { top: 45px;}
+	0% { }
+}
+
+@-o-keyframes eat_eyes {
+	0% {-o-transform: scale(1,1);}
+	50% {-o-transform: scale(1,0); top: 10px;}
+	51% {-o-transform: scale(1,0); top: 10px;}
+	100% {-o-transform: scale(1,1);}
+}
+
+@-o-keyframes blink {
+	0% {-o-transform: scale(1,1);}
+	49% {-o-transform: scale(1,1);}
+	50% {-o-transform: scale(1,0);}
+	51% {-o-transform: scale(1,0);}
+	52% {-o-transform: scale(1,1);}
+	53% {-o-transform: scale(1,1);}
+	54% {-o-transform: scale(1,0);}
+	55% {-o-transform: scale(1,0);}
+	56% {-o-transform: scale(1,1);}
+	100% {-o-transform: scale(1,1);}
+}
+
+@-o-keyframes purr {
+	0% {-o-transform: translate(0);}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {-o-transform: translate(0px, 0);}
+	10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%  {-o-transform: translate(-1px, 0);}
+	100% {-o-transform: translate(0);}
+}
+
+@-o-keyframes paw {
+	0% {-o-transform: translateY(0);}
+	30%, 50%, 70% {-o-transform: translateY(-135px);}
+	40%, 60%, 80% {-o-transform: translateY(-120px);}
+	100% {-o-transform: translateY(0);}
+}
+/* MS */
+@-ms-keyframes twitch {
+	0% { -ms-transform: rotate(12deg); }
+	9% { -ms-transform: rotate(12deg); }
+	10%, 12%, 14% { -ms-transform: rotate(15deg); }
+	11%, 13%, 15% { -ms-transform: rotate(12deg); }
+	100% { -ms-transform: rotate(12deg); }
+}
+@-ms-keyframes tail_flick {
+	0% { -ms-transform: rotate(0deg); }
+	79% { -ms-transform: rotate(0deg); }
+	80%, 85%, 90% { -ms-transform: rotate(-5deg); }
+	83%, 88%, 93% { -ms-transform: rotate(0deg); }
+	100% { -ms-transform: rotate(0deg); }
+}
+
+@-ms-keyframes eat_mouth {
+	0% {  }
+	50% { top: 75px; left: 50px; height: 100px; width: 100px; border-radius: 50%; background-color: #ab0014;}
+	0% { }
+}
+
+@-ms-keyframes eat_nose {
+	0% {  }
+	50% { top: 45px;}
+	0% { }
+}
+
+@-ms-keyframes eat_eyes {
+	0% {-ms-transform: scale(1,1);}
+	50% {-ms-transform: scale(1,0); top: 10px;}
+	51% {-ms-transform: scale(1,0); top: 10px;}
+	100% {-ms-transform: scale(1,1);}
+}
+
+@-ms-keyframes blink {
+	0% {-ms-transform: scale(1,1);}
+	49% {-ms-transform: scale(1,1);}
+	50% {-ms-transform: scale(1,0);}
+	51% {-ms-transform: scale(1,0);}
+	52% {-ms-transform: scale(1,1);}
+	53% {-ms-transform: scale(1,1);}
+	54% {-ms-transform: scale(1,0);}
+	55% {-ms-transform: scale(1,0);}
+	56% {-ms-transform: scale(1,1);}
+	100% {-ms-transform: scale(1,1);}
+}
+
+@-ms-keyframes purr {
+	0% {-ms-transform: translate(0);}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {-ms-transform: translate(0px, 0);}
+	10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%  {-ms-transform: translate(-1px, 0);}
+	100% {-ms-transform: translate(0);}
+}
+
+@-ms-keyframes paw {
+	0% {-ms-transform: translateY(0);}
+	30%, 50%, 70% {-ms-transform: translateY(-135px);}
+	40%, 60%, 80% {-ms-transform: translateY(-120px);}
+	100% {-ms-transform: translateY(0);}
+}
+/* plain */
+@keyframes twitch {
+	0% { transform: rotate(12deg); }
+	9% { transform: rotate(12deg); }
+	10%, 12%, 14% { transform: rotate(15deg); }
+	11%, 13%, 15% { transform: rotate(12deg); }
+	100% { transform: rotate(12deg); }
+}
+@keyframes tail_flick {
+	0% { transform: rotate(0deg); }
+	79% { transform: rotate(0deg); }
+	80%, 85%, 90% { transform: rotate(-5deg); }
+	83%, 88%, 93% { transform: rotate(0deg); }
+	100% { transform: rotate(0deg); }
+}
+
+@keyframes eat_mouth {
+	0% {  }
+	50% { top: 75px; left: 50px; height: 100px; width: 100px; border-radius: 50%; background-color: #ab0014;}
+	0% { }
+}
+
+@keyframes eat_nose {
+	0% {  }
+	50% { top: 45px;}
+	0% { }
+}
+
+@keyframes eat_eyes {
+	0% {transform: scale(1,1);}
+	50% {transform: scale(1,0); top: 10px;}
+	51% {transform: scale(1,0); top: 10px;}
+	100% {transform: scale(1,1);}
+}
+
+@keyframes blink {
+	0% {transform: scale(1,1);}
+	49% {transform: scale(1,1);}
+	50% {transform: scale(1,0);}
+	51% {transform: scale(1,0);}
+	52% {transform: scale(1,1);}
+	53% {transform: scale(1,1);}
+	54% {transform: scale(1,0);}
+	55% {transform: scale(1,0);}
+	56% {transform: scale(1,1);}
+	100% {transform: scale(1,1);}
+}
+
+@keyframes purr {
+	0% {transform: translate(0);}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {transform: translate(0px, 0);}
+	10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%  {transform: translate(-1px, 0);}
+	100% {transform: translate(0);}
+}
+
+@keyframes paw {
+	0% {transform: translateY(0);}
+	30%, 50%, 70% {transform: translateY(-135px);}
+	40%, 60%, 80% {transform: translateY(-120px);}
+	100% {transform: translateY(0);}
+}
