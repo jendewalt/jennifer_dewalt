@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+    background-color: #eee;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+#container {
+    padding-bottom: 36px;
+    color: #aaa;
+    padding-top: 200px;
+}
+
+#message_container {
+	height: 20px;
+}
+p {
+	font-size: 20px;
+}
+
+.spin {
+	-webkit-animation: spin .3s infinite linear;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+    z-index: 1000;
+}
+
+#links_container {
+	padding: 10px 0;
+}
+
+#links_container a {
+	color: #87ad90 ;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+@-webkit-keyframes spin {
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(360deg);}
+
+}
