@@ -1,0 +1,116 @@
+body {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
+    background-color: #1c1c1c;
+    text-align: center;
+    color: #808687;
+}
+
+#container {
+    padding-bottom: 34px;
+    width: 800px;
+    padding-top: 50px; 
+    margin: auto;
+}
+
+.card {
+	float: left;
+	height: 10px;
+	width: 10px;
+	border: 5px solid #1c1c1c;
+	border-radius: 50%;
+	background-color: #808687;
+	cursor: pointer;
+}
+
+.wave {
+	-webkit-animation: wave .4s linear;
+	-moz-animation: wave .4s linear;
+	-ms-animation: wave .4s linear;
+	-o-animation: wave .4s linear;
+	animation: wave .4s linear;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 34px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#links_container {
+	padding: 10px 20px;
+	text-align: center;
+}
+#links_container a {
+	margin: 0 10px;
+	text-decoration: none;
+	color: #808687;
+}
+#links_container a:visited {
+	color: #808687;
+}
+#links_container a:hover {
+	color: #f700ff;
+}
+
+.clear {
+	clear: both;
+}
+
+@-webkit-keyframes wave {
+	0% { -webkit-transform: translateY(0); background-color: #808687;}
+	50% { -webkit-transform: translateY(-15px); background-color: #f700ff;}
+	100% { -webkit-transform: translateY(0); background-color: #808687;}
+}
+@-moz-keyframes wave {
+	0% { -moz-transform: translateY(0); background-color: #808687;}
+	50% { -moz-transform: translateY(-15px); background-color: #f700ff;}
+	100% { -moz-transform: translateY(0); background-color: #808687;}
+}
+@-ms-keyframes wave {
+	0% { -ms-transform: translateY(0); background-color: #808687;}
+	50% { -ms-transform: translateY(-15px); background-color: #f700ff;}
+	100% { -ms-transform: translateY(0); background-color: #808687;}
+}
+@-o-keyframes wave {
+	0% { -o-transform: translateY(0); background-color: #808687;}
+	50% { -o-transform: translateY(-15px); background-color: #f700ff;}
+	100% { -o-transform: translateY(0); background-color: #808687;}
+}
+@keyframes wave {
+	0% { transform: translateY(0); background-color: #808687;}
+	50% { transform: translateY(-15px); background-color: #f700ff;}
+	100% { transform: translateY(0); background-color: #808687;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
