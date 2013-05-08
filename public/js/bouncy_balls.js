@@ -16,15 +16,15 @@ $(document).ready(function () {
 	var balls = [];
 	var mouse = {x: 0, y: 0};
 	
-	var h = document.height - 25,
-		w = document.width;
+	var h = window.innerHeight - 25,
+		w = window.innerWidth;
 
 	canvas.height = h;
 	canvas.width = w;
 
 	$('body').disableSelection();
 
-		start();
+	start();
 
 	$('#blink').on('click', function (e) {
 		e.stopPropagation();
@@ -38,6 +38,7 @@ $(document).ready(function () {
 	});
 
 	$('#canvas').on('click', function (e) {
+		console.log('Click!')
 		var x = e.pageX - canvas.offsetLeft;
 		var y = e.pageY - canvas.offsetTop;
 
@@ -45,6 +46,7 @@ $(document).ready(function () {
 	});
 
 	$('#canvas').on('mousemove', function (e) {
+		console.log('works!')
 		mouse.x = e.pageX - canvas.offsetLeft;
 		mouse.y = e.pageY - canvas.offsetTop;
 	});
