@@ -1,0 +1,114 @@
+body {	
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    background-color: #353538;
+    color: #63e682;
+}
+
+#container {
+    padding-bottom: 36px;
+}
+
+header {
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.8);	
+}
+
+#logo {
+	float: left;
+	padding: 20px 20px;
+	margin-left: 5px;
+	font-size: 28px;
+	letter-spacing: 5px;
+}
+
+#control_container {
+	float: right;
+    padding: 20px; 
+}
+
+input{
+	-webkit-appearance: none;
+	border: none;
+	box-shadow: none;	
+}
+
+input:focus {
+	box-shadow: 0 0 2 rgba(255,255,255,0.3);
+}
+
+input[type="text"] {
+	border: 1px solid rgba(0,0,0,0.2);
+	width: 60px;	
+	padding: 5px;
+	font-size: 14px;
+}
+
+.control {
+	display: inline-block;
+	margin: 0 8px;
+}
+
+.btn {
+	border: none;
+	border-radius: none;
+	font-size: 14px;
+	width: 100px;
+	padding: 5px 0;
+	border: 1px solid rgba(255,255,255,0.05);
+	cursor: pointer;
+}
+
+.btn:active {
+	box-shadow: 0 0 2px rgba(255,255,255,0.5);
+}
+
+.eraser {
+	background-color: #6b50c7;
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+}
+.erase_all {
+	background-color: #d92e42;
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+}
+
+canvas {
+	cursor: none;
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+}
+
+#links_container {
+
+	text-align: right;
+	padding: 10px 5px;
+	margin: 0 20px;
+}
+
+#links_container a {
+	text-decoration: none;
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.2);	
+	color: #6b50c7;
+	margin-left: 15px;
+}
+
+#links_container a:visited {
+	color: #6b50c7;
+}
+
+#links_container a:hover {
+	color: #d92e42;
+}
+.clear {
+	clear: both;
+}
