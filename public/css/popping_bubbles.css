@@ -1,0 +1,60 @@
+body {
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    text-align: center;
+	background-color: #fff5e8;
+}
+
+#container {
+    /*padding-bottom: 36px;*/
+}
+
+button {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	border: none;
+	border-radius: none;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 14px;
+	padding: 5px 10px;
+	background-color: #ffd39a;
+	cursor: pointer;
+	z-index: 50;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+    z-index: 20;
+}
+
+#links_container {
+	text-align: right;
+	padding: 10px 20px;
+}
+
+#links_container a {
+	color: #9ac6ff;
+	text-decoration: none;
+	margin-left: 10px;
+}
+#links_container a:visited {
+	color: #9ac6ff;
+}
+#links_container a:hover {
+	color: #005dd5;
+}
+
+#sound {
+	height: 0;
+	width: 0;
+}
