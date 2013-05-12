@@ -19,6 +19,9 @@ $(document).ready(function () {
 	$('body').disableSelection();
 	$(['light_bulb_on.png', 'light_bulb_off.png', 'chain_on.png', 'chain_off.png']).preload();
 
+	$('#bulb_' + state).hide();
+	$('#chain_' + state).hide();
+
 	setTimeout(function () {
 		$('#message').fadeOut(1500);
 	}, 2000)
@@ -42,15 +45,17 @@ $(document).ready(function () {
 	function flipSwitch(e) {
 		if (e.pageY >= mouse + 100) {
 			$('body').addClass(state);
-			$('#bulb_container').html('<img src="images/light_bulb_' + state +'.png" id="bulb">');
-			$('#chain_container').html('<img src="images/chain_' + state +'.png" id="chain">');
-
+			$('#bulb_' + state).show();
+			$('#chain_' + state).show();
+			
 			if (state == 'on') {
 				state = 'off';
 			} else {
 				state = 'on'
 			}
 			$('body').removeClass(state);
+			$('#bulb_' + state).hide();
+			$('#chain_' + state).hide();
 		}
 	}
 });
