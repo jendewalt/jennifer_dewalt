@@ -30,6 +30,7 @@ body {
 				1px 2px 0 #242424, 2px 1px 0 #242424,
 				2px 2px 2px rgba(0,0,0,0.5);
 	cursor: pointer;
+	z-index: 10;
 }
 
 footer {
