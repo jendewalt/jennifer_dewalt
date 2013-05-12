@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+    background-color: #538f99;
+    color: #141414;
+}
+
+#container {
+    padding-bottom: 40px;
+}
+
+#handle {
+	position: absolute;
+	top: 200px;
+	left: 50px;
+}
+
+#magnet_container {
+	position: absolute;
+	bottom: 60px;
+	height: 200px;
+}
+
+.magnet {
+	position: absolute;
+	padding: 5px 10px;
+	background-color: #fff;
+	border-top: 1px solid rgba(0,0,0,0.05);
+	border-left: 1px solid rgba(0,0,0,0.05);
+	box-shadow: 0px 1px 0 #242424, 1px 0px 0 #242424,
+				1px 2px 0 #242424, 2px 1px 0 #242424,
+				2px 2px 2px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+}
+
+#links_container {
+	padding: 10px;
+	text-align: right;
+}
+
+#links_container a {
+	color: #bbd5da;
+	margin: 0 10px;
+	text-decoration: none;
+	font-family: 'Racing Sans One', cursive;
+	letter-spacing: 2px;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+#links_container a:visited {
+	color: #bbd5da;
+}
+#links_container a:hover {
+	color: #6fb179;
+}
