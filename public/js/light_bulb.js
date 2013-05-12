@@ -7,10 +7,17 @@
     };
 })(jQuery);
 
+$.fn.preload = function() {
+    this.each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+
 $(document).ready(function () {
 	var mouse;
 	var state = 'on';
 	$('body').disableSelection();
+	$(['light_bulb_on.png', 'light_bulb_off.png', 'chain_on.png', 'chain_off.png']).preload();
 
 	setTimeout(function () {
 		$('#message').fadeOut(1500);
