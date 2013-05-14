@@ -38,7 +38,6 @@ $(document).ready(function () {
 	});
 
 	$('#canvas').on('click', function (e) {
-		console.log('Click!')
 		var x = e.pageX - canvas.offsetLeft;
 		var y = e.pageY - canvas.offsetTop;
 
@@ -46,7 +45,6 @@ $(document).ready(function () {
 	});
 
 	$('#canvas').on('mousemove', function (e) {
-		console.log('works!')
 		mouse.x = e.pageX - canvas.offsetLeft;
 		mouse.y = e.pageY - canvas.offsetTop;
 	});
