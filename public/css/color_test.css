@@ -1,0 +1,175 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+    letter-spacing: 4px;
+    height: 800%;
+    background-color: #606060;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 44px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+#title {
+    float: left;
+    color: #10e3d1;
+    font-size: 18px;
+    padding: 13px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 20%);
+}
+button {
+    border: none;
+    border-radius: none;
+    font-size: 20px;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: #10e3d1; 
+}
+
+#links_container {
+    float: right;
+    text-align: right;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
+#links_container a {
+    text-decoration: none;
+    color: #10e3d1;
+    margin-left: 15px;
+}
+
+#links_container a:visited {
+    color: #10e3d1;
+}
+
+#links_container a:hover {
+    color: #d110e3;
+}
+
+.close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 5px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 50px;
+    line-height: 50px;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.bold {
+    font-size: 24px;
+    color: #10e3d1;
+    margin-bottom: 20px; 
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 60px; 
+    color: #fafafa;
+    background-color: #303030;
+    z-index: 100;
+}
+
+#win {
+    display: none;
+}
+
+#info {
+    display: none;
+}
+
+#directions {
+    width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.sample {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    margin: 100px 30px 0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+#test_sample {
+    right: 50%;
+}
+#user_sample {
+    left: 50%;
+    cursor: crosshair;
+}
+
+#stats_container {
+    width: 360px;
+    margin: 50px auto;
+    letter-spacing: 4px;
+    color: #ddd;
+    text-align: center;
+}
+
+#stats_container h2 {
+    color: #10e3d1;
+}
+
+.stat {
+    margin: 5px;
+    
+}
+h3 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#info_tab {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #10e3d1;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0 5px 0 0;
+    cursor: pointer;
+}
+
+#info_tab:hover {
+    background-color: #888;
+    color: #10665f;
+}
+
+.clear{
+    clear: both;
+}
