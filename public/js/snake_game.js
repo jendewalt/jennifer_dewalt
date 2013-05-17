@@ -103,7 +103,7 @@ $(document).ready(function () {
 
 					if (foodBin.length == 0) {
 						level++;
-						speed -= 40;
+						speed *= 0.75;
 						for (var i = 0; i < level; i++) {
 							foodBin.push(new Food);
 						}
