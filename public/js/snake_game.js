@@ -155,5 +155,7 @@ $(document).ready(function () {
 				snake.dir = 'down';
 			}, 30);
 		}
+
+		e.preventDefault();
 	});
 });
