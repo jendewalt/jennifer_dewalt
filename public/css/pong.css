@@ -1,0 +1,99 @@
+body {
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #3f3d54;
+    background-color: #fcfcfc;
+}
+
+.modal {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+}
+
+.inner_modal {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    padding: 60px;
+    color: #1f12b5;
+    background-color: rgba(0,0,0,0.1);
+}
+
+h1 {
+    letter-spacing: 5px;
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+button {
+    border: none;
+    border-radius: none;
+    font-size: 22px;
+    padding: 10px 20px;
+    background-color: #e8093d;
+    color: white;
+}
+
+a {
+    color: #02c222;
+    text-decoration: none;
+}
+
+#title_card {
+  ;
+}
+
+#game_over {
+    display: none;
+}
+
+#container {
+    padding-top: 60px;
+    padding-bottom: 36px;
+}
+
+canvas {
+    border: 1px solid #7a7c8f;
+}
+
+#score {
+    margin: 15px;
+    font-size: 22px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+}
+
+#links_container {
+	text-align: right;
+	padding: 10px 20px;
+}
+
+#links_container a {
+	text-decoration: none;
+	color: #1f12b5;
+	margin-left: 15px;
+}
+
+#links_container a:visited {
+	color: #1f12b5;
+}
+
+#links_container a:hover {
+	color: #02c222;
+}
