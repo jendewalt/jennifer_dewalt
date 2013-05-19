@@ -1,0 +1,60 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #111;
+}
+
+header {
+    height: 36px;
+    margin-bottom: 10px;
+}
+
+button {
+    border: none;
+    border-radius: none;
+    margin: 5px 0;
+    padding: 10px;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.35);
+    background-color: #12151E;
+}
+
+button:hover {
+    color: rgba(255,255,255,0.8);
+    background-color: #21242D;
+}
+
+#container {
+    padding-bottom: 36px;
+}
+
+canvas {
+    box-shadow: 0 0 5px black;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+}
+
+#links_container {
+    text-align: right;
+    padding: 10px 20px;
+}
+
+#links_container a {
+    text-decoration: none;
+    color: #2a2a2e;
+    margin-left: 15px;
+}
+
+#links_container a:visited {
+    color: #2a2a2e;
+}
+
+#links_container a:hover {
+    color: #636c88;
+}

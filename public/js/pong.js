@@ -1,12 +1,11 @@
-// (function($){
-//     $.fn.disableSelection = function() {
-//         return this
-//                  .attr('unselectable', 'on')
-//                  .css('user-select', 'none')
-//                  .on('selectstart', false);
-//     };
-// })(jQuery);
-// $('body').disableSelection();
+(function($){
+    $.fn.disableSelection = function() {
+        return this
+                 .attr('unselectable', 'on')
+                 .css('user-select', 'none')
+                 .on('selectstart', false);
+    };
+})(jQuery);
 
 $(document).ready(function () {
 	var canvas = document.getElementById('canvas'),
@@ -21,6 +20,7 @@ $(document).ready(function () {
 
 	canvas.height = h;
 	canvas.width = w;
+	$('body').disableSelection();
 
 	function Paddle(pos) {
 		this.h = 75;
