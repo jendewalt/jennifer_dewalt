@@ -1,0 +1,109 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #222;
+    background-color: #f7f7f7;
+}
+
+#container {
+    padding-bottom: 36px;
+}
+
+#title {
+    font-size: 40px;
+    font-weight: 900;
+    padding-top:100px;
+    letter-spacing: 2px; 
+}
+
+#form_wrap {
+    width: 600px;
+    margin: auto;
+}
+
+form {
+    position: absolute;
+    top: 220px;
+    width:600px;
+}
+
+#loc_input {
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.btn {
+    height: 32px;
+    margin: 2px 0 2px -5px;
+    padding: 0 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: none;
+    background-color: #aa17bd;
+    color: #fff;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+#temp_wrap {
+    position: relative;
+    margin: auto;
+    width: 290px;
+    height: 290px;
+    z-index: -1;
+}
+
+#temp_container {
+    display: none;
+    position: absolute;
+    top: 180px;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    border: 20px solid rgba(0,0,0,0.5);
+}
+
+#temp {
+    font-size: 100px;
+    padding-top: 65px;
+}
+
+#desc {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 0 40px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+}
+
+#links_container {
+    font-weight: 600;
+	text-align: right;
+	padding: 10px 20px;
+}
+
+#links_container a {
+	text-decoration: none;
+	color: #aa17bd;
+	margin-left: 10px;
+}
+
+#links_container a:visited {
+	color: #aa17bd;
+}
+
+#links_container a:hover {
+	color: #112090;
+}
