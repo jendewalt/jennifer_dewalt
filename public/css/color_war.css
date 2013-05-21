@@ -1,0 +1,90 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #151515;
+    letter-spacing: 3px;
+}
+
+header {
+    height: 36px;
+    height: 56px;
+    margin-bottom: 30px;
+    line-height: 56px;
+    padding: 0 20px;
+}
+
+#title {
+    float: left;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    color: #e80923;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+#links_container {
+    float: right;
+}
+
+#links_container a {
+    text-decoration: none;
+    color: #1318bf;
+    margin-left: 15px;
+}
+
+#links_container a:visited {
+    color: #1318bf;
+}
+
+#links_container a:hover {
+    color: #1fe30d;
+}
+
+h1 {
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: 50px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    color: #e80923;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 30px 0;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.inner_modal {
+    position: relative;
+    width: 500px;
+    margin: 150px auto;
+    padding: 50px;
+    background-color: rgba(255,255,255,0.9);
+}
+
+button {
+    border: none;
+    border-radius: none;
+    font-size: 22px;
+    letter-spacing: 3px;
+    padding: 10px 20px;
+    background-color: #1318bf;
+    color: white;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #0e1291;
+}
+
+.clear {
+    clear: both;
+}
