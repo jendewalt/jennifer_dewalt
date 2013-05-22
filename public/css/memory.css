@@ -1,0 +1,149 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+	letter-spacing: 1px;
+	color: #3d4970;
+    background-color: #fff7f7;
+}
+img {
+	margin: -2px 0 0 0;
+}
+
+header {
+    height: 36px;
+    height: 56px;
+    margin-bottom: 10px;
+    line-height: 56px;
+    padding: 0 20px;
+}
+
+#title {
+    float: left;
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: #8E44AD;
+    font-size: 44px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-shadow: -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+#links_container {
+    float: right;
+}
+
+#links_container a {
+    text-decoration: none;
+    color: #8E44AD;
+    margin-left: 15px;
+}
+
+#links_container a:visited {
+    color: #8E44AD;
+}
+
+#links_container a:hover {
+    color: #E67E22;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    color: #8E44AD;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+#try_again {
+	display: block;
+	text-decoration: none;
+	color: #27a88e;
+	margin-top: 40px;
+}
+
+.modal {
+	display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.75);
+}
+
+.inner_modal {
+    position: relative;
+    width: 500px;
+    margin: 150px auto;
+    padding: 50px;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    color: #8E44AD;
+    cursor: pointer;
+}
+
+#block {
+	display: none;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#stats_container {
+	display: inline-block;
+	width: 200px;
+	margin-right: 40px;
+	margin-top: 115px; 
+	vertical-align: top;
+	text-align: left;
+}
+
+#stats_container h1 {
+	font-size: 22px;
+	line-height: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+	color: #fff;
+	text-shadow: -1px 1px 0 rgba(0,0,0,0.1);
+	background-color: #E67E22;
+}
+
+.stat {
+	margin: 10px 0 10px 5px;
+}
+
+#card_container {
+	display: inline-block;
+	width: 648px;
+	margin: auto;
+	vertical-align: top;
+}
+
+.card {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	margin: 4px;
+	box-shadow: -1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.back {
+	background-color: #333;
+}
+
+.clear {
+	clear: both;
+}
