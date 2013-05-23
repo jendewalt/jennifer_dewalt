@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Rondo";
+    src: url("http://jenniferdewalt.com/rondomn.ttf");
+  }
+
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #f2f3f7;
+    color: #2d3157;
+}
+
+header {
+    margin-bottom: 40px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform:uppercase;
+}
+
+.hover:hover {
+    background-color: #1ab079;
+    color: #f2f3f7;
+}
+
+.info {
+    float: right;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.title {
+    float: left;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #2d3157;
+}
+
+#links_container {
+    float: right;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#links_container a {
+    text-decoration: none;
+    color: #2d3157;
+    padding: 10px 20px;
+}
+
+#links_container a:visited {
+    color: #2d3157;
+}
+
+#links_container a:hover {
+    color: #f2f3f7;
+}
+
+.modal {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.inner_modal {
+    position: relative;
+    width: 400px;
+    margin: auto;
+    padding: 50px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    color: #cf0000;
+    cursor: pointer;
+}
+
+#etch_frame {
+    position: relative;
+    width: 750px;
+    height: 530px;
+    margin: auto;
+    background-color: #cf0000;
+    border-radius: 10px;
+
+    box-shadow: 0px 1px 0 rgba(255,255,255,0.05) inset, 1px 0px 0 rgba(255,255,255,0.05) inset,
+                1px 2px 0 rgba(255,255,255,0.05) inset, 2px 1px 0 rgba(255,255,255,0.05) inset,
+                2px 3px 0 rgba(255,255,255,0.05) inset, 3px 2px 0 rgba(255,255,255,0.05) inset,
+                3px 4px 0 rgba(255,255,255,0.05) inset, 4px 3px 0 rgba(255,255,255,0.05) inset,
+                4px 5px 0 rgba(255,255,255,0.05) inset, 5px 4px 0 rgba(255,255,255,0.05) inset,
+                5px 6px 0 rgba(255,255,255,0.05) inset, 6px 5px 0 rgba(255,255,255,0.05) inset,
+                6px 7px 0 rgba(255,255,255,0.05) inset, 7px 6px 0 rgba(255,255,255,0.05) inset,
+                7px 9px 0 rgba(255,255,255,0.05) inset, 8px 7px 0 rgba(255,255,255,0.05) inset,
+                8px 9px 0 rgba(255,255,255,0.05) inset, 9px 8px 0 rgba(255,255,255,0.05) inset,
+
+                -0px -1px 0 rgba(0,0,0,0.05) inset, -1px -0px 0 rgba(0,0,0,0.05) inset,
+                -1px -2px 0 rgba(0,0,0,0.05) inset, -2px -1px 0 rgba(0,0,0,0.05) inset,
+                -2px -3px 0 rgba(0,0,0,0.05) inset, -3px -2px 0 rgba(0,0,0,0.05) inset,
+                -3px -4px 0 rgba(0,0,0,0.05) inset, -4px -3px 0 rgba(0,0,0,0.05) inset,
+                -4px -5px 0 rgba(0,0,0,0.05) inset, -5px -4px 0 rgba(0,0,0,0.05) inset,
+                -5px -6px 0 rgba(0,0,0,0.05) inset, -6px -5px 0 rgba(0,0,0,0.05) inset,
+                -6px -7px 0 rgba(0,0,0,0.05) inset, -7px -6px 0 rgba(0,0,0,0.05) inset,
+                -7px -9px 0 rgba(0,0,0,0.05) inset, -8px -7px 0 rgba(0,0,0,0.05) inset,
+                -8px -9px 0 rgba(0,0,0,0.05) inset, -9px -8px 0 rgba(0,0,0,0.05) inset,
+
+                0 0 3px rgba(0,0,0,0.3), 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.logo {
+    padding-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    color: #ffe6c9;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+}
+
+.logo span {
+    margin: 0 30px;
+    font-size: 40px;
+    font-family: "Rondo";
+    font-style: normal;
+    font-weight: normal;
+}
+
+canvas {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: silver;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    box-shadow: 0px 1px 0 rgba(255,255,255,0.08), 1px 0px 0 rgba(255,255,255,0.08),
+                1px 2px 0 rgba(255,255,255,0.08), 2px 1px 0 rgba(255,255,255,0.08),
+                2px 3px 0 rgba(255,255,255,0.08), 3px 2px 0 rgba(255,255,255,0.08),
+                3px 4px 0 rgba(255,255,255,0.08), 4px 3px 0 rgba(255,255,255,0.08),
+                4px 5px 0 rgba(255,255,255,0.08), 5px 4px 0 rgba(255,255,255,0.08),
+
+                -0px -1px 0 rgba(0,0,0,0.05), -1px -0px 0 rgba(0,0,0,0.05),
+                -1px -2px 0 rgba(0,0,0,0.05), -2px -1px 0 rgba(0,0,0,0.05),
+                -2px -3px 0 rgba(0,0,0,0.05), -3px -2px 0 rgba(0,0,0,0.05),
+                -3px -4px 0 rgba(0,0,0,0.05), -4px -3px 0 rgba(0,0,0,0.05),
+                -4px -5px 0 rgba(0,0,0,0.05), -5px -4px 0 rgba(0,0,0,0.05);
+}
+
+.knob {
+    position: absolute;
+    bottom: 15px;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.5), 0 0 3px rgba(0,0,0,0.7) inset;
+
+    background: -moz-radial-gradient(center, ellipse cover, rgba(224,224,224,1) 0%, rgba(242,242,242,1) 22%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(224,224,224,1)), color-stop(22%,rgba(242,242,242,1)), color-stop(100%,rgba(255,255,255,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(224,224,224,1) 0%,rgba(242,242,242,1) 22%,rgba(255,255,255,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(224,224,224,1) 0%,rgba(242,242,242,1) 22%,rgba(255,255,255,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(224,224,224,1) 0%,rgba(242,242,242,1) 22%,rgba(255,255,255,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(224,224,224,1) 0%,rgba(242,242,242,1) 22%,rgba(255,255,255,1) 100%);
+}
+
+.knob_r {
+    right: 20px;
+}
+.knob_l {
+    left: 20px;
+}
+
+.clear {
+    clear: both;
+}
