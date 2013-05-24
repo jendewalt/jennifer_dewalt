@@ -6,8 +6,8 @@ $(document).ready(function () {
 		lives = 3,
 		score = 0,
 		level= 0,
-		h = document.height - 40,
-		w = document.width;
+		h = window.innerHeight - 40,
+		w = window.innerWidth;
 
 		canvas.height = h;
 		canvas.width = w;
