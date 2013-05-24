@@ -1,0 +1,84 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #454555;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+}
+
+#links_container {
+    text-align: right;
+    padding: 10px 20px;
+}
+
+#links_container a {
+    text-decoration: none;
+    color: #6b50c7;
+    margin-left: 15px;
+}
+
+#links_container a:visited {
+    color: #6b50c7;
+}
+
+#links_container a:hover {
+    color: #d92e42;
+}
+
+#info_container { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 20px;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin: 10px 0;
+    line-height: 20px; 
+}
+
+a {
+    color: #3ab53e;
+    text-decoration: none;
+}
+
+.modal {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+}
+
+.inner_modal {
+    position: relative;
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    color: #ba1fa8;
+    cursor: pointer;
+}
+
+#game_over {
+    display: none;
+}
