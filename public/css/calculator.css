@@ -1,0 +1,156 @@
+body {
+    position: static;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    text-align: center;
+    background-color: #34333d;
+    color: #2e2e36;
+}
+
+a {
+    color: #aeadbb;
+    text-decoration: none;
+}
+
+header {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    height: 36px;
+    margin-bottom: 30px;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 20px;
+    letter-spacing: 4px;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.5), 1px 1px 0 rgba(255,255,255,0.1);
+}
+
+#links_container {
+    float: right;
+}
+
+#links_container a {
+    text-decoration: none;
+    color: #aeadbb;
+    margin-left: 15px;
+}
+
+#links_container a:visited {
+    color: #aeadbb;
+}
+
+#links_container a:hover {
+    color: #13d7d0;
+}
+
+#title {
+    float: left;
+    font-size: 28px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #13d7d0;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+img {
+    margin-top: 15px; 
+}
+
+.modal {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+
+.inner_modal {
+    position: relative;
+    width: 700px;
+    margin: auto;
+    padding: 30px;
+    background-color: #17171a;
+}
+
+#zero {
+    display: none;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 5px;
+    font-size: 22px;
+    color: #ffa200;
+    cursor: pointer;
+}
+
+#container {
+   ;
+}
+
+#inner_container {
+    /*padding-top: 100px;*/
+}
+
+#display {
+    width: 379px;
+    height: 70px;
+    margin: auto;
+    padding: 10px;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 50px;
+    color: #2e2e36;
+    text-align: right;
+    background-color: #fbfbfb;
+    border: none;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    border-left: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3) inset;
+}
+
+table {
+    padding: 10px;
+    width: 400px;
+    margin: auto;
+    border-spacing: 10px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+td {
+    background-color: #fbfbfb;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    box-shadow: 1px 0px 0 rgba(0,0,0,0.05), 0px 1px 0 rgba(0,0,0,0.05),
+                2px 1px 0 rgba(0,0,0,0.05), 1px 2px 0 rgba(0,0,0,0.05);
+}
+
+.calc {
+    width: 70px;
+    height: 70px;
+}
+
+#clear_all {
+    background-color: #ffa200;
+}
+#clear_all:active {
+    background-color: #e68300;
+}
+
+#equals {
+    background-color: #13d7d0;
+}
+#equals:active {
+    background-color: #29c2bc;
+}
+
+.empty {
+    background-color: #34333d;
+    cursor: auto;
+}
+
+.clear {
+    clear: both;
+}
