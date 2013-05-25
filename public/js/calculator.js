@@ -12,11 +12,13 @@ $(document).ready(function () {
 		exp = '',
 		ans;
 
+	$('#display').focus();
+
 	$('.close').on('click', function () {
 		$('#zero').hide();
 	});
 
-	$('.num').on('click', function (e) { 
+	$('.num').on('click', function () { 
 		updateNum(this.id);
 	});
 
@@ -39,41 +41,83 @@ $(document).ready(function () {
 		displayNum(curNum);
 	});
 
-	$(document).on('keypress', function (e) {
-		e.preventDefault();
-		key = e.keyCode;
-			console.log(key)
-
-		if (key == 46 || (key >= 48 && key <=57)) {
-			updateNum(String.fromCharCode(key));
-		}
-
-		if (key == 42 || key == 43 || key == 45 || key ==47) {
-			updateExp(String.fromCharCode(key));
-		}
-
-		if (key == 13) {
+	function determineType(key) {
+		if (key == '*' || key == '-' || key == '+' || key == '/') {
+			updateExp(key);
+		} else if (key == 'enter') {
 			evalExp();
+		} else if (key != 'delete') {
+			updateNum(key);
 		}
+	};
+
+	var key_map = {
+		'13': 'enter',
+		'48': '0',
+		'49': '1',
+		'50': '2',
+		'51': '3',
+		'52': '4',
+		'53': '5',
+		'54': '6',
+		'55': '7',
+		'56': '8',
+		'57': '9',
+		'106': '*',
+		'107': '+',
+		'109': '-',
+		'111': '/',
+		'110': '.',
+		'96': '0',
+		'97': '1',
+		'98': '2',
+		'99': '3',
+		'100': '4',
+		'101': '5',
+		'102': '6',
+		'103': '7',
+		'104': '8',
+		'105': '9',
+		'61': '+',
+		'187': '+',
+		'173': '-',
+		'189': '-',
+		'191': '/',
+		'190': '.',
+	}
+
+	$('#display').on('keydown', function (e) {
+		e.preventDefault();
 	});
+
 
 	$('#display').on('keyup', function (e) {
 		e.preventDefault();
-		key = e.keyCode;
-		console.log(key + ' up');
-
-		if (key == 46 || key == 8) {
+		key = e.which;
+		if (e.which == 8 || e.which == 46) {
+			key = 'delete';
 			curNum = '';
 			exp = $('#display').val();
-			console.log(exp)
+			exp = exp.substring(0, exp.length - 1);
+			$('#display').val(exp);
+
+		} else {
+			key = key_map[String(key)]
 		}
 
+		if (key === '8') {
+			key = e.shiftKey ? '*' : 8;
+		}
+
+		if (key) {
+			determineType(key);	
+		}
 	});
 
 	function updateNum(num) {
 		if (num == '.') {
 			if (curNum.indexOf('.') !== -1) {
-				console.log('err')
+				;
 			} else {
 				curNum += num;
 			}
@@ -109,7 +153,9 @@ $(document).ready(function () {
 		if (isNaN(test)) {
 			alert('Looks like there\'s a problem.');
 		} else {
-			ans = eval(exp);
+			ans = eval(exp) * 1e6
+			ans = Math.round(ans, 6);
+			ans = ans/1e6;
 
 			if (ans == Infinity || ans == -Infinity) {
 				$('#zero').show();
