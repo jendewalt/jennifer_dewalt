@@ -1,0 +1,35 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#container {
+    padding-bottom: 36px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+}
+
+#links_container {
+	text-align: right;
+	padding: 10px 20px;
+}
+
+#links_container a {
+	text-decoration: none;
+	color: #6b50c7;
+	margin-left: 15px;
+}
+
+#links_container a:visited {
+	color: #6b50c7;
+}
+
+#links_container a:hover {
+	color: #d92e42;
+}
