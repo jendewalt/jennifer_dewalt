@@ -204,7 +204,7 @@ $(document).ready(function () {
 			}
 			if (trooper.y >=  height - 15 && running) {
 				var x_pos = island.x + levels[level].island_offset;
-				if (trooper.x > x_pos - 15 && trooper.x < x_pos + levels[level].island_width + 20) {
+				if (trooper.x > x_pos - 20 && trooper.x < x_pos + levels[level].island_width + 20) {
 					hits += 1;
 					troopers.splice(trooper, 1);
 				}
