@@ -1,10 +1,70 @@
 body {
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
     text-align: center;
+    color: #fff;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #1c2766;
+    background-color: white;
+    z-index: 100;
+}
+
+.inner_modal {
+    position: relative;
+    width: 500px;
+    margin: 100px auto;
+}
+
+h1 {
+    letter-spacing: 3px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+button {
+    border: none;
+    border-radius: none;
+    font-size: 22px;
+    padding: 10px 23px;
+    background-color: #7dc936;
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    color: #7dc936;
+    text-decoration: none;
+}
+
+#info {
+  ;
+}
+
+#game_over {
+    display: none;
 }
 
 #container {
     padding-bottom: 36px;
+}
+
+canvas{
+    border-bottom: 1px solid black;
 }
 
 footer {
@@ -12,24 +72,35 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 36px;
+    height: 40px;
+    background-color: #1486b3;
+}
+
+#stats_container {
+    display: none;
+    float: left;
+}
+
+.stat {
+    display: inline-block;
+	padding: 10px 20px;
 }
 
 #links_container {
-	text-align: right;
-	padding: 10px 20px;
+    float: right;
+    padding: 10px 20px;
 }
 
 #links_container a {
 	text-decoration: none;
-	color: #6b50c7;
-	margin-left: 15px;
+	color: #fff;
+	margin-left: 20px;
 }
 
 #links_container a:visited {
-	color: #6b50c7;
+	color: #fff;
 }
 
 #links_container a:hover {
-	color: #d92e42;
+	color: #e88d15;
 }
