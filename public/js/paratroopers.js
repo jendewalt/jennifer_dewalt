@@ -44,7 +44,7 @@ $(document).ready(function () {
 		},
 		{
 			island_width: 80,
-			island_offset: 30,
+			island_offset: 120,
 			goal: 3,
 			troopers_left: 5
 		},
@@ -257,7 +257,8 @@ $(document).ready(function () {
 	}
 
 	$(document).on('keypress', function (e) {
-		if (e.keyCode == 32 && troopers_left != 0 && running) {
+		console.log(e)
+		if (e.charCode == 32 && troopers_left != 0 && running) {
 			troopers_left--;
 			troopers.push(new Trooper(plane.horizontal + 115, plane.vertical + 60, plane.v0x, 0));
 		}
