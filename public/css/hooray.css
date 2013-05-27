@@ -1,0 +1,119 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+header {
+    text-align: right;
+}
+
+button {
+    position: relative;
+    width: 70px;
+    margin: 10px;
+    padding: 3px 0;
+    border: none;
+    border-radius: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.on {
+    background-color: #17bf4c;    
+}
+.off {
+    background-color: #3c4975;        
+}
+
+#container {
+    padding-bottom: 40px;
+}
+
+#rope_wrap {
+    position: absolute;
+    top: -300px;
+    left: 50px;
+    width: 64px;
+    height: 800px;
+    z-index: 20;
+}
+
+#rope {
+    cursor: pointer;
+}
+
+#message {
+    position: absolute;
+    left: 130px;
+    top:  350px;
+    color: #17bf4c; 
+}
+
+p {
+  display: inline-block;    
+  margin-left: 10px;
+}
+
+#arrow{
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-right: 9px solid #17bf4c;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+#arrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 3px solid #17bf4c;
+  border-radius: 20px 0 0 0;
+  top: -12px;
+  left: -9px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 1px;
+    vertical-align: bottom;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+    z-index: 10;
+}
+
+#links_container {
+	text-align: right;
+	padding: 10px 20px;
+}
+
+#links_container a {
+	text-decoration: none;
+	color: #3c4975;
+	margin-left: 15px;
+}
+
+#links_container a:visited {
+	color: #3c4975;
+}
+
+#links_container a:hover {
+	color: #17bf4c;
+}
