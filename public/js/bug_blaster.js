@@ -68,11 +68,11 @@ $(document).ready(function () {
 		{
 			num_bugs: 3,
 			bullets: 10,
-			radius: 5		},
+			radius: 7		},
 		{
 			num_bugs: 3,
 			bullets: 5,
-			radius: 5
+			radius: 7
 		}
 		];
 
