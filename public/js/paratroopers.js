@@ -257,7 +257,6 @@ $(document).ready(function () {
 	}
 
 	$(document).on('keypress', function (e) {
-		console.log(e)
 		if (e.charCode == 32 && troopers_left != 0 && running) {
 			troopers_left--;
 			troopers.push(new Trooper(plane.horizontal + 115, plane.vertical + 60, plane.v0x, 0));

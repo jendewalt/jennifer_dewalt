@@ -1,0 +1,123 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #172729;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #172729;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 100;
+}
+
+.inner_modal {
+    position: relative;
+    width: 500px;
+    margin: 100px auto;
+}
+
+h1 {
+    letter-spacing: 3px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+button {
+    border: none;
+    border-radius: none;
+    font-size: 22px;
+    padding: 10px 23px;
+    background-color: #0898ab;
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    color: #0898ab;
+    text-decoration: none;
+}
+
+.info {
+
+}
+.win {
+  display: none;
+}
+
+.game_over {
+    display: none;
+}
+.level {
+    background-color: transparent;
+}
+.level_up {
+    display: none;
+    font-size: 30px;
+}
+
+#container {
+    padding-bottom: 36px;
+}
+
+canvas {
+    vertical-align: bottom;
+}
+
+.stat {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+}
+
+.stats_container {
+    float: left;
+    padding: 10px 20px;
+}
+
+#links_container {
+    position: relative;
+    float: right;
+	text-align: right;
+	padding: 10px 20px;
+    z-index: 300;
+}
+
+#links_container a {
+	text-decoration: none;
+	color: #0898ab;
+	margin-left: 15px;
+}
+
+#links_container a:visited {
+	color: #0898ab;
+}
+
+#links_container a:hover {
+	color: #34def5;
+}
+
+.clear {
+    clear: both;
+}
