@@ -273,8 +273,8 @@ $(document).ready(function () {
 
 		if (e.keyCode == 39) {
 			cannon.power += 0.02;
-			if (cannon.power >= 100) {
-				cannon.power = 100;
+			if (cannon.power >= 1) {
+				cannon.power = 1;
 			}
 		}
 
