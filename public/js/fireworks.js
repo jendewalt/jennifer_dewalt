@@ -148,18 +148,6 @@ $(document).ready(function () {
 		rockets.push(new_rocket);
 	});
 
-	canvas.addEventListener('touchend', function (e) {
-		var new_rocket = new Rocket(e.clientX, e.clientY);
-
-		new_rocket['x_dif'] = new_rocket.xf - new_rocket.x0;
-		new_rocket['y_dif'] = new_rocket.yf - new_rocket.y0;
-
-		new_rocket['vx'] = (new_rocket.v * new_rocket.x_dif)/(Math.sqrt((Math.pow(new_rocket.x_dif, 2) + Math.pow(new_rocket.y_dif, 2))));
-		new_rocket['vy'] = (new_rocket.v * new_rocket.y_dif)/(Math.sqrt((Math.pow(new_rocket.x_dif, 2) + Math.pow(new_rocket.y_dif, 2))));
-
-		rockets.push(new_rocket);
-	});
-
 	paintScreen();
 	
 	$('body').disableSelection();
