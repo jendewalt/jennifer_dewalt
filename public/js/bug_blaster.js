@@ -142,7 +142,7 @@ $(document).ready(function () {
 	};
 
 	function evolveBalls() {
-		_.each(balls, function (ball) {
+		_.each(balls, function (ball, i) {
 			var v0x = ball.v0 * Math.sin(ball.angle);
 			var v0y = ball.v0 * Math.cos(ball.angle);
 
@@ -152,7 +152,7 @@ $(document).ready(function () {
 			ball.y = ball.y0 - v0y * ball.time + acceleration * Math.pow(ball.time, 2);
 
 			if (ball.y > h + ball.r) {
-				balls.splice(ball, 1);
+				balls.splice(i, 1);
 			}
 		});
 	};

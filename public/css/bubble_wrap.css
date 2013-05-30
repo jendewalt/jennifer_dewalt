@@ -1,0 +1,114 @@
+body {
+    width: 858px;
+    margin: auto;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+header {
+    height: 36px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+#links_container {
+    float: right;
+    text-align: right;
+}
+
+#links_container a {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #000;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background-color: hsl(300, 70%, 70%);
+}
+
+#links_container a:visited {
+    color: #000;
+}
+
+#links_container a:hover {
+    color: lime;
+}
+
+.btn {
+    float: left;
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: none;
+    background-color: hsl(300, 70%, 70%);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.reset {
+    margin-right: 10px;
+}
+
+.control:active {
+    background-color: hsl(300, 90%, 50%);
+}
+
+.on {
+    background-color: hsl(200, 70%, 70%); 
+}
+.off {
+    color: #666;
+    background-color: hsl(300, 30%, 70%); 
+}
+
+#container {
+    position: relative;
+    height: 442px;
+    width: 858px;
+    margin: auto;
+}
+
+#bubble_container {
+    ;
+}
+
+.frame {
+    position: absolute;
+    height: 450px;
+    width: 22px;
+    z-index: 100;
+    background-color: white;
+}
+
+.left {
+    left: -22px;
+}
+
+.right {
+    right: -22px;
+}
+
+.bubble {
+    position: absolute;
+    cursor: pointer;
+}
+
+.popped {
+    position: absolute;
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
