@@ -9,7 +9,7 @@
 
 $(document).ready(function () {
 	var cur_num = randomInt(1, 1000),
-		count = 5,
+		count = 30,
 		misses = 0,
 		clock,
 		cur_time;
