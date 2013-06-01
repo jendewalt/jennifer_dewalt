@@ -1,0 +1,115 @@
+body {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    background-color: #ddd;
+    letter-spacing: 4px;
+    color: #333;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+}
+
+#container {
+    position: relative;
+    width: 800px;
+    margin: auto;
+    padding-top: 80px; 
+    padding-bottom: 36px;
+}
+
+p {
+    line-height: 40px;
+}
+
+button {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 50px; 
+    color: white;
+    font-size: 50px;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.5) ;
+    border-radius: 50%;
+    border: none;
+}
+
+.able {
+    background-color: #f0421f; 
+    box-shadow: 0 1px 0 #861d0a, 0 2px 0 #861d0a,
+                0 3px 0 #861d0a, 0 4px 0 #861d0a,
+                0 5px 0 #861d0a, 0 6px 0 #861d0a,
+                0 7px 0 #861d0a, 0 8px 0 #861d0a,
+                0 9px 0 #861d0a, 0 10px 0 #861d0a,
+                0 11px 0 #861d0a, 0 12px 3px rgba(0,0,0,0.4),
+                0 1px 4px rgba(255,255,255,0.4) inset, 0 -1px 3px rgba(0,0,0,0.3) inset;
+}
+.disable {
+    background-color: #a0a0a0; 
+    box-shadow: 0 -1px 0 #303030, 0 -2px 0 #303030,
+                0 -3px 0 #303030,
+                0 -4px 3px rgba(255,255,255,0.15),
+                0 1px 2px rgba(0,0,0,0.2),
+                0 -2px 4px rgba(0,0,0,0.4) inset, 
+                0 2px 4px rgba(0,0,0,0.3) inset;
+}
+
+.progress_window {
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 60px;
+    top: 120px;
+    left: 150px;
+    padding: 30px 0;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+.loading.text {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #07e8a8;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+
+.bar_container {
+    height: 10px;
+    width: 400px;
+    margin: auto;
+    background-color: #333;
+    border-radius: 20px;
+    border: 7px solid rgba(0,0,0,0.9);
+}
+
+.inner_bar {
+    height: 6px;
+    width: 395px;
+    margin: 2px;
+    border-radius: 12px; 
+    background-color: #07e8a8;
+    box-shadow: 0 0 5px rgba(7, 232, 168, 0.7)
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+}
+
+#links_container {
+	text-align: right;
+	padding: 10px 20px;
+}
+
+#links_container a {
+	text-decoration: none;
+	color: #f0421f;
+	margin-left: 15px;
+}
+
+#links_container a:visited {
+    color: #f0421f;
+}
+
+#links_container a:hover {
+	color: #07e8a8;
+}
