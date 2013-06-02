@@ -8,6 +8,7 @@
 })(jQuery);
 
 $(document).ready(function () {
+	xxx = random;
 	var random = ['I am not a robot, I am a unicorn!',
 				  'Who likes ice cream? I do!',
 				  'I\'m a pretty, pretty princess!',
@@ -69,10 +70,12 @@ $(document).ready(function () {
 				'Get out of my personal space!',
 				'Do not touch!'];
 
+	$('.text').focus();
+
 	$('.head').on('click', function () {
 		$('.head').addClass('bounce');
 		$('p').text(poke[randomInt(0,15)]);
-
+		$('.text').focus();
 		setTimeout(function () {
 			$('.head').removeClass('bounce');
 		}, 800);
@@ -85,12 +88,15 @@ $(document).ready(function () {
 			$('p').text('Well that\'s rude.');
  	
 		} else {
-			$('p').text(random[randomInt(0,21)]);
+			$('p').text(random[randomInt(0,42)]);
 		}		
 		$('.text').val('');
+		$('.text').focus();
 	});
 
 	$('body').disableSelection();
+
+	xxx = random
 	
 });
 
