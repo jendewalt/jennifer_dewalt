@@ -17,7 +17,7 @@ $(document).ready(function () {
 				  'Where am I?',
 				  'Is this real life?',
 				  'What\'s that smell?',
-				  'I can haz cheezburger?',
+				  'I can has cheezburger?',
 				  'So two not robots walk into a bar...',
 				  'I am bored.',
 				  'Where is your tutu?',
