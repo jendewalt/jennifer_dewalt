@@ -1,0 +1,175 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #08e2e2;
+    background-color: #1b1a1f;
+}
+
+header {
+    margin-bottom: 10px;
+    line-height: 56px;
+    padding: 0 20px;
+}
+
+#links_container {
+    float: right;
+}
+
+a {
+    color: #908e96;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+}
+
+#links_container a {
+    margin-left: 15px;
+}
+
+a:visited {
+    color: #908e96;
+}
+
+a:hover {
+    color: #27f7f7;
+}
+
+#title {
+    float: left;
+    font-size: 18px;
+}
+
+#container {
+    padding-bottom: 46px;
+}
+
+p {
+    line-height: 28px;
+    margin: 20px 0;
+    text-shadow: 0 0 6px rgba(0,0,0,0.75);
+}
+
+.modal {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.inner_modal {
+    position: relative;
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.55);
+}
+
+#info {
+    ;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    color: #08e2e2;
+    cursor: pointer;
+}
+
+.board {
+    position: relative;
+    width: 700px;
+    height: 450px;
+    margin: auto;
+}
+
+.orb {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #908e96;
+    cursor: pointer;
+
+    box-shadow: -3px -3px 5px rgba(0,0,0, 0.3) inset, 3px 3px 5px rgba(0,0,0, 0.08) inset,
+                0 0 10px rgba(0,0,0, 0.8);
+
+    background: -webkit-gradient(radial, 65% 25%, 0px, center center, 100%, color-stop(10%,#aaa8af), color-stop(100%,#5d5b63)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(65% 25%, ellipse cover, #aaa8af 10%,#5d5b63 100%); /* Chrome10+,Safari5.1+ */
+    background: -moz-radial-gradient(65% 25%, ellipse cover, #aaa8af 10%, #5d5b63 100%); /* FF3.6+ */
+    background: -ms-radial-gradient(65% 25%, ellipse cover, #aaa8af 10%,#5d5b63 100%); /* IE10+ */
+    background: -o-radial-gradient(65% 25%, ellipse cover, #aaa8af 10%,#5d5b63 100%); /* Opera 12+ */
+    background: radial-gradient(ellipse at 65% 25%, #aaa8af 10%,#5d5b63 100%); /* W3C */
+}
+
+.lit {
+    box-shadow: 0 0 10px rgba(39,247,247, 0.45), 0 0 20px rgba(39,247,247, 0.45),
+                -3px -3px 3px rgba(0,0,0, 0.09) inset, 3px 3px 3px rgba(0,0,0, 0.09) inset;
+
+    background: #27f7f7; /* Old browsers */
+    background: -webkit-gradient(radial, 65% 25%, 0px, center center, 100%, color-stop(10%,#67f7eb), color-stop(100%,#4DA9E2)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(65% 25%, ellipse cover, #67f7eb 10%,#4DA9E2 100%); /* Chrome10+,Safari5.1+ */
+    background: -moz-radial-gradient(65% 25%, ellipse cover, #67f7eb 10%, #4DA9E2 100%); /* FF3.6+ */
+    background: -ms-radial-gradient(65% 25%, ellipse cover, #67f7eb 10%,#4DA9E2 100%); /* IE10+ */
+    background: -o-radial-gradient(65% 25%, ellipse cover, #67f7eb 10%,#4DA9E2 100%); /* Opera 12+ */
+    background: radial-gradient(ellipse at 65% 25%, #67f7eb 10%,#4DA9E2 100%); /* W3C */
+}
+
+.shimmy {
+    -webkit-animation: shimmy 0.4s;
+    -moz-animation: shimmy 0.4s;
+    -ms-animation: shimmy 0.4s;
+    -o-animation: shimmy 0.4s;
+    animation: shimmy 0.4s;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+}
+
+.level {
+    text-align: left;
+    padding: 10px 40px 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+@-webkit-keyframes shimmy {
+    0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {-webkit-transform: translateX(0);}
+    5%, 25%, 45%, 65%, 85% {-webkit-transform: translateX(2px);}
+    15%, 35%, 55%, 75%, 95% {-webkit-transform: translateX(-2px);}
+}
+@-moz-keyframes shimmy {
+    0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {-moz-transform: translateX(0);}
+    5%, 25%, 45%, 65%, 85% {-moz-transform: translateX(2px);}
+    15%, 35%, 55%, 75%, 95% {-moz-transform: translateX(-2px);}
+}
+@-ms-keyframes shimmy {
+    0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {-ms-transform: translateX(0);}
+    5%, 25%, 45%, 65%, 85% {-ms-transform: translateX(2px);}
+    15%, 35%, 55%, 75%, 95% {-ms-transform: translateX(-2px);}
+}
+@-o-keyframes shimmy {
+    0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {-o-transform: translateX(0);}
+    5%, 25%, 45%, 65%, 85% {-o-transform: translateX(2px);}
+    15%, 35%, 55%, 75%, 95% {-o-transform: translateX(-2px);}
+}
+@keyframes shimmy {
+    0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {transform: translateX(0);}
+    5%, 25%, 45%, 65%, 85% {transform: translateX(2px);}
+    15%, 35%, 55%, 75%, 95% {transform: translateX(-2px);}
+}
+
+
+
+
+
+
+
