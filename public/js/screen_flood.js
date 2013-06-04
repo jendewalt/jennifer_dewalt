@@ -74,7 +74,7 @@ $(document).ready(function () {
 
 		if (drop.y > water_level + drop.radius * 2) {
 			drops.splice(i, 1);
-			water_level -= 1;
+			water_level -= 0.25;
 		}
 	};
 
