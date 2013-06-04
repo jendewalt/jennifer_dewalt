@@ -1,0 +1,124 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: #fff;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+	padding: 10px 20px;
+    z-index: 10;
+}
+
+#links_container {
+    float: right;
+}
+
+#links_container a {
+	text-decoration: none;
+	color: #084178;
+    margin-left: 15px;
+}
+
+#links_container a:visited {
+    color: #084178;
+}
+
+#links_container a:hover {
+    color: #ffa500;
+}
+
+button {
+    float: left;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: none;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #084178;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #031a30;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.5);
+}
+
+#container {
+    ;
+}
+
+#ducky {
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    z-index: 20;
+
+    -webkit-animation: bob 3s infinite linear;
+    -moz-animation: bob 3s infinite linear;
+    -ms-animation: bob 3s infinite linear;
+    -o-animation: bob 3s infinite linear;
+    animation: bob 3s infinite linear;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px solid blue;
+    cursor: pointer;
+}
+
+.clear {
+    clear: both;
+}
+
+@-webkit-keyframes bob {
+    0% {-webkit-transform: rotate(0) translateY(0);}
+    25% {-webkit-transform: rotate(3deg) translateY(-2px);}
+    75% {-webkit-transform: rotate(-3deg);}
+    100% {-webkit-transform: rotate(0) translateY(0);}
+}
+@-moz-keyframes bob {
+    0% {-moz-transform: rotate(0) translateY(0);}
+    25% {-moz-transform: rotate(3deg) translateY(-2px);}
+    75% {-moz-transform: rotate(-3deg);}
+    100% {-moz-transform: rotate(0) translateY(0);}
+}
+@-ms-keyframes bob {
+    0% {-ms-transform: rotate(0) translateY(0);}
+    25% {-ms-transform: rotate(3deg) translateY(-2px);}
+    75% {-ms-transform: rotate(-3deg);}
+    100% {-ms-transform: rotate(0) translateY(0);}
+}
+@-o-keyframes bob {
+    0% {-o-transform: rotate(0) translateY(0);}
+    25% {-o-transform: rotate(3deg) translateY(-2px);}
+    75% {-o-transform: rotate(-3deg);}
+    100% {-o-transform: rotate(0) translateY(0);}
+}
+@keyframes bob {
+    0% {transform: rotate(0) translateY(0);}
+    25% {transform: rotate(3deg) translateY(-2px);}
+    75% {transform: rotate(-3deg);}
+    100% {transform: rotate(0) translateY(0);}
+}
+
+
+
+
+
+
+
+
+
+
+
