@@ -13,8 +13,6 @@ $(document).ready(function () {
 		cur_i = 0,
 		tar_i = 1;
 
-	$('#0 .color').focus();
-
 	$('#0 .color').val('#d4228d');
 	$('#1 .color').val('#3bedb5');
 

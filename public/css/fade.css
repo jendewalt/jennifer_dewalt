@@ -24,7 +24,6 @@ form {
 
 .picker {
     text-align: center;
-    height: 90px;
     width: 130px;
     background-color: rgba(0,0,0,0.9);
 }
@@ -32,19 +31,15 @@ form {
 input {
     width: 124px;
     border: none;
-    margin: 70px -2px;
     padding: 3px;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
+    height: 100px;
 }
 
-#button_containter {
-    ;
-}
-
-.btn {
-    margin: 5px;
+.submit.btn {
+    height: 30px;
 }
 
 footer {
