@@ -1,0 +1,75 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+#container {
+    padding-bottom: 36px;
+}
+
+form {
+    width: 700px;
+    margin: auto;
+    padding: 10px 0;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0 0 20px 20px;
+}
+
+.control {
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+}
+
+.picker {
+    text-align: center;
+    height: 90px;
+    width: 130px;
+    background-color: rgba(0,0,0,0.9);
+}
+
+input {
+    width: 124px;
+    border: none;
+    margin: 70px -2px;
+    padding: 3px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#button_containter {
+    ;
+}
+
+.btn {
+    margin: 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+}
+
+#links_container {
+	text-align: right;
+	padding: 10px 20px;
+}
+
+#links_container a {
+	text-decoration: none;
+	color: #6b50c7;
+	margin-left: 15px;
+}
+
+#links_container a:visited {
+	color: #6b50c7;
+}
+
+#links_container a:hover {
+	color: #d92e42;
+}
