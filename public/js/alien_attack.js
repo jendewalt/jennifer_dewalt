@@ -43,11 +43,11 @@ $(document).ready(function () {
 		mouse.y = e.clientY;
 	});
 
-	document.addEventListener('touchmove', function(e) {
+	document.addEventListener('touchmove', function (e) {
     	e.preventDefault();
 
     	mouse.x = e.clientX;
-		mouse.yy = e.clientY;
+		mouse.y = e.clientY;
 	}, false);
 
 	$('canvas').on('click', function () {
@@ -214,6 +214,7 @@ $(document).ready(function () {
 				ctx.closePath();
 
 				$('.game_over').show();
+				$('body').css('cursor', 'auto');
 
 			} else {
 				_.each(lasers, function (laser, j) {
