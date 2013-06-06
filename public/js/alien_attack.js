@@ -43,6 +43,13 @@ $(document).ready(function () {
 		mouse.y = e.clientY;
 	});
 
+	document.addEventListener('touchmove', function(e) {
+    	e.preventDefault();
+
+    	mouseX = e.pageX;
+		mouseY = e.pageY;
+	}, false);
+
 	$('canvas').on('click', function () {
 		lasers.push(new Laser(ship_x, ship_y))
 	});

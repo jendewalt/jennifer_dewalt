@@ -2,6 +2,7 @@ body {
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
     text-align: center;
     letter-spacing: 2px;
+    cursor: none;
 }
 
 #container {
@@ -51,6 +52,7 @@ a {
     padding: 30px;
     border-radius: 10px;
     background-color: rgba(0,0,0,0.7);
+    cursor: auto;
 }
 
 .game_over {
