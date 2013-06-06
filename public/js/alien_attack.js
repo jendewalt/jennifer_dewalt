@@ -44,7 +44,7 @@ $(document).ready(function () {
 	});
 
 	$('canvas').on('click', function () {
-		lasers.push(new Laser(ship_x, ship_y);
+		lasers.push(new Laser(ship_x, ship_y))
 	});
 
 	function init() {
