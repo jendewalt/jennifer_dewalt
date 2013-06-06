@@ -1,0 +1,94 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#container {
+    /*padding-bottom: 36px;*/
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 30px;
+    color: #a3b9d6;
+}
+
+a {
+    color: #1fe30d;
+    text-decoration: none;
+}
+
+.info {
+    position: relative;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 10;
+}
+
+.modal {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    color: #a3b9d6;
+    z-index: 20;
+}
+
+.inner_modal {
+    position: relative;
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.game_over {
+    display: none;
+}
+
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+}
+
+#links_container {
+	text-align: right;
+	padding: 10px 20px;
+}
+
+#links_container a {
+	text-decoration: none;
+	color: #6b50c7;
+	margin-left: 15px;
+}
+
+#links_container a:visited {
+	color: #6b50c7;
+}
+
+#links_container a:hover {
+	color: #d92e42;
+}
