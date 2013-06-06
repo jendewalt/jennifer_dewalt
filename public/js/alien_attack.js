@@ -51,7 +51,11 @@ $(document).ready(function () {
 	}, false);
 
 	$('canvas').on('click', function () {
-		lasers.push(new Laser(ship_x, ship_y))
+		lasers.push(new Laser(ship_x, ship_y));
+	});
+
+	document.addEventListener('touchstart', function () {
+		lasers.push(new Laser(ship_x, ship_y));
 	});
 
 	function init() {
