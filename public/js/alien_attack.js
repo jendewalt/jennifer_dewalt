@@ -46,8 +46,8 @@ $(document).ready(function () {
 	document.addEventListener('touchmove', function (e) {
     	e.preventDefault();
 
-    	mouse.x = e.clientX;
-		mouse.y = e.clientY;
+    	mouse.x = e.pageX;
+		mouse.y = e.pageY;
 	}, false);
 
 	$('canvas').on('click', function () {
