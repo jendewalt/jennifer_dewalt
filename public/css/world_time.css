@@ -1,0 +1,124 @@
+body {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    text-align: center;
+    background-color: #ada9b0;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+#first_head {
+    line-height: 50px;
+}
+
+#second_head {
+    line-height: 50px;
+}
+
+.modal {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.inner_modal {
+    position: relative;
+    width: 500px;
+    margin: auto;
+    padding: 50px;
+    color: #4b4352;
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 10px;
+}
+
+#help {
+    ;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    color: #1dc69f;
+    cursor: pointer;
+}
+
+#container {
+    position: relative;
+    height: 300px;
+    width: 1000px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 36px;
+}
+
+.form_wrap {
+    position: absolute;
+    bottom: 10px;
+}
+
+.f0 {
+    left: 0px;
+}
+.f1 {
+    left: 250px;
+}
+.f2 {
+    left: 500px;
+}
+.f3 {
+    left: 750px;
+}
+
+.loc_input {
+    width: 230px;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #312c36;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.hide {
+    display: none;
+}
+
+canvas {
+    margin: auto;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+}
+
+#links_container {
+	text-align: right;
+	padding: 10px 20px;
+}
+
+#links_container a {
+	text-decoration: none;
+	color: #4b4352;
+	margin-left: 15px;
+}
+
+#links_container a:visited {
+	color: #4b4352;
+}
+
+#links_container a:hover {
+	color: #1dc69f;
+}
