@@ -10,9 +10,31 @@
 $(document).ready(function () {
 	var left = true,
 		pendulum_timeout,
-		bpm = 135,
+		bpm = 95,
 		one_min = 60000,
-		running = false;
+		running = false,
+		audio = document.createElement('audio'),
+		does_not_support_mp3 = !(audio.canPlayType && audio.canPlayType('audio/mpeg').replace(/no/, ''));
+
+	var mp3 = $('<audio>', {
+		id: 'beep',
+		src: 'audio/beep.mp3',
+		hidden: true, 
+		preload: "auto"
+	});
+
+	var ogg = $('<audio>', {
+		id: 'beep_ogg',
+		src: 'audio/beep.ogg',
+		hidden: true, 
+		preload: "auto"
+	});
+
+	if (does_not_support_mp3) {
+		ogg.appendTo('footer');
+	} else {
+		mp3.appendTo('footer');
+	}
 
 	function start() {
 		pendulum_timeout = setTimeout(start, one_min / bpm);
@@ -54,7 +76,11 @@ $(document).ready(function () {
 	};
 
 	function beep() {
-		document.getElementById('beep').play();
+		if (does_not_support_mp3){
+			document.getElementById('beep_ogg').play();			
+		} else {
+			document.getElementById('beep').play();						
+		}
 	};
 
 	$('button').on('click', function () {
@@ -74,8 +100,9 @@ $(document).ready(function () {
 		containment: 'parent',
 		zIndex: 20,
 		stop: function (e, obj) {
-			bpm = Math.round(obj.position.top * 0.8 + 40);
+			bpm = Math.round(obj.position.top * 0.5 + 40);
 			$('#bpm').text(bpm + ' bpm');
+			console.log(obj.position)
 		}
 	});
 
