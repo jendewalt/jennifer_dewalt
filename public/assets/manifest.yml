@@ -1,9 +1,19 @@
 ---
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
-application.js: application-155203b7144128c2047da6377a6f613e.js
-application/index.js: application-155203b7144128c2047da6377a6f613e.js
-application.css: application-1b13569e9620782f423d4cd3ce931750.css
-application/index.css: application-1b13569e9620782f423d4cd3ce931750.css
+application.js: application-b5683aff4bd9fe6f63f2709ff58022ff.js
+application/index.js: application-b5683aff4bd9fe6f63f2709ff58022ff.js
+application.css: application-ae59f9b677be381b54c0daaa46932d1b.css
+application/index.css: application-ae59f9b677be381b54c0daaa46932d1b.css
+jscolor/arrow.gif: jscolor/arrow-8d335214eafc2bc37c17405a714082af.gif
+jscolor/arrow/index.gif: jscolor/arrow-8d335214eafc2bc37c17405a714082af.gif
+jscolor/cross.gif: jscolor/cross-06926b61be3dcbeb4035c538b59c98a2.gif
+jscolor/cross/index.gif: jscolor/cross-06926b61be3dcbeb4035c538b59c98a2.gif
+jscolor/demo.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
+jscolor/demo/index.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
+jscolor/hs.png: jscolor/hs-1e8941491c176e76afb7e3629cf60fb8.png
+jscolor/hs/index.png: jscolor/hs-1e8941491c176e76afb7e3629cf60fb8.png
+jscolor/hv.png: jscolor/hv-98b04464f34e332d4aad25a49a05c5e9.png
+jscolor/hv/index.png: jscolor/hv-98b04464f34e332d4aad25a49a05c5e9.png
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 jquery/index.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
