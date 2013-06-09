@@ -21,5 +21,17 @@
 .DS_Store
 
 # Ignore all of the config directory
-/config
-!/config/routes.rb
+/config/environments
+/config/initializers
+/config/locales
+/config/application.rb
+/config/boot.rb
+/config/database.yml
+/config/deploy.rb
+/config/environment.rb
+/config/nginx.god
+/config/redis.god
+/config/resque.god
+/config/unicorn.god
+/config/unicorn.rb
+/config/unicorn_local.rb
