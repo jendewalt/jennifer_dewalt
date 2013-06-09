@@ -1,0 +1,100 @@
+body {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: #9fd8e6;
+    color: #283133;
+}
+
+header {
+	padding: 0 20px;
+	margin-bottom: 30px;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	background-color: #62bfd6;
+	color: #164956;
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.23), -1px -1px 0 rgba(0,0,0,0.05);
+}
+
+#logo {
+	float: left;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+
+#links_container {
+	float: right;
+}
+
+#links_container a {
+	font-size: 16px;
+	line-height: 40px;
+	text-decoration: none;
+	color: #164956;
+	margin-left: 15px;
+}
+
+#links_container a:visited {
+	color: #164956;
+}
+
+#links_container a:hover {
+	color: #e87015;
+}
+
+#container {
+    ;
+}
+
+form {
+	margin-bottom: 20px;
+}
+
+textarea {
+	height: 60px;
+	width: 450px;
+	padding: 5px;
+	margin: 0 -4px;
+	resize: none;
+	vertical-align: top;
+	font-size: 16px;
+	border: none;
+}
+
+.btn {
+    border: none;
+    width: 100px;
+    padding: 0;
+    margin: 0 -4px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 70px;
+    color: #fff;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.15);
+    background-color: #f28431;
+    cursor: pointer;
+}
+
+.btn:active {
+    border: none;
+    background-color: #d16513;
+}
+
+.btn::-moz-focus-inner {
+    border:0;
+    padding:0;
+}
+
+.note_container {
+	width: 500px;
+	padding: 30px;
+	margin: auto;
+	line-height: 24px;
+	background-color: #fff;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.clear {
+	clear: both;
+}
