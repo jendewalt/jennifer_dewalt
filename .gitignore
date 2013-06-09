@@ -22,3 +22,4 @@
 
 # Ignore all of the config directory
 /config
+!routes.rb
