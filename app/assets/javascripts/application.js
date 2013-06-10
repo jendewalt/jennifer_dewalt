@@ -14,4 +14,6 @@
 //= require touch_punch
 //= require jscolor/jscolor
 //= require analytics
-//= require_tree .
+//= require_tree ./websites
+//= require router
+

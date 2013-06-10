@@ -1,0 +1,101 @@
+body.click_counter_buttons_show {
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: #2D3A35;
+
+	#container {
+		padding-top: 20px;
+	    padding-bottom: 36px;
+	}
+
+    h1 {
+    	font-size: 46px;
+    	line-height: 80px;
+    	text-shadow: -1px -1px 0 rgba(0,0,0,0.85), 1px 1px 0 rgba(255,255,255,0.8);
+    }
+
+    #click_num {
+
+    	font-size: 150px;
+    	line-height: 180px;
+    	color: #c20a72;
+    	text-shadow: 0 1px 0 #790647, 0 2px 0 #790647,
+    				 0 3px 0 #790647, 0 4px 0 #790647,
+	    			 0 5px 0 #790647, 0 6px 0 #790647,
+	    			 0 6px 5px rgba(0,0,0,0.7);
+    }
+
+    h2 {
+    	margin-top: 20px;
+    	line-height: 50px;
+    	font-size: 14px;
+    }
+
+	.btn {
+	    border: none;
+	    width: 260px;
+	    padding: 0;
+	    margin: 10px -4px;
+	    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+	    font-size: 28px;
+	    letter-spacing: 4px;
+	    line-height: 70px;
+	    color: #fff;
+	    text-shadow: -1px -1px 0 rgba(0,0,0,0.6);
+	    background-color: #19946d;
+	    border-radius: 10px;
+	    box-shadow: 0 1px 0 #0e533d, 0 2px 0 #0e533d,
+	    			0 3px 0 #0e533d, 0 4px 0 #0e533d,
+	    			0 5px 0 #0e533d, 0 6px 0 #0e533d,
+	    			0 7px 0 #0e533d, 0 8px 5px rgba(0,0,0,0.7);
+	    cursor: pointer;
+	}
+
+	.btn:disabled, .btn:active {
+	    border: none;
+	    background-color: #11684d;
+	    box-shadow:none;
+	    text-shadow:none;
+	    box-shadow: 0 -1px 0 #07271d, 0 -2px 0 #07271d,
+	    			0 -3px 0 #07271d, 1px 3px 3px rgba(0,0,0,0.2) inset,
+	    			-1px -1px 3px rgba(0,0,0,0.3) inset;
+
+	    margin-top: 18px;
+
+	}
+
+	.btn::-moz-focus-inner {
+	    border:0;
+	    padding:0;
+	}
+
+	footer {
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    height: 36px;
+	}
+
+	#links_container {
+		text-align: right;
+		padding: 10px 20px;
+	}
+
+	#links_container a {
+		text-decoration: none;
+		color: #c20a72;
+		margin-left: 15px;
+	}
+
+	#links_container a:visited {
+		color: #c20a72;
+	}
+
+	#links_container a:hover {
+		color: #790647;
+	}
+
+}

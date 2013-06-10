@@ -2,6 +2,9 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  get "click_counter_buttons/:id" => "click_counter_buttons#show"
+  put "click_counter_buttons/:id" => "click_counter_buttons#update"
+
   get "leave_a_note" => "leave_a_note_notes#index"
   post "leave_a_note" => "leave_a_note_notes#create"
   

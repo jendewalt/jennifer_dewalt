@@ -9,7 +9,7 @@
   	<%= javascript_include_tag "application" %>
   	<%= csrf_meta_tags %>
 </head>
-<body>
+<body class="<%= controller.controller_name + '_' + controller.action_name %>" >
 	<%= yield %>
 </body>
 </html>
