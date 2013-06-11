@@ -2,6 +2,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  get "one_page_pages/:id" => "one_page_pages#show"
+  get "one_page_pages/:id/edit" => "one_page_pages#edit"
+  put "one_page_pages/:id" => "one_page_pages#update"
+
   get "click_counter_buttons/:id" => "click_counter_buttons#show"
   put "click_counter_buttons/:id" => "click_counter_buttons#update"
 
