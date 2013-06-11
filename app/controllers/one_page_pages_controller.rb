@@ -1,7 +1,11 @@
 class OnePagePagesController < ApplicationController
   def show
     @title = 'One Page'
-    @page = OnePagePage.find(params[:id]) || OnePagePage.create(:content => '') 
+    begin
+      @page = OnePagePage.find(params[:id])
+    rescue
+      @page = OnePagePage.create(:content => '') 
+    end
   end
 
   def edit
