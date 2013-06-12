@@ -11,10 +11,11 @@ function clickCounter() {
 	$('button').on('click', function (e) {
 		e.preventDefault();
 		$(this).attr('disabled', 'disabled');
+		console.log('Hello')
 
 		$.ajax({
 			type: 'PUT',
-			url: '/click_counter_buttons/1'
+			url: '/click_counter/buttons/1'
 		});
 
 		updateClicks();

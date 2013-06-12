@@ -120,7 +120,8 @@ body.one_page_pages_edit, body.one_page_pages_show {
 		transform: skew(5deg) rotate(5deg);
 	}
 
-	button a {
+	.btn a {
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 		display: inline-block;
 		line-height: 100%;
 		width: 100%;
@@ -129,13 +130,9 @@ body.one_page_pages_edit, body.one_page_pages_show {
 		padding: 10px 0;
 	}
 
-	button.btn {
-		margin-top: 20px;
-	}
-
 	.btn {
 		width: 100px;
-		margin-top: 20px;
+		margin: 20px auto 0;
 		font-size: 16px;
 		letter-spacing: 2px;
 		color: white;

@@ -1,0 +1,53 @@
+<%= render 'make_a_dude/dudes/header' %>
+
+	<div id="container">
+		<div class="dude_container new">
+			<div class="dude_name"></div>
+			
+			<div class="dude">
+				<div class="face">
+				    <div class="eyes_container">
+				      <div class="eyeball eye_left"></div>
+				      <div class="eyeball eye_right"></div>
+				    </div>
+
+				    <div class="mouth smile"></div>
+				</div>
+
+				<div class="head">
+				    <div class="arm arm_left">
+				    	<div class="hand hand_left">
+				        	<div class="finger f1"></div>
+				        	<div class="finger f2"></div>
+				        	<div class="finger f3"></div>
+				      	</div>
+				    </div>
+					<div class="arm arm_right">
+				    	<div class="hand hand_right">
+				        	<div class="finger f1"></div>
+				        	<div class="finger f2"></div>
+				        	<div class="finger f3"></div>
+				      	</div>
+				    </div>
+
+				    <div class="leg leg_left">
+				    	<div class="foot foot_left"></div>
+				    </div>
+				    <div class="leg leg_right">
+				    	<div class="foot foot_right"></div>
+				    </div>
+				</div>
+			</div>	
+
+			<div class="dude_message"></div>
+		</div>
+
+		<div class="new">
+			<%= form_for @dude do |f| %>
+				<div class="form_name">Dude Name: </div> <%= f.text_field(:name) %>
+				<div class="form_message">Dude Message: </div> <%= f.text_field(:message) %>
+				<div class="form_color">Dude Color: </div><%= f.text_field(:color, :class => "color") %>
+				<%= f.submit("Create", :class => "btn") %>
+			<% end %>
+		</div>
+	</div>

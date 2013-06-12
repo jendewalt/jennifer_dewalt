@@ -1,0 +1,11 @@
+<%= render 'one_page/pages/header' %>
+
+<div id="container">
+	<div class="edit" id="page_container">
+		<%= form_for @page do |f| %>
+			<%= f.text_area :content, :value => @page.content %>
+			<%= f.submit "Update", :class => 'btn' %>
+		<% end %> 
+	</div>
+</div>
+

@@ -2,15 +2,21 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
-  get "one_page_pages/:id" => "one_page_pages#show"
-  get "one_page_pages/:id/edit" => "one_page_pages#edit"
-  put "one_page_pages/:id" => "one_page_pages#update"
+  namespace :make_a_dude do
+    resources :dudes
+  end
 
-  get "click_counter_buttons/:id" => "click_counter_buttons#show"
-  put "click_counter_buttons/:id" => "click_counter_buttons#update"
+  namespace :one_page do
+    resources :pages
+  end
+  
+  namespace :click_counter do
+    resources :buttons
+  end
 
-  get "leave_a_note" => "leave_a_note_notes#index"
-  post "leave_a_note" => "leave_a_note_notes#create"
+  namespace :leave_a_note do
+    resources :notes, :only => [:index, :create]
+  end
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

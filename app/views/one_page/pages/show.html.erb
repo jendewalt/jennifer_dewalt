@@ -1,0 +1,14 @@
+<%= render 'one_page/pages/header' %>
+
+<div id="container">
+	<div class="btn">
+		<%= link_to( 'Edit', edit_one_page_page_path) %>
+	</div>
+
+	<div class="show" id="page_container">
+		<div id="page">
+			<%= simple_format(@page.content) %>
+		</div>
+	</div>
+</div>
+
