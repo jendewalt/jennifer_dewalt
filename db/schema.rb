@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130612013740) do
+ActiveRecord::Schema.define(:version => 20130612054248) do
 
   create_table "click_counter_buttons", :force => true do |t|
     t.integer  "clicks"
@@ -26,12 +26,11 @@ ActiveRecord::Schema.define(:version => 20130612013740) do
   end
 
   create_table "make_a_dude_dudes", :force => true do |t|
+    t.string   "name"
+    t.text     "message"
     t.string   "color"
-    t.integer  "size"
-    t.string   "message"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "name"
   end
 
   create_table "one_page_pages", :force => true do |t|
