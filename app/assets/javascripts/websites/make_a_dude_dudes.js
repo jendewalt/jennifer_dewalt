@@ -14,11 +14,7 @@ function makeADude() {
 
 	$('input').on('keypress', function (e) {
 		if (e.which == 13) {
-			e.preventDefault();
-		console.log(e)			
+			e.preventDefault();		
 		}
-
-
 	});
-	
 }

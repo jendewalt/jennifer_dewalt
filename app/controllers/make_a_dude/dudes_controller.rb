@@ -21,5 +21,4 @@ class MakeADude::DudesController < ApplicationController
       #handle not saving probably by flash notification
     end
   end
-
 end

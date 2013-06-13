@@ -1,6 +1,12 @@
 JenniferDewalt::Application.routes.draw do
 
+  get "keep_it_up_players/index"
+
   root :to => 'pages#home'
+
+  namespace :keep_it_up do
+    resources :players
+  end
 
   namespace :make_a_dude do
     resources :dudes

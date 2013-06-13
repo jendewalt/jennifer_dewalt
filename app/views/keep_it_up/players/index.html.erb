@@ -1,0 +1,41 @@
+<%= render "/keep_it_up/players/header" %>
+
+<canvas></canvas>
+
+<div class="modal" id="game_over">
+    <div class="inner_modal">
+		<h1>Game Over</h1>
+		<h2 class="score"></h2>
+		<h2>Enter your name to submit your score</h2>
+
+		<%= form_for @player do |f| %>
+			<%= f.text_field :score, :class => 'score', :type => 'hidden', :placeholder => 'Limit 30 Characters' %>
+			<%= f.text_field :name, :id => "enter_name" %>
+			<%= f.submit :value => 'Submit', :class => "btn" %>
+		<% end %>
+
+		<a href="/keep_it_up/players">Try again?</a>
+    </div>
+</div>
+
+<div class="modal" id="start">
+	<div class="inner_modal">
+		<h1>Keep It Up</h1>
+		<h2>Click on the ball to keep it <br>
+		in the air for as long as possible</h2>
+
+		<button class="btn start_btn">Start</button>
+
+		<h1 class="leader_board">Leaderboard</h1>
+
+		<div id="leaders">
+			<% @leaders.each do |leader| %>
+				<div class="leader_container">
+					<div class="leader_name"><%= leader.name %></div>
+					<div class="leader_score"><%= leader.score %></div>
+					<br class="clear">
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>

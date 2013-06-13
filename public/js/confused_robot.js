@@ -8,7 +8,6 @@
 })(jQuery);
 
 $(document).ready(function () {
-	xxx = random;
 	var random = ['I am not a robot, I am a unicorn!',
 				  'Who likes ice cream? I do!',
 				  'I\'m a pretty, pretty princess!',
@@ -95,8 +94,6 @@ $(document).ready(function () {
 	});
 
 	$('body').disableSelection();
-
-	xxx = random
 	
 });
 

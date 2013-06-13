@@ -141,8 +141,6 @@ $(document).ready(function () {
 				deltaY = 0;
 			}
 		});
-
-		// e.preventDefault();
 	});
 	
 	$('body').disableSelection();
