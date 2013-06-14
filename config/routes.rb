@@ -1,8 +1,10 @@
 JenniferDewalt::Application.routes.draw do
 
-  get "view_graph_views/index"
-
   root :to => 'pages#home'
+
+  namespace :king_of_comments do
+    resources :comments
+  end
 
   namespace :view_graph do
     resources :views
