@@ -1,0 +1,2 @@
+module ViewGraphViewsHelper
+end

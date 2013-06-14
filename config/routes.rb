@@ -1,8 +1,12 @@
 JenniferDewalt::Application.routes.draw do
 
-  get "keep_it_up_players/index"
+  get "view_graph_views/index"
 
   root :to => 'pages#home'
+
+  namespace :view_graph do
+    resources :views
+  end
 
   namespace :keep_it_up do
     resources :players

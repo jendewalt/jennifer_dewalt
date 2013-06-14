@@ -1,0 +1,22 @@
+<div class="modal info">
+	<div class="inner_modal">
+		<div class='close'>x</div>
+		<h1>View Graph</h1>
+		<h2>Every time this website is viewed a new orb is <br> 
+			created and given it's own x and y coordinate.</h2>
+
+		<h2>Older orbs are fainter than newer orbs.</h2>
+		<h2>Your current page view is the red orb.</h2>
+		<h2>To create a new orb, reload the page.</h2>
+	</div>
+</div>
+
+<div id="views_container">
+	<% @views.each do |view| %>
+		<div class="view_mark" style="position:absolute; left:<%= view.x %>%; top:<%= view.y %>%"></div>
+	<% end %>
+</div>
+
+<div id="info_tab">?</div>
+
+<%= render 'view_graph/views/footer' %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130612211855) do
+ActiveRecord::Schema.define(:version => 20130613225854) do
 
   create_table "click_counter_buttons", :force => true do |t|
     t.integer  "clicks"
@@ -42,6 +42,13 @@ ActiveRecord::Schema.define(:version => 20130612211855) do
 
   create_table "one_page_pages", :force => true do |t|
     t.text     "content"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "view_graph_views", :force => true do |t|
+    t.float    "x"
+    t.float    "y"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
