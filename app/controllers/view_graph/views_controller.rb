@@ -2,7 +2,7 @@ class ViewGraph::ViewsController < ApplicationController
   before_filter :log_view, :only => [:index]
 
   def index
-    @title = 'View Graph'
+    @title = 'Page View Graph'
     @views = ViewGraphView.find(:all)
   end
 
