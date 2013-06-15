@@ -1,0 +1,42 @@
+<%= render 'king_of_comments/comments/header' %>
+
+<div id="entry_form">
+	<%= form_for @comment, :html => {:id => "comment_entry_form"} do |f| %>
+		<%= f.text_area :content, :class => "comment_entry input_box", :placeholder => "Whaddya got to say?" %>
+		<div id="entry_form_name_container">
+			<%= f.text_field :name, :class => "name_entry input_box", :placeholder => "Who's sayin' it?" %>
+			<%= f.submit :value => 'Submit', :class => "btn" %>
+			<br class="clear">
+		</div>
+	<% end %>
+</div>
+
+<div id="comments_container">
+	<% @comments.each do |comment| %>
+		<div class="comment_block">
+
+			<div class="comment voting_container">
+				<% my_route = '/king_of_comments/comments/' + comment.id.to_s %>
+
+				<%= form_tag(my_route, :method => 'put', :class => "voter") do %>
+					<%= hidden_field_tag :vote, params[:value], :value => '1' %>
+					<input type="submit" class="vote_btn up btn">
+				<% end %>
+				
+				<div class="comment votes"><%= comment.votes %></div>
+
+				<%= form_tag(my_route, :method => 'put', :class => "voter down_vote") do %>
+					<%= hidden_field_tag :vote, params[:value], :value => '-1' %>
+					<input type="submit" class="vote_btn down btn">
+				<% end %>
+			</div>
+
+
+			<div class="comment content_container">
+				<div class="content"><%= comment.content %></div>
+			</div>
+			<div class="name"><%= comment.name %></div>
+		</div>
+	<% end %>
+
+</div>
