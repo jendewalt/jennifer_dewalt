@@ -3,7 +3,7 @@ class ViewGraph::ViewsController < ApplicationController
 
   def index
     @title = 'Page View Graph'
-    @views = ViewGraphView.find(:all, :order => "id desc", :limit => 1000).reverse
+    @views = ViewGraphView.find(:all, :order => "id desc", :limit => 2000).reverse
   end
 
   def log_view
@@ -11,8 +11,8 @@ class ViewGraph::ViewsController < ApplicationController
     y = rand() * 98
     new_view = ViewGraphView.create(:x => x, :y => y).id()
 
-    if new_view > 1000
-      ViewGraphView.destroy(new_view - 1000)
+    if new_view > 2000
+      ViewGraphView.destroy(new_view - 2000)
     end
   end
 end
