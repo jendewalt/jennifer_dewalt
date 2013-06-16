@@ -5,7 +5,8 @@ $(document).ready(function () {
 		"make_a_dude": makeADude,
 		"keep_it_up": keepItUpGame,
 		"view_graph": viewGraph,
-		"king_of_comments": kingOfComments
+		"king_of_comments": kingOfComments,
+		"pixshow": pixShow
 	}
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

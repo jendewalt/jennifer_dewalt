@@ -14,7 +14,7 @@ class MakeADude::DudesController < ApplicationController
     message = params[:make_a_dude_dude][:message]
     color = params[:make_a_dude_dude][:color]
       
-    dude = MakeADudeDude.create(:name => name, :message => message, :color => color)
+    dude = MakeADudeDude.new(:name => name, :message => message, :color => color)
     if dude.save
       redirect_to :action => :index
     else

@@ -39,3 +39,5 @@ gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
+
+gem "paperclip", "~> 3.0"

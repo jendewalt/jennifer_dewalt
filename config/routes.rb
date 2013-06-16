@@ -2,6 +2,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :pixshow do
+    resources :scraps
+  end
+
   namespace :king_of_comments do
     resources :comments
   end

@@ -1,0 +1,91 @@
+body.pixshow_scraps_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    background-color: #ededed;
+    letter-spacing: 4px;
+    color: #354b60;
+    overflow-y: scroll;
+
+    header {
+        padding: 5px 20px 0;
+        background-color: #1abc9c;
+        margin-bottom: 0px;
+        color: #ededed;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    }
+
+    #logo {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #ededed;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #ededed;
+    }
+
+    #links_container a:hover {
+        color: #7f8c8d;
+    }
+
+    #form_container {
+        padding: 10px;
+        border-top: 1px solid rgba(0,0,0,0.2);
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+
+    h1 {
+        font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+        font-size: 22px;
+        padding: 10px 0;
+        font-weight: bold;
+    }
+
+    form {
+        padding: 10px;
+        width: 400px;
+        margin: 5px auto;
+        box-shadow: 0 0 3px rgba(0,0,0,0.3) inset;
+        background-color: rgba(26,188,156,0.3);
+    }
+
+    #content_container {
+        margin-top: 30px;
+    }
+
+    .img_container {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+        margin: 7px;
+        box-shadow: 0 0 2px rgba(0,0,0,0.1);
+        background-image:url('shl.png');
+    }
+
+    img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .clear {
+        clear: both;
+    }
+}

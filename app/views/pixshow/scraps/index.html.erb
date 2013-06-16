@@ -1,0 +1,17 @@
+<%= render "pixshow/scraps/header" %>
+
+<div id="form_container">
+	<h1>Awesome Pix Only!</h1>
+	<%= form_for @scrap, :url => pixshow_scraps_path, :html => { :multipart => true } do |form| %>
+	  <%= form.file_field :photo %>
+	  <%= form.submit 'Submit' %>
+	<% end %>
+</div>
+
+<div id="content_container">
+	<% @scraps.each do |scrap| %>
+		<div class="img_container">
+			<%= image_tag scrap.photo.url(:thumb) %>
+		</div>
+	<% end %>
+</div>
