@@ -75,21 +75,22 @@ body.your_space_users_new, body.your_space_users_edit, body.your_space_users_sho
     #content_container {
         margin-top: 20px;
 
-        a {
-            display: inline-block;
-            text-decoration: none;
-            color: #2c3e50;
-            text-shadow: 0 0 2px rgba(255,255,255,0.2);
-        }
     }
 
     li.user_container {
         width: 500px;
         margin: auto;
-        padding: 12px 20px;
         background-color: #c9d6e1;
         border-top: 1px solid rgba(0,0,0,0.1);
         border-bottom: 1px solid rgba(255,255,255,0.3);
+        a {
+            display: inline-block;
+            width: 100%;
+            padding: 12px 20px;
+            text-decoration: none;
+            color: #2c3e50;
+            text-shadow: 0 0 2px rgba(255,255,255,0.2);
+        }
 
         div {
             float: left;

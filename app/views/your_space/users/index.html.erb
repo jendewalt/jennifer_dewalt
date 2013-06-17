@@ -15,13 +15,13 @@
 <ul id="content_container">
 	<% @users.each do |user| %>
 		<% unless user.name.blank? %>
-			<%= link_to your_space_user_path(user.id) do %>
-				<li class="user_container">
+			<li class="user_container">
+				<%= link_to your_space_user_path(user.id) do %>
 					<div class="photo"><%= image_tag user.photo.url(:thumb) %></div>
 					<div class="name"><%= user.name %></div>
 					<br class="clear">
-				</li>
-			<% end %>
+				<% end %>
+			</li>
 		<% end %>
 	<% end %>
 </ul>
