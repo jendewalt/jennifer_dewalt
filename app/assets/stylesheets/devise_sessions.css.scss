@@ -1,0 +1,28 @@
+body.devise_sessions_new, body.devise_registrations_new {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #fbfcfd;
+    letter-spacing: 3px;
+    line-height: 40px;
+    color: #333;
+
+    h2 {
+    	padding: 20px 0;
+    	font-size: 22px;
+    	font-weight: bold;
+    	color: #2980b9;
+    }
+
+    .btn {
+    	margin: 30px;
+        border-radius: 5px;
+        background-color: #2980b9;
+        border:none;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 26px;
+        color: #fff;
+        padding: 0 10px;
+        cursor: pointer;
+    }
+}

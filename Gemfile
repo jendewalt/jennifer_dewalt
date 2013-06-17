@@ -41,3 +41,5 @@ gem 'capistrano'
 # gem 'debugger'
 
 gem "paperclip", "~> 3.0"
+gem "devise"
+gem "omniauth"

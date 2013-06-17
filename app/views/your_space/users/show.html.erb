@@ -1,0 +1,23 @@
+<%= render "your_space/users/header" %>
+<div id="show_page">
+	<div id="profile_container">
+		<div class="photo_container">
+			<%= image_tag @user.photo.url(:medium) %>
+		</div>
+
+		<div class="text_container">
+			<h1 class="user_name">
+				<%= @user.name %>
+			</h1>
+
+			<div class="user_description">
+				<%= @user.description %>
+			</div>
+		</div>
+		<br class="clear">
+	</div>
+
+	<% if @user == current_user %>
+		<div class="show btn"><%= link_to "Edit Profile", edit_your_space_user_path(current_user.id) %></div>
+	<% end %>
+</div>

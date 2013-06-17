@@ -6,9 +6,6 @@ class Pixshow::ScrapsController < ApplicationController
   end
 
   def create
-    logger.debug('@@@@@@@@@@@@@@@@@@@@@@@@')
-    logger.debug('Hello Jen!')
-
     if params[:pixshow_scrap] 
       @scrap = PixshowScrap.new(params[:pixshow_scrap])
       @scrap.save

@@ -1,0 +1,27 @@
+<%= render "your_space/users/header" %>
+
+<div class="headline">
+	<h1>Users</h1>
+
+	<div class="btn profile_btn">
+		<% if user_signed_in? %>
+			<%= link_to "My Profile", your_space_user_path(current_user.id) %>
+		<% else %>
+			<%= link_to "Log In", new_user_session_path %>
+		<% end %>
+	</div>
+</div>
+
+<ul id="content_container">
+	<% @users.each do |user| %>
+		<% unless user.name.blank? %>
+			<%= link_to your_space_user_path(user.id) do %>
+				<li class="user_container">
+					<div class="photo"><%= image_tag user.photo.url(:thumb) %></div>
+					<div class="name"><%= user.name %></div>
+					<br class="clear">
+				</li>
+			<% end %>
+		<% end %>
+	<% end %>
+</ul>

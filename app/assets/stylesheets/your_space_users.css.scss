@@ -1,0 +1,182 @@
+body.your_space_users_new, body.your_space_users_edit, body.your_space_users_show, body.your_space_users_index, {
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    text-align: center;
+    background-color: #fbfcfd;
+    letter-spacing: 3px;
+    color: #354b60;
+    overflow-y: scroll;
+
+    header {
+        padding: 0 20px;
+        background-color: #10171d;
+        margin-bottom: 0px;
+        text-shadow: 1px 1px 0 rgba(255,255,255,0.05), -1px -1px 0 rgba(0,0,0,0.1);
+    }
+
+    #logo a {
+        float: left;
+        line-height: 38px;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 6px;
+        color: #b9c9d8;
+        text-decoration: none;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 38px;
+        text-decoration: none;
+        color: #b9c9d8;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #b9c9d8;
+    }
+
+    #links_container a:hover {
+        color: #7f8c8d;
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+        color: #2980b9;
+    }
+
+    .btn {   
+        a {
+            border-radius: 5px;
+            background-color: #2980b9;
+            font-size: 14px;
+            font-weight: 300;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+        }
+    }
+
+    .headline {
+        position: relative;
+        padding: 20px;
+
+        .btn {
+            position:absolute;
+            right: 40px;
+            top: 20px;
+        }
+    }
+
+    #content_container {
+        margin-top: 20px;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #2c3e50;
+            text-shadow: 0 0 2px rgba(255,255,255,0.2);
+        }
+    }
+
+    li.user_container {
+        width: 500px;
+        margin: auto;
+        padding: 12px 20px;
+        background-color: #c9d6e1;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+
+        div {
+            float: left;
+            vertical-align: middle;
+        }
+
+        div.photo {
+            margin-right: 30px;
+        }
+    }
+
+    #show_page {
+        ;
+        #profile_container {
+            width: 700px;
+            margin: 60px auto;
+
+            .photo_container {
+                float: left;
+                margin-right: 40px;
+            }
+
+            .text_container {
+                float: left;
+                width: 360px;
+                text-align: left;
+                
+                .user_name {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .btn {
+            display: inline-block;
+        }
+    }
+
+    #show_page {
+        #form_container {
+            padding: 30px;
+            width: 600px;
+            margin: auto;
+            box-shadow: 0 0 3px rgba(0,0,0,0.3) inset;
+            background-color: #c9d6e1;            
+        }
+
+        form {
+            td {
+                padding: 10px 0;
+            }
+            .label {
+                vertical-align: top;
+                text-align: right;
+                padding-right: 16px;
+            }
+
+            .name {
+                width: 400px;
+                padding:5px;
+                border: 1px solid rgba(0,0,0,0.25);
+                box-shadow: 0 0 3px rgba(0,0,0,0.2) inset;
+            }
+
+            .description {
+                width: 400px;
+                padding:5px;
+                height: 200px;
+                border: 1px solid rgba(0,0,0,0.25);
+                box-shadow: 0 0 3px rgba(0,0,0,0.2) inset;
+            }
+
+            .btn {
+                border-radius: 5px;
+                background-color: #2980b9;
+                border:none;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 26px;
+                color: #fff;
+                padding: 0 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+}

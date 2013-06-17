@@ -1,0 +1,27 @@
+<%= render "your_space/users/header" %>
+<div id="show_page">
+	<div class="headline">
+		<h1>Edit Your Profile</h1>
+	</div>
+
+	<div id="form_container">
+		<%= form_for @user, :url => your_space_user_path, :html => { :multipart => true } do |form| %>
+			<table>
+				<tr>
+					<td class="label">Add Photo:</td> 
+					<td><%= form.file_field :photo, :class => "photo" %></td>
+				</tr>
+				<tr>
+					<td class="label">Name:</td>
+					<td><%= form.text_field :name, :class => "name", :maxlength => 255 %></td>
+				</tr>
+				<tr>
+					<td class="label">Description:</td>
+					<td><%= form.text_area :description, :class => "description" %></td>
+				</tr>
+			</table>
+
+			<%= form.submit 'Submit', :class => "btn" %>
+		<% end %>
+	</div>
+</div>

@@ -1,6 +1,12 @@
 JenniferDewalt::Application.routes.draw do
 
+  devise_for :users
+
   root :to => 'pages#home'
+
+  namespace :your_space do
+    resources :users
+  end
 
   namespace :pixshow do
     resources :scraps
