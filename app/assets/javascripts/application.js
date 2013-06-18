@@ -13,9 +13,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery_ui/ui/jquery-ui
 //= require underscore
-//= require touch_punch
 //= require jscolor/jscolor
 //= require analytics
 //= require_tree ./websites
