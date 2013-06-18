@@ -9,7 +9,7 @@ $(document).ready(function () {
 		"pixshow": pixShow,
 		"your_space": yourSpace,
 		"hangman": hangmanGame
-	}
+	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
 });
