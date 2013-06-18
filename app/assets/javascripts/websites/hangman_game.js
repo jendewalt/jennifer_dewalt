@@ -114,7 +114,7 @@ function hangmanGame() {
 	};
 
 	function checkGuess(letter) {
-		var check_word = word
+		var check_word = word;
 		var indices = [];
 		
 		while (_.indexOf(check_word, letter) != -1) {
@@ -171,7 +171,7 @@ function hangmanGame() {
 	init();
 
 	$('body').on('keypress', function (e) {
-		var key = e.charCode || e.keyCode
+		var key = e.charCode || e.keyCode;
 		if (key >= 97 && key <= 122) {
 			var letter = String.fromCharCode(key);
 			$('#btn_' + letter).click();
