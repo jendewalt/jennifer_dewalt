@@ -1,0 +1,22 @@
+<%= render 'hangman/game/header' %>
+
+<div class="modal game_over">
+	<div class='inner_modal'>
+		<h1>Game Over</h1>
+		<%= link_to 'Try Again?', hangman_game_index_path %>
+	</div>
+</div>
+
+<div class="modal win">
+	<div class='inner_modal'>
+		<h1>You Win!</h1>
+		<%= link_to 'Play Again', hangman_game_index_path %>
+	</div>
+</div>
+
+<div id="container">
+	<canvas></canvas>
+	<div id="word_container"></div>
+
+	<div id="btn_container"></div>
+</div>

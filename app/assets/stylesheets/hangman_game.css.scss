@@ -1,0 +1,138 @@
+body.hangman_game_index, {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #34495e;
+    background-color: #fff;
+    overflow-y: scroll;
+
+    header {
+        padding: 0 20px;
+        margin-bottom: 0px;
+        background-color: orange;
+    }
+
+    #logo a {
+        float: left;
+        line-height: 38px;
+        font-size: 20px;
+        letter-spacing: 6px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 38px;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #fff;
+    }
+
+    #links_container a:hover {
+        color: #9b59b6;
+    }
+
+    .modal {
+        position: absolute;
+        width: 100%;
+        top: 150px;
+        z-index: 10;
+        
+        .inner_modal {
+           width: 300px;
+           margin: auto;
+           padding-bottom: 10px;
+           background-color: rgba(255,255,255,0.98);
+           box-shadow: 0 0 4px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            line-height: 80px;
+            font-size: 36px;
+            color: #16a085;
+        }
+
+        a {
+            color: #9b59b6;
+            text-decoration: none;
+            line-height: 40px;
+        }
+    }
+
+    .game_over {
+        display: none;
+    }
+    .win {
+        display: none;
+    }
+
+    #container {
+        position: relative;
+        width: 700px;
+        margin: auto;
+    }
+
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-bottom: 2px solid orange;
+    }
+
+    .letter_slot {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 30px;
+        height: 40px;
+        margin: 330px 5px 50px;
+        line-height: 40px;
+        font-size: 30px;
+        border-bottom: 2px solid #34495e;
+    }
+
+    .fail {
+        color: #e74c3c;
+    }
+
+    #btn_container {
+        width: 455px;
+        margin: auto;
+    }
+
+    button {
+        cursor: pointer;
+        border: none;
+        border-radius: none;
+        margin: 0;
+        margin-bottom: 1px;
+        width: 35px;
+        line-height: 40px;
+        font-size: 24px;
+        color: #fff;
+        background-color: #16a085;
+        border-left: 1px solid rgba(0,0,0,0.2);
+        border-right: 1px solid rgba(255,255,255,0.2);
+
+        &:disabled {
+            background-color: #bdc3c7;
+        }
+    }
+
+    #btn_a, #btn_n {
+        border-left: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .clear {
+        clear: both;
+    }
+
+}
