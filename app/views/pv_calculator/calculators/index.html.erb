@@ -1,0 +1,112 @@
+<%= render 'pv_calculator/calculators/header' %>
+
+<div id="container">
+	<div id="tabs_container">
+		<div class="tab left active" id="basic">
+			<p>Basic</p>
+		</div>
+		
+		<div class="tab middle"  id="compounding">
+			<p>Compounding</p>
+		</div>
+
+		<div class="tab right" id="offset">
+			<p>Offset</p>
+		</div>
+	</div>
+
+	<div id="basic_calc" class="calc_container">
+		<h1>Basic value calculation summing a set of cash flows discounted by interest rate.</h1>
+		<form>
+			<table>
+				<tr>
+					<td class="label">Interest Rate:</td> 
+					<td><input type="text" class="int_rate"></td>
+				</tr>
+				<tr>
+					<td class="label">Number of Years:</td>
+					<td><input type="text" class="num_years" id="basic_years"></td>
+					<td><button id="basic_years_btn" class="btn small">Add Revenue Fields</button></td>
+				</tr>
+			</table>
+				
+			<input type="submit" class="btn" value="Submit">
+		</form>
+		
+		<div class="answer_container">
+			<div class="label">Value: </div>
+			<div class="answer">00.00</div>
+		</div>
+	</div>
+
+	<div id="compounding_calc" class="calc_container">
+		<h1>Value calculation for a compounding revenue stream <br>
+			lasting for a fixed number of years.</h1>
+		<form>
+			<table>
+				<tr>
+					<td class="label">Interest Rate:</td> 
+					<td><input type="text" class="int_rate"></td>
+				</tr>
+				<tr>
+					<td class="label">Number of Years:</td>
+					<td><input type="text" class="num_years"></td>
+				</tr>
+				<tr>
+					<td class="label">Revenue:</td> 
+					<td><input type="text" class="revenue"></td>
+				</tr>
+				<tr>
+					<td class="label">Growth Rate:</td>
+					<td><input type="text" class="growth"></td>
+				</tr>
+			</table>
+				
+			<input type="submit" class="btn" value="Submit">
+		</form>
+		
+		<div class="answer_container">
+			<div class="label">Value: </div>
+			<div class="answer">00.00</div>
+		</div>
+	</div>
+
+	<div id="offset_calc" class="calc_container">
+		<h1>Value calculation for a compounding revenue stream <br>
+			lasting for a fixed number of years with a specified offest.</h1>
+		<h2>e.g. A company making no money for three years but crushin' it year four and onward.</h2>
+		<form>
+			<table>
+				<tr>
+					<td class="label">Interest Rate:</td> 
+					<td><input type="text" class="int_rate"></td>
+				</tr>
+				<tr>
+					<td class="label">Revenue:</td> 
+					<td><input type="text" class="revenue"></td>
+				</tr>
+				<tr>
+					<td class="label">Growth Rate:</td>
+					<td><input type="text" class="growth"></td>
+				</tr>
+				<tr>
+					<td class="label">Total Number of Years:</td>
+					<td><input type="text" class="num_years"></td>
+				</tr>
+				<tr>
+					<td class="label">Years Without Revenue:</td>
+					<td><input type="text" class="num_years_no_rev"></td>
+				</tr>
+			</table>
+				
+			<input type="submit" class="btn" value="Submit">
+		</form>
+		
+		<div class="answer_container">
+			<div class="label">Value: </div>
+			<div class="answer">00.00</div>
+		</div>
+	</div>
+
+</div>
+

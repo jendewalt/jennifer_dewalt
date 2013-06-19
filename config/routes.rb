@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :pv_calculator do 
+    resources :calculators, :only => [:index]
+  end
+
   namespace :hangman do 
     resources :game, :only => [:index]
   end

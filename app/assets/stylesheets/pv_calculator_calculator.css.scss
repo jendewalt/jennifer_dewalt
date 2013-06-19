@@ -1,0 +1,133 @@
+body.pv_calculator_calculators_index {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: #fff;
+    
+    header {
+        padding: 5px 20px 0;
+        background-color: #1abc9c;
+        margin-bottom: 0px;
+        color: #000;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+
+	    #logo a {
+	        float: left;
+	        line-height: 20px;
+	        font-size: 14px;
+	        text-decoration: none;
+	        color: #000;
+	    }
+
+	    #links_container {
+	        float: right;
+	    }
+
+	    #links_container a {
+	        font-size: 14px;
+	        line-height: 20px;
+	        text-decoration: none;
+	        color: #000;
+	        margin-left: 15px;
+	    }
+
+	    #links_container a:visited {
+	        color: #000;
+	    }
+
+	    #links_container a:hover {
+	        color: #f00;
+	    }
+    }
+
+    #container {
+    	width: 801px;
+    	margin: 30px auto;
+    }
+
+    .tab {
+    	display: inline-block;
+    	width: 267px;
+    	margin: -3px;
+    	padding: 10px 0;
+    	font-size: 13px;
+    	color: #fff;
+    	background-color: #d1d1d1;
+
+    	&.active {
+    		background-color: #2341ba;
+    	}
+    }
+
+    #compounding_calc {
+    	display: none;
+    }
+
+    #offset_calc {
+    	display: none;
+    }
+
+    .calc_container {
+    	padding: 20px 40px;
+    	background-color: #dce2fa;
+    	min-height: 550px;
+
+    	h1 {
+    		line-height: 20px;
+    	}
+
+    	h2 {
+    		margin-top: 10px;
+    		font-size: 13px;
+    		line-height: 18px;
+    	}
+
+    	form {
+    		margin-top: 30px;
+    	}
+
+    	table {
+    		margin-left: 95px;
+
+	    	.label {
+	    		text-align: right;
+	    		padding: 8px 20px;
+	    		font-weight: 300;
+	    	}
+
+    		input[type="text"] {
+    			width: 130px;
+    			text-align: center;
+    		}
+    	}
+    }
+
+    .answer_container{
+    	display: none;
+    	div {
+    		display: inline-block;
+    		margin: 40px 0;
+    	}
+
+    	.label {
+    		text-align: right;
+    		font-weight: 300;
+    	}
+
+    	.answer {
+    		text-align: left;
+    	}
+    }
+
+    .btn {
+    	border: none;
+    	border-radius: none;
+
+    }
+
+
+    .clear {
+        clear: both;
+    }
+}

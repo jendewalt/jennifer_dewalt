@@ -8,7 +8,8 @@ $(document).ready(function () {
 		"king_of_comments": kingOfComments,
 		"pixshow": pixShow,
 		"your_space": yourSpace,
-		"hangman": hangmanGame
+		"hangman": hangmanGame,
+		"pv_calculator": pvCalculator
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
