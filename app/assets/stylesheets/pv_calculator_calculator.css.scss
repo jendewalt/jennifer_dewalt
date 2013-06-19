@@ -4,20 +4,21 @@ body.pv_calculator_calculators_index {
     text-align: center;
     letter-spacing: 2px;
     background-color: #fff;
+    color: #2c3e50;
     
     header {
-        padding: 5px 20px 0;
-        background-color: #1abc9c;
-        margin-bottom: 0px;
-        color: #000;
+        padding: 10px 20px 0;
+        margin-bottom: 50px;
+        color: #2c3e50;
         text-shadow: 0 0 1px rgba(0,0,0,0.2);
 
 	    #logo a {
 	        float: left;
 	        line-height: 20px;
-	        font-size: 14px;
+	        font-size: 18px;
+	        font-weight: 600;
 	        text-decoration: none;
-	        color: #000;
+	        color: #1f51cf;
 	    }
 
 	    #links_container {
@@ -28,21 +29,21 @@ body.pv_calculator_calculators_index {
 	        font-size: 14px;
 	        line-height: 20px;
 	        text-decoration: none;
-	        color: #000;
+	        color: #2c3e50;
 	        margin-left: 15px;
 	    }
 
 	    #links_container a:visited {
-	        color: #000;
+	        color: #2c3e50;
 	    }
 
 	    #links_container a:hover {
-	        color: #f00;
+	        color: #1f51cf;
 	    }
     }
 
     #container {
-    	width: 801px;
+    	width: 803px;
     	margin: 30px auto;
     }
 
@@ -54,9 +55,15 @@ body.pv_calculator_calculators_index {
     	font-size: 13px;
     	color: #fff;
     	background-color: #d1d1d1;
+    	cursor: pointer;
 
     	&.active {
-    		background-color: #2341ba;
+    		background-color: #1f51cf;
+    	}
+
+    	&.middle {
+    		border-left: 1px solid rgba(255,255,255,0.5);
+    		border-right: 1px solid rgba(255,255,255,0.5);
     	}
     }
 
@@ -68,19 +75,34 @@ body.pv_calculator_calculators_index {
     	display: none;
     }
 
+    #basic_calc {
+    	.interest_row {
+    		.label{
+    			padding-bottom: 30px;    			
+    		}
+    	}
+
+    	.btn {
+    		margin-left: 5px; 
+    	}
+    }
+
     .calc_container {
     	padding: 20px 40px;
     	background-color: #dce2fa;
     	min-height: 550px;
 
     	h1 {
-    		line-height: 20px;
+    		line-height: 28px;
+    		font-weight: 400;
+    		color: #3565e1;
     	}
 
     	h2 {
     		margin-top: 10px;
     		font-size: 13px;
     		line-height: 18px;
+    		color: #3565e1;
     	}
 
     	form {
@@ -98,21 +120,31 @@ body.pv_calculator_calculators_index {
 
     		input[type="text"] {
     			width: 130px;
+    			height: 16px;
     			text-align: center;
+    		}
+
+    		.helper {
+    			font-size: 9px;
+    			padding-left: 10px;
+    			font-weight: 600;
+    			color: #3565e1;
     		}
     	}
     }
 
     .answer_container{
     	display: none;
+
     	div {
     		display: inline-block;
-    		margin: 40px 0;
+    		padding: 40px 0;
+    		font-weight: 400;
+    		font-size: 18px;
     	}
 
     	.label {
     		text-align: right;
-    		font-weight: 300;
     	}
 
     	.answer {
@@ -120,11 +152,31 @@ body.pv_calculator_calculators_index {
     	}
     }
 
-    .btn {
-    	border: none;
-    	border-radius: none;
-
+    input {
+    	&.btn {
+    		font-size: 16px;
+    		line-height: 26px;
+    		padding: 0 10px;
+    		margin-top: 30px; 
+    	}
     }
+
+    .btn {
+    	font-family: 'Open Sans', arial, sans-serif;
+    	font-weight: 300;
+    	letter-spacing: 2px;
+    	border:none;
+    	border-radius: 0;
+    	background-color: #1f51cf;
+    	color: #fff;
+    	text-shadow: 0 0 1px rgba(0,0,0,0.3);
+    	cursor: pointer;
+
+    	&:active {
+    		background-color: #1840a3;
+    		
+    	}
+    }    	
 
 
     .clear {

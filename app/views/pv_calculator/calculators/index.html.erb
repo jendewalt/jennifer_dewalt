@@ -7,21 +7,23 @@
 		</div>
 		
 		<div class="tab middle"  id="compounding">
-			<p>Compounding</p>
+			<p>Constant Growth</p>
 		</div>
 
 		<div class="tab right" id="offset">
-			<p>Offset</p>
+			<p>Offset Growth</p>
 		</div>
 	</div>
 
 	<div id="basic_calc" class="calc_container">
-		<h1>Basic value calculation summing a set of cash flows discounted by interest rate.</h1>
+		<h1>Basic present value calculation summing a <br>
+			set of cash flows discounted by interest rate.</h1>
 		<form>
 			<table>
-				<tr>
-					<td class="label">Interest Rate:</td> 
+				<tr class="interest_row">
+					<td class="label">Decimal Interest Rate:</td> 
 					<td><input type="text" class="int_rate"></td>
+					<td class="helper">(Hint: Enter 2% as 0.02)</td>
 				</tr>
 				<tr>
 					<td class="label">Number of Years:</td>
@@ -34,31 +36,33 @@
 		</form>
 		
 		<div class="answer_container">
-			<div class="label">Value: </div>
+			<div class="label">Present Value: </div>
 			<div class="answer">00.00</div>
 		</div>
 	</div>
 
 	<div id="compounding_calc" class="calc_container">
-		<h1>Value calculation for a compounding revenue stream <br>
+		<h1>Present value calculation for a compounding revenue stream <br>
 			lasting for a fixed number of years.</h1>
 		<form>
 			<table>
 				<tr>
-					<td class="label">Interest Rate:</td> 
+					<td class="label">Decimal Interest Rate:</td> 
 					<td><input type="text" class="int_rate"></td>
+					<td class="helper">(Hint: Enter 2% as 0.02)</td>
 				</tr>
 				<tr>
-					<td class="label">Number of Years:</td>
-					<td><input type="text" class="num_years"></td>
+					<td class="label">Growth Rate:</td>
+					<td><input type="text" class="growth"></td>
+					<td class="helper">(Hint: Enter 2% as 0.02)</td>
 				</tr>
 				<tr>
 					<td class="label">Revenue:</td> 
 					<td><input type="text" class="revenue"></td>
 				</tr>
 				<tr>
-					<td class="label">Growth Rate:</td>
-					<td><input type="text" class="growth"></td>
+					<td class="label">Number of Years:</td>
+					<td><input type="text" class="num_years"></td>
 				</tr>
 			</table>
 				
@@ -66,28 +70,30 @@
 		</form>
 		
 		<div class="answer_container">
-			<div class="label">Value: </div>
+			<div class="label">Present Value: </div>
 			<div class="answer">00.00</div>
 		</div>
 	</div>
 
 	<div id="offset_calc" class="calc_container">
-		<h1>Value calculation for a compounding revenue stream <br>
+		<h1>Present value calculation for a compounding revenue stream <br>
 			lasting for a fixed number of years with a specified offest.</h1>
 		<h2>e.g. A company making no money for three years but crushin' it year four and onward.</h2>
 		<form>
 			<table>
 				<tr>
-					<td class="label">Interest Rate:</td> 
+					<td class="label">Decimal Interest Rate:</td> 
 					<td><input type="text" class="int_rate"></td>
-				</tr>
-				<tr>
-					<td class="label">Revenue:</td> 
-					<td><input type="text" class="revenue"></td>
+					<td class="helper">(Hint: Enter 2% as 0.02)</td>
 				</tr>
 				<tr>
 					<td class="label">Growth Rate:</td>
 					<td><input type="text" class="growth"></td>
+					<td class="helper">(Hint: Enter 2% as 0.02)</td>
+				</tr>
+				<tr>
+					<td class="label">Revenue:</td> 
+					<td><input type="text" class="revenue"></td>
 				</tr>
 				<tr>
 					<td class="label">Total Number of Years:</td>
@@ -103,7 +109,7 @@
 		</form>
 		
 		<div class="answer_container">
-			<div class="label">Value: </div>
+			<div class="label">Present Value: </div>
 			<div class="answer">00.00</div>
 		</div>
 	</div>
