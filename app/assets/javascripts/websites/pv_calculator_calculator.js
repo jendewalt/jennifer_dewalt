@@ -8,8 +8,8 @@ function pvCalculator() {
 		$('.calc_container').hide();
 		$('#' + this.id + '_calc').show();
 	});
-
-	$('#basic_years_btn').on('click', function (e) {
+	
+	$('#basic_years').on('change', function (e) {
 		e.preventDefault();
 		var num_years = $('#basic_years').val();
 		if (!$.isNumeric(num_years)) {
@@ -59,7 +59,8 @@ function pvCalculator() {
 			t = y - x,
 			answer = 0;
 
-		answer = (c / (r - g)) - (c / (r - g) * Math.pow((1 + g), t) / Math.pow((1 + r), t)) / Math.pow((1+r), x);
+		answer = (c / (r - g) - c / (r - g) * Math.pow((1 + g), t) / Math.pow((1 + r), t)) / Math.pow((1+r), x);
+
 
 		updateAnswer(answer, '#offset_calc');
 	};
