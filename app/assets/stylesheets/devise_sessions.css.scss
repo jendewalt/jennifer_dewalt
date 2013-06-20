@@ -1,9 +1,9 @@
-body.devise_sessions_new, body.devise_registrations_new {
+body.devise_sessions_new, body.devise_registrations_new, body.devise_registrations_create {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
     text-align: center;
     background-color: #fbfcfd;
     letter-spacing: 3px;
-    line-height: 40px;
+    line-height: 30px;
     color: #333;
 
     h2 {

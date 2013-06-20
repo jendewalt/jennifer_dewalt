@@ -17,6 +17,12 @@
 		<br class="clear">
 	</div>
 
+	<div id="contrib_container">
+		<% if @user.tiny_notes_notes.length > 0 %>
+			<%= link_to @user.name + "'s Tiny Notes", tiny_notes_note_path(@user.id) %>
+		<% end %>
+	</div>
+
 	<% if @user == current_user %>
 		<div class="show btn"><%= link_to "Edit Profile", edit_your_space_user_path(current_user.id) %></div>
 	<% end %>

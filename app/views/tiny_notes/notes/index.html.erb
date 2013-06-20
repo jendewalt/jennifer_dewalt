@@ -1,0 +1,50 @@
+<%= render 'tiny_notes/notes/header' %>
+
+<div id="index_container">
+	<% if user_signed_in? %>
+		<div id="profile_container">
+			<div class="profile">
+				<div class="user photo" ><%= image_tag @user.photo.url(:thumb) %></div>
+				<div class="user name"><%= link_to @user.name, your_space_user_path(@user.id) %></div>
+			</div>
+
+			<%= form_for @note do |f| %>
+				<%= f.text_field :content, :maxlength => 255, :placeholder => "Add a Tiny Note..." %>
+				<%= f.submit :value => 'Submit', :class => "btn" %>
+			<% end %>
+		</div>
+	<% else %>
+		<div id="btn_container">
+			<h1>Share a Tiny Note!</h1>
+			<h2>Log in or sign up to join <br>
+				the Tiny Note fun!</h2>
+
+			<%= link_to "Log In", new_user_session_path, :class => "login btn" %>
+			<%= link_to "Sign Up", new_user_registration_path, :class => "signup btn" %>
+		</div>
+	<% end %>
+
+	<ul id="notes_container">
+		<div class="headline">
+			<h1>Recent Tiny Notes</h1>
+		</div>
+		<% @notes.each do |note| %>
+			<li class="note_container">
+				<div class="user photo">
+					<%= link_to your_space_user_path(note.user.id) do %>
+						<%= image_tag note.user.photo.url(:thumb) %>
+					<% end %>
+				</div>
+
+				<div class="note_content">
+					<div class="user name">
+						<%= link_to note.user.name, your_space_user_path(note.user.id) %>
+					</div>
+					<div class="note">
+						<%= note.content %>
+					</div>
+				</div>
+			</li>
+		<% end %>
+	</ul>
+</div>

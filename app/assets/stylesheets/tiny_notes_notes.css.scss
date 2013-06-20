@@ -1,0 +1,243 @@
+body.tiny_notes_notes_index, body.tiny_notes_notes_create, body.tiny_notes_notes_show {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #34495d;
+    background-color: #c5d2df;
+
+    .notice {
+    	line-height: 30px;
+    }
+
+    h3 {
+    	margin: 30px;
+    }
+    
+    header {
+        padding: 10px 20px;
+        background-color: #090321;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 12px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #fff;
+    }
+
+    #links_container a:hover {
+        color: #9b59b6;
+    }
+
+	.user {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.name a {
+		text-decoration: none;
+		color: inherit;
+		font-weight: 600;
+	}
+
+	::-webkit-input-placeholder {
+   		color: #ccc;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		color: #ccc;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+		color: #ccc;  
+	}
+
+	:-ms-input-placeholder {  
+		color: #ccc;  
+	}
+
+	#index_container, #show_container {
+		padding: 30px;
+	}
+
+
+    #profile_container {
+    	display: inline-block;
+    	vertical-align: top;
+    	width: 300px;
+    	margin-right: 20px;
+    	border-radius: 5px;
+    	background-color: #fff;
+    	border: 1px solid rgba(0,0,0,0.2);
+    	box-shadow: 0 0 2px rgba(0,0,0,0.10);
+
+    	.profile {
+			text-align: left;
+			padding: 12px;
+			border-bottom: 1px solid rgba(0,0,0,0.15);
+    	}
+
+    	.user img {
+    		width: 50px;
+    		margin-right: 10px;
+    	}
+
+    	.name a {
+	    	font-size: 16px;
+		}
+
+    	form {
+    		padding: 12px;
+    		background-color: rgba(0,0,0,0.1);
+    		border-top: 1px solid rgba(255,255,255,0.25);
+    	}
+
+    	input {
+    		border: none;
+    		border-radius: 3px;
+    		vertical-align: bottom;
+    	}
+
+    	input[type="text"] {
+    		width: 200px;
+    		padding: 6px;
+    		margin: 0;
+    		font-size: 15px;
+    		box-shadow: 0 0 2px rgba(0,0,0,0.5) inset;
+
+    		&:focus {
+    			box-shadow: 0 0 3px rgba(0,207,131, 0.8);
+    		}
+    	}
+
+    	input[type="submit"] {
+    		font-family: inherit;
+		    height: 30px;
+		    width: 50px;
+		    color: white;
+		    background-color: #8e44ad;
+		    cursor: pointer;
+
+		    &:active {
+		    	background-color: #592f6a;
+		    }
+    	}
+    }
+
+    #btn_container {
+		display: inline-block;
+    	vertical-align: top;
+    	width: 300px;
+    	margin-right: 20px;
+    	padding: 16px;
+    	border-radius: 5px;
+    	background-color: #fff;
+    	border: 1px solid rgba(0,0,0,0.2);
+    	box-shadow: 0 0 2px rgba(0,0,0,0.10);
+
+    	h1 {
+    		margin-bottom: 16px;
+    		font-size: 20px;
+    		font-weight: 600;
+    		color: #8e44ad;
+    	}
+
+    	h2 {
+    		line-height: 22px;
+    		margin-bottom: 30px;
+    	}
+
+		a.btn {
+			display: block;
+			width: 110px;
+			margin: 0 auto 20px;
+			padding: 8px 0;
+			font-weight: 400;
+			text-decoration: none;
+			color: #fff;
+			background-color: #16a085;
+			border-radius: 5px;
+
+			&:active {
+				background-color: #10745f;
+			}
+
+		}
+    }
+
+    #notes_container {
+    	display: inline-block;
+    	vertical-align: top;
+    	width: 500px;
+    	font-size: 15px;
+    	text-align: left;
+    	border-radius: 5px;
+    	background-color: #fff;
+    	border: 1px solid rgba(0,0,0,0.2);
+    	box-shadow: 0 0 2px rgba(0,0,0,0.10);
+
+    	.headline {
+    		padding: 12px;
+    		font-weight: 600;
+    		color: #8e44ad;
+    		border-bottom: 1px solid rgba(0,0,0,0.10);
+    	}
+
+    	.note_container {
+    		border-bottom: 1px solid rgba(0,0,0,0.10);
+    		padding: 12px;
+
+	    	.photo {
+	    		display: inline-block;
+	    		vertical-align: top;
+	    		margin-right: 14px;
+
+	    		img {
+	    			width: 80px;
+	    		}
+	    	}
+
+	    	.note_content {
+	    		display: inline-block;
+	    		vertical-align: top;
+	    		width: 375px;
+
+	    		.name {
+	    			margin-bottom: 10px;
+					word-wrap: break-word;
+	    		}
+
+	    		.note {
+	    			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	    			font-size: 13px;
+	    			line-height: 16px;
+					word-wrap: break-word;
+	    		}
+	    	}
+    	}
+    }
+
+    .clear {
+        clear: both;
+    }
+}

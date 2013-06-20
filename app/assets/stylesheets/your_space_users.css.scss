@@ -103,13 +103,20 @@ body.your_space_users_new, body.your_space_users_edit, body.your_space_users_sho
     }
 
     #show_page {
-        ;
         #profile_container {
+            display: inline-block;
+            vertical-align: top;
             width: 700px;
-            margin: 60px auto;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid rgba(0,0,0,0.2);
+            box-shadow: 0 0 2px rgba(0,0,0,0.10);
 
             .photo_container {
                 float: left;
+                width: 300px;
                 margin-right: 40px;
             }
 
@@ -124,12 +131,18 @@ body.your_space_users_new, body.your_space_users_edit, body.your_space_users_sho
             }
         }
 
-        .btn {
-            display: inline-block;
+        #contrib_container {
+            width: 600px;
+            margin: 0 auto 30px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid rgba(0,0,0,0.2);
+            box-shadow: 0 0 2px rgba(0,0,0,0.10);
         }
     }
 
-    #show_page {
+    #edit_page {
         #form_container {
             padding: 30px;
             width: 600px;

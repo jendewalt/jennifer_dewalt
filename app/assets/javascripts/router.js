@@ -9,7 +9,8 @@ $(document).ready(function () {
 		"pixshow": pixShow,
 		"your_space": yourSpace,
 		"hangman": hangmanGame,
-		"pv_calculator": pvCalculator
+		"pv_calculator": pvCalculator,
+		"tiny_notes": tinyNotes
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

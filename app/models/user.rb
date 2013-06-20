@@ -8,4 +8,5 @@ class User < ActiveRecord::Base
   attr_accessible :username, :email, :password, :password_confirmation, :remember_me, :photo, :name, :description
 
   has_attached_file :photo, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "missing_icon.png"
+  has_many :tiny_notes_notes, dependent: :destroy
 end

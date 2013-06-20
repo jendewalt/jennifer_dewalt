@@ -1,0 +1,28 @@
+<%= render 'tiny_notes/notes/header' %>
+
+<div id="show_container">
+	<ul id="notes_container">
+		<div class="headline">
+			<h1><%= @owner.name %>'s Recent Tiny Notes</h1>
+		</div>
+		<% @notes.each do |note| %>
+			<li class="note_container">
+				<div class="user photo">
+					<%= link_to your_space_user_path(note.user.id) do %>
+						<%= image_tag note.user.photo.url(:thumb) %>
+					<% end %>
+				</div>
+
+				<div class="note_content">
+					<div class="user name">
+						<%= link_to note.user.name, your_space_user_path(note.user.id) %>
+					</div>
+					<div class="note">
+						<%= note.content %>
+					</div>
+				</div>
+			</li>
+		<% end %>
+	</ul>
+</div>
+
