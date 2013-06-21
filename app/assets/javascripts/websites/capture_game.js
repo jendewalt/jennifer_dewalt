@@ -196,15 +196,19 @@ function captureGame() {
 			if (blasts.length == 0) {
 				running = false;
 				if (current_captured < levels[level - 1].target) {
-					flashFail();
-					startLevel();
+					setTimeout(function () {
+						flashFail();
+						startLevel();						
+					}, 300);
 				} else {
 					total_captured += current_captured
 					level++;
 
 					if (level <= levels.length) {
-						flashNextLevel();
-						startLevel();
+						setTimeout(function () {
+							flashNextLevel();
+							startLevel();							
+						}, 300);
 					} else {
 						showWin();
 					}
