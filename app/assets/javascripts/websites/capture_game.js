@@ -8,7 +8,7 @@ function captureGame() {
 		total_captured = 0,
 		current_captured = 0,
 		time_int = 50,
-		level = 1,
+		level = 0,
 		running = false,
 
 		levels = [
@@ -90,220 +90,208 @@ function captureGame() {
 			}
 		];
 
-		canvas.height = h;
-		canvas.width = w;
+	canvas.height = h;
+	canvas.width = w;
+	
+	$('body').disableSelection();
 
-		function Ball(x, y, vx, vy) {
-			this.x = x;
-			this.y = y;
-			this.vx = vx;
-			this.vy = vy;
-			this.r = 8;
-			this.color = randomColorRGB();
+	setInterval(function () {
+		paintScreen();
+	}, time_int);
 
-			this.move = function () {
-				if(this.x > w - 8) {
-					this.x = w - 8;
-					this.vx = -this.vx;
-				} else if(this.x < 8) {
-					this.x = 8;
-					this.vx = -this.vx;
-				}
+	startLevel();
 
-				if(this.y > h - 8) {
-					this.y = h - 8;
-					this.vy = -this.vy;
-				} else if(this.y < 38) {
-					this.y = 38;
-					this.vy = -this.vy;
-				}
+	$('.retry').on('click', function () {
+		$('.modal').fadeOut('300');
+	});
 
-				this.x+= this.vx;
-				this.y+= this.vy;
+	function paintScreen() {
+		ctx.fillStyle = '#fff';
+		ctx.fillRect(0,0,w,h);
+		drawScorePanel();
 
-				ctx.fillStyle = 'rgba('+ this.color + ', 1)';
-				ctx.beginPath();
-				ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-				ctx.closePath();
-				ctx.fill();
-			};
-		};
+		_.each(balls, function (ball) {
+			ball.move();
+		});
+		_.each(blasts, function (blast) {
+			blast.draw();
+		});
 
-		function Blast(x, y, color) {
-			this.x = x;
-			this.y = y;
-			this.r = 40;
-			this.color = color;
-			this.time = time_int;
+		if (running) {
+			balls = checkCollisions();
+			blasts = checkBlasts();
+			checkIfGameEnded();
+		}
+	};
 
-			this.draw = function () {
-				ctx.fillStyle = 'rgba('+ this.color + ', 0.75)';
-				ctx.beginPath();
-				ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-				ctx.closePath();
-				ctx.fill();
+	function startLevel() {
+		balls = [];
+		current_captured = 0;
 
-				this.time += 50;
-			};
-		};
+		_.each(_.range(levels[level].num_balls), function (i) {
+			makeBall(randomInt(20, w - 20), randomInt(20, h - 42));
+		});
 
-		function makeBall(x, y) {
-			var vx = randomFloat(-5, 5);
-			var vy = randomFloat(-5, 5);
+		$('canvas').on('click', function (e) {
+			var x = e.pageX - canvas.offsetLeft;
+			var y = e.pageY - canvas.offsetTop;
 
-			if (vx < 3 && vx > 0) {
-				vx += 3;
-			} else if (vx > -3 && vx < 0) {
-				vx -= 3;
+			makeBlast(x, y, '100, 100, 100');
+			running = true;
+			$('canvas').off();
+		});
+	};
+
+	function Ball(x, y, vx, vy) {
+		this.x = x;
+		this.y = y;
+		this.vx = vx;
+		this.vy = vy;
+		this.r = 8;
+		this.color = randomColorRGB();
+
+		this.move = function () {
+			if(this.x > w - 8) {
+				this.x = w - 8;
+				this.vx = -this.vx;
+			} else if(this.x < 8) {
+				this.x = 8;
+				this.vx = -this.vx;
 			}
 
-			if (vy < 3 && vy > 0) {
-				vy += 3;
-			} else if (vy > -3 && vy < 0) {
-				vy -= 3;
+			if(this.y > h - 8) {
+				this.y = h - 8;
+				this.vy = -this.vy;
+			} else if(this.y < 38) {
+				this.y = 38;
+				this.vy = -this.vy;
 			}
 
-			balls.push(new Ball(x, y, vx, vy));
-		};
+			this.x+= this.vx;
+			this.y+= this.vy;
 
-		function makeBlast(x, y, color) {
-			blasts.push(new Blast(x, y, color));
+			ctx.fillStyle = 'rgba('+ this.color + ', 1)';
+			ctx.beginPath();
+			ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+			ctx.closePath();
+			ctx.fill();
 		};
+	};
 
-		function flashFail() {
-			$('.fail').fadeIn('300');
+	function Blast(x, y, color) {
+		this.x = x;
+		this.y = y;
+		this.r = 40;
+		this.color = color;
+		this.time = time_int;
+
+		this.draw = function () {
+			ctx.fillStyle = 'rgba('+ this.color + ', 0.75)';
+			ctx.beginPath();
+			ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+			ctx.closePath();
+			ctx.fill();
+
+			this.time += 50;
 		};
+	};
 
-		function flashNextLevel() {
-			$('.next h2').text('Target: ' + levels[level - 1].target);
-			$('.next').fadeIn('300');
-			setTimeout(function () {
-				$('.next').fadeOut('300');
-			}, 800);
+	function makeBall(x, y) {
+		var vx = randomFloat(-5, 5);
+		var vy = randomFloat(-5, 5);
+
+		if (vx < 3 && vx > 0) {
+			vx += 3;
+		} else if (vx > -3 && vx < 0) {
+			vx -= 3;
 		}
 
-		function showWin() {
-			$('.win').fadeIn('300');
-		};
+		if (vy < 3 && vy > 0) {
+			vy += 3;
+		} else if (vy > -3 && vy < 0) {
+			vy -= 3;
+		}
 
-		function checkBlasts() {
-			_.each(blasts, function (blast, i) {
-				if (blast.time > 1500) {
-					blasts.splice(i, 1);
-				}
-			});
+		balls.push(new Ball(x, y, vx, vy));
+	};
 
-			if (blasts.length == 0) {
-				running = false;
-				if (current_captured < levels[level - 1].target) {
+	function makeBlast(x, y, color) {
+		blasts.push(new Blast(x, y, color));
+	};		
+
+	function checkCollisions() {
+	    return _.reject(balls, function (ball) {
+	        var remove = false;
+	        _.each(blasts, function (blast) {
+	            if (ball.x - ball.r > blast.x - blast.r && ball.x + ball.r < blast.x + blast.r && 
+	            	ball.y - ball.r > blast.y - blast.r && ball.y +	ball.r < blast.y + blast.r) {
+	                makeBlast(ball.x, ball.y, ball.color);
+	                current_captured = levels[level].num_balls - balls.length;
+	                remove = true;
+	            }
+	        });
+	        return remove;
+	    });
+	};
+
+	function checkBlasts() {
+    	return _.reject(blasts, function (blast) {
+        	return (blast.time > 1500);
+	    });
+	};
+
+	function checkIfGameEnded() {
+		current_captured = levels[level].num_balls - balls.length;
+
+		if (blasts.length == 0) {
+			running = false;
+			if (current_captured < levels[level].target) {
+				setTimeout(function () {
+					flashFail();
+					startLevel();						
+				}, 300);
+			} else {
+				total_captured += current_captured
+				level++;
+
+				if (level <= levels.length) {
 					setTimeout(function () {
-						flashFail();
-						startLevel();						
+						flashNextLevel();
+						startLevel();							
 					}, 300);
 				} else {
-					total_captured += current_captured
-					level++;
-
-					if (level <= levels.length) {
-						setTimeout(function () {
-							flashNextLevel();
-							startLevel();							
-						}, 300);
-					} else {
-						showWin();
-					}
+					showWin();
 				}
 			}
-		};
-
-		function drawScorePanel() {
-			ctx.fillStyle = '#eb7405';
-			ctx.fillRect(0, 0, w, 30);
-			ctx.fillStyle = '#fff';
-			ctx.font = '16px Open Sans';
-			ctx.fillText('Target: ' + levels[level - 1].target, 20, 20);
-			ctx.fillText('Captured: ' + current_captured, 120, 20);
-			ctx.fillText('Score: ' + total_captured * 100, 250, 20);
 		}
+	};
 
-		function checkCollisions() {
-			_.each(balls, function (ball, i) {
-				_.each(blasts, function (blast, j) {
-					if (ball.x - ball.r > blast.x - blast.r && ball.x + ball.r < blast.x + blast.r &&
-						ball.y - ball.r > blast.y - blast.r && ball.y + ball.r < blast.y + blast.r) {
-						
-						makeBlast(ball.x, ball.y, ball.color);
-						balls.splice(i, 1);
+	function drawScorePanel() {
+		ctx.fillStyle = '#eb7405';
+		ctx.fillRect(0, 0, w, 30);
+		ctx.fillStyle = '#fff';
+		ctx.font = '16px Open Sans';
+		ctx.fillText('Target: ' + levels[level].target, 20, 20);
+		ctx.fillText('Captured: ' + current_captured, 120, 20);
+		ctx.fillText('Score: ' + total_captured * 100, 250, 20);
+	};
 
-						current_captured++;
-					}
-				});
-			});
-			checkBlasts()
-		};
 
-		function paintScreen() {
-			ctx.fillStyle = '#fff';
-			ctx.fillRect(0,0,w,h);
-			drawScorePanel();
+	function flashFail() {
+		$('.fail').fadeIn('300');
+	};
 
-			_.each(balls, function (ball) {
-				ball.move();
-			});
-			_.each(blasts, function (blast) {
-				blast.draw();
-			});
+	function flashNextLevel() {
+		$('.next h2').text('Target: ' + levels[level].target);
+		$('.next').fadeIn('300');
+		setTimeout(function () {
+			$('.next').fadeOut('300');
+		}, 800);
+	};
 
-			if (running) {
-				checkCollisions();
-			}
-		};
-
-		function startLevel() {
-				balls = [];
-				current_captured = 0;
-
-				_.each(_.range(levels[level - 1].num_balls), function (i) {
-					makeBall(randomInt(20, w - 20), randomInt(20, h - 42));
-				});
-
-				$('canvas').on('click', function (e) {
-					var x = e.pageX - canvas.offsetLeft;
-					var y = e.pageY - canvas.offsetTop;
-
-					makeBlast(x, y, '100, 100, 100');
-					running = true;
-					$('canvas').off();
-				});
-		};
-
-		startLevel();
-
-		var play = setInterval(function () {
-			paintScreen();
-		}, time_int);
-
-		$('.retry').on('click', function () {
-			$('.modal').fadeOut('300');
-		})
-
-	$('body').disableSelection();
+	function showWin() {
+		$('.win').fadeIn('300');
+	};
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
