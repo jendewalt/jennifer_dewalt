@@ -10,7 +10,8 @@ $(document).ready(function () {
 		"your_space": yourSpace,
 		"hangman": hangmanGame,
 		"pv_calculator": pvCalculator,
-		"tiny_notes": tinyNotes
+		"tiny_notes": tinyNotes,
+		"capture": captureGame
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

@@ -17,4 +17,5 @@
 //= require jscolor/jscolor
 //= require analytics
 //= require_tree ./websites
+//= require my_functions
 //= require router

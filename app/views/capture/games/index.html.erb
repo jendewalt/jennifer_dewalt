@@ -1,0 +1,29 @@
+<%= render 'capture/games/header' %>
+
+<div id="index_page">
+	<div class="modal fail">
+		<div class="inner_modal">
+			<h1>Level Failed</h1>
+			<button class="retry btn">Retry</button>
+		</div>
+	</div>
+
+	<div class="modal next">
+		<div class="inner_modal">
+			<h1>Next Level</h1>
+			<h2></h2>
+		</div>
+	</div>
+
+	<div class="modal win">
+		<div class="inner_modal">
+			<h1>Oh Snap!</h1>
+			<h2>You beat the whole game!</h2>
+			<%= link_to 'Play Again?', capture_games_path, :class => 'btn' %>	
+		</div>
+	</div>
+
+
+
+	<canvas></canvas>
+</div>

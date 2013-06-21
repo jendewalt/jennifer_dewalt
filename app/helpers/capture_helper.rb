@@ -1,0 +1,2 @@
+module CaptureHelper
+end

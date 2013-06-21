@@ -1,0 +1,111 @@
+body.capture_games_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    background-color: #272629;
+    letter-spacing: 2px;
+    
+    header {
+        padding: 10px 20px;
+        background-color: #151417;
+        margin-bottom: 0px;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    }
+
+    #logo a {
+        float: left;
+        font-size: 18px;
+        text-decoration: none;
+        color: #eb7405;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #bdbdbd;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #bdbdbd;
+    }
+
+    #links_container a:hover {
+        color: #057ceb;
+    }
+
+    .modal {
+    	position: absolute;
+    	top: 38px;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	width: 100%;
+
+    	.inner_modal {
+    		width: 300px;
+    		margin: 160px auto;
+    		padding: 30px;
+    		background-color: rgba(255,255,255,0.93);
+    		box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    		border-radius: 5px;
+
+    		h1 {
+    			font-size: 26px;
+    			margin-bottom: 20px;
+    		}
+    	}
+    }
+
+    .btn {
+    	border: none;
+    	padding: 8px 15px;
+		background-color: #057ceb;
+		border-radius: 5px;
+		color: #fff;
+		font-size: 14px;
+		font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+		text-decoration: none;
+		letter-spacing: 2px;
+		text-shadow: 0 0 1px rgba(0,0,0,0.3);
+		cursor: pointer;
+		border-bottom: 2px solid rgba(255,255,255,0.2);
+
+		&:active {
+			border: none;
+			border-top: 2px solid rgba(0,0,0,0.3);
+			background-color: #0468c5;
+		}
+    }
+
+    .fail {
+    	display: none;
+    }
+    .next {
+    	display: none;
+    }
+    .win {
+    	display: none;
+
+    	h2 {
+    		margin-bottom: 30px;
+    	}
+    	a {
+    		color: #fff;
+    		text-decoration: none;
+    	}
+    }
+
+    canvas {
+    	margin-top: 30px;
+    	border: 1px solid rgba(0,0,0,0.5);
+    	cursor: pointer;
+    }
+
+    .clear {
+        clear: both;
+    }
+}

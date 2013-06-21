@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :capture do 
+    resources :games, :only => [:index]
+  end
+
   namespace :tiny_notes do 
     resources :notes
   end
