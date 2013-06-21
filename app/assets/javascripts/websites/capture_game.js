@@ -254,7 +254,8 @@ function captureGame() {
 				total_captured += current_captured
 				level++;
 
-				if (level <= levels.length) {
+				if (level <= 3) {
+				// if (level <= levels.length) {
 					setTimeout(function () {
 						flashNextLevel();
 						startLevel();							
