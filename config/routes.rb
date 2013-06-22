@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :text_scroller do 
+    resources :streams, :only => [:index]
+  end
+
   namespace :capture do 
     resources :games, :only => [:index]
   end

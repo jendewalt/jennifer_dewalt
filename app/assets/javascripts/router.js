@@ -11,7 +11,8 @@ $(document).ready(function () {
 		"hangman": hangmanGame,
 		"pv_calculator": pvCalculator,
 		"tiny_notes": tinyNotes,
-		"capture": captureGame
+		"capture": captureGame,
+		"text_scroller": textScroller
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

@@ -1,0 +1,87 @@
+body.text_scroller_streams_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    background-color: #101010;
+
+    #container {
+    	padding-bottom: 36px;
+    }
+
+    #form_wrap {
+	    position: relative;
+	    width: 360px;
+	    margin: auto;
+	    	
+	    form {
+	    	position: absolute;
+	    	top: 0;
+	    	background-color: rgba(255,255,255,0.1);
+	    	padding: 20px 40px;
+
+	    	input[type="text"]{
+	    		width: 200px;
+	   		}
+	    }
+
+	    .close {
+		    position: absolute;
+		    top: 20px;
+		    left: 10px;
+		    padding: 5px;
+		    color: #666;
+		    cursor: pointer;
+		    z-index: 10;
+		}
+
+		.btn {
+	    	border: none;
+			background-color: #057ceb;
+			padding: 0 5px;
+			color: #fff;
+			line-height: 20px;
+			letter-spacing: 2px;
+			text-shadow: 0 0 1px rgba(0,0,0,0.3);
+			cursor: pointer;
+
+			&:active {
+				background-color: #0468c5;
+			}
+	    }
+    }
+
+    canvas {
+    	margin-top: 25%;
+    }
+    
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #links_container {
+        float: right;
+        margin-right: 20px; 
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #000;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #000;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+}
