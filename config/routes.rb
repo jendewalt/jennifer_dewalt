@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :hollywood do 
+    resources :sign, :only => [:index]
+  end
+
   namespace :text_scroller do 
     resources :streams, :only => [:index]
   end

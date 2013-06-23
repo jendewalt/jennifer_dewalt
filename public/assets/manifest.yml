@@ -1,14 +1,16 @@
 ---
+hollywood_sign.jpg: hollywood_sign-865d870132e9b7404e248ac9da48f380.jpg
+hollywood_sign/index.jpg: hollywood_sign-865d870132e9b7404e248ac9da48f380.jpg
 missing_icon.png: missing_icon-bb54248ca63a4009d1a7b41deed0e158.png
 missing_icon/index.png: missing_icon-bb54248ca63a4009d1a7b41deed0e158.png
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 shl.png: shl-13124083091e669962bc51fa47252cec.png
 shl/index.png: shl-13124083091e669962bc51fa47252cec.png
-application.js: application-ee88b6f04e6d014081db89d41d49346b.js
-application/index.js: application-ee88b6f04e6d014081db89d41d49346b.js
-application.css: application-215209470b63627e231946ad53941816.css
-application/index.css: application-215209470b63627e231946ad53941816.css
+application.js: application-d9231c5f4ff70c176fe64f8026eaa6af.js
+application/index.js: application-d9231c5f4ff70c176fe64f8026eaa6af.js
+application.css: application-704c45dc844addfa0748f544d7a8466a.css
+application/index.css: application-704c45dc844addfa0748f544d7a8466a.css
 jscolor/demo.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
 jscolor/demo/index.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map

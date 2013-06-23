@@ -1,0 +1,14 @@
+<header>
+	<div id="links_container">
+	  	<a href="/index.html" id="home">Home</a>
+	  	<a href="http://blog.jenniferdewalt.com" id="blog">Blog</a>
+
+		<% if user_signed_in? %>
+		 	<%= link_to "Profile", your_space_user_path(@user.id) %>
+		 	<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+		<% else %>
+		 	<%= link_to "Sign in", new_user_session_path %>
+		<% end %>
+	</div>
+	<br class="clear">
+</header>

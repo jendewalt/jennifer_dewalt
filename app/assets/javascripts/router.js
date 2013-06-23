@@ -12,7 +12,8 @@ $(document).ready(function () {
 		"pv_calculator": pvCalculator,
 		"tiny_notes": tinyNotes,
 		"capture": captureGame,
-		"text_scroller": textScroller
+		"text_scroller": textScroller,
+		"hollywood": hollywoodSign
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
