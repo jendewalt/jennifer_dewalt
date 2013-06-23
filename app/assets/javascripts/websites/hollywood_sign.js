@@ -37,6 +37,8 @@ function hollywoodSign() {
 		}, 4000);
 	});
 
+	$('body').disableSelection();
+
 	function makeBlink() {
 		blink = setInterval(function () {
 			$('.letter').css('color', randomColorHex());

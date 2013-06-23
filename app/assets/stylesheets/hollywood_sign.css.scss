@@ -43,7 +43,7 @@ body.hollywood_sign_index {
 
     #sign {
     	position: absolute;
-    	top: 198px;
+    	top: 202px;
     	right: 58px;
     	width: 200px;
     	height: 20px;
@@ -53,6 +53,7 @@ body.hollywood_sign_index {
     	position: absolute;
     	display: inline-block;
     	font-weight: 700;
+        line-height: 8px;
     	font-family: 'Passion One', sans-serif;
     	color: #ebe0d1;
     	text-shadow: 0 0 2px rgba(0,0,0,0.3);
