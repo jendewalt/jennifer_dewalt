@@ -45,7 +45,18 @@ body.liquor_likes_liquors_index, body.liquor_likes_liquors_new, body.liquor_like
         color: #f00;
     }
 
-    .btn a, .like_btn {
+    .like_btn {
+        padding: 8px 13px;
+        font-weight: 400;
+        color: #fff;
+        background-color: #16a085;
+
+        &:active {
+            background-color: #10745f;
+        }
+    }
+
+    .btn a {
         margin-bottom: 20px;
         padding: 8px 13px;
         font-weight: 400;
@@ -58,6 +69,7 @@ body.liquor_likes_liquors_index, body.liquor_likes_liquors_new, body.liquor_like
     }
 
     .like_btn{
+        margin-bottom: 0;
         width: 60px;
         border: none;
         padding: 3px 5px;
@@ -87,6 +99,10 @@ body.liquor_likes_liquors_index, body.liquor_likes_liquors_new, body.liquor_like
             font-size: 11px;
             color: #95a5a6;
         }
+    }
+
+    td {
+        vertical-align: middle;
     }
 
     #show {
