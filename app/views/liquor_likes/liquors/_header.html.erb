@@ -1,0 +1,15 @@
+<header>
+	<div id="logo"><%= link_to "Liquor Likes", liquor_likes_liquors_path %></div>
+
+	<div id="links_container">
+	  	<a href="/index.html" id="home">Home</a>
+	  	<a href="http://blog.jenniferdewalt.com" id="blog">Blog</a>
+
+		<% if user_signed_in? %>
+		 	<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+		<% else %>
+		 	<%= link_to "Sign in", new_user_session_path %>
+		<% end %>
+	</div>
+	<br class="clear">
+</header>

@@ -1,0 +1,33 @@
+<%= render 'liquor_likes/liquors/header' %>
+
+<div id='button_container'>
+	<div class="btn"><%= link_to('Add a New Liquor', new_liquor_likes_liquor_path) %></div>
+</div>
+
+<div id="index">
+	<table class="lined_table">
+		<% @liquors.each do |liquor| %>
+			<tr class="liquor" >
+				
+				<td class="name"><%= link_to(liquor.name, liquor) %></td>
+				<td class="description"><%= liquor.description %></td>
+				<td class="like_container">
+					
+					<% if current_user && current_user.likes_liquor?(liquor.id) %>
+						<button id="<%= liquor.id %>" class="like_btn" disabled="disabled">Liked!</button>
+					<% else %>
+						<button id="<%= liquor.id %>" class="like_btn">Like Me!</button>
+					<% end %>
+				</td>
+
+				<td class="like_count">
+					<% if liquor.liquor_likes_likes_count %>
+						Liked by <span><%= liquor.liquor_likes_likes_count %></span>
+						<span class="people"><%= liquor.liquor_likes_likes_count == 1 ? 'person' : 'people' %></span>
+					<% end %>
+				</td>
+			</tr>
+		<% end %>
+		<tr><td></td><td></td><td></td><td></td></tr>
+	</table>
+</div>

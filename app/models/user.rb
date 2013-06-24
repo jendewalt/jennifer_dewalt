@@ -9,4 +9,10 @@ class User < ActiveRecord::Base
 
   has_attached_file :photo, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "missing_icon.png"
   has_many :tiny_notes_notes, dependent: :destroy
+  has_many :liquor_likes_likes
+  has_many :liquor_likes_liquors, :through => :liquor_likes_likes
+
+  def likes_liquor?(liquor_id)
+    liquor_likes_likes.exists?(:liquor_likes_liquor_id => liquor_id)
+  end
 end

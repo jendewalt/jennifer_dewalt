@@ -1,0 +1,140 @@
+body.liquor_likes_liquors_index, body.liquor_likes_liquors_new, body.liquor_likes_liquors_show {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    color: #34495e;
+    letter-spacing: 3px;
+
+    a {
+        display: inline-block;
+        color: #000;
+        text-decoration: none;
+    }
+    
+    header {
+        padding: 7px 20px;
+        background-color: #226;
+        margin-bottom: 20px;
+        color: #fff;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #fff;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .btn a, .like_btn {
+        margin-bottom: 20px;
+        padding: 8px 13px;
+        font-weight: 400;
+        color: #fff;
+        background-color: #16a085;
+
+        &:active {
+            background-color: #10745f;
+        }
+    }
+
+    .like_btn{
+        width: 60px;
+        border: none;
+        padding: 3px 5px;
+
+        &:disabled {
+            background-color: #aaa;
+        }
+    }
+    
+    table.lined_table {
+        width: 70%;
+        margin: auto;
+
+        tr {
+        }
+
+        td {
+            border-top: 1px solid black;
+            padding: 20px;
+        }
+
+        form {
+            text-align: right;
+        }
+
+        .like_count {
+            font-size: 11px;
+            color: #95a5a6;
+        }
+    }
+
+    #show {
+        td {
+            border-bottom: 1px solid black;            
+        }
+        
+        h1 {
+            font-size: 14px;
+            color: #16a085;
+            margin-bottom: 10px;
+        }
+
+        #likers_container {
+            padding-top: 20px;
+        }
+
+        .liker {
+            line-height: 26px;
+        }
+    }
+
+    #new {
+        table {
+            margin: auto;
+
+            td {
+                text-align: right;
+            }
+        }
+
+        h1 {
+           font-size: 20px;
+           color:  #16a085;
+           margin-bottom: 20px;
+        }
+
+        input {
+            width: 300px;
+            margin: 5px;
+        }
+
+        .btn {
+            width: 80px;
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+}

@@ -1,0 +1,17 @@
+<%= render 'liquor_likes/liquors/header' %>
+<div id="new">
+	<h1>Add a New Liquor</h1>
+	<table class="new_form">
+		<%= form_for @liquor do |f| %>
+		<tr>
+			<td class="form_name">Liquor Name: </td><td><%= f.text_field(:name, :maxlength => 255) %></td>
+		</tr>
+		<tr>
+			<td class="form_description">Liquor description:  </td><td><%= f.text_field(:description) %></td>
+		</tr>
+		<tr>
+			<td></td><td><%= f.submit("Create", :class => "btn") %></td>
+		</tr>
+		<% end %>
+	</table>
+</div>

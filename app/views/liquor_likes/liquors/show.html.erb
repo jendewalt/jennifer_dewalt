@@ -1,0 +1,34 @@
+<%= render 'liquor_likes/liquors/header' %>
+
+<div id='button_container'>
+	<div class="btn"><%= link_to('Add a New Liquor', new_liquor_likes_liquor_path) %></div>
+</div>
+
+<div id="show">
+	<table id="liquor_container" class="lined_table">
+		<tr>
+			<td class="name"><%= @liquor.name %></td>
+			<td class="description"><%= @liquor.description %></td>
+
+			<td class="like_container">
+				<div class="like_count">
+					<div class = "num_likes">
+						<% if @liquor.liquor_likes_likes_count %>
+							Liked by <%= pluralize(@liquor.liquor_likes_likes_count, 'person') %>
+						<% end %>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+	<div id="likers_container">
+		<h1>These people like <%= @liquor.name %></h1>
+
+		<% @likers.each do |liker| %>
+			<div class="liker">
+				<%= liker.name %>
+			</div>
+		<% end %>
+	</div>
+</div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130619211426) do
+ActiveRecord::Schema.define(:version => 20130624023300) do
 
   create_table "click_counter_buttons", :force => true do |t|
     t.integer  "clicks"
@@ -39,6 +39,27 @@ ActiveRecord::Schema.define(:version => 20130619211426) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "liquor_likes_likes", :force => true do |t|
+    t.integer  "liquor_likes_liquor_id"
+    t.integer  "user_id"
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
+  end
+
+  add_index "liquor_likes_likes", ["liquor_likes_liquor_id"], :name => "index_liquor_likes_likes_on_liquor_likes_liquor_id"
+  add_index "liquor_likes_likes", ["user_id", "liquor_likes_liquor_id"], :name => "index_liquor_likes_likes_on_user_id_and_liquor_likes_liquor_id", :unique => true
+  add_index "liquor_likes_likes", ["user_id"], :name => "index_liquor_likes_likes_on_user_id"
+
+  create_table "liquor_likes_liquors", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "liquor_likes_likes_count"
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
+  end
+
+  add_index "liquor_likes_liquors", ["liquor_likes_likes_count"], :name => "index_liquor_likes_liquors_on_liquor_likes_likes_count"
 
   create_table "make_a_dude_dudes", :force => true do |t|
     t.string   "name"

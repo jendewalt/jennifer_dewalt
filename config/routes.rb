@@ -4,6 +4,11 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :liquor_likes do 
+    resources :liquors
+    resources :likes
+  end
+
   namespace :hollywood do 
     resources :sign, :only => [:index]
   end

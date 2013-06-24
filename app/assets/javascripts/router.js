@@ -13,7 +13,8 @@ $(document).ready(function () {
 		"tiny_notes": tinyNotes,
 		"capture": captureGame,
 		"text_scroller": textScroller,
-		"hollywood": hollywoodSign
+		"hollywood": hollywoodSign,
+		"liquor_likes": liquorLikes
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
