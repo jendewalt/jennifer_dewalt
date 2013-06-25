@@ -1,0 +1,2 @@
+module FishyFriendFishHelper
+end

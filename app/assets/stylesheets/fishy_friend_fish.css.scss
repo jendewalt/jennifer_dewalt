@@ -1,0 +1,52 @@
+body.fishy_friend_fish_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    color: #0d4d73;
+    letter-spacing: 2px;
+    background: #0a6284; /* Old browsers */
+	background: -moz-linear-gradient(top, #7dd2e8 15%, #0a6284 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(15%,#7dd2e8), color-stop(100%,#0a6284)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #7dd2e8 15%,#0a6284 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #7dd2e8 15%,#0a6284 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #7dd2e8 15%,#0a6284 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #7dd2e8 15%,#0a6284 100%); /* W3C */
+	    
+    header {
+        padding: 5px 20px;
+        margin-bottom: 0px;
+        color: #0d4d73;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        color: #0d4d73;
+        text-decoration: none;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #0d4d73;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #0d4d73;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+}

@@ -2,6 +2,10 @@ JenniferDewalt::Application.routes.draw do
 
   devise_for :users
 
+  namespace :fishy_friend do 
+    resources :fish, :only => [:index]
+  end
+
   root :to => 'pages#home'
 
   namespace :liquor_likes do 

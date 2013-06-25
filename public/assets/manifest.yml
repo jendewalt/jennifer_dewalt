@@ -1,4 +1,8 @@
 ---
+fishy_friend.png: fishy_friend-7314fbabd69fd584f6f4ada8289c37bb.png
+fishy_friend/index.png: fishy_friend-7314fbabd69fd584f6f4ada8289c37bb.png
+fishy_friend_right.png: fishy_friend_right-1d6a41ead81c2cca97668e0ffc4c6cb3.png
+fishy_friend_right/index.png: fishy_friend_right-1d6a41ead81c2cca97668e0ffc4c6cb3.png
 hollywood_sign.jpg: hollywood_sign-865d870132e9b7404e248ac9da48f380.jpg
 hollywood_sign/index.jpg: hollywood_sign-865d870132e9b7404e248ac9da48f380.jpg
 missing_icon.png: missing_icon-bb54248ca63a4009d1a7b41deed0e158.png
@@ -7,10 +11,10 @@ rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 shl.png: shl-13124083091e669962bc51fa47252cec.png
 shl/index.png: shl-13124083091e669962bc51fa47252cec.png
-application.js: application-16f24b973a4bdb24e493189bb7d6526e.js
-application/index.js: application-16f24b973a4bdb24e493189bb7d6526e.js
-application.css: application-8455b7f0466959ce34fbd6968c91082e.css
-application/index.css: application-8455b7f0466959ce34fbd6968c91082e.css
+application.js: application-b4cb576da23da28491b2447d2c59d92c.js
+application/index.js: application-b4cb576da23da28491b2447d2c59d92c.js
+application.css: application-63b69060ce7344f2b12f9406b286a9d4.css
+application/index.css: application-63b69060ce7344f2b12f9406b286a9d4.css
 jscolor/demo.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
 jscolor/demo/index.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
