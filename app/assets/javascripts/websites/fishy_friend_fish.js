@@ -85,8 +85,6 @@ function fishyFriend() {
 		for (var i = 0; i < 40; i++) {
 			bubbles.push(new Bubble());
 		}
-
-		makeBubble();
 	};
 	
 	fish_left.horizontal = 0;
