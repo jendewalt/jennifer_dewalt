@@ -1,0 +1,175 @@
+body.snare_snare_index {
+	height: 100%;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    text-align: center;
+    color: #25c4c4;
+    background-color: #000;
+    overflow-y: scroll;
+
+    #error {
+    	display: none;
+    	padding: 60px;
+    	color: #04bf0a;
+
+    	#info {
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		padding: 20px;
+    		cursor: pointer;
+    		font-size: 20px;
+    		font-weight: bold;
+    	
+		    #info_modal {
+		    	display: none;
+		    	position: absolute;
+		    	top: 40px;
+		    	width: 200px;
+		    	font-size: 13px;
+		    	font-weight: normal;
+		    }
+
+		    &:hover {
+		    	#info_modal {
+			    	display: block;
+			    	position: absolute;
+			    	top: 40px;
+			    	width: 200px;
+			    	font-size: 13px;
+			    	font-weight: normal;
+
+		    	}
+		    }
+		}
+
+    	h1 {
+    		font-size: 50px;
+    		margin-bottom: 20px;
+    	}
+    	h2 {
+    		line-height: 30px;
+    	}
+
+    	a {
+    		display: inline-block;
+    		padding: 5px 10px;
+    		margin-top: 30px;
+    		border-radius: 3px;
+    		border: 2px solid #555;
+    		background-color: #aaa;
+    		text-decoration: none;
+    		color: #111;
+    	}
+    }
+
+    #container {
+    	background-image: url('herringbone_03.png');
+    	height: 100%;
+    	width: 100%;
+
+	    header {
+	        padding: 5px 20px 0;
+	        margin-bottom: 50px;
+	        color: #2c3e50;
+	        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+	    }
+
+	    #logo a{
+	        float: left;
+	        line-height: 20px;
+	        font-size: 14px;
+	    }
+
+	    #links_container {
+	        float: right;
+	    }
+
+	    #links_container a {
+	        font-size: 14px;
+	        line-height: 20px;
+	        text-decoration: none;
+	        color: #2c3e50;
+	        margin-left: 15px;
+	    }
+
+	    #links_container a:visited {
+	        color: #2c3e50;
+	    }
+
+	    #links_container a:hover {
+	        color: #f00;
+	    }
+
+	    .clear {
+	        clear: both;
+	    }
+
+	    #target {
+	    	position: absolute;
+	    	top: 50%;
+	    	margin: auto;
+	    	left: 0;
+	    	right: 0;
+	    	margin-top: -200px;
+	    }
+
+	    .circle {
+	    	border-radius: 50%;
+	    	background-color: #ecf0f1;
+	    	margin: auto;
+	    	cursor: pointer;
+	    }
+
+	    .c1 {
+	    	position: relative;
+	    	height: 320px;
+	    	width: 320px;
+	    	background-color: #ecf0f1;
+	    	border: 40px solid #e74c3c;
+
+	    	&:hover {
+	    		border: 40px solid #c0392b;
+	    	}
+	    }
+	    .c2 {
+	    	position: absolute;
+	    	top: 40px;
+	    	left: 40px;
+	    	height: 160px;
+	    	width: 160px;
+	    	border: 40px solid #e74c3c;
+
+	    	&:hover {
+	    		border: 40px solid #c0392b;
+	    	}
+	    }
+	    .c3 {
+	    	position: absolute;
+	    	top: 40px;
+	    	left: 40px;
+	    	height: 80px;
+	    	width: 80px;
+	    	background-color: #e74c3c;
+
+	    	&:hover {
+	    		background-color: #c0392b;
+	    	}
+	    }
+    }
+
+    .shrink {
+    	-webkit-animation: 1.8s shrink ease-in;
+    }
+}
+
+@-webkit-keyframes shrink {
+	0% {-webkit-transform: scale(1) rotate(0deg)}
+	60% {-webkit-transform: scale(0) rotate(1000deg) }
+	100% {-webkit-transform: scale(0) rotate(1000deg) }
+}
+
+
+
+
+
+

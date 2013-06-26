@@ -15,7 +15,8 @@ $(document).ready(function () {
 		"text_scroller": textScroller,
 		"hollywood": hollywoodSign,
 		"liquor_likes": liquorLikes,
-		"fishy_friend": fishyFriend
+		"fishy_friend": fishyFriend,
+		"snare": snare
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

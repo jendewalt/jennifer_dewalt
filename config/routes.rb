@@ -1,12 +1,18 @@
 JenniferDewalt::Application.routes.draw do
 
+  get "snare_snare/index"
+
   devise_for :users
+
+  root :to => 'pages#home'
+
+  namespace :snare do 
+    resources :snare, :only => [:index]
+  end
 
   namespace :fishy_friend do 
     resources :fish, :only => [:index]
   end
-
-  root :to => 'pages#home'
 
   namespace :liquor_likes do 
     resources :liquors
