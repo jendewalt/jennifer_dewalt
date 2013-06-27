@@ -16,7 +16,8 @@ $(document).ready(function () {
 		"hollywood": hollywoodSign,
 		"liquor_likes": liquorLikes,
 		"fishy_friend": fishyFriend,
-		"snare": snare
+		"snare": snare,
+		"countdown": countdownClock
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

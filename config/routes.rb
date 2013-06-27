@@ -1,10 +1,12 @@
 JenniferDewalt::Application.routes.draw do
 
-  get "snare_snare/index"
-
   devise_for :users
 
   root :to => 'pages#home'
+
+  namespace :countdown do 
+    resources :clock, :only => [:index]
+  end
 
   namespace :snare do 
     resources :snare, :only => [:index]

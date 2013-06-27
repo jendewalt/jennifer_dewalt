@@ -1,0 +1,2 @@
+module CountdownClockHelper
+end
