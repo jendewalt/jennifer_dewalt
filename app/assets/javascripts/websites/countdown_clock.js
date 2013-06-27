@@ -13,7 +13,6 @@ function countdownClock() {
 		e.preventDefault();
 		init();
 
-		$('.modal').fadeOut('600');
 
 		var year = Number($('.year').val()),
 			month = Number($('.month').val()),
@@ -29,11 +28,17 @@ function countdownClock() {
 		} else {
 			end_date = new Date(year, month - 1, day);
 			dateDiff();
+			$('.modal').fadeOut('600');
 			$('#event_name').text(name);
+			$('#container').fadeIn('600');
 		}
 
-		$('#container').fadeIn('600');
 	});
+
+	function resetOnError() {
+		$('#container').hide();
+		$('.modal').show();
+	};
 
 
 	function dateDiff() {
