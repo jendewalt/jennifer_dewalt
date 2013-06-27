@@ -1,0 +1,2 @@
+module QuickWordsGameHelper
+end

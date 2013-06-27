@@ -1,0 +1,42 @@
+body.quick_words_game_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    
+    header {
+        padding: 5px 20px 0;
+        background-color: #1abc9c;
+        margin-bottom: 0px;
+        color: #000;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    }
+
+    #logo {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #000;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #000;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+}
