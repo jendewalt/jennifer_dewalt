@@ -20,6 +20,9 @@
 # Ignore DS_store files
 .DS_Store
 
+# Ignore all .orig files
+*.orig
+
 # Ignore all of the config directory
 /config/environments
 /config/initializers

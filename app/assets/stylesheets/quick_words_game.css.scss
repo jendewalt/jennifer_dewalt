@@ -1,19 +1,19 @@
 body.quick_words_game_index {
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     text-align: center;
+    letter-spacing: 2px;
     
     header {
         padding: 5px 20px 0;
-        background-color: #1abc9c;
         margin-bottom: 0px;
-        color: #000;
-        text-shadow: 0 0 1px rgba(0,0,0,0.2);
     }
 
-    #logo {
+    #logo a {
         float: left;
         line-height: 20px;
         font-size: 14px;
+        text-decoration: none;
+        color: #333;
     }
 
     #links_container {
@@ -24,12 +24,12 @@ body.quick_words_game_index {
         font-size: 14px;
         line-height: 20px;
         text-decoration: none;
-        color: #000;
+        color: #333;
         margin-left: 15px;
     }
 
     #links_container a:visited {
-        color: #000;
+        color: #333;
     }
 
     #links_container a:hover {
@@ -38,5 +38,18 @@ body.quick_words_game_index {
 
     .clear {
         clear: both;
+    }
+
+    .modal {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        font-size: 22px;
+
+    }
+
+    canvas {
+        margin-top: 60px;
     }
 }

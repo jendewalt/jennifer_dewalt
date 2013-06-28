@@ -8,6 +8,10 @@ JenniferDewalt::Application.routes.draw do
     resources :game, :only => [:index]
   end
 
+  namespace :countdown do 
+    resources :clock, :only => [:index]
+  end
+
   namespace :snare do 
     resources :snare, :only => [:index]
   end
