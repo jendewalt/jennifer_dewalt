@@ -1,0 +1,70 @@
+body.hourglass_timer_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    letter-spacing: 2px;
+    
+    header {
+        padding: 5px 20px 0;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #34495e;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #34495e;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #34495e;
+    }
+
+    #links_container a:hover {
+        color: #e74c3c;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .modal {
+    	margin-top: 40px;
+    	background-color: #1abc9c;
+    	padding: 20px;
+    	h1 {
+    		font-size: 20px;
+    		margin-bottom: 20px;
+    	}
+    }
+
+    .times_up {
+    	display: none;
+    	position: absolute;
+    	top: 240px;
+    	left: 0;
+    	right: 0;
+    	background-color: rgba(231, 76, 60,0.95);
+    	h1 {
+    		margin-bottom: 0;
+    	}
+    }
+
+    canvas {
+    	margin-top: 80px;
+    }
+}

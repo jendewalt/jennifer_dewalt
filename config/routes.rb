@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :hourglass do 
+    resources :timer, :only => [:index]
+  end
+
   namespace :quick_words do 
     resources :game, :only => [:index]
   end

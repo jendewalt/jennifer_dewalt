@@ -18,7 +18,8 @@ $(document).ready(function () {
 		"fishy_friend": fishyFriend,
 		"snare": snare,
 		"quick_words": quickWords,
-		"countdown": countdownClock
+		"countdown": countdownClock,
+		"hourglass": hourglass
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
