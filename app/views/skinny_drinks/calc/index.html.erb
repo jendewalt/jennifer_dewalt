@@ -1,0 +1,43 @@
+<div id="headlines">
+	<h1>Skinny Drinks</h1>
+	<h2>Discover which beverages provide the most<br>
+		booze bang for your caloric buck!</h2>
+</div>
+<div id="directions">
+	<h3>Enter the name of the beverage, its alcohol percentage, the number of ounces and how many calories the drink has. <br>
+	Hit submit to get the drink's Skinny Factor.</h3>
+</div>
+
+<div id="container">
+	<form>
+		<table>
+			<tr>
+				<td class="lable">Name: </td><td><input class="entry name" type="text" placeholder="Absolut"></td>
+			</tr>
+			<tr>
+				<td class="lable">ABV%: </td><td><input class="entry abv" type="text" placeholder="40%"></td>
+			</tr>
+			<tr>
+				<td class="lable">Ounces: </td><td><input class="entry ounces" type="text" placeholder ="1.5"></td>
+			</tr>
+			<tr>
+				<td class="lable">Calories: </td><td><input class="entry calories"type="text" placeholder ="99"></td>
+			</tr>
+			<tr>
+				<td></td><td class="submit"><input class="btn" type="submit" value ="Submit"></td>
+			</tr>
+		</table>
+	</form>
+
+	<div id="result_container">
+		<div class="result"></div>
+		<div class="skinny_factor"></div>
+		<div class="info">What is this?
+			<div id="info_modal">
+				The Skinny Factor is a number between 0 and 100 reflecting what percentage of the calories are unavoidable. A higher Skinny Factor means more alcohol and less other sugars.  
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= render 'skinny_drinks/calc/footer' %>

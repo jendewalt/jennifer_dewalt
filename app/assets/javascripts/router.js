@@ -19,7 +19,8 @@ $(document).ready(function () {
 		"snare": snare,
 		"quick_words": quickWords,
 		"countdown": countdownClock,
-		"hourglass": hourglass
+		"hourglass": hourglass,
+		"skinny_drinks": skinnyDrinks
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

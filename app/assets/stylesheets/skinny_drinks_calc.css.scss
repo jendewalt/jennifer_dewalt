@@ -1,0 +1,129 @@
+body.skinny_drinks_calc_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    color: #333;
+    letter-spacing: 2px;
+
+    #container {
+    	padding-bottom: 56px;
+    }
+
+    #headlines {
+    	padding: 20px;
+    	background-color: #3d566e;
+    	color: #fff;
+    	text-shadow: 0 0 2px rgba(0, 0, 0,0.4);
+    	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+	    h1 {
+	    	font-size: 30px;
+	    	margin-bottom: 10px;
+	    }
+
+	    h2 {
+	    	font-size: 18px;
+	    	line-height: 24px;
+	    }
+    }
+
+    #directions {
+		width: 500px;
+		margin: 20px auto;
+
+	    h3 {
+	    	font-size: 13px;
+	    	line-height: 20px;
+	    }
+    }
+
+    table {
+    	margin: 0 auto 10px;
+    	td {
+    		padding: 3px;
+
+    	}
+		.submit {
+			text-align: right;
+
+			.btn {
+				border-radius: none;
+				border: none;
+				padding: 4px 8px;
+				color: #fff;
+				text-shadow: 0 0 1px rgba(255,255,255,0.5);
+				background-color: #ffa500;
+				cursor: pointer;
+			}
+		}
+    }
+
+    #result_container {
+    	display: none;
+
+    	.result {
+    		font-size: 18px;
+    		margin-bottom: 15px;
+    	}
+    	.skinny_factor {
+    		font-size: 80px;
+  			font-weight: bold;
+    		color: #e74c3c;
+    		margin-bottom: 20px;
+    	}
+
+    	.info {
+    		font-size: 11px;
+    		color: #3498db;
+    		cursor: pointer;
+
+    		#info_modal {
+    			display: none;
+    			width: 450px;
+    			margin: auto;
+    			padding: 10px;
+    			line-height: 18px;
+    			color: #888;
+    		}
+
+    		&:hover {
+    			#info_modal {
+    				display: block;
+    			}
+    		}
+    	}
+    }
+    
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 56px;
+    }
+    
+    #links_container {
+        float: right;
+        padding: 20px;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 10px 20px;
+        text-decoration: none;
+        color: #333;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #333;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+}
