@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :pinwheel do 
+    resources :pinwheel, :only => [:index]
+  end
+
   namespace :skinny_drinks do 
     resources :calc, :only => [:index]
   end

@@ -20,7 +20,8 @@ $(document).ready(function () {
 		"quick_words": quickWords,
 		"countdown": countdownClock,
 		"hourglass": hourglass,
-		"skinny_drinks": skinnyDrinks
+		"skinny_drinks": skinnyDrinks,
+		"pinwheel": pinwheel
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

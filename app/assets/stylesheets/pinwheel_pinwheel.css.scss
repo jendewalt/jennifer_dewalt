@@ -1,0 +1,43 @@
+body.pinwheel_pinwheel_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    cursor: pointer;
+   
+    #container {
+    	padding-top: 50px;
+    	padding-bottom: 37px;
+    }
+
+    footer {
+    	position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    height: 37px;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    }
+
+    #links_container {
+        padding: 10px 20px;
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #a33ede;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #a33ede;
+    }
+
+    #links_container a:hover {
+        color: #1bde69;
+    }
+
+    .clear {
+        clear: both;
+    }
+}
