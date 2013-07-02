@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :typing_test do 
+    resources :tests, :only => [:index]
+  end
+
   namespace :pinwheel do 
     resources :pinwheel, :only => [:index]
   end

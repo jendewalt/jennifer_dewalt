@@ -1,0 +1,167 @@
+body.typing_test_tests_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #333;
+    overflow-y: scroll;
+
+    #container {
+    	padding-bottom: 40px;
+    }
+
+    h1 {
+    	font-size: 30px;
+    	margin-bottom: 15px;
+    }
+    h2 {
+    	font-size: 20px;
+    	line-height: 26px;
+    }
+
+    button {
+    	cursor: pointer;
+    	border: none;
+    	padding: 8px 16px;
+    	font-size: 16px;
+    	letter-spacing: 1px;
+    	color: #1f1f37;
+    	text-shadow: 0 0 2px rgba(255,255,255,0.43);
+    	border-radius: 5px;
+    	background-color: #0accb5;
+    	border-bottom: 1px solid #089b8a;
+
+    	&:active {
+    		background-color: #089b8a;
+    		border-top: 1px solid #0accb5;
+    	}
+    }
+
+    .modal {
+    	position: absolute;
+    	top: 0;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	background-color: #1f1f37;
+    	z-index: 10;
+
+    	&.start {
+    		;
+    	}
+    	&.end {
+    		display: none;
+    		h1 {
+    			margin-bottom: 20px;
+    		}
+
+    		h2 {
+    			margin-bottom: 10px;
+    		}
+
+    		p, a {
+    			display: inline-block;
+    			color: #089b8a;
+    			margin: 20px 10px 0;
+    			font-size: 14px;
+    			text-decoration: none;
+    			cursor: pointer;
+    		}
+    	}
+    	
+    	.inner_modal {
+    		width: 500px;
+    		margin: 120px auto;
+    		padding: 40px;
+    		border-radius: 5px;
+    		background-color: #fff;
+    		box-shadow: 0 0 2px rgba(0,0,0,0.5) inset;
+    	}
+
+    	.instructions {
+    		width: 400px;
+    		margin: auto;
+
+		    p {
+		    	line-height: 22px;
+		    	margin: 40px 0 20px;
+		    }
+    	}
+    }
+
+    #test_container {
+    	position: relative;
+    	width: 850px;
+    	margin: auto;
+    	padding-bottom: 40px;
+	
+	    .timer_area {
+	    	position: absolute;
+	    	top: 80px;
+	    	height: 40px;
+	    	width: 100px;
+	    	line-height: 40px;
+	    	color: #fff;
+	    	text-shadow: 0 0 1px rgba(0,0,0,0.35);
+	    	border-radius:5px;
+	    	background-color: #3a3a68;
+	    	box-shadow: 0 0 4px rgba(0,0,0,0.6) inset;
+	    }
+	 
+	    .timer {
+	    	;
+	    }
+	
+	    .test_area {
+	    	display: inline-block;
+	    	margin-top: 30px;
+	    }
+
+	    #text_passage {
+	    	width: 600px;
+	    	margin: auto;
+	    	font-size: 14px;
+	    	line-height: 18px;
+	    	text-align: left;
+	    }
+
+	    textarea {
+	    	height: 150px;
+	    	width: 600px;
+	    	margin: 20px auto 40px;
+	    }
+    }
+    
+    footer {
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+    }
+
+    #links_container {
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+        padding: 10px 20px;
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #3a3a68;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #3a3a68;
+    }
+
+    #links_container a:hover {
+        color: #0accb5;
+    }
+
+    .clear {
+        clear: both;
+    }
+}

@@ -21,7 +21,8 @@ $(document).ready(function () {
 		"countdown": countdownClock,
 		"hourglass": hourglass,
 		"skinny_drinks": skinnyDrinks,
-		"pinwheel": pinwheel
+		"pinwheel": pinwheel,
+		"typing_test": typingTest
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

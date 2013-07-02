@@ -1,0 +1,41 @@
+<div class="modal info start">
+	<div class="inner_modal">
+		<h1>Typing Test</h1>
+		<h2>How many words per minute you can type?</h2>
+
+		<div class="instructions" >
+			<p>Hit start to get your test passage of text and begin typing. You'll have 60 seconds to type as much of the passage as you can. The timer will start when you begin typing. Good luck!</p>
+		</div>
+
+		<button class="btn start">Start</button>
+	</div>
+</div>
+
+<div class="modal info end">
+	<div class="inner_modal">
+		<h1>Result</h1>
+		
+		<h2 class="wpm"></h2>
+		
+		<p>View Test</p>
+		<%= link_to "Try Again", typing_test_tests_path %>
+	</div>
+</div>
+
+<div id="test_container">
+	<div class="timer_area">
+		<div class="timer">01:00</div>
+	</div>
+	
+
+	<div class="test_area">
+		<div id="text_passage"></div>
+
+		<form>
+			<textarea autofocus></textarea>
+		</form>
+	</div>
+	<br class="clear">
+</div>
+
+<%= render 'typing_test/tests/header' %>
