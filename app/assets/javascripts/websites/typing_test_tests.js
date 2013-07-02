@@ -14,16 +14,18 @@ function typingTest() {
 		clock,
 		cur_passage = passages[randomInt(0,4)];
 
+	$('textarea').blur();
 
-	$('.start').on('click', function () {
+	$('button.start').on('click', function () {
 		$('textarea').focus();
 		$('#text_passage').html(cur_passage);
 		$('.modal.start').fadeOut(300);
+		
+		$('textarea').one('input', function () {
+			timer();
+		});
 	});
 
-	$('textarea').one('input', function () {
-		timer();
-	});
 
 
 	$('.end p').on('click', function () {
