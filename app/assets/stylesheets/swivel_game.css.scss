@@ -1,0 +1,48 @@
+body.swivel_game_index {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: #fff;
+    
+    header {
+        padding: 5px 20px 0;
+        margin-bottom: 20px;
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #333;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #333;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    canvas {
+    	margin-bottom: 10px;
+    }
+
+}

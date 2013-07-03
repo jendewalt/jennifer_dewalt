@@ -22,7 +22,8 @@ $(document).ready(function () {
 		"hourglass": hourglass,
 		"skinny_drinks": skinnyDrinks,
 		"pinwheel": pinwheel,
-		"typing_test": typingTest
+		"typing_test": typingTest,
+		"swivel": swivelGame
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

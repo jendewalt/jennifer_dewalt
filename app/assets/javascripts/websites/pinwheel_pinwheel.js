@@ -3,9 +3,7 @@ function pinwheel() {
 		ctx = canvas.getContext('2d'),
 		h = 500,
 		w = 500,
-		animation
-		// top_petal_color_lite = '#e6277a',
-		// top_petal_color = '#c31762',
+		animation,
 		top_petal_color = '#b15be3',
 		top_petal_color_top = '#a33ede',
 		right_petal_color = '#44e886',
@@ -13,9 +11,7 @@ function pinwheel() {
 		bottom_petal_color = '#fc8f29',
 		bottom_petal_color_top = '#ef7503',
 		left_petal_color = '#3c99f0',
-		left_petal_color_top = '#1280e7'
-
-		;
+		left_petal_color_top = '#1280e7';
 
 	canvas.height = h;
 	canvas.width = w;
