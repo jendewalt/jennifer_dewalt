@@ -39,7 +39,7 @@ $(document).ready(function () {
 		drawParticles();
 
 		requestAnimFrame(paintScreen);		
-	}
+	};
 
 	function Rocket(x, y) {
 		this.x0 = w / 2;
@@ -51,7 +51,7 @@ $(document).ready(function () {
 		this.v = 10;
 		this.vx;
 		this.vy;
-	}
+	};
 
 	function checkRocket(rocket, i) {
 		if (rocket.x_dif < 0) {
@@ -74,7 +74,7 @@ $(document).ready(function () {
 			var size = Math.random()*1.8;
 			particles.push(new Particle(x, y, color, size));
 		}
-	}
+	};
 
 	function Particle(x, y, color, size) {
 		this.x = x;
@@ -86,7 +86,7 @@ $(document).ready(function () {
 		this.time = 0;
 		this.r = size,
 		this.color = color;
-	}
+	};
 
 	function drawParticles() {
 		_.each(particles, function (part) {

@@ -24,7 +24,8 @@ $(document).ready(function () {
 		"pinwheel": pinwheel,
 		"typing_test": typingTest,
 		"swivel": swivelGame,
-		"mastermind": mastermindGame
+		"mastermind": mastermindGame,
+		"sparklers": sparklers
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
