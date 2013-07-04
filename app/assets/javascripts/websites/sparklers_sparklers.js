@@ -9,7 +9,9 @@ function sparklers() {
 		acceleration = 0.0001,
 		sparkler = {
 			x: w / 2,
-			y: h / 2
+			y: h / 2,
+			x0: w / 2,
+			y0: h / 2
 		}
 		mouse = {
 			x: w / 2,
@@ -65,19 +67,27 @@ function sparklers() {
 	};
 
 	function drawSparkler() {
-		sparkler.x += (mouse.x - sparkler.x) / 20 - 1;
-		sparkler.y += (mouse.y - sparkler.y) / 5 - 25;
-
 		ctx.beginPath();
-		ctx.fillStyle = color;
 		ctx.strokeStyle = '#222';
 		ctx.lineWidth = 1;
-		ctx.arc(sparkler.x, sparkler.y, 1, 0, 2 * Math.PI);
 		ctx.moveTo(sparkler.x, sparkler.y);
 		ctx.lineTo(sparkler.x + 20, sparkler.y + 100);
 		ctx.stroke();
-		ctx.fill();
 		ctx.closePath();
+
+		ctx.strokeStyle = 'rgba(255,224,171, 0.5)';
+		ctx.lineWidth = 2;
+		ctx.beginPath();
+		ctx.moveTo(sparkler.x0, sparkler.y0);
+		ctx.lineTo(sparkler.x, sparkler.y);
+		ctx.stroke();
+		ctx.closePath();
+
+		sparkler.x0 = sparkler.x;			
+		sparkler.y0 = sparkler.y;	
+
+		sparkler.x += (mouse.x - sparkler.x) / 2;
+		sparkler.y += (mouse.y - sparkler.y) / 2;		
 
 		drawParticles();
 	};
