@@ -4,16 +4,11 @@ body.sparklers_sparklers_index {
     background-color: black;
     
     header {
+        position: absolute;
+        top: 0;
+        right: 0;
         padding: 10px 20px;
         text-shadow: 0 0 1px rgba(0,0,0,0.2);
-    }
-
-    #logo a {
-        float: left;
-        line-height: 20px;
-        font-size: 14px;
-        text-decoration: none;
-        color: #000;
     }
 
     #links_container {
@@ -24,15 +19,15 @@ body.sparklers_sparklers_index {
         font-size: 14px;
         line-height: 20px;
         text-decoration: none;
-        color: #000;
+        color: #333;
         margin-left: 15px;
     }
 
-    #links_container a:visited {
-        color: #000;
+   a:visited {
+        color: #333;
     }
 
-    #links_container a:hover {
+    a:hover {
         color: #f00;
     }
 
@@ -41,6 +36,7 @@ body.sparklers_sparklers_index {
     }
 
     canvas {
+        display: block;
     	cursor: none;
     }
 }

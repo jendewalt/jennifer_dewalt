@@ -1,7 +1,7 @@
 function sparklers() {
 	var canvas = $('canvas')[0],
 		ctx = canvas.getContext('2d'),
-		h = window.innerHeight - 40,
+		h = window.innerHeight,
 		w = window.innerWidth,
 		particles = [],
 		color = '#ffe0ab',
