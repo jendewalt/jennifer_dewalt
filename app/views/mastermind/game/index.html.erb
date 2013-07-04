@@ -1,0 +1,169 @@
+<%= render 'mastermind/game/header' %>
+
+<div class="modal info">
+	<div class="inner_modal">
+		<h1>Mastermind</h1>
+		<h2>Can you crack the code?</h2>
+
+		<p>Starting at the bottom of the board, drag the colored dots to the slots on the game board. If you'd like to change a color in a slot, drag a new color to the slot.</p>
+		<p>When you are happy with your guess, hit submit to see how close you are to the right answer. A small red dot mean you have a correct color in the correct position. A white dot means you have a correct color in the wrong position. You have 8 tries to crack the code.</p>
+
+		<button class="start">Start</button>
+	</div>
+</div>
+
+<div id="game_container">
+	<div id="code_container">
+		<div id="row_1" class="code row">
+			<div class="code peg_container">
+				<div class="code"><div class="peg hole" data-index="0"></div></div>
+				<div class="code"><div class="peg hole" data-index="1"></div></div>
+				<div class="code"><div class="peg hole" data-index="2"></div></div>
+				<div class="code"><div class="peg hole" data-index="3"></div></div>
+			</div>
+		</div>
+	</div>
+
+	<div is="guess_container">
+		<div id="row_1" class="guess row">
+			<div class="guess peg_container">
+				<div class="guess peg hole" data-index="0"></div>
+				<div class="guess peg hole" data-index="1"></div>
+				<div class="guess peg hole" data-index="2"></div>
+				<div class="guess peg hole" data-index="3"></div>
+			</div>
+
+			<div class="guess key_container">
+				<div class="guess key hole" data-index="0"></div>
+				<div class="guess key hole" data-index="1"></div>
+				<div class="guess key hole" data-index="2"></div>
+				<div class="guess key hole" data-index="3"></div>
+			</div>
+		</div>
+
+		<div id="row_2" class="guess row">
+			<div class="guess peg_container">
+				<div class="guess peg hole" data-index="0"></div>
+				<div class="guess peg hole" data-index="1"></div>
+				<div class="guess peg hole" data-index="2"></div>
+				<div class="guess peg hole" data-index="3"></div>
+			</div>
+
+			<div class="guess key_container">
+				<div class="guess key hole" data-index="0"></div>
+				<div class="guess key hole" data-index="1"></div>
+				<div class="guess key hole" data-index="2"></div>
+				<div class="guess key hole" data-index="3"></div>
+			</div>
+		</div>
+
+		<div id="row_3" class="guess row">
+			<div class="guess peg_container">
+				<div class="guess peg hole" data-index="0"></div>
+				<div class="guess peg hole" data-index="1"></div>
+				<div class="guess peg hole" data-index="2"></div>
+				<div class="guess peg hole" data-index="3"></div>
+			</div>
+
+			<div class="guess key_container">
+				<div class="guess key hole" data-index="0"></div>
+				<div class="guess key hole" data-index="1"></div>
+				<div class="guess key hole" data-index="2"></div>
+				<div class="guess key hole" data-index="3"></div>
+			</div>
+		</div>
+
+		<div id="row_4" class="guess row">
+			<div class="guess peg_container">
+				<div class="guess peg hole" data-index="0"></div>
+				<div class="guess peg hole" data-index="1"></div>
+				<div class="guess peg hole" data-index="2"></div>
+				<div class="guess peg hole" data-index="3"></div>
+			</div>
+
+			<div class="guess key_container">
+				<div class="guess key hole" data-index="0"></div>
+				<div class="guess key hole" data-index="1"></div>
+				<div class="guess key hole" data-index="2"></div>
+				<div class="guess key hole" data-index="3"></div>
+			</div>
+		</div>
+
+		<div id="row_5" class="guess row">
+			<div class="guess peg_container">
+				<div class="guess peg hole" data-index="0"></div>
+				<div class="guess peg hole" data-index="1"></div>
+				<div class="guess peg hole" data-index="2"></div>
+				<div class="guess peg hole" data-index="3"></div>
+			</div>
+
+			<div class="guess key_container">
+				<div class="guess key hole" data-index="0"></div>
+				<div class="guess key hole" data-index="1"></div>
+				<div class="guess key hole" data-index="2"></div>
+				<div class="guess key hole" data-index="3"></div>
+			</div>
+		</div>
+
+		<div id="row_6" class="guess row">
+			<div class="guess peg_container">
+				<div class="guess peg hole" data-index="0"></div>
+				<div class="guess peg hole" data-index="1"></div>
+				<div class="guess peg hole" data-index="2"></div>
+				<div class="guess peg hole" data-index="3"></div>
+			</div>
+
+			<div class="guess key_container">
+				<div class="guess key hole" data-index="0"></div>
+				<div class="guess key hole" data-index="1"></div>
+				<div class="guess key hole" data-index="2"></div>
+				<div class="guess key hole" data-index="3"></div>
+			</div>
+		</div>
+
+		<div id="row_7" class="guess row">
+			<div class="guess peg_container">
+				<div class="guess peg hole" data-index="0"></div>
+				<div class="guess peg hole" data-index="1"></div>
+				<div class="guess peg hole" data-index="2"></div>
+				<div class="guess peg hole" data-index="3"></div>
+			</div>
+
+			<div class="guess key_container">
+				<div class="guess key hole" data-index="0"></div>
+				<div class="guess key hole" data-index="1"></div>
+				<div class="guess key hole" data-index="2"></div>
+				<div class="guess key hole" data-index="3"></div>
+			</div>
+		</div>
+
+		<div id="row_8" class="guess row">
+			<div class="guess peg_container">
+				<div class="guess peg hole" data-index="0"></div>
+				<div class="guess peg hole" data-index="1"></div>
+				<div class="guess peg hole" data-index="2"></div>
+				<div class="guess peg hole" data-index="3"></div>
+			</div>
+
+			<div class="guess key_container">
+				<div class="guess key hole" data-index="0"></div>
+				<div class="guess key hole" data-index="1"></div>
+				<div class="guess key hole" data-index="2"></div>
+				<div class="guess key hole" data-index="3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="color_container">
+		<div class="wrap" id="c0"></div>
+		<div class="wrap" id="c1"></div>
+		<div class="wrap" id="c2"></div>
+		<div class="wrap" id="c3"></div>
+		<div class="wrap" id="c4"></div>
+		<div class="wrap" id="c5"></div>
+		<div class="wrap" id="c6"></div>
+		<div class="wrap" id="c7"></div>
+	</div>
+</div>
+
+<button class="submit">Submit</button>

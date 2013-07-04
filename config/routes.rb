@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :mastermind do 
+    resources :game, :only => [:index]
+  end
+
   namespace :swivel do 
     resources :game, :only => [:index]
   end

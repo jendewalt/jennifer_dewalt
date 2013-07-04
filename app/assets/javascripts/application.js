@@ -13,6 +13,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.draggable
+//= require jquery.ui.droppable
+//= require touch_punch
 //= require underscore
 //= require jscolor/jscolor
 //= require analytics

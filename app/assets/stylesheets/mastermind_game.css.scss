@@ -1,0 +1,171 @@
+body.mastermind_game_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    
+    header {
+        padding: 10px 20px;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #000;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #000;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    button {
+    	cursor: pointer;
+    	border: none;
+    	padding: 5px 10px;
+    	background-color: #3375e8;
+    	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    	letter-spacing: 2px;
+    	text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    	font-size: 16px;
+    	color: #fff;
+
+    	&:active {
+    		background-color: #1c65e5;
+    	}
+    }
+
+	.submit {
+		margin-top: 10px;
+	}
+
+    .modal {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	background-color: rgba(0,0,0,0.9);
+
+    	.inner_modal {
+    		width: 500px;
+    		margin: 150px auto;
+    		padding: 40px;
+    		background-color: #fff;
+    	}
+
+    	h1 {
+    		font-size: 34px;
+    		margin-bottom: 10px;
+    	}
+
+    	h2 {
+    		font-size: 22px;
+    		margin-bottom: 30px;
+    	}
+
+    	p {
+    		line-height: 20px;
+    		margin: 10px;
+    	}
+    }
+
+    #game_container {
+    	width: 250px;
+    	height: 580px;
+    	margin: auto;
+    	padding: 10px;
+    	background-color: #222;
+
+	    #code_container {
+	    	background-color: #555;
+	    	height: 53px;
+
+	    	.row {
+	    		border-top: 1px solid rgba(255,255,255,0.15);
+	    	}
+	    	.peg.hole {
+	    		display: none;
+	    	}
+
+	    	.code {
+	    		display: inline-block;
+	    	}
+	    }
+
+    	.row {
+    		width: 100%;
+    		text-align: left;
+    		border-top: 1px solid rgba(0,0,0,0.2);
+
+    		.hole {
+	    		display: inline-block;
+	    		border-radius: 50%;
+	    		background-color: #666;
+    		}
+	
+	    	.peg {
+	    		height: 20px;
+	    		width: 20px;
+	    		margin: 14px 8px;
+	    	}
+
+	    	.peg_container, .key_container {
+	    		display: inline-block;
+	    		vertical-align: top;
+	    	}
+
+	    	.key_container {
+	    		text-align: right;
+	    		margin-left: 20px;
+	    	}
+
+	    	.key {
+	    		height: 8px;
+	    		width: 8px;
+	    		margin-top: 20px;
+	    	}
+    	}
+
+    	#color_container {
+    		border-top: 1px solid rgba(0,0,0,0.8);
+    		padding-top: 16px;
+
+    		.wrap {
+				margin: 8px 16px;
+    			display: inline-block;
+    		}
+
+    		.color {
+	    		border-radius: 50%;
+	    		height: 20px;
+	    		width: 20px;
+	    		background-color: red;
+    		}
+    	}
+    }
+
+    .active {
+    	box-shadow: 0 0 5px rgba(255,255,255,0.4);
+    }
+}

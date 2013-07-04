@@ -23,7 +23,8 @@ $(document).ready(function () {
 		"skinny_drinks": skinnyDrinks,
 		"pinwheel": pinwheel,
 		"typing_test": typingTest,
-		"swivel": swivelGame
+		"swivel": swivelGame,
+		"mastermind": mastermindGame
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
