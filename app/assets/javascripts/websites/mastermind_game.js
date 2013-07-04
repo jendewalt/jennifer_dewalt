@@ -1,11 +1,11 @@
 function mastermindGame() {
 	var colors = ['#eb1144', '#11d3ed', '#f2680c', '#c111ed', 
-		 		  '#0ee307', '#867fd4', '#3375e8', '#f2f20c'],
+		 		  '#0ee307', '#3375e8'],
 		code = [],
 		guesses = 8,
 		cur_guess = [];
 
-	for (var i = 0; i < 8; i++) {
+	for (var i = 0; i < 6; i++) {
 		$('<div />', {
 			class: 'guess peg color',
 			id: i
