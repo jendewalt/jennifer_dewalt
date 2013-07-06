@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130624023300) do
+ActiveRecord::Schema.define(:version => 20130706051037) do
 
   create_table "click_counter_buttons", :force => true do |t|
     t.integer  "clicks"
@@ -83,6 +83,19 @@ ActiveRecord::Schema.define(:version => 20130624023300) do
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
   end
+
+  create_table "postbored_sites", :force => true do |t|
+    t.text     "url"
+    t.string   "title"
+    t.integer  "user_id"
+    t.string   "tag"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "postbored_sites", ["tag"], :name => "index_postbored_sites_on_postbored_sites_type"
+  add_index "postbored_sites", ["user_id", "url"], :name => "index_postbored_sites_on_user_id_and_postbored_sites_url", :unique => true
+  add_index "postbored_sites", ["user_id"], :name => "index_postbored_sites_on_user_id"
 
   create_table "tiny_notes_notes", :force => true do |t|
     t.string   "content"

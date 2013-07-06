@@ -1,0 +1,27 @@
+<%= render 'postbored/sites/header' %>
+
+<div id="tag_line">Feeling bored? Discover and share awesome sites on PostBored!</div>
+
+<div id="page_container">
+	<div id='button_container'>
+		<div class="btn"><%= link_to('Submit a site', new_postbored_site_path) %></div>
+	</div>
+
+	<div id="content_table">
+		<% @sites.each do |site| %>
+			<div class="tag"><%= site.tag %></div>
+
+			<div class="site_container">
+				<div class="site">
+					<div class="title"><%= link_to(site.title, site.url) %></div>
+					<div class="url"><%= link_to(site.url, site.url) %></div>
+				</div>
+
+				<div class="sub_container">
+					<div class="submitter">Posted by <%= link_to(site.user.name || site.user.username, your_space_user_path(site.user.id)) %> <%= time_ago_in_words(site.created_at) %></div>
+					<br class="clear">
+				</div>
+			</div>
+		<% end %>
+	</div>
+</div>

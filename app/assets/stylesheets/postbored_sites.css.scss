@@ -1,0 +1,209 @@
+body.postbored_sites_index, body.postbored_sites_new {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    color: #333;
+    background-color: #3d3642;
+
+    #page_container {
+    	width: 750px;
+    	margin:auto;
+    }
+
+    .notice, .alert {
+    	position: absolute;
+    	top: 100px;
+    	left: 0;
+    	right: 0;
+    	background-color: rgba(255,255,255,0.95);
+    	z-index: 100;
+    }
+    
+    header {
+        padding: 10px 20px;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+        background-color: #3498db;
+        letter-spacing: 2px;
+    }
+
+    #logo a {
+        float: left;
+        font-family: Verdana, Geneva, sans-serif;
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3), 0 1px 0px rgba(0, 0, 0, 0.2);
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 13px;
+        line-height: 30px;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #fff;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    #tag_line {
+    	margin-bottom: 20px;
+    	line-height: 38px;
+    	font-size: 13px;
+    	background-color: #fff;
+    	box-shadow: 0 0 2px rgba(0,0,0,0.2) inset;	
+    }
+
+    #button_container {
+    	text-align: right;
+    	margin: 10px 0;
+    }
+
+    .btn {
+    	display: inline-block;
+    	vertical-align: middle;
+    	margin-bottom: 0;
+    	padding: 4px 10px;
+    	line-height: 20px;
+    	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    	font-size: 14px;
+    	letter-spacing: 1px;
+    	background-color: #3498db;
+    	border-radius: 3px;
+    	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    	cursor: pointer;
+
+    	a {
+    		color: #fff;
+    		text-decoration: none;
+    	}
+    }
+
+    #content_table {
+    	text-align: left;
+    }
+
+   .tag {
+		text-align: center;
+		width: 90px;
+		padding: 5px 0;
+		font-size: 9px;
+		letter-spacing: 1px;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+		color: #fff;
+        background-color:#6e6d7a;
+    }
+
+    .site_container {
+    	border-top: 1px solid rgba(0,0,0,0.1);
+    	border-bottom: 1px solid rgba(0,0,0,0.1);
+    	padding: 16px; 
+    	background-color: #fff;  
+    	box-shadow: 0 0 2px rgba(0,0,0,0.2) inset;	
+    }
+
+    .site {
+    	width: 100%;
+
+    	.title a {
+    		display: inline-block;
+    		margin-bottom: 10px;
+    		line-height: 20px;
+    		font-weight: bold;
+    		text-decoration: none;
+    		color: #333;
+    	}
+
+    	.url a {
+    		font-size: 13px;
+	    	color: #7f8c8d;
+
+	    	white-space: pre-wrap; 
+			white-space: -moz-pre-wrap; 
+			white-space: -pre-wrap; 
+			white-space: -o-pre-wrap; 
+			word-wrap: break-word;
+    	}
+
+
+    }
+	.sub_container {
+		text-align: right;
+		margin-top: 15px;
+
+    	.submitter {
+    		float: right;
+    		font-size: 9px;
+    		color: #333;
+
+    		a {
+    			font-weight: bold;
+    			color: #333;
+    		}
+    	}
+	}  
+}
+
+body.postbored_sites_new {
+	#page_container {
+		width: 500px;
+		padding: 30px;
+		margin-top: 60px;
+		background-color: #fff;
+	}
+
+	h1 {
+		margin: 20px;
+		font-size: 20px;
+	}
+
+	table {
+		margin: auto;
+	}
+
+	td {
+		padding: 10px;
+	}
+
+	#url_form, input[type="text"] {
+		vertical-align: bottom;
+		width: 200px;
+		height: 13px;
+		padding: 5px;
+		margin: 0;
+		border: 1px solid rgba(0,0,0,0.3);
+		box-shadow: 0 0 2px rgba(0,0,0,0.2) inset;
+		resize: none;
+	}
+
+	input[type="submit"] {
+		border: none;
+		color: #fff;
+    	cursor: pointer;
+	}
+
+
+}
+
+
+
+
+
+
+
+

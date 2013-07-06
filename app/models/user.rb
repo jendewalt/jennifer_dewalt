@@ -11,6 +11,7 @@ class User < ActiveRecord::Base
   has_many :tiny_notes_notes, dependent: :destroy
   has_many :liquor_likes_likes
   has_many :liquor_likes_liquors, :through => :liquor_likes_likes
+  has_many :postbored_sites
 
   def likes_liquor?(liquor_id)
     liquor_likes_likes.exists?(:liquor_likes_liquor_id => liquor_id)

@@ -1,0 +1,27 @@
+<%= render 'postbored/sites/header' %>
+
+<div id="page_container">
+	<% flash.each do |key, value| %>
+	    <div class="alert alert-<%= key %>"><%= value %></div>
+	<% end %>
+
+	<div>
+		<h1>Post a Site to PostBored</h1>
+		<table class="new_form">
+			<%= form_for @site do |f| %>
+			<tr>
+				<td class="site_url">URL: </td><td><%= f.text_area(:url, :id => 'url_form') %></td>
+			</tr>
+			<tr>
+				<td class="site_title">Title:  </td><td><%= f.text_field(:title, :id => 'title_form', :maxlength => 255) %></td>
+			</tr>
+			<tr>
+				 <td class="site_tag">Tag:  </td><td><%= f.select :tag, [['News','news'],['Games','game'],['Humor','humor'],['Awesome','awesome'],['Weird','weird']] %></td>
+			</tr>
+			<tr>
+				<td></td><td><%= f.submit("Post", :class => "btn") %></td>
+			</tr>
+			<% end %>
+		</table>
+	</div>
+</div>

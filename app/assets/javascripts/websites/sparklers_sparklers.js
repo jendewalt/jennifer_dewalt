@@ -12,7 +12,7 @@ function sparklers() {
 			y: h / 2,
 			x0: w / 2,
 			y0: h / 2
-		}
+		},
 		mouse = {
 			x: w / 2,
 			y: h / 2
