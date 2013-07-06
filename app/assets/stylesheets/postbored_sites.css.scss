@@ -73,26 +73,23 @@ body.postbored_sites_index, body.postbored_sites_new {
     	margin: 10px 0;
     }
 
-    .btn {
+    a.btn, .btn {
     	display: inline-block;
     	vertical-align: middle;
     	margin-bottom: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        letter-spacing: 1px;
+        background-color: #3498db;
+        border-radius: 3px;
+        border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        cursor: pointer;
     	padding: 4px 10px;
     	line-height: 20px;
-    	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    	font-size: 14px;
-    	letter-spacing: 1px;
-    	background-color: #3498db;
-    	border-radius: 3px;
-    	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    	cursor: pointer;
-
-    	a {
-    		color: #fff;
-    		text-decoration: none;
-    	}
-    }
+        color: #fff;
+        text-decoration: none;
+	}
 
     #content_table {
     	text-align: left;
