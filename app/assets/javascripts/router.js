@@ -27,7 +27,8 @@ $(document).ready(function () {
 		"mastermind": mastermindGame,
 		"sparklers": sparklers,
 		"postbored": postbored,
-		"text_to_braille": textToBraille
+		"text_to_braille": textToBraille,
+		"emergency_off": emergencyOff
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

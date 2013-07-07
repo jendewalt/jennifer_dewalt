@@ -1,6 +1,6 @@
 class Mastermind::GameController < ApplicationController
   def index
-    @title = Mastermind
+    @title = 'Mastermind'
     @user = current_user
   end
 end

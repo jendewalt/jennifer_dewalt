@@ -1,0 +1,117 @@
+body.emergency_off_button_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 30px;
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #000;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #000;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .modal {
+    	display: none;
+    	position: absolute;
+    	top: 0;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	background-color: rgba(0,0,0,0.9);
+
+    	.inner_modal {
+    		position: absolute;
+    		height: 125px;
+    		width: 500px;
+    		top:50%;
+    		left: 50%;
+    		margin-top: -150px;
+    		margin-left: -250px;
+    		padding: 30px 10px;
+    		background-color: #fff;
+    	}
+
+    	.modal_content {
+
+    		p {
+    			font-weight: bold;
+    			line-height: 45px;
+    		}
+
+    		.bar_container {
+    			margin-top: 10px;
+    		}
+    	}
+    }
+
+	.bar_container {
+	    height: 10px;
+	    width: 400px;
+	    margin: auto;
+	    background-color: #333;
+	    border: 7px solid rgba(0,0,0,0.5);
+	}
+
+	.inner_bar {
+	    height: 10px;
+	    width: 395px;
+	    background-color: #d40404;
+	}
+
+    h1 {
+    	font-size: 60px;
+    	line-height: 80px;
+    }
+
+    h2 {
+    	font-size: 40px;
+    	line-height: 80px;
+    }
+
+    button {
+    	height: 230px;
+    	width: 230px;
+    	margin: 30px;
+    	font-size: 26px;
+    	color: #fff;
+    	text-shadow: -1px -1px 0 rgba(0,0,0,0.3), 1px 1px 0 rgba(255,255,255,0.3);
+    	border-radius: 50%;
+    	border: 14px solid #d83a3a;
+    	background-color: #d40404;
+    	box-shadow: 1px 1px 0 rgba(0,0,0,0.3), -1px -1px 0 rgba(0,0,0,0.2) inset, 
+    				1px 1px 0 rgba(255,255,255,0.25) inset;
+    
+    	&:active {
+    		box-shadow: 2px 2px 0 rgba(0,0,0,0.2) inset, 0px 0px 20px rgba(0,0,0,0.3) inset, -1px -1px 0 rgba(255,255,255,0.25) inset;
+    	}
+    }
+}
