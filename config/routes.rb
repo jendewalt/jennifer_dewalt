@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :text_to_braille do 
+    resources :converter, :only => [:index]
+  end
+
   namespace :postbored do 
     resources :sites
   end
