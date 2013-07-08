@@ -21,13 +21,13 @@ function noOneWatching() {
 	};
 
 	function flashMessageIn() {
-		$('#message').fadeIn(100);
+		$('#message').fadeIn(300);
 
-		setTimeout(flashMessageOut, 180);
+		setTimeout(flashMessageOut, 300);
 	};
 
 	function flashMessageOut() {
-		$('#message').fadeOut(randomInt(100));
+		$('#message').fadeOut(randomInt(300));
 
 		setTimeout(flashMessageIn, randomInt(8000, 20000));
 	};
