@@ -9,10 +9,14 @@ function noOneWatching() {
 
 		var video = document.querySelector('video');
 
+		var onDenial = function(e) {
+	    	;
+	  	};
+
 		if (navigator.getUserMedia) {
 		  navigator.getUserMedia({audio: true, video: true}, function(stream) {
 		    video.src = window.URL.createObjectURL(stream);
-		  });
+		  }, onDenial);
 		} 		
 	};
 

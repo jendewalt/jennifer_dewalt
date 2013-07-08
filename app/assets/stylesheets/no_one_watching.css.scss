@@ -41,9 +41,12 @@ body.no_one_watching_page_index {
 	    	position: absolute;
 	    	top: 0;
 	    	left: 0; 
-	    	-webkit-filter: grayscale(1) contrast(20) brightness(0.35);
+            -webkit-filter: grayscale(1) contrast(20) brightness(0.35);
+            -moz-filter: grayscale(1) contrast(20) brightness(0.35);
+            -ms-filter: grayscale(1) contrast(20) brightness(0.35);
+            -o-filter: grayscale(1) contrast(20) brightness(0.35);
+	    	filter: grayscale(1) contrast(20) brightness(0.35);
 	    	opacity: 0.2;
-	    	border-radius: 50%;
 	    }
     }
 

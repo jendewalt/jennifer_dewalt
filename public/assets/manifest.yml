@@ -23,10 +23,10 @@ shl.png: shl-13124083091e669962bc51fa47252cec.png
 shl/index.png: shl-13124083091e669962bc51fa47252cec.png
 white_paper_texture.jpg: white_paper_texture-ffe5883e5aac5b80eacafb354489065f.jpg
 white_paper_texture/index.jpg: white_paper_texture-ffe5883e5aac5b80eacafb354489065f.jpg
-application.js: application-b1d93831ffde88f5a87423f18a022bd9.js
-application/index.js: application-b1d93831ffde88f5a87423f18a022bd9.js
-application.css: application-012bd9b7231206f7616e4daab8e70c85.css
-application/index.css: application-012bd9b7231206f7616e4daab8e70c85.css
+application.js: application-2f087e6b0c739a6244fa0227226c6d3b.js
+application/index.js: application-2f087e6b0c739a6244fa0227226c6d3b.js
+application.css: application-55a736afa01937f872236bf599ae7f10.css
+application/index.css: application-55a736afa01937f872236bf599ae7f10.css
 big_word_list: big_word_list
 jscolor/demo.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
 jscolor/demo/index.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
