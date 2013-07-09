@@ -1,0 +1,2 @@
+module TosPageHelper
+end

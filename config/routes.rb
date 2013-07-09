@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :tos do 
+    resources :page, :only => [:index]
+  end
+
   namespace :no_one_watching do 
     resources :page, :only => [:index]
   end

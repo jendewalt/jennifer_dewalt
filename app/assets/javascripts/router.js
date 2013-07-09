@@ -28,7 +28,8 @@ $(document).ready(function () {
 		"sparklers": sparklers,
 		"postbored": postbored,
 		"text_to_braille": textToBraille,
-		"no_one_watching": noOneWatching
+		"no_one_watching": noOneWatching,
+		"tos": tos
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
