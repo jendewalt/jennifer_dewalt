@@ -1,8 +1,6 @@
 function songMachine() {
 	var canvas = $('canvas')[0],
 		ctx = canvas.getContext('2d'),
-		audio = document.createElement('audio'),
-		does_not_support_mp3 = !(audio.canPlayType && audio.canPlayType('audio/mpeg').replace(/no/, '')),
 		file_names = ['ab1','ab2','ab3','bb1','bb2','c1','c2','db1','db2','eb1','eb2','f1','f2','g1','g2'],
 		notes = [],
 		h = window.innerHeight - 40,
@@ -75,10 +73,6 @@ function songMachine() {
 			} else {
 				ctx.fillStyle = 'rgba(' + this.color + ', 1)';				
 			}
-			
-			ctx.shadowOffsetY = 1;
-			ctx.shadowColor="rgba(0,0,0,0.8)";
-			ctx.shadowBlur = 3;
 
 			ctx.beginPath();
 			ctx.arc(this.x, this.y, 10, 0, 2 * Math.PI);
@@ -113,9 +107,6 @@ function songMachine() {
 
 	function paintScreen() {
 		ctx.beginPath();
-		ctx.shadowOffsetY = 3;
-		ctx.shadowColor="rgba(0,0,0,0.4)";
-		ctx.shadowBlur = 3;
 		ctx.fillStyle = '#fff';
 		ctx.strokeStyle = "rgba(0,0,0,0.2)";
 		ctx.lineWidth = 3;
@@ -127,6 +118,7 @@ function songMachine() {
 			note.draw();
 		});
 
+		ctx.save();
 		ctx.beginPath();
 		ctx.strokeStyle = "#242733";
 		ctx.fillStyle = "#242733";
@@ -147,10 +139,12 @@ function songMachine() {
 		ctx.stroke();
 		ctx.fill();
 		ctx.closePath();
+		ctx.restore();
 
 
 		evolveNotes();
-		setTimeout(paintScreen, 26);
+		// setTimeout(paintScreen, 30);
+		requestAnimFrame(paintScreen);
 	};
 
 	$('body').disableSelection();
