@@ -143,7 +143,6 @@ function songMachine() {
 
 
 		evolveNotes();
-		// setTimeout(paintScreen, 30);
 		requestAnimFrame(paintScreen);
 	};
 
