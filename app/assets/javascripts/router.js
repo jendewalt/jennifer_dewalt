@@ -29,7 +29,8 @@ $(document).ready(function () {
 		"postbored": postbored,
 		"text_to_braille": textToBraille,
 		"no_one_watching": noOneWatching,
-		"tos": tos
+		"tos": tos,
+		"song_machine": songMachine
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

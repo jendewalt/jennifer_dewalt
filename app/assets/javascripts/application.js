@@ -17,6 +17,7 @@
 //= require jquery.ui.droppable
 //= require touch_punch
 //= require underscore
+//= require howler
 //= require jscolor/jscolor
 //= require analytics
 //= require_tree ./websites

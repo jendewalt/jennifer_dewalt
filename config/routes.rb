@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :song_machine do 
+    resources :page, :only => [:index]
+  end
+
   namespace :tos do 
     resources :page, :only => [:index]
   end

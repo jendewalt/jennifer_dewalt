@@ -1,0 +1,46 @@
+body.song_machine_page_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    background-color: #242733;
+    
+    header {
+        padding: 10px 20px;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #aaa;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #aaa;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #aaa;
+    }
+
+    #links_container a:hover {
+        color: #8524bd;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    canvas {
+    	vertical-align: top;
+    }
+}
