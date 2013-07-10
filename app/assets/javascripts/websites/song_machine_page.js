@@ -1,7 +1,7 @@
 function songMachine() {
 	var canvas = $('canvas')[0],
 		ctx = canvas.getContext('2d'),
-		file_names = ['ab1','ab2','ab3','bb1','bb2','c1','c2','db1','db2','eb1','eb2','f1','f2','g1','g2'],
+		file_names = ['ab1','bb1','c1','db1','eb1','f1','g1','ab2','bb2','c2','db2','eb2','f2','g2','ab3'],
 		notes = [],
 		h = window.innerHeight - 40,
 		w = 750;
