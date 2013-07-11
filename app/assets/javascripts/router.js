@@ -30,7 +30,8 @@ $(document).ready(function () {
 		"text_to_braille": textToBraille,
 		"no_one_watching": noOneWatching,
 		"tos": tos,
-		"song_machine": songMachine
+		"song_machine": songMachine,
+		"globulator": globulator
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
