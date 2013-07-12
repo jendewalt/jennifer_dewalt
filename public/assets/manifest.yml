@@ -75,6 +75,10 @@ missing_icon.png: missing_icon-bb54248ca63a4009d1a7b41deed0e158.png
 missing_icon/index.png: missing_icon-bb54248ca63a4009d1a7b41deed0e158.png
 nyan_cat.gif: nyan_cat-9b731893e65c3f9abeb0bd42387eb35d.gif
 nyan_cat/index.gif: nyan_cat-9b731893e65c3f9abeb0bd42387eb35d.gif
+paint_cracks.png: paint_cracks-9ed9fa61a6f58cb7cc03dcaf8f5857d6.png
+paint_cracks/index.png: paint_cracks-9ed9fa61a6f58cb7cc03dcaf8f5857d6.png
+paint_wall.jpg: paint_wall-aee56f9b246e41b393dda73c6311a551.jpg
+paint_wall/index.jpg: paint_wall-aee56f9b246e41b393dda73c6311a551.jpg
 paper_texture.png: paper_texture-87a0504c466793e7e197d69e9d963a21.png
 paper_texture/index.png: paper_texture-87a0504c466793e7e197d69e9d963a21.png
 pbj_time.gif: pbj_time-d88dc5a9d9ed9aa1e7c5729cedc55535.gif
@@ -85,10 +89,10 @@ shl.png: shl-13124083091e669962bc51fa47252cec.png
 shl/index.png: shl-13124083091e669962bc51fa47252cec.png
 white_paper_texture.jpg: white_paper_texture-ffe5883e5aac5b80eacafb354489065f.jpg
 white_paper_texture/index.jpg: white_paper_texture-ffe5883e5aac5b80eacafb354489065f.jpg
-application.js: application-ae337bbe899df993b841c3a717d3f6d0.js
-application/index.js: application-ae337bbe899df993b841c3a717d3f6d0.js
-application.css: application-83a625562eab6e7d1e1059169cc359f9.css
-application/index.css: application-83a625562eab6e7d1e1059169cc359f9.css
+application.js: application-582e45c6860934e7b8e9928b238db23d.js
+application/index.js: application-582e45c6860934e7b8e9928b238db23d.js
+application.css: application-1a229b0921d71abbd6ab917ba0366410.css
+application/index.css: application-1a229b0921d71abbd6ab917ba0366410.css
 big_word_list: big_word_list
 jscolor/demo.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
 jscolor/demo/index.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html

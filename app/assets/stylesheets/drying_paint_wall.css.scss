@@ -1,0 +1,130 @@
+body.drying_paint_wall_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    background-color: #e31444;
+    
+    header {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+        padding: 10px 20px;
+        text-shadow: 0 0 1px rgba(0,0,0,0.2);
+        z-index: 100;
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #fff;
+    }
+
+    #links_container a:hover {
+        color: #141ae3;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    #paint {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	background-image: url('paint_wall.jpg');
+    	z-index: 1;
+    }
+
+    .drying {
+    	-webkit-animation: dry 7200s;
+    	-moz-animation: dry 7200s;
+    	-ms-animation: dry 7200s;
+    	-o-animation: dry 7200s;
+    	animation: dry 7200s;
+    }
+
+    .dry {
+    	-webkit-filter: contrast(80%); 
+    	opacity: 0.4
+    }
+
+    #cracks {
+    	display: none;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	background-image: url('paint_cracks.png');
+    	z-index: 2;
+    }
+
+    #info {
+    	position: absolute;
+    	bottom: 20px;
+    	left: 20px;
+    	z-index: 10;
+    	color: #fff;
+
+		&:hover {
+			display: block;
+
+			p {
+				display: block;
+				width: 300px;
+				padding: 20px;
+				line-height: 20px;
+			}
+		}
+
+    	#info_mark {
+    		text-align: left;
+
+    	}
+
+    	p {
+    		display: none;
+    	}
+    }
+};
+
+@-webkit-keyframes dry {
+	0% {-webkit-filter: contrast(100%); z-index: 1; opacity: 1}
+	100% {-webkit-filter: contrast(80%); z-index: 1; opacity: 0.4}
+}
+@-moz-keyframes dry {
+	0% {-moz-filter: contrast(100%); z-index: 1; opacity: 1}
+	100% {-moz-filter: contrast(80%); z-index: 1; opacity: 0.4}
+}
+@-ms-keyframes dry {
+	0% {-ms-filter: contrast(100%); z-index: 1; opacity: 1}
+	100% {-ms-filter: contrast(80%); z-index: 1; opacity: 0.4}
+}
+@-o-keyframes dry {
+	0% {-o-filter: contrast(100%); z-index: 1; opacity: 1}
+	100% {-o-filter: contrast(80%); z-index: 1; opacity: 0.4}
+}
+@keyframes dry {
+	0% {filter: contrast(100%); z-index: 1; opacity: 1}
+	100% {filter: contrast(80%); z-index: 1; opacity: 0.4}
+}

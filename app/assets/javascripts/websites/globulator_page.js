@@ -121,13 +121,8 @@ function globulator() {
 		var new_color;
 
 		globs = _.reject(globs, function (glob) {
-			if ( 
-				selectedGlob != glob &&
-				selectedGlob.x + selectedGlob.radius > glob.x - glob.radius + (r_min - 1) &&
-			 	selectedGlob.x - selectedGlob.radius < glob.x + glob.radius - (r_min - 1) &&
-			  	selectedGlob.y + selectedGlob.radius > glob.y - glob.radius + (r_min - 1) &&
-			  	selectedGlob.y - selectedGlob.radius < glob.y + glob.radius - (r_min - 1)
-			) {
+			var distance = Math.sqrt(Math.pow(selectedGlob.x - glob.x, 2) + Math.pow(selectedGlob.y - glob.y , 2));
+			if (selectedGlob != glob &&	distance < selectedGlob.radius + glob.radius - 4) {
 
 				new_radius = combinedRadius(selectedGlob.volume(), glob.volume());
 				new_position = newPosition(selectedGlob, glob);

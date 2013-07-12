@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :drying_paint do 
+    resources :wall, :only => [:index]
+  end
+
   namespace :globulator do 
     resources :page, :only => [:index]
   end
