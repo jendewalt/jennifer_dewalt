@@ -2,10 +2,10 @@ function wordClock() {
 	getTime();
 
 	function getTime() {
-		var hour = new Date().getHours();
-		console.log(hour)
+		// var hour = new Date().getHours();
+		var hour = 20;
 
-		if (hour > 12) {
+		if (hour > 11) {
 			var abbrev = "pm";
 		} 
 		else {
@@ -30,7 +30,12 @@ function wordClock() {
 		}
 
 		$(".hour_list li").removeClass('now');
-		$(".hour_list ." + hour % 12).addClass('now');
+
+		if (hour % 12 == 0) {
+			$(".hour_list ." + 12).addClass('now');
+		} else {
+			$(".hour_list ." + hour % 12).addClass('now');
+		} 
 
 		$(".abbrev").removeClass('now');
 		$("#" + abbrev).addClass('now');
