@@ -3,6 +3,7 @@ function wordClock() {
 
 	function getTime() {
 		var hour = new Date().getHours();
+		console.log(hour)
 
 		if (hour > 12) {
 			var abbrev = "pm";
