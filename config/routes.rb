@@ -4,6 +4,7 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+<<<<<<< HEAD
   namespace :word_clock do 
     resources :page, :only => [:index]
   end
@@ -26,6 +27,10 @@ JenniferDewalt::Application.routes.draw do
 
   namespace :no_one_watching do 
     resources :page, :only => [:index]
+=======
+  namespace :emergency_off do 
+    resources :button, :only => [:index]
+>>>>>>> shut_down
   end
 
   namespace :text_to_braille do 

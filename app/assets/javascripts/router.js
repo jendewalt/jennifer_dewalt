@@ -28,12 +28,16 @@ $(document).ready(function () {
 		"sparklers": sparklers,
 		"postbored": postbored,
 		"text_to_braille": textToBraille,
+<<<<<<< HEAD
 		"no_one_watching": noOneWatching,
 		"tos": tos,
 		"song_machine": songMachine,
 		"globulator": globulator,
 		"drying_paint": dryingPaint,
 		"word_clock": wordClock
+=======
+		"emergency_off": emergencyOff
+>>>>>>> shut_down
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

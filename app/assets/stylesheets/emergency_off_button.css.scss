@@ -1,0 +1,146 @@
+body.emergency_off_button_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 30px;
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #000;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #000;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .modal {
+    	display: none;
+    	position: absolute;
+    	top: 0;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	background-color: rgba(0,0,0,0.9);
+        z-index: 10;
+
+    	.inner_modal {
+            display: none;
+    		position: absolute;
+    		height: 125px;
+    		width: 500px;
+    		top:50%;
+    		left: 50%;
+    		margin-top: -150px;
+    		margin-left: -250px;
+    		padding: 10px 10px 30px;
+    		background-color: #eee;
+            border-radius: 5px;
+            border-top: 30px solid #aaa;
+        }
+
+        .modal_content {
+
+            p {
+                font-weight: bold;
+                line-height: 45px;
+            }
+
+            .bar_container {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .bar_container {
+        height: 10px;
+        width: 400px;
+        margin: auto;
+        background-color: #333;
+        border: 7px solid rgba(0,0,0,0.5);
+    }
+
+    .inner_bar {
+        height: 10px;
+        width: 395px;
+        background-color: #d40404;
+    }
+
+
+    h1 {
+    	font-size: 60px;
+    	line-height: 80px;
+    }
+
+    h2 {
+    	font-size: 40px;
+    	line-height: 80px;
+    }
+
+    button {
+    	height: 230px;
+    	width: 230px;
+    	margin: 30px;
+    	font-size: 26px;
+    	color: #fff;
+    	text-shadow: -1px -1px 0 rgba(0,0,0,0.3), 1px 1px 0 rgba(255,255,255,0.3);
+    	border-radius: 50%;
+    	border: 14px solid #d83a3a;
+    	background: rgb(211,25,25);
+        background: -moz-radial-gradient(center, ellipse cover, rgba(211,25,25,1) 31%, rgba(173,0,0,1) 100%);
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(31%,rgba(211,25,25,1)), color-stop(100%,rgba(173,0,0,1)));
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(211,25,25,1) 31%,rgba(173,0,0,1) 100%);
+        background: -o-radial-gradient(center, ellipse cover, rgba(211,25,25,1) 31%,rgba(173,0,0,1) 100%);
+        background: -ms-radial-gradient(center, ellipse cover, rgba(211,25,25,1) 31%,rgba(173,0,0,1) 100%);
+        background: radial-gradient(ellipse at center, rgba(211,25,25,1) 31%,rgba(173,0,0,1) 100%);
+
+    	box-shadow: 1px 1px 0 rgba(0,0,0,0.3), -1px -1px 0 rgba(0,0,0,0.2) inset, 
+    				1px 1px 5px rgba(255,255,255,0.4) inset;
+
+        cursor: pointer;
+    
+    	&:active {
+    		box-shadow: 1px 1px 0 rgba(0,0,0,0.3), 2px 2px 0 rgba(0,0,0,0.2) inset, 
+                        0px 0px 20px rgba(0,0,0,0.3) inset, 0px 0px 3px rgba(0,0,0,0.3) inset, 
+                        -1px -1px 0 rgba(255,255,255,0.25) inset;
+    	}
+    }
+
+    .flicker {
+        -webkit-animation: flicker 0.8s linear 2;
+    }
+}
+
+@-webkit-keyframes flicker {
+    0% {opacity: 1;}
+    80% {opacity: 1;}
+    81% {opacity: 0;}
+    90% {opacity: 1;}
+    95% {opacity: 1;}
+    100% {opacity: 0;}
+}
