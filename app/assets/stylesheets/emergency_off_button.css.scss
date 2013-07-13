@@ -121,6 +121,8 @@ body.emergency_off_button_index {
 
     	box-shadow: 1px 1px 0 rgba(0,0,0,0.3), -1px -1px 0 rgba(0,0,0,0.2) inset, 
     				1px 1px 5px rgba(255,255,255,0.4) inset;
+
+        cursor: pointer;
     
     	&:active {
     		box-shadow: 1px 1px 0 rgba(0,0,0,0.3), 2px 2px 0 rgba(0,0,0,0.2) inset, 
