@@ -1,0 +1,69 @@
+body.word_clock_page_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;	
+	font-weight: 900;
+	font-size: 40px;
+	letter-spacing: 2px;
+	color: rgba(0,0,0,0.8);
+	background-color: #101012;    
+
+    .clear {
+        clear: both;
+    }
+
+	#main {
+		width: 900px;
+		height: 500px;
+		margin: auto;
+		padding-bottom: 36px;
+		padding-top: 40px;
+		text-align: center;
+	}
+
+	.time {
+		display: inline-block;
+		margin: 0 -6px;	
+	}
+
+	#abbrev_container {
+		;
+	}
+
+	.abbrev {
+		display: inline-block;
+	}
+
+	.now {
+		color: #33DDED;
+		text-shadow: 0 0 6px rgba(255,255,255, 0.45);
+	}
+
+   footer {
+        position: fixed;
+        bottom: 0;
+        padding: 10px 20px;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: rgba(0,0,0,0.8);
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: rgba(0,0,0,0.8);
+    }
+
+    #links_container a:hover {
+        color: #aaa;
+    }
+
+    .clear {
+        clear: both;
+    }
+}

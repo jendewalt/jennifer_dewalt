@@ -32,7 +32,8 @@ $(document).ready(function () {
 		"tos": tos,
 		"song_machine": songMachine,
 		"globulator": globulator,
-		"drying_paint": dryingPaint
+		"drying_paint": dryingPaint,
+		"word_clock": wordClock
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
