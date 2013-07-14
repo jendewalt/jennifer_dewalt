@@ -2,8 +2,7 @@ function wordClock() {
 	getTime();
 
 	function getTime() {
-		// var hour = new Date().getHours();
-		var hour = 20;
+		var hour = new Date().getHours();
 
 		if (hour > 11) {
 			var abbrev = "pm";
