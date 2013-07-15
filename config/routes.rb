@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :infinite_descent do 
+    resources :page, :only => [:index]
+  end
+
   namespace :word_clock do 
     resources :page, :only => [:index]
   end

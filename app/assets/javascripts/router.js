@@ -34,7 +34,8 @@ $(document).ready(function () {
 		"globulator": globulator,
 		"drying_paint": dryingPaint,
 		"word_clock": wordClock,
-		"emergency_off": emergencyOff
+		"emergency_off": emergencyOff,
+		"infinite_descent": infiniteDescent
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

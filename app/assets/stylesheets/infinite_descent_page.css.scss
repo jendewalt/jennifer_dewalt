@@ -1,0 +1,56 @@
+body.infinite_descent_page_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    background: #ededed;
+    
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#1e1e1e), color-stop(60%,#000000));
+    background: -webkit-radial-gradient(center center, circle contain, #1e1e1e 1%,#000000 60%);
+    background: -moz-radial-gradient(center center, circle contain, #1e1e1e 1%, #000000 60%);
+    background: -ms-radial-gradient(center center, circle contain, #1e1e1e 1%,#000000 60%);
+    background: -o-radial-gradient(center center, circle contain, #1e1e1e 1%,#000000 60%);
+    background: radial-gradient(center center, circle contain, #1e1e1e 1%,#000000 60%);
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 20px;
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #888;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #888;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #888;
+    }
+
+    #links_container a:hover {
+        color: #aaa;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    canvas {
+        display: block;
+    }
+}
