@@ -35,7 +35,8 @@ $(document).ready(function () {
 		"drying_paint": dryingPaint,
 		"word_clock": wordClock,
 		"emergency_off": emergencyOff,
-		"infinite_descent": infiniteDescent
+		"infinite_descent": infiniteDescent,
+		"wish": wish
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

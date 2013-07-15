@@ -1,0 +1,58 @@
+body.wish_page_index {
+	font-family: 'Open Sans', arial, sans-serif;
+	font-size: 20px;
+	letter-spacing: 2px;
+	background-color: #fff;
+	text-align: center;
+
+	#wrap {
+		width: 365px;
+		margin: auto;
+		padding-top: 100px;
+		text-align: left;
+
+		.phrase {
+			display: inline-block;
+			margin: 3px;
+		}
+
+		#front {
+			color: #747475;	
+		}
+
+		#message {
+			font-weight: 600;
+			color: #121212;
+		}
+	}    
+
+   footer {
+        position: fixed;
+        bottom: 0;
+        padding: 10px 20px;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 11px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #aaa;
+        margin-right: 10px;
+    }
+
+    #links_container a:visited {
+        color: #aaa;
+    }
+
+    #links_container a:hover {
+        color: #333;
+    }
+
+    .clear {
+        clear: both;
+    }
+}
