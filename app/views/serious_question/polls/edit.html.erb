@@ -1,0 +1,31 @@
+<%= render 'serious_question/polls/header' %>
+
+<p class="error"><%= flash[:error] %></p>
+
+<%= form_for @poll do |f| %>
+	<div class="vote_block">
+		<div class="option">
+			This
+			<div class="option subtext">(proxy)</div>
+		</div>
+		<div class="wrap">
+			<%= f.radio_button :this_votes, 'this', :name => "vote" %>
+		</div>
+	</div>
+
+	<div class="vote_block">
+		<div class="option">That</div>
+		
+		<div class="wrap">
+			<%= f.radio_button :that_votes, 'that', :name => "vote" %>
+		</div>
+	</div>
+
+	<div class="vote_block">
+		<div class="option">Self</div>
+		<div class="wrap">
+			<%= f.radio_button :self_votes, 'self', :name => "vote" %>
+		</div>
+	</div>
+	<%= f.submit "Submit Vote"%>
+<% end %>

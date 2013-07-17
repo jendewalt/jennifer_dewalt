@@ -1,0 +1,30 @@
+<%= render 'serious_question/polls/header' %>
+
+<h1>Results</h1>
+
+<div class="vote_block">
+	<div class="option">
+		This
+		<div class="option subtext">(proxy)</div>
+	</div>
+	<div class="wrap">
+		<p><%= @this_percent %>% </p>
+	</div>
+</div>
+
+<div class="vote_block">
+	<div class="option">That</div>
+	
+	<div class="wrap">
+		<p><%= @that_percent %>% </p>
+	</div>
+</div>
+
+<div class="vote_block">
+	<div class="option">Self</div>
+	<div class="wrap">
+		<p><%= @self_percent %>% </p>
+	</div>
+</div>
+
+<%= link_to "Vote Again?", edit_serious_question_poll_path, :class => 'redirect' %>

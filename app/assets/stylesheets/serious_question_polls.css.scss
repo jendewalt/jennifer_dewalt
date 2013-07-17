@@ -1,0 +1,107 @@
+body.serious_question_polls_edit, body.serious_question_polls_show {
+    font-family: "Arial", "Arial", sans-serif;
+    text-align: center;
+    color: #555;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 150px;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #555;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #555;
+    }
+
+    #links_container a:hover {
+        color: orange;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .error {
+    	position: absolute;
+    	width: 100%;
+		top: 80px;
+    }
+
+    .vote_block {
+    	position: relative;
+    	display: inline-block;
+    	height: 150px;
+    	font-size: 90px;
+    	font-weight: 900;
+    	margin: 0px 40px 50px;
+    	vertical-align: top;
+
+    	.option {
+    		color: #111;
+    	}
+
+    	.subtext {
+    		font-size: 13px;
+    		color: #ccc;
+    		font-weight: 300;
+    	}
+
+    	.wrap {
+    		position: absolute;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+
+    		p {
+    			font-size: 24px;
+    		}
+    	}
+    }
+
+    input[type="submit"] {
+    	display: block;
+    	margin: auto;
+    	padding: 5px 10px;
+    	font-size: 16px;
+    	color: #fff;
+    	border-radius: 3px;
+    	border: none;
+    	background-color: orange;
+
+    	&:active {
+    		background-color: hsl(35, 95%, 49%)
+    	}
+    }
+}
+
+body.serious_question_polls_show {
+
+	header {
+		margin-bottom: 0;
+	}
+
+    h1 {
+    	font-size: 24px;
+    	line-height: 150px;
+    }
+
+    .redirect {
+    	display: block;
+    	font-size: 13px;
+    	color: orange;
+    }
+
+}
+
+

@@ -1,0 +1,2 @@
+module SeriousQuestionPollsHelper
+end

@@ -36,7 +36,8 @@ $(document).ready(function () {
 		"word_clock": wordClock,
 		"emergency_off": emergencyOff,
 		"infinite_descent": infiniteDescent,
-		"wish": wish
+		"wish": wish,
+		"serious_question": seriousQuestion
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

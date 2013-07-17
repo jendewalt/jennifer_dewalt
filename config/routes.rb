@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :serious_question do 
+    resources :polls, :only => [:edit, :update, :show]
+  end
+
   namespace :wish do 
     resources :page, :only => [:index]
   end
