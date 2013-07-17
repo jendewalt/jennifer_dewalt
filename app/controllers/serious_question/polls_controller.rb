@@ -28,13 +28,13 @@ class SeriousQuestion::PollsController < ApplicationController
       redirect_to :action => :edit and return      
     end
 
-    if vote = 'this'
+    if vote == 'this'
       poll.this_votes += 1
       poll.save
-    elsif vote = 'tht'      
+    elsif vote == 'that'      
       poll.that_votes += 1
       poll.save
-    elsif vote = self
+    elsif vote == 'self'
       poll.self_votes += 1
       poll.save
     end
