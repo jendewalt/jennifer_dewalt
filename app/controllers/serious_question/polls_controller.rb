@@ -21,20 +21,20 @@ class SeriousQuestion::PollsController < ApplicationController
 
   def update
     poll = SeriousQuestionPoll.find(1)
-    vote = params[:serious_question_poll]
+    vote = params[:vote]
 
     unless vote
-      flash[:error] = "You cannot submit and empty form!"
+      flash[:error] = "You cannot submit an empty form!"
       redirect_to :action => :edit and return      
     end
 
-    if vote.has_key?(:this_votes)
+    if vote = 'this'
       poll.this_votes += 1
       poll.save
-    elsif vote.has_key?(:that_votes)      
+    elsif vote = 'tht'      
       poll.that_votes += 1
       poll.save
-    elsif vote.has_key?(:self_votes)
+    elsif vote = self
       poll.self_votes += 1
       poll.save
     end
