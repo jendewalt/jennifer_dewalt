@@ -2,7 +2,7 @@ function algaeTank() {
 	var canvas = $('canvas')[0],
 		ctx = canvas.getContext('2d'),
 		h = 550,
-		w = 1000,
+		w = 900,
 		cell_size = 10;
 		cells = [],
 		animation = null;
@@ -88,7 +88,7 @@ function algaeTank() {
 
 		cells = new_cells;
 
-		animation = setTimeout(paintScreen, 30);
+		animation = setTimeout(paintScreen, 40);
 	};
 
 	function getNeighbors(x, index) {
