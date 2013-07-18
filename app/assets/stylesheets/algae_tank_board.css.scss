@@ -1,0 +1,70 @@
+body.algae_tank_board_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    background-color: #050a14;
+    color: #fff;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 10px;
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #fff;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    canvas {
+        cursor: pointer;
+    }
+
+    button {
+        margin: 12px 8px;
+        padding: 5px 10px;
+        font-size: 14px;
+        color: #fff;
+        text-shadow: 0 0 1px rgba(0,0,0,0.3);
+        border: none;
+        cursor: pointer;
+    }
+
+    .start {
+        background-color: #1bbd61;        
+    }
+
+    .disable {
+        background-color: #8f8f8f;
+        cursor: default;
+    }
+
+    .reset {
+        background-color: #1564d9;
+    }
+}

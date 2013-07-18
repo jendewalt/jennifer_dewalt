@@ -37,7 +37,8 @@ $(document).ready(function () {
 		"emergency_off": emergencyOff,
 		"infinite_descent": infiniteDescent,
 		"wish": wish,
-		"serious_question": seriousQuestion
+		"serious_question": seriousQuestion,
+		"algae_tank": algaeTank
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

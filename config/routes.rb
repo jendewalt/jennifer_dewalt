@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :algae_tank do 
+    resources :board, :only => [:index]
+  end
+
   namespace :serious_question do 
     resources :polls, :only => [:edit, :update, :show]
   end
