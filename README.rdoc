@@ -1,1 +1,7 @@
 Hi! I'm Jennifer Dewalt and I am making 180 websites in 180 days.
+
+You can follow along here, on my [website] [1] , and on my [blog] [2].
+
+  [1]: http://jenniferdewalt.com/ "Jen's Homepage"
+  [2]: http://blog.jenniferdewalt.com/  "Jen's Blog"
+  
