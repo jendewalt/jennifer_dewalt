@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :colorworks do 
+    resources :page, :only => [:index]
+  end
+
   namespace :algae_tank do 
     resources :board, :only => [:index]
   end

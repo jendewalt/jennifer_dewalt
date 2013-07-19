@@ -1,0 +1,42 @@
+<%= render 'colorworks/page/header' %>
+<div id="input_container">
+	<form>
+		<fieldset id="color_input">
+			<label class="hl">Hex Color</label>
+			<input id="color" type="text" placeholder="ex: 3b45bd">
+		</fieldset>
+
+		<fieldset id="adjustment_input">
+			<label class="hl">Adjustment Options</label>
+
+			<div class="options">
+				<span>
+					<input id="lighten" type="radio" value="lighten" name="adjust" checked="checked">
+					<label for="lighten">Lighten</label>
+
+					<input id="darken" type="radio" value="darken" name="adjust">
+					<label for="darken">Darken</label>
+
+					<input id="saturate" type="radio" value="saturate" name="adjust">
+					<label for="saturate">Saturate</label>
+
+				 	<input id="desaturate" type="radio" value="desaturate" name="adjust">
+					<label for="desaturate">Desaturate</label>
+				</span>
+			</div>
+		</fieldset>
+
+		<fieldset id="percentage_input">
+			<label class="hl">Percentage</label>
+			<input id="percent" type="text" value="5%"> 
+		</fieldset>
+
+		<fieldset id="buttons">
+			<button id="submit" disabled="disabled">Submit</button>
+			<button type="reset" id="reset">Reset</button>
+		</fieldset>
+		<br class="clear">
+	</form>
+</div>
+
+<div id="swatch_section"></div>

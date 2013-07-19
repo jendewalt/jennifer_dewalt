@@ -38,7 +38,8 @@ $(document).ready(function () {
 		"infinite_descent": infiniteDescent,
 		"wish": wish,
 		"serious_question": seriousQuestion,
-		"algae_tank": algaeTank
+		"algae_tank": algaeTank,
+		"colorworks": colorWorks
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
