@@ -6,24 +6,22 @@ function effects() {
 
 	images = _.map(images, function (image_name) {
 		var image_path = '/assets/' + image_name;
-		$('<img/>')[0].src = image_path;
-		return image_path;
+		var image = $('<img/>');
+		image[0].src = image_path;
+		return image;
 	});
 
 	$('body').on('click', function (e) {
 		var x = e.pageX;
 		var y = e.pageY;
 
-		var image_path = images[randomInt(0, 16)];
-		var image = $('<img/>').load(function(){
-			$(this).css({
-        		top: y - this.height / 2,
-        		left: x - this.width / 2,
-        		position: 'absolute'
-        	}).appendTo('#image_container');
-		});
-
-		image[0].src = image_path;
+		var image = images[randomInt(0, 16)];
+		xxx = image;
+		image.css({
+        	top: y - image[0].height / 2,
+        	left: x - image[0].width / 2,
+        	position: 'absolute'
+        }).clone().appendTo('#image_container');
 	});
 
 	$('body').disableSelection();	
