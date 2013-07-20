@@ -4,25 +4,26 @@ function effects() {
 				  'pow.png', 'skreech.png', 'splat.png', 'thwack.png', 'wham.png',
 				  'zazam.png', 'zoom.png'];
 
-	_.each(images, function (img) {
-		var image = new Image();
-		image.src = '/assets/' + img
+	images = _.map(images, function (image_name) {
+		var image_path = '/assets/' + image_name;
+		$('<img/>')[0].src = image_path;
+		return image_path;
 	});
 
 	$('body').on('click', function (e) {
 		var x = e.pageX;
 		var y = e.pageY;
 
-		var action = $('<img class="action" src="/assets/' + images[randomInt(0, 16)] + '"/>')
-			.hide()
-            .load(function () {
-            	$(this).css({
-            		top: y - this.height / 2,
-            		left: x - this.width / 2
-            	});
-            })
-            .appendTo('#image_container')
-            .show();
+		var image_path = images[randomInt(0, 16)];
+		var image = $('<img/>').load(function(){
+			$(this).css({
+        		top: y - this.height / 2,
+        		left: x - this.width / 2,
+        		position: 'absolute'
+        	}).appendTo('#image_container');
+		});
+
+		image[0].src = image_path;
 	});
 
 	$('body').disableSelection();	
