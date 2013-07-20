@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :effects do 
+    resources :page, :only => [:index]
+  end
+
   namespace :colorworks do 
     resources :page, :only => [:index]
   end

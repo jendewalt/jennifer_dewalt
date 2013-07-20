@@ -1,0 +1,38 @@
+body.effects_page_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    background-color: #111;
+    cursor: pointer;
+    
+    header {
+        padding: 10px 20px;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #666;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #666;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .action {
+    	position: absolute;
+    }
+}
