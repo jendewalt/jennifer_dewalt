@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :down_the_weight do 
+    resources :weights, :only => [:index]
+  end
+
   namespace :effects do 
     resources :page, :only => [:index]
   end

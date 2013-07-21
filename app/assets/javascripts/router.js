@@ -40,7 +40,8 @@ $(document).ready(function () {
 		"serious_question": seriousQuestion,
 		"algae_tank": algaeTank,
 		"colorworks": colorWorks,
-		"effects": effects
+		"effects": effects,
+		"down_the_weight": downTheWeight
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
