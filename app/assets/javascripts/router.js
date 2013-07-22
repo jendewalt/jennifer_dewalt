@@ -41,7 +41,8 @@ $(document).ready(function () {
 		"algae_tank": algaeTank,
 		"colorworks": colorWorks,
 		"effects": effects,
-		"down_the_weight": downTheWeight
+		"down_the_weight": downTheWeight,
+		"check_sketch": checkSketch
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

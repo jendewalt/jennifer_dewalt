@@ -1,0 +1,63 @@
+body.check_sketch_page_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    
+    header {
+        padding: 10px 20px;
+    }
+ 	
+ 	#control_container {
+ 		float: left;
+
+	 	button {
+	    	border: none;
+	    	width: 120px;
+	    	margin-right: 5px;
+	    	padding: 5px 0;
+	    	background-color: #ff7b00;
+	    	color: white;
+	    	cursor: pointer;
+	    }
+
+	    .turbo_off {
+	    	background-color: #777;
+	    }
+
+	    #reset {
+	    	background-color: #0fa36a;
+
+	    	&:active {
+	    		background-color: #0b744c;
+	    	}
+	    }
+	}
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #555;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #555;
+    }
+
+    #links_container a:hover {
+        color: #ff7b00;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    #sketch_pad {
+    	margin: auto;
+    }
+}
