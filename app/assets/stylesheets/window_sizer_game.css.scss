@@ -1,0 +1,144 @@
+body.window_sizer_game_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: #333;
+    letter-spacing: 2px;
+    overflow: hidden;
+    
+    header {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+        padding: 10px 20px;
+        z-index: 20;
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #fff;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .modal {
+    	position: absolute;
+    	top: 0;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	z-index: 10;
+
+    	.inner_modal {
+    		width: 500px;
+    		margin: 100px auto 0;
+    		padding: 50px 30px;
+    		background-color: #fff;
+    		border-radius: 5px;
+    		box-shadow: 0 0 2px rgba(0,0,0,0.4);
+    	}
+
+		h1 {
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+
+		p {
+			line-height: 20px;
+		}
+
+		button {
+			margin-top: 20px;
+			padding: 5px 10px;
+			font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+			font-size: 16px;
+			color: #fff;
+			letter-spacing: 2px;
+			border: none;
+			background-color: #db117c;
+		}
+    }
+
+	#end_container{
+		display: none;
+	}
+
+    #game_container {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	bottom: 0;
+    	right: 0;
+
+    	#info_container {
+	    	padding: 40px 20px;
+	    	background-color: rgba(255,255,255,0.5);
+	    	width: 450px;
+	    	margin: 100px auto;
+	    	border-radius: 5px;
+	    	box-shadow: 0 0 3px rgba(0,0,0,0.38) inset;
+
+	    	#target_text {
+	    		font-size: 60px;
+	    	}
+	    	
+	    	#timer {
+	    		width: 360px;
+	    		margin: 30px auto 0;
+	    		padding: 2px;
+	    		border: 3px solid #333;
+	    		background-color: #fff;
+
+	    		#progress_bar {
+	    			width: 100%;
+	    			height: 10px;
+	    			background-color: #db117c;
+	    		}
+	    	}
+    	}
+    		
+    	#target_area {
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		box-shadow: 1px 1px 4px black;
+    		z-index: -1;
+    	}
+
+
+    }
+
+    #answer_box {
+    	display: none;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	border: 1px solid black;
+    }
+}

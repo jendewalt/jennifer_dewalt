@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :window_sizer do 
+    resources :game, :only => [:index]
+  end
+
   namespace :check_sketch do 
     resources :page, :only => [:index]
   end

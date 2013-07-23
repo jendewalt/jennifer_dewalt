@@ -26,8 +26,6 @@ function typingTest() {
 		});
 	});
 
-
-
 	$('.end p').on('click', function () {
 		$('.modal.end').fadeOut(300);
 	});

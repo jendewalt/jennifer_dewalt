@@ -42,7 +42,8 @@ $(document).ready(function () {
 		"colorworks": colorWorks,
 		"effects": effects,
 		"down_the_weight": downTheWeight,
-		"check_sketch": checkSketch
+		"check_sketch": checkSketch,
+		"window_sizer": windowSizer
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
