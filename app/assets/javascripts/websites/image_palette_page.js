@@ -26,8 +26,9 @@ function imagePalette() {
 	// Img loading
 	img.addEventListener('load', function () {
 		clearCanvas();
-		canvas.width = img.width
-		canvas.height = img.height
+		canvas.width = img.width;
+		canvas.height = img.height;
+		$('canvas').css('cursor', 'crosshair');
 		ctx.drawImage(img, 0, 0);
 	}, false);
 
