@@ -3,7 +3,7 @@ function algaeTank() {
 		ctx = canvas.getContext('2d'),
 		h = 550,
 		w = 900,
-		cell_size = 10;
+		cell_size = 10,
 		cells = [],
 		animation = null;
 
@@ -156,9 +156,9 @@ function algaeTank() {
 
 	$('.reset').on('click', function () {
 		clearTimeout(animation);
+		cells = [];
 		init();
 	});
-
 
 	$('body').disableSelection();
 };
