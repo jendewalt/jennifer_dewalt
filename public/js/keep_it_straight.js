@@ -14,7 +14,6 @@ $(document).ready(function () {
 		$('.end').on('mouseenter', function () {
 			$('#modal').show();
 			win = true;
-			console.log('win');
 		});
 
 		$('.game_container').on('mouseleave', function () {

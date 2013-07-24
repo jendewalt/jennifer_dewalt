@@ -51,8 +51,6 @@ $(document).ready(function () {
 		$('.result.left.' + compChoice).show();
 
 		setTimeout(function() {
-			console.log(userChoice + ', ' + compChoice)
-
 			if ( userChoice == compChoice ) {
 				$('#score_container').text('Tie!');
 			} else if ( (userChoice == 'rock' && compChoice == 'scissors') || (userChoice == 'paper' && compChoice == 'rock') || (userChoice == 'scissors' && compChoice == 'paper') ) {

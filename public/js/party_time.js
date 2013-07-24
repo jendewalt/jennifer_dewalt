@@ -24,7 +24,7 @@ $(document).ready(function () {
 					var year  = birthday[0];
 					var month = (birthday[1])-1;
 					var day   = birthday[2];
-					console.log(year, month, day)
+					
 				} 
 
 			var birthtime = $('#btime').val().split(':');
@@ -61,7 +61,7 @@ $(document).ready(function () {
 				$('.party').text("Today's your birthday?! PARTY TIME!");
 			} else if (todayStr == (tenKDay.toDateString() || twentyKDay.toDateString() || fiveHundkHour.toDateString() || millionMin.toDateString() || tenMillionMin() || fiftyMillionMin() ) ) {
 				$('.party').text("Looks Like We've Got a Party Here!");
-				console.log(todayStr, tenKDay.toDateString(), twentyKDay.toDateString())
+				
 			} else {
 				$('.party').text("Boo! No Parties Today.");				
 			}

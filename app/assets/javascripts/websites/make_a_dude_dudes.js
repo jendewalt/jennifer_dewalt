@@ -8,7 +8,6 @@ function makeADude() {
 	});	
 
 	$('.color').on('change', function () {
-		console.log('hi')
 		$('.head').css('backgroundColor', '#' + this.color);
 	});
 

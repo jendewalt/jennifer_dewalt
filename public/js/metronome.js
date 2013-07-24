@@ -102,7 +102,6 @@ $(document).ready(function () {
 		stop: function (e, obj) {
 			bpm = Math.round(obj.position.top * 0.5 + 40);
 			$('#bpm').text(bpm + ' bpm');
-			console.log(obj.position)
 		}
 	});
 

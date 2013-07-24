@@ -11,7 +11,6 @@ function clickCounter() {
 	$('button').on('click', function (e) {
 		e.preventDefault();
 		$(this).attr('disabled', 'disabled');
-		console.log('Hello')
 
 		$.ajax({
 			type: 'PUT',

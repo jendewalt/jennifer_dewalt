@@ -53,7 +53,6 @@ function textScroller() {
 			direction = 'left';
 			x = w;
 		}
-		console.log(x)
 		phrases.push(new Phrase(phrase, x, 50, vx, randomColorRGB(), direction))
 	}
 

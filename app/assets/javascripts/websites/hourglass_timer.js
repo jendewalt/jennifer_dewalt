@@ -62,14 +62,12 @@ function hourglass() {
 		var entry = Number($('.time').val());
 
 		if (_.isNaN(entry)) {
-			console.log(_.isNaN(entry))
 			alert("Time limit must be a number.");
 		} else {
 			time = entry * 60000;
 			$('.modal').hide();
 			paintScreen();
 		}
-
 	});
 
 	mask.horizontal = 0;
