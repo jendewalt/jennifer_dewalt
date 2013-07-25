@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :splodin_bacon do 
+    resources :page, :only => [:index]
+  end
+
   namespace :image_palette do 
     resources :page, :only => [:index]
   end
