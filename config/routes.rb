@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :glob_glob do 
+    resources :globs, :only => [:show, :update]
+  end
+
   namespace :splodin_bacon do 
     resources :page, :only => [:index]
   end

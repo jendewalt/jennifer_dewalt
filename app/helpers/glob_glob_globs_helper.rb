@@ -1,0 +1,2 @@
+module GlobGlobGlobsHelper
+end

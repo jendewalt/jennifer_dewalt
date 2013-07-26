@@ -45,7 +45,8 @@ $(document).ready(function () {
 		"check_sketch": checkSketch,
 		"window_sizer": windowSizer,
 		"image_palette": imagePalette,
-		"splodin_bacon": splodinBacon
+		"splodin_bacon": splodinBacon,
+		"glob_glob": globGlob
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

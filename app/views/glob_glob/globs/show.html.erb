@@ -1,0 +1,30 @@
+<%= render 'glob_glob/globs/header' %>
+
+<canvas data-size="<%= @glob.size %>"></canvas>
+
+<div class="modal start">
+	<div class="inner_modal">
+		<h1>Glob Glob</h1>
+		
+		<ul>
+			<li>The previous visitor made the glob on the left.</li>
+			<li>Can you beat them?</li>
+			<li>Hit the spacebar to grow your glob.</li>
+			<li>You've got 10 seconds.</li>
+		</ul>
+
+		<p>Hit the spacebar to begin.</p>
+	</div>
+</div>
+
+<div class="modal end">
+	<div class="inner_modal">
+		<h2>You grew your glob to</h2>
+		<h1 class="score"></h1>
+
+		<p id="kudos"></p>
+
+		<%= link_to 'Play Again?', glob_glob_glob_path %>
+	</div>
+</div>
+

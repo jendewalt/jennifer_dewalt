@@ -11,10 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130717014828) do
+ActiveRecord::Schema.define(:version => 20130725220150) do
 
   create_table "click_counter_buttons", :force => true do |t|
     t.integer  "clicks"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "glob_glob_globs", :force => true do |t|
+    t.string   "name"
+    t.integer  "size"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
