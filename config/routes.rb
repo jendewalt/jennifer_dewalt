@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :forest do 
+    resources :page, :only => [:index]
+  end
+
   namespace :glob_glob do 
     resources :globs, :only => [:show, :update]
   end

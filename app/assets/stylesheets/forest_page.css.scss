@@ -1,0 +1,109 @@
+body.forest_page_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    color: #333;
+    
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 20px;
+        z-index: 10;
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #888;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #888;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #888;
+    }
+
+    #links_container a:hover {
+        color: #681a94;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    canvas {
+        display: block;
+    }
+
+    #control_container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 5px;
+        background-color: rgba(0,0,0,0.3);
+
+        li {
+            background-color: rgba(255,255,255,0.5);
+        }
+        
+        .label {
+           padding: 10px 0;
+        }
+
+        .control {
+            margin: 5px;            
+        }
+
+        img {
+            box-shadow: 0 0 3px rgba(0,0,0,0.15);
+            cursor: pointer;
+            border-radius: 5px;
+
+            &:active {
+                box-shadow: 0 0 3px rgba(0,0,0,0.5);                
+            }
+        }
+
+        .color {
+            border: 1px solid rgba(255,255,255,0.8);
+            width: 50px;
+            text-align: center;
+            padding: 5px;
+            box-shadow: 0 0 3px rgba(0,0,0,0.5) inset;                
+        }
+
+        button.control {
+            cursor: pointer;
+            border: none;
+            width: 80px;
+            padding: 5px 10px;
+            margin: 10px;
+            margin-bottom: 20px;
+            background-color: #681a94;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 1px rgba(255,255,255,0.5) inset,
+                        0 0 1px rgba(0,0,0,0.5);  
+            text-shadow: 0 0 1px rgba(0,0,0,0.2);   
+
+            &:active {
+                background-color: #491368;
+                box-shadow: 0 0 1px rgba(0,0,0,0.5) inset,
+                            0 0 1px rgba(0,0,0,0.5);  
+            }
+        }
+    }
+}

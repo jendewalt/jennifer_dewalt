@@ -95,6 +95,8 @@ klang.png: klang-4b8a16d733128b87e4c480f5d6b4727c.png
 klang/index.png: klang-4b8a16d733128b87e4c480f5d6b4727c.png
 krack.png: krack-66da5f8a2217a17cfdc77021243f2aa6.png
 krack/index.png: krack-66da5f8a2217a17cfdc77021243f2aa6.png
+leaf_icon.png: leaf_icon-aca2cb611f034a5b5539248f3ccc8c58.png
+leaf_icon/index.png: leaf_icon-aca2cb611f034a5b5539248f3ccc8c58.png
 missing_icon.png: missing_icon-bb54248ca63a4009d1a7b41deed0e158.png
 missing_icon/index.png: missing_icon-bb54248ca63a4009d1a7b41deed0e158.png
 nyan_cat.gif: nyan_cat-9b731893e65c3f9abeb0bd42387eb35d.gif
@@ -127,6 +129,8 @@ splat.png: splat-7abdd37ffa1719b27240f848c3290640.png
 splat/index.png: splat-7abdd37ffa1719b27240f848c3290640.png
 thwack.png: thwack-9277087d0d8b60d065bbb4f2cc0ffade.png
 thwack/index.png: thwack-9277087d0d8b60d065bbb4f2cc0ffade.png
+tree_icon.png: tree_icon-8056ef058c8290c940bf08cd1ae49b22.png
+tree_icon/index.png: tree_icon-8056ef058c8290c940bf08cd1ae49b22.png
 wham.png: wham-563935fac6fa11e4d4402453da338deb.png
 wham/index.png: wham-563935fac6fa11e4d4402453da338deb.png
 white_paper_texture.jpg: white_paper_texture-ffe5883e5aac5b80eacafb354489065f.jpg
@@ -135,10 +139,10 @@ zazam.png: zazam-db6091b35ea1d595558dfa3ee9ad2c14.png
 zazam/index.png: zazam-db6091b35ea1d595558dfa3ee9ad2c14.png
 zoom.png: zoom-cc03c1f274ad6ffcd6964d7bb0960abc.png
 zoom/index.png: zoom-cc03c1f274ad6ffcd6964d7bb0960abc.png
-application.js: application-27cec56d39c1da0f3a1eb0a8560b7888.js
-application/index.js: application-27cec56d39c1da0f3a1eb0a8560b7888.js
-application.css: application-b1617e72dc109e267844bbee7b1a6145.css
-application/index.css: application-b1617e72dc109e267844bbee7b1a6145.css
+application.js: application-6069f1c7a06f180c12bdad99b71ea515.js
+application/index.js: application-6069f1c7a06f180c12bdad99b71ea515.js
+application.css: application-086dfa6ed9525e760370cf751726ab31.css
+application/index.css: application-086dfa6ed9525e760370cf751726ab31.css
 big_word_list: big_word_list
 jscolor/demo.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
 jscolor/demo/index.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
