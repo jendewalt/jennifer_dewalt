@@ -99,4 +99,6 @@ function forest() {
 	$('#leaf_btn').on('click', function () {
 		brush = 'leaf';
 	});
+
+	$('body').disableSelection();
 }
