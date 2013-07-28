@@ -1,0 +1,27 @@
+<header>
+	<div id="logo"><%= link_to "MishMosh", mishmosh_page_index_path %></div>
+
+	<div id="links_container">
+	  	<a href="/index.html" id="home">Home</a>
+	  	<a href="http://blog.jenniferdewalt.com" id="blog">Blog</a>
+		
+		<% if user_signed_in? %>
+		 	<%= link_to "Profile", your_space_user_path(current_user.id) %>
+		 	<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+		<% else %>
+		 	<%= link_to "Sign in", new_user_session_path %>
+		<% end %>
+	</div>
+	<br class="clear">
+
+</header>
+
+<div id="info_container">
+	<ul>
+	<li>Move: Drag</li>
+	<li>Scale: Shift-Drag</li>
+	<li>Rotate: Alt-Drag</li>
+	<li>Delete: Double Click</li>
+	<li><button id="save">Save</button></li>
+	</ul>
+</div>

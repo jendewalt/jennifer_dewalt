@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :mishmosh do 
+    resources :page, :only => [:index]
+  end
+
   namespace :forest do 
     resources :page, :only => [:index]
   end

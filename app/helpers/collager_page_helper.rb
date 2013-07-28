@@ -1,0 +1,2 @@
+module CollagerPageHelper
+end
