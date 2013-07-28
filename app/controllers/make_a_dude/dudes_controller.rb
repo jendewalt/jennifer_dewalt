@@ -1,7 +1,7 @@
 class MakeADude::DudesController < ApplicationController
   def index
     @title = "Make A Dude"
-    @dudes = MakeADudeDude.order('created_at DESC')
+    @dudes = MakeADudeDude.limit(100).order('created_at DESC')
   end
 
   def new 
