@@ -17,6 +17,8 @@
 //= require jquery.ui.droppable
 //= require touch_punch
 //= require underscore
+//= require json2
+//= require backbone
 //= require howler
 //= require kinetic
 //= require jscolor/jscolor
@@ -24,3 +26,9 @@
 //= require_tree ./websites
 //= require my_functions
 //= require router
+//= require_tree ./models
+//= require_tree ./collections
+//= require_tree ./templates
+//= require_tree ./views
+//= require_tree ./helpers
+//= require bb_router

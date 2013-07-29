@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130725220150) do
+ActiveRecord::Schema.define(:version => 20130728230022) do
 
   create_table "click_counter_buttons", :force => true do |t|
     t.integer  "clicks"
@@ -120,6 +120,16 @@ ActiveRecord::Schema.define(:version => 20130725220150) do
   end
 
   add_index "tiny_notes_notes", ["user_id", "created_at"], :name => "index_tiny_notes_notes_on_user_id_and_created_at"
+
+  create_table "todo_todos", :force => true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.integer  "user_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "todo_todos", ["user_id"], :name => "index_todo_todos_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "username"

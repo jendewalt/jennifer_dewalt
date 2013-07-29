@@ -109,6 +109,8 @@ paint_cracks.png: paint_cracks-9ed9fa61a6f58cb7cc03dcaf8f5857d6.png
 paint_cracks/index.png: paint_cracks-9ed9fa61a6f58cb7cc03dcaf8f5857d6.png
 paint_wall.jpg: paint_wall-aee56f9b246e41b393dda73c6311a551.jpg
 paint_wall/index.jpg: paint_wall-aee56f9b246e41b393dda73c6311a551.jpg
+paper_text.png: paper_text-1b81be239c6044163c9127d6f05ff7b8.png
+paper_text/index.png: paper_text-1b81be239c6044163c9127d6f05ff7b8.png
 paper_texture.png: paper_texture-87a0504c466793e7e197d69e9d963a21.png
 paper_texture/index.png: paper_texture-87a0504c466793e7e197d69e9d963a21.png
 pbj_time.gif: pbj_time-d88dc5a9d9ed9aa1e7c5729cedc55535.gif
@@ -139,10 +141,12 @@ zazam.png: zazam-db6091b35ea1d595558dfa3ee9ad2c14.png
 zazam/index.png: zazam-db6091b35ea1d595558dfa3ee9ad2c14.png
 zoom.png: zoom-cc03c1f274ad6ffcd6964d7bb0960abc.png
 zoom/index.png: zoom-cc03c1f274ad6ffcd6964d7bb0960abc.png
-application.js: application-52faeadc4a92ebb61f6953361412a6d7.js
-application/index.js: application-52faeadc4a92ebb61f6953361412a6d7.js
-application.css: application-5d91e3e6183d3e2bb378da89ce020165.css
-application/index.css: application-5d91e3e6183d3e2bb378da89ce020165.css
+application.js: application-31df7d747057e5831b8ad95bb003dc6b.js
+application/index.js: application-31df7d747057e5831b8ad95bb003dc6b.js
+helpers/application.js: helpers/application-4c749d00be3e691c1036a2107930a1a2.js
+helpers/application/index.js: helpers/application-4c749d00be3e691c1036a2107930a1a2.js
+application.css: application-7bff0ebb7a642f774829f18ee01e4cf4.css
+application/index.css: application-7bff0ebb7a642f774829f18ee01e4cf4.css
 big_word_list: big_word_list
 jscolor/demo.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
 jscolor/demo/index.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html

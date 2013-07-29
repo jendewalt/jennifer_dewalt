@@ -46,6 +46,7 @@ GEM
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
+    ejs (1.1.1)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -53,6 +54,9 @@ GEM
     highline (1.6.15)
     hike (1.2.1)
     i18n (0.6.4)
+    jbuilder (1.5.0)
+      activesupport (>= 3.0.0)
+      multi_json (>= 1.2.0)
     journey (1.0.4)
     jquery-rails (2.2.1)
       railties (>= 3.0, < 5.0)
@@ -76,6 +80,7 @@ GEM
     net-ssh (2.6.6)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
+    oj (2.1.4)
     omniauth (1.1.4)
       hashie (>= 1.2, < 3)
       rack
@@ -168,8 +173,11 @@ PLATFORMS
 DEPENDENCIES
   capistrano
   devise
+  ejs
+  jbuilder
   jquery-rails
   jquery-ui-rails
+  oj
   omniauth
   paperclip (~> 3.0)
   pg

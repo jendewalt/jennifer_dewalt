@@ -6,7 +6,7 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-
+gem 'ejs'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -27,7 +27,9 @@ gem 'jquery-ui-rails'
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
-# gem 'jbuilder'
+gem 'jbuilder'
+
+gem 'oj'
 
 # Use unicorn as the app server
 gem 'unicorn'
