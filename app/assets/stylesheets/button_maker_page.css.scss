@@ -98,12 +98,16 @@ body.button_maker_page_index {
 		border-bottom: 1px solid #235598;
 		text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
 
+    }
+
+    #btn {
+        
 		&:active {
 			background-color: #235598;
 			border-bottom: none;
 			border-top: 1px solid #3679d1;
 		}
-	}
+    }
 
     #right_container {
     	display: inline-block;
