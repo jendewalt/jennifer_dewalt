@@ -22,7 +22,7 @@ function buttonMaker() {
 		e.preventDefault();
 	});
 
-	$('#background').on('change', function () {
+	$('#background-color').on('change', function () {
 		$('.button').css('background-color', '#' + this.color);
 	});
 
