@@ -49,7 +49,8 @@ $(document).ready(function () {
 		"glob_glob": globGlob,
 		"forest": forest,
 		"mishmosh": mishmosh,
-		"todo": nothing
+		"todo": nothing,
+		"button_maker": buttonMaker
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

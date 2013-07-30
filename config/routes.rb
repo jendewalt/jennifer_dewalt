@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :button_maker do 
+    resources :page, :only => [:index]
+  end
+
   namespace :todo do 
     resources :todos
   end
