@@ -41,7 +41,6 @@ function brickSmasher() {
 		id: 'paddle'
 	});
 
-	var animation; 
 	var frame_rate = 20;
 
 	makeBricks();
@@ -118,7 +117,7 @@ function brickSmasher() {
 	}
 
 	function checkCollisions() {
-		var ball_radius = ball.getRadius()
+		var ball_radius = ball.getRadius();
 		var ball_x = ball.getX();
 		var ball_y = ball.getY();
 		var paddle_x = paddle.getX();
@@ -133,9 +132,7 @@ function brickSmasher() {
 		} 
 
 		// Check paddle
-		if (ball_x - ball_radius > paddle_x - paddle.getOffsetX() &&
-			ball_x + ball_radius < paddle_x + paddle.getOffsetX() && 
-			ball_y + ball_radius >= paddle_y) {
+		if (ball_x - ball_radius > paddle_x - paddle.getOffsetX() && ball_x + ball_radius < paddle_x + paddle.getOffsetX() && ball_y + ball_radius >= paddle_y) {
 
 			ball.setY(paddle_y - 1 - ball_radius);
 			speed_y *= -1;
@@ -150,8 +147,7 @@ function brickSmasher() {
 		_.each(bricks, function (brick) {
 			// Check Top & Bottom
 			if (brick.left <= ball_x && ball_x <= brick.right) {
-				if (brick.top <= ball_y - ball_radius && ball_y - ball_radius <= brick.bottom ||
-                    brick.top <= ball_y - ball_radius && ball_y - ball_radius <= brick.bottom) {
+				if ((brick.top <= ball_y - ball_radius && ball_y - ball_radius <= brick.bottom) || (brick.top <= ball_y - ball_radius && ball_y - ball_radius <= brick.bottom)) {
 
 					speed_y *= -1;
 					stage.get('#brick' + brick.i).destroy();
@@ -166,8 +162,7 @@ function brickSmasher() {
 			}	
 			// Check left and right
 			if (brick.top <= ball_y && ball_y <= brick.bottom) {
-                if (brick.left <= ball_x - ball_radius && ball_x - ball_radius <= brick.right ||
-                    brick.left <= ball_x - ball_radius && ball_x - ball_radius <= brick.right) {	
+                if ((brick.left <= ball_x - ball_radius && ball_x - ball_radius <= brick.right) || (brick.left <= ball_x - ball_radius && ball_x - ball_radius <= brick.right)) {	
 
                 	speed_y *= -1;
 					stage.get('#brick' + brick.i).destroy();
@@ -181,8 +176,7 @@ function brickSmasher() {
                 }
             }		
 		});	
-		
-		animation = setTimeout(animate, frame_rate);
+		setTimeout(animate, frame_rate);
 	}
 
 	function updateGame() {

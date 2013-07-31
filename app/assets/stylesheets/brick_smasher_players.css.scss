@@ -62,25 +62,26 @@ body.brick_smasher_players_index {
     	top: 150px;
     	left: 0;
     	right: 0;
-	    
-	    .inner_modal {
-	    	background-color: rgba(255,255,255,0.95);
-	    	padding: 30px;
 
-	    	h1 {
-	    		font-size: 30px;
-	    		font-weight: bold;
-	    		color: #e8566c;
-	    	}
-	    	h2 {
-	    		font-size: 20px;
-	    		margin: 30px;
-	    	}
+        .inner_modal {
+        	background-color: rgba(255,255,255,0.95);
+        	padding: 30px;
 
-	    	a {
-	    		font-size: 13px;
-	    		color: #1CCFC7;
-	    	}
-	    }
+        	h1 {
+        		font-size: 30px;
+        		font-weight: bold;
+        		color: #e8566c;
+        	}
+            
+        	h2 {
+        		font-size: 20px;
+        		margin: 30px;
+        	}
+
+        	a {
+        		font-size: 13px;
+        		color: #1CCFC7;
+        	}
+        }
     }
 }
