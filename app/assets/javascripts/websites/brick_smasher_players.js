@@ -83,6 +83,7 @@ function brickSmasher() {
 		this.bottom = y + brick_height;
 		this.left = x;
 		this.right = x + brick_width;
+		this.dead = false;
 
 		var brick = new Kinetic.Rect({
 			x: this.x,
@@ -136,28 +137,26 @@ function brickSmasher() {
 
 			ball.setY(paddle_y - 1 - ball_radius);
 			speed_y *= -1;
-			if (ball_x < paddle_x + paddle.getOffsetX) {
+			if (ball_x < paddle_x) {
 				speed_x = Math.abs(speed_x) * -1;
-			} else if (ball_x >= paddle_x + paddle.getOffsetX) {
+			} else if (ball_x >= paddle_x) {
 				speed_x = Math.abs(speed_x);
 			}
 		}
 
 		// Check Bricks
-		_.each(bricks, function (brick) {
+		bricks = _.reject(bricks, function (brick) {
 			// Check Top & Bottom
 			if (brick.left <= ball_x && ball_x <= brick.right) {
 				if ((brick.top <= ball_y - ball_radius && ball_y - ball_radius <= brick.bottom) || (brick.top <= ball_y - ball_radius && ball_y - ball_radius <= brick.bottom)) {
 
 					speed_y *= -1;
 					stage.get('#brick' + brick.i).destroy();
-					bricks = _.reject(bricks, function (check_brick) {
-						return check_brick == brick;
-					});
 
 					brick_layer.draw();
 					brick_hits += 1;
 					updateGame();
+					return true;
 				}
 			}	
 			// Check left and right
@@ -166,15 +165,14 @@ function brickSmasher() {
 
                 	speed_y *= -1;
 					stage.get('#brick' + brick.i).destroy();
-					bricks = _.reject(bricks, function (check_brick) {
-						return check_brick == brick;
-					});
 
 					brick_layer.draw();
 					brick_hits += 1;
 					updateGame();
+					return true;
                 }
-            }		
+            }	
+            return false;	
 		});	
 		setTimeout(animate, frame_rate);
 	}
