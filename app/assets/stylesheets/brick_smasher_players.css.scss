@@ -1,0 +1,87 @@
+body.brick_smasher_players_index {
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #555;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #555;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #555;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #555;
+    }
+
+    #links_container a:hover {
+        color: #1CCFC7;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    #game {
+    	position: relative;
+    }
+
+    .kineticjs-content {
+    	border: 1px solid #aaa;
+    	box-shadow: 0 0 3px rgba(0,0,0,0.25);
+    	vertical-align: top;
+    }
+
+    canvas {
+    	top: 0;
+    	left: 0;
+    }
+
+    .modal {
+    	display: none;
+    	position: absolute;
+    	top: 150px;
+    	left: 0;
+    	right: 0;
+	    
+	    .inner_modal {
+	    	background-color: rgba(255,255,255,0.95);
+	    	padding: 30px;
+
+	    	h1 {
+	    		font-size: 30px;
+	    		font-weight: bold;
+	    		color: #e8566c;
+	    	}
+	    	h2 {
+	    		font-size: 20px;
+	    		margin: 30px;
+	    	}
+
+	    	a {
+	    		font-size: 13px;
+	    		color: #1CCFC7;
+	    	}
+	    }
+    }
+
+}

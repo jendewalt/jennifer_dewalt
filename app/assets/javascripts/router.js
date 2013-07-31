@@ -50,7 +50,8 @@ $(document).ready(function () {
 		"forest": forest,
 		"mishmosh": mishmosh,
 		"todo": nothing,
-		"button_maker": buttonMaker
+		"button_maker": buttonMaker,
+		"brick_smasher": brickSmasher
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
