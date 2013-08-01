@@ -1,5 +1,5 @@
 body.balloon_page_index {
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     text-align: center;
    	overflow: hidden;
 
@@ -16,48 +16,31 @@ body.balloon_page_index {
     	left: 0;
     }
 
-    #controls_container {
-    	position: fixed;
-    	bottom: 0;
-    	left: 0;
-    	height: 200px;
-    	padding: 10px;
-
-    	#controls {
-    		display: block;
-    		padding: 10px;
-    		text-align: left;
-    	}
-
-    	.input {
-    		width: 100px;
-    	}
-    }
-    
     footer {
 	    position: fixed;
 	    bottom: 0;
 	    left: 0;
 	    right: 0;
 	    height: 36px;
-		}
 
 		#links_container {
 			text-align: right;
 			padding: 10px 20px;
+			font-size: 13px;
 		}
 
 		#links_container a {
 			text-decoration: none;
-			color: #4b4352;
+			color: #aaa;
 			margin-left: 15px;
 		}
 
 		#links_container a:visited {
-			color: #4b4352;
+			color: #aaa;
 		}
 
 		#links_container a:hover {
-			color: #1dc69f;
+			color: #c00;
 		}
+	}
 }

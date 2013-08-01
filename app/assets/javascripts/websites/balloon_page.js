@@ -18,7 +18,7 @@ function balloon() {
 		var balloon_w = image.width;
 		var balloon_h = image.height;
         var balloon = new Kinetic.Image({
-          x: width / 2,
+          x: width / 4,
           y: height / 2,
           image: image,
           width: balloon_w,
@@ -26,7 +26,7 @@ function balloon() {
           draggable: true
         });
 
-        balloon.vx = 0;
+        balloon.vx = 2;
         balloon.vy = 0;
 	
 		balloon.createImageHitRegion(function () {
@@ -88,13 +88,6 @@ function balloon() {
     		balloon.setX(balloon_x + balloon.vx);
     		balloon.setY(balloon_y + balloon.vy);
 
-    		if (balloon_y < 0) {
-    			balloon.setY(0);
-    			balloon.vy *= -1;
-    			balloon.vy *= damper;
-    			balloon.vx *= damper / 1.3;
-    		}
-
     		if (balloon_x < 0) {
     			balloon.setX(0);
     			balloon.vx *= -1;
@@ -104,6 +97,19 @@ function balloon() {
     			balloon.setX(width - balloon.getWidth());
     			balloon.vx *= -1;
     			balloon.vx *= damper;
+    		}
+
+    		if (balloon_y < 0) {
+    			balloon.setY(0);
+    			balloon.vy *= -1;
+    			balloon.vy *= damper;
+    			balloon.vx *= damper / 1.3;
+    		}
+
+    		if (balloon_y > height - balloon.getHeight()) {
+    			balloon.setY(height - balloon.getHeight());
+    			balloon.vy *= -1;
+    			balloon.vy *= damper;
     		}
     	}
     }
