@@ -51,7 +51,8 @@ $(document).ready(function () {
 		"mishmosh": mishmosh,
 		"todo": nothing,
 		"button_maker": buttonMaker,
-		"brick_smasher": brickSmasher
+		"brick_smasher": brickSmasher,
+		"balloon": balloon
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

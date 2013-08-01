@@ -75,6 +75,8 @@ bacon_full.png: bacon_full-9f1bfdbf2987c83be1cf2914a4312f04.png
 bacon_full/index.png: bacon_full-9f1bfdbf2987c83be1cf2914a4312f04.png
 bam.png: bam-8471856764321635ac41fb0064dd7ec7.png
 bam/index.png: bam-8471856764321635ac41fb0064dd7ec7.png
+blue_balloon.png: blue_balloon-1dd00d1fc284cf9bac08b4ec4a0fa2fe.png
+blue_balloon/index.png: blue_balloon-1dd00d1fc284cf9bac08b4ec4a0fa2fe.png
 boom.png: boom-d9f6db1b7f82665ff59a3b7f2092eb81.png
 boom/index.png: boom-d9f6db1b7f82665ff59a3b7f2092eb81.png
 crunch.png: crunch-fe1335cfc6dff714c178439076583891.png
@@ -141,12 +143,12 @@ zazam.png: zazam-db6091b35ea1d595558dfa3ee9ad2c14.png
 zazam/index.png: zazam-db6091b35ea1d595558dfa3ee9ad2c14.png
 zoom.png: zoom-cc03c1f274ad6ffcd6964d7bb0960abc.png
 zoom/index.png: zoom-cc03c1f274ad6ffcd6964d7bb0960abc.png
-application.js: application-60dcd57c9cf7b3387dd6895a84691713.js
-application/index.js: application-60dcd57c9cf7b3387dd6895a84691713.js
+application.js: application-4d07226ef5b242e2650fcadcd8a9f361.js
+application/index.js: application-4d07226ef5b242e2650fcadcd8a9f361.js
 helpers/application.js: helpers/application-4c749d00be3e691c1036a2107930a1a2.js
 helpers/application/index.js: helpers/application-4c749d00be3e691c1036a2107930a1a2.js
-application.css: application-6538d8f9aa7b93fa19c80f299ae8df9b.css
-application/index.css: application-6538d8f9aa7b93fa19c80f299ae8df9b.css
+application.css: application-bf4a6c9075758c7b58a317d139b6d0a4.css
+application/index.css: application-bf4a6c9075758c7b58a317d139b6d0a4.css
 big_word_list: big_word_list
 jscolor/demo.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
 jscolor/demo/index.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
