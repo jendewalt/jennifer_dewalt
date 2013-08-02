@@ -52,7 +52,8 @@ $(document).ready(function () {
 		"todo": nothing,
 		"button_maker": buttonMaker,
 		"brick_smasher": brickSmasher,
-		"balloon": balloon
+		"balloon": balloon,
+		"plinky": plinky
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

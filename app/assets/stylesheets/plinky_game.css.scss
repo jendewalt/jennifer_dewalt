@@ -1,0 +1,68 @@
+body.plinky_game_index {
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    text-align: center;
+    background-color: #2b2930;
+    letter-spacing: 2px;
+    
+    header {
+    	position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        padding: 10px 20px;
+        z-index: 20;
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #fff;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    #win {
+    	display: none;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	z-index: 10;
+
+    	#inner_modal {
+    		margin-top: 150px;
+    		font-size: 100px;
+    		color: #35d49a;
+    	}
+    }
+
+    canvas {
+    	border-left: 1px solid #fff;
+    	border-right: 1px solid #fff;
+    	border-bottom: 1px solid #fff;
+    }
+}

@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :plinky do 
+    resources :game, :only => [:index]
+  end
+
   namespace :balloon do 
     resources :page, :only => [:index]
   end

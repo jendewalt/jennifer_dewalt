@@ -61,14 +61,14 @@ function balloon() {
 
         layer.draw();
 
-        evolveBall(delta_time, balloon);
+        evolveBalloon(delta_time, balloon);
 
         requestAnimFrame(function () {
         	animate(time, balloon);
         });
     }
 
-    function evolveBall(delta_time, balloon) {
+    function evolveBalloon(delta_time, balloon) {
     	var balloon_x = balloon.getX();
     	var balloon_y = balloon.getY();
     	var mouse = stage.getMousePosition();
@@ -90,26 +90,22 @@ function balloon() {
 
     		if (balloon_x < 0) {
     			balloon.setX(0);
-    			balloon.vx *= -1;
-    			balloon.vx *= damper;
+    			balloon.vx *= -1 * damper;
     		}
     		if (balloon_x > width - balloon.getWidth()) {
     			balloon.setX(width - balloon.getWidth());
-    			balloon.vx *= -1;
-    			balloon.vx *= damper;
+    			balloon.vx *= -1 * damper;
     		}
 
     		if (balloon_y < 0) {
     			balloon.setY(0);
-    			balloon.vy *= -1;
-    			balloon.vy *= damper;
+    			balloon.vy *= -1 * damper;
     			balloon.vx *= damper / 1.3;
     		}
 
     		if (balloon_y > height - balloon.getHeight()) {
     			balloon.setY(height - balloon.getHeight());
-    			balloon.vy *= -1;
-    			balloon.vy *= damper;
+    			balloon.vy *= -1 * damper;
     		}
     	}
     }
