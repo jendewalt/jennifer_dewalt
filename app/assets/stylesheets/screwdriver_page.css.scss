@@ -1,0 +1,82 @@
+body.screwdriver_page_index {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    text-align: center;
+   	overflow: hidden;
+
+    #container {
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	margin-top: -80px;
+    	margin-left: -325px;
+
+    	#screwdriver {
+    		.tip {
+    			display: none;
+    		}
+
+    		&:hover .tip {
+    			display: inline-block;
+	    		position: absolute;
+	    		top: 110px;
+	    		left: 293px;
+	    		padding: 10px 15px;
+	    		font-size: 14px;
+	    		color: #333;
+	    		background-color: #e3e3e3;
+	    		border-radius: 5px;
+	    		box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+
+	    		&:after, &:before {
+					position: absolute;
+					bottom: 100%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					pointer-events: none;
+				}
+
+				&:after {
+					border-bottom-color: #e3e3e3;
+					border-width: 14px;
+					left: 50%;
+					margin-left: -14px;
+				}
+
+				&:before {
+					border-width: 36px;
+					left: 50%;
+					margin-left: -36px;
+				}
+    		}
+    	}
+    }
+    footer {
+	    position: fixed;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    height: 36px;
+
+		#links_container {
+			text-align: right;
+			padding: 10px 20px;
+			font-size: 13px;
+		}
+
+		#links_container a {
+			text-decoration: none;
+			color: #aaa;
+			margin-left: 15px;
+		}
+
+		#links_container a:visited {
+			color: #aaa;
+		}
+
+		#links_container a:hover {
+			color: #c00;
+		}
+	}
+}

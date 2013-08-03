@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :screwdriver do 
+    resources :page, :only => [:index]
+  end
+
   namespace :plinky do 
     resources :game, :only => [:index]
   end

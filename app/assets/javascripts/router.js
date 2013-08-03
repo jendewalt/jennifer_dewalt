@@ -53,7 +53,8 @@ $(document).ready(function () {
 		"button_maker": buttonMaker,
 		"brick_smasher": brickSmasher,
 		"balloon": balloon,
-		"plinky": plinky
+		"plinky": plinky,
+		"screwdriver": screwdriver
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
