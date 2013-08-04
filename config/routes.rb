@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :confused_twitter do 
+    resources :tweets, :only => [:index]
+  end
+
   namespace :screwdriver do 
     resources :page, :only => [:index]
   end

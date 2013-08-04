@@ -46,3 +46,4 @@ gem 'capistrano'
 gem "paperclip", "~> 3.0"
 gem "devise"
 gem "omniauth"
+gem "twitter"

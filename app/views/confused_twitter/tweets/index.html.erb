@@ -1,0 +1,13 @@
+<%= render 'confused_twitter/tweets/header' %>
+
+<div id="tweet_container">
+	<ul title="Confused? These are some posts from Twitter about being confused. That's all there is to it, really.">
+		<% @tweets.each do |tweet| %>
+			<li><p><%= tweet[:text] %></p></li>
+			<% if tweet[:img_url] %>
+				<li><%= image_tag(tweet[:img_url]) %></li> 
+			<% end %>
+		<% end %>
+	</ul>
+</div>
+

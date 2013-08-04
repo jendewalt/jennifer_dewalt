@@ -1,0 +1,91 @@
+body.confused_twitter_tweets_index {
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    text-align: center;
+    color: #444;
+    letter-spacing: 2px;
+
+	background: -moz-linear-gradient(top, #2cafe3 0%, #49c0f0 8%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2cafe3), color-stop(8%,#49c0f0));
+	background: -webkit-linear-gradient(top, #2cafe3 0%,#49c0f0 8%);
+	background: -o-linear-gradient(top, #2cafe3 0%,#49c0f0 8%);
+	background: -ms-linear-gradient(top, #2cafe3 0%,#49c0f0 8%);
+	background: linear-gradient(to bottom, #2cafe3 0%,#49c0f0 8%);
+
+
+	background-repeat: no-repeat;
+	background-color: #49c0f0;
+
+    header {
+    	font-family: 'Finger Paint', cursive;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        text-align: left;
+
+        background: #2b2d30;
+		background: -moz-linear-gradient(top, #2b2d30 0%, #000000 99%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2b2d30), color-stop(99%,#000000));
+		background: -webkit-linear-gradient(top, #2b2d30 0%,#000000 99%);
+		background: -o-linear-gradient(top, #2b2d30 0%,#000000 99%);
+		background: -ms-linear-gradient(top, #2b2d30 0%,#000000 99%);
+		background: linear-gradient(to bottom, #2b2d30 0%,#000000 99%);
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 18px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #fff;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    #tweet_container {
+    	padding-bottom: 60px;
+
+	    ul {
+	    	width: 500px;
+	    	margin: auto;
+	    	padding: 20px 40px;
+	    	background-color: #fdfdfd;
+	    	box-shadow: 0 0 3px rgba(0,0,0,0.4);
+
+	    	li {
+	    		padding: 20px 50px;
+	    		border-top: 1px solid rgba(0,0,0,0.2);
+	    		border-bottom: 1px solid rgba(255,255,255,0.2);
+
+	    		p {
+	    			line-height: 20px;
+	    		}
+
+	    		img {
+	    			max-width: 400px;
+	    			box-shadow: 0 0 2px rgba(0,0,0,0.2);
+	    		}
+	    	}
+	    }
+    }
+}
