@@ -56,7 +56,8 @@ $(document).ready(function () {
 		"plinky": plinky,
 		"screwdriver": screwdriver,
 		"confused_twitter": confusedTwitter,
-		"picnic": picnic
+		"picnic": picnic,
+		"share_a_secret": shareASecret
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

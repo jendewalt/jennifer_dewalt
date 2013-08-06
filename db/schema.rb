@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130728230022) do
+ActiveRecord::Schema.define(:version => 20130805224016) do
 
   create_table "click_counter_buttons", :force => true do |t|
     t.integer  "clicks"
@@ -110,6 +110,12 @@ ActiveRecord::Schema.define(:version => 20130728230022) do
     t.integer  "self_votes"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "share_a_secret_secrets", :force => true do |t|
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "tiny_notes_notes", :force => true do |t|

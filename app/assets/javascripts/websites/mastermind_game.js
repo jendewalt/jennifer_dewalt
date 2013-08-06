@@ -1,9 +1,9 @@
 function mastermindGame() {
 	var colors = ['#eb1144', '#11d3ed', '#f2680c', '#c111ed', 
-		 		  '#0ee307', '#3375e8'],
-		code = [],
-		guesses = 8,
-		cur_guess = [];
+		 		  '#0ee307', '#3375e8'];
+	var code = [];
+	var guesses = 8;
+	var cur_guess = [];
 
 	for (var i = 0; i < 6; i++) {
 		$('<div />', {
@@ -16,7 +16,7 @@ function mastermindGame() {
 	}
 
 	for (var i = 0; i < 4; i++) {
-		code.push(colors[randomInt(0, 7)]);
+		code.push(colors[randomInt(0, colors.length - 1)]);
 	}
 
 	$('.start').on('click', function() {
@@ -65,8 +65,8 @@ function mastermindGame() {
 	};
 
 	function checkGuess() {
-		var keys = {red_marks: 0, white_marks: 0},
-			color_count = generateCheckHash();
+		var keys = {red_marks: 0, white_marks: 0};
+		var	color_count = generateCheckHash();
 
 		_.each(cur_guess, function (guess, i) {
 			if (color_count[guess]) {
@@ -120,17 +120,4 @@ function mastermindGame() {
 			$('.code .peg[data-index="'+ i +'"]').css('background-color', color).fadeIn(500);
 		});
 	}
-
-};
-
-
-
-
-
-
-
-
-
-
-
-
+}

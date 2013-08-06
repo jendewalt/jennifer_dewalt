@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :share_a_secret do 
+    resources :secrets, :only => [:index, :create]
+  end
+
   namespace :picnic do 
     resources :blanket, :only => [:index]
   end
