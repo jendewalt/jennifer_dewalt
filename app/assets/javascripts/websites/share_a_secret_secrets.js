@@ -13,6 +13,7 @@ function shareASecret() {
 			alert("You can't think of another secret? I'm sure you have at least a few more secrets to share.");
 		} else {
 			last_secret = secret;
+			$('.secret_input').val('');
 			
 		    $.ajax({
 				type: 'POST',
