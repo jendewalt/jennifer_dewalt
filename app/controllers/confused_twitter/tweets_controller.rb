@@ -1,7 +1,7 @@
 class ConfusedTwitter::TweetsController < ApplicationController
   def index
     @title = 'Confused Twitter'
-    results = Twitter.search('confused OR confused AND pic.twitter.com', {include_entities: true})
+    results = Twitter.search('confused OR confusing OR confused AND pic.twitter.com', {include_entities: true})
     @tweets = results.statuses.map do |status| 
       { text: status.text, img_url: status.attrs[:entities][:media].try(:first).try(:[], :media_url) }
     end

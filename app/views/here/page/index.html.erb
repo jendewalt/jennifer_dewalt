@@ -1,0 +1,30 @@
+<div id="start" class="modal">
+	<div id="info" class="inner_modal">
+		<h1>This website requires geolocation.</h1>
+		<p>Allowing geolocation will provide the app with <br>
+		   your approximate location which will be used to <br>
+		   find and display Instagram photos taken near you.</p>
+	</div>
+
+	<div id="loading" class="inner_modal">
+		<h2>Retreiving nearby photos.</h2>
+		<img src="/assets/here_throbber.gif">
+	</div>
+
+	<div id="here" class="inner_modal">
+		<h1>You Are Here</h1>
+	</div>
+</div>
+
+<div id="error" class="modal">
+	<div class="inner_modal">
+		<h1>There seems to be a problem.</h1>
+		<p></p>
+	</div>
+</div>
+
+<div id="wrapper">
+	<div id="img_container"></div>
+</div>
+
+<%= render 'here/page/footer' %>

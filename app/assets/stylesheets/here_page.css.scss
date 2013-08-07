@@ -1,0 +1,100 @@
+body.here_page_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    overflow-y: scroll;
+    background-color: #131316;
+    color: #454545;
+
+    #wrapper {
+	    padding-bottom: 20px;
+    	
+	    #img_container {
+	    	padding: 30px;
+	    }
+	    
+	    img {
+	    	display: inline-block;
+	    	vertical-align: top;
+	    }
+    }
+
+    .modal {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	padding-top: 100px;
+    	background-color: rgba(255,255,255,1);
+    	z-index: 10;
+
+    	.inner_modal {
+    		width: 500px;
+    		margin: auto;
+
+    		h1 {
+    			font-size: 30px;
+    			color: #1d29a3;
+    			margin-bottom: 26px;
+    		}
+
+    		h2 {
+    			font-size: 22px;
+    			color: #454545;
+    			margin-bottom: 26px;
+    		}
+
+    		p {
+    			font-size: 16px;
+    			line-height: 26px;
+    		}
+    	}
+    }
+
+    #here {
+    	display: none;
+    }
+
+    #error {
+    	display: none;
+    }
+    #loading {
+    	display: none;
+    	margin-top: 50px;
+    }
+    
+    footer {
+    	position: absolute;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+        padding: 10px 20px;
+        height: 20px;
+        z-index: 100;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 11px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #888;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #888;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+}

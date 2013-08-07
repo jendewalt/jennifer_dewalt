@@ -1,4 +1,4 @@
-function shareASecret() {
+ function shareASecret() {
 	var last_secret = '';
 
 	$('.secret_input').focus();
@@ -22,7 +22,7 @@ function shareASecret() {
 				data: {
 					new_secret: secret
 				},
-				complete: function(data){
+				complete: function (data) {
 		        	insertResponse(data.responseText);
 		        }
 			});	
