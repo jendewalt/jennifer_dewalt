@@ -1,0 +1,2 @@
+module PhotoboothPageHelper
+end

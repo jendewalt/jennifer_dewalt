@@ -1,0 +1,31 @@
+<%= render 'photobooth/page/header' %>
+
+<div class="modal start">
+	<h1>Photobooth</h1>
+	<p>The photobooth takes four photos with your camera.</p>
+	<p>There will be 3 seconds between each photo.</p>
+	<p>After the photobooth finishes, you'll get a photostrip of your pictures which you can download and keep.</p>
+	<button class="start_btn btn">Start</button>
+</div>
+
+<div id="countdown_container">
+	<div id="countdown"></div>
+</div>
+
+<div id="container">
+	<video></video>
+	<p class="access">Please Allow Camera Access.</p>
+</div>
+
+<div id="photo_container">
+	<canvas id="final_canvas"></canvas>
+	<div class="btn_container">
+		<button id="save" class="btn">Save</button>
+		<button id="reset" class="btn">Redo</button>
+	</div>
+</div>
+
+<div id="flash"></div>
+
+<canvas id="video_capture" style="display:none;"></canvas>
+
