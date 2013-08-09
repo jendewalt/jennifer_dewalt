@@ -38,7 +38,6 @@ function catWall() {
 
 	// 4. The API will call this function when the video player is ready.
 	function onPlayerReady(event) {
-		console.log(event.target)
 		event.target.mute();
 		event.target.playVideo();
 	}
