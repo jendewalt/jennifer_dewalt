@@ -20,7 +20,6 @@ function catWall() {
 
 				player = new YT.Player('player' + i, {
 					playerVars: { 
-						// 'autoplay': 1, 
 						'autohide': 1,
 						'wmode': 'opaque', 
 						'controls': 0,

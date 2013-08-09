@@ -7,14 +7,6 @@ body.cat_wall_page_index {
         padding: 10px 20px;
     }
 
-    #logo a {
-        float: left;
-        line-height: 20px;
-        font-size: 14px;
-        text-decoration: none;
-        color: #000;
-    }
-
     #links_container {
         float: right;
     }
@@ -23,12 +15,12 @@ body.cat_wall_page_index {
         font-size: 14px;
         line-height: 20px;
         text-decoration: none;
-        color: #000;
+        color: #555;
         margin-left: 15px;
     }
 
     #links_container a:visited {
-        color: #000;
+        color: #555;
     }
 
     #links_container a:hover {
@@ -45,7 +37,6 @@ body.cat_wall_page_index {
     }
 
     .video {
-    	// display: none;
     	height: 200px;
     	width: 200px;
     }
