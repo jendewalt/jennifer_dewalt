@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :cat_wall do 
+    resources :page, :only => [:index, :create]
+  end
+
   namespace :photobooth do 
     resources :page, :only => [:index]
   end

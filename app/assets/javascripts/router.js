@@ -59,7 +59,8 @@ $(document).ready(function () {
 		"picnic": picnic,
 		"share_a_secret": shareASecret,
 		"here": herePage,
-		"photobooth": photobooth
+		"photobooth": photobooth,
+		"cat_wall": catWall
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

@@ -1,0 +1,52 @@
+body.cat_wall_page_index {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    background-color: black;
+    
+    header {
+        padding: 10px 20px;
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #000;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: #000;
+    }
+
+    #links_container a:hover {
+        color: #f00;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    #video_container {
+    	width: 800px;
+    	margin: auto;
+    }
+
+    .video {
+    	// display: none;
+    	height: 200px;
+    	width: 200px;
+    }
+}
