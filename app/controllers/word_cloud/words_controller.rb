@@ -14,7 +14,13 @@ class WordCloud::WordsController < ApplicationController
 
       @cloud_words = Hash.new(0)
       words.each do |word|
-        scale = (word.count - min_frequency).to_f/(max_frequency - min_frequency)
+        if max_frequency - min_frequency == 0
+          denom = 1
+        else
+          denom = max_frequency - min_frequency
+        end
+
+        scale = (word.count - min_frequency).to_f / denom
         size = min_size + ((max_size - min_size) * scale).round
         @cloud_words[word.word_text] = size
       end
