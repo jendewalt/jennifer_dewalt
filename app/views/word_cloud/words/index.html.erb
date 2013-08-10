@@ -1,0 +1,29 @@
+<%= render 'word_cloud/words/header' %>
+
+<div id="cloud_container">
+	<% @cloud_words.each_pair do |word, size| %>
+		<p class="cloud_word" style="font-size: <%= size %>px"><%= word %></p>
+	<% end %>
+</div>
+
+<div id="form_container">
+	<div id="info_tab" title="What is this?">?</div>
+	<br class="clear">
+
+	<div class="input_warning" style="opacity: 0">Your text is too long.</div>
+
+	<%= form_for @new_words do |f| %>
+		<%= f.text_field :word_text, :id => 'text_field' %>
+		<%= f.submit :value => 'Submit', :class => "btn" %>
+	<% end %>
+</div>
+
+<div class="modal" style="display: none">
+	<div class="inner_modal">
+		<div class="close">X</div>
+
+		<p>This word cloud shows the 120 words most recently submitted to the website using the form below.</p>
+
+		<p>The size of each word represents the overall frequency of submission for the word as compared to the other words on the page.</p>
+	</div>
+</div>

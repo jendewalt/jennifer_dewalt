@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :word_cloud do 
+    resources :words, :only => [:index, :create]
+  end
+
   namespace :cat_wall do 
     resources :page, :only => [:index, :create]
   end

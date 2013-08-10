@@ -60,7 +60,8 @@ $(document).ready(function () {
 		"share_a_secret": shareASecret,
 		"here": herePage,
 		"photobooth": photobooth,
-		"cat_wall": catWall
+		"cat_wall": catWall,
+		"word_cloud": wordCloud
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130805224016) do
+ActiveRecord::Schema.define(:version => 20130809205544) do
 
   create_table "click_counter_buttons", :force => true do |t|
     t.integer  "clicks"
@@ -189,5 +189,14 @@ ActiveRecord::Schema.define(:version => 20130805224016) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "word_cloud_words", :force => true do |t|
+    t.string   "word_text"
+    t.integer  "count"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "word_cloud_words", ["count"], :name => "index_word_cloud_words_on_count"
 
 end
