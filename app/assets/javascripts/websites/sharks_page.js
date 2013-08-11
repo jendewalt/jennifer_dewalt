@@ -4,7 +4,6 @@ function sharks() {
 	var height = window.innerHeight;
 	var width = window.innerWidth;
 	var screen_center = {x: width/2, y: height/2};
-	var time_prime = 1000;
 	var sharks = [];
 	var sources = ['/assets/shark_0.png', '/assets/shark_1.png', '/assets/shark_2.png', '/assets/shark_3.png', '/assets/shark_4.png']
 
@@ -38,7 +37,7 @@ function sharks() {
 			this.time += 2;
 			this.x = screen_center.x + (this.x_prime / 10000) * Math.pow(this.time, 2);
 			this.y = screen_center.y + (this.y_prime / 10000) * Math.pow(this.time, 2);
-			
+
 			ctx.drawImage(this.img, this.x - offset_x, this.y - offset_y, cur_width, cur_height);
 		}
 		shark_img.src = img_src;
@@ -52,7 +51,7 @@ function sharks() {
 		_.each(sharks, function (shark) {
 			if (shark.x > width * 2 || shark.x < 0 - shark.width ||
 				shark.y > height * 2 || shark.y < 0 - shark.height) {
-				
+
 				var angle = Math.random() * Math.PI * 2;
 				var x = Math.cos(angle) * height * 0.2;
 				var y = Math.sin(angle) * height * 0.2;
@@ -65,12 +64,13 @@ function sharks() {
 				shark.y = screen_center.y;
 			}
 		});
+
 		requestAnimFrame(paintScreen);
 	}
 
 	function paintScreen() {
 		ctx.clearRect(0,0,width, height);
-		
+
 		_.each(sharks, function (shark) {
 		 	shark.draw();
 		});
@@ -78,7 +78,7 @@ function sharks() {
 	}
 
 	function addSharks() {
-		if (sharks.length < 12) {
+		if (sharks.length < 10) {
 			var angle = Math.random() * Math.PI * 2;
 			var x = Math.cos(angle) * height * 0.2;
 			var y = Math.sin(angle) * height * 0.2;
@@ -89,6 +89,6 @@ function sharks() {
 	}
 
 	addSharks();
-	
+
 	paintScreen();
 }
