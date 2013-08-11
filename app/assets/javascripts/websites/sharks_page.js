@@ -11,10 +11,22 @@ function sharks() {
 	canvas.height = height;
 	canvas.width = width;
 
+	function loadImages(sources) {
+		var images = {};
+		var numImages = sources.length;
+
+		_.each(sources, function (src) {
+			images[src] = new Image();
+			images[src].src = sources[src];
+		});
+
+		addSharks();
+	
+		paintScreen();
+	}
+
 	function Shark(x_prime, y_prime, img_src) {
 		var shark_img = new Image;
-
-		shark_img.src = img_src;
 
 		this.x_prime = x_prime;
 		this.y_prime = y_prime;
@@ -29,6 +41,8 @@ function sharks() {
 			that.height = shark_img.height;
 			that.width = shark_img.width;
 		}
+
+		shark_img.src = img_src;
 
 		this.draw = function () {
 			var scale = 0.005 * this.time;
@@ -60,6 +74,7 @@ function sharks() {
 
 				shark.x_prime = x;
 				shark.y_prime = y;
+				shark.img = sources[randomInt(0, sources.length - 1)];
 				shark.time = 1;
 				shark.x = screen_center.x;
 				shark.y = screen_center.y;
@@ -75,7 +90,6 @@ function sharks() {
 		_.each(sharks, function (shark) {
 		 	shark.draw();
 		});
-
 		checkSharks();
 	}
 
@@ -88,10 +102,7 @@ function sharks() {
 			makeShark(x, y, sources[randomInt(0, sources.length - 1)]);
 		}
 		setTimeout(addSharks, randomInt(500, 2000));
-		
 	}
 
-	addSharks();
-	
-	paintScreen();
+	loadImages(sources);
 }
