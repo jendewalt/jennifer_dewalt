@@ -28,7 +28,6 @@ function sharks() {
 			that.width = shark_img.width;
 		}
 
-
 		this.draw = function () {
 			var scale = 0.005 * this.time;
 			var cur_width = this.width * scale;
@@ -61,11 +60,11 @@ function sharks() {
 				shark.x_prime = x;
 				shark.y_prime = y;
 				shark.time = 1;
+				shark.img.src = sources[randomInt(0, sources.length - 1)];
 				shark.x = screen_center.x;
 				shark.y = screen_center.y;
 			}
 		});
-
 		requestAnimFrame(paintScreen);
 	}
 
@@ -79,7 +78,7 @@ function sharks() {
 	}
 
 	function addSharks() {
-		if (sharks.length < 10) {
+		if (sharks.length < 12) {
 			var angle = Math.random() * Math.PI * 2;
 			var x = Math.cos(angle) * height * 0.2;
 			var y = Math.sin(angle) * height * 0.2;
