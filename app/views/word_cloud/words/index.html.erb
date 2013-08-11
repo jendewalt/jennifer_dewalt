@@ -15,7 +15,7 @@
 	<div class="input_warning" style="opacity: 0">Your text is too long.</div>
 
 	<%= form_for @new_words do |f| %>
-		<%= f.text_field :word_text, :id => 'text_field' %>
+		<%= f.text_field :word_text, :id => 'text_field', :maxlength => 255 %>
 		<%= f.submit :value => 'Submit', :class => "btn" %>
 	<% end %>
 </div>

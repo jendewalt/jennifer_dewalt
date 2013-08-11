@@ -61,7 +61,8 @@ $(document).ready(function () {
 		"here": herePage,
 		"photobooth": photobooth,
 		"cat_wall": catWall,
-		"word_cloud": wordCloud
+		"word_cloud": wordCloud,
+		"sharks": sharks
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

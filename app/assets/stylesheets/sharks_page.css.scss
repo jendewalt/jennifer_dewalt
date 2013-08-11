@@ -1,0 +1,64 @@
+body.sharks_page_index {
+    $text_color: #282d33;
+    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    $header_links_color: #ccc;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 1px;
+background: #000000;
+background: -moz-radial-gradient(center, ellipse cover, #000000 0%, #111214 5%, #0e1014 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#000000), color-stop(5%,#111214), color-stop(100%,#0e1014));
+background: -webkit-radial-gradient(center, ellipse cover, #000000 0%,#111214 5%,#0e1014 100%);
+background: -o-radial-gradient(center, ellipse cover, #000000 0%,#111214 5%,#0e1014 100%);
+background: -ms-radial-gradient(center, ellipse cover, #000000 0%,#111214 5%,#0e1014 100%);
+background: radial-gradient(ellipse at center, #000000 0%,#111214 5%,#0e1014 100%);
+    
+    header {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: $header_links_color;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 11px;
+        line-height: 20px;
+        text-decoration: none;
+        color: $header_links_color;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: $header_links_color;
+    }
+
+    #links_container a:hover {
+        color: $text_color;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    canvas {
+    	display: inline-block;
+    	vertical-align: top;
+    }
+}
