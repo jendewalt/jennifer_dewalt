@@ -6,24 +6,10 @@ function sharks() {
 	var screen_center = {x: width/2, y: height/2};
 	var time_prime = 1000;
 	var sharks = [];
-	var sources = ['/assets/shark_0.png/', '/assets/shark_1.png/', '/assets/shark_2.png/', '/assets/shark_3.png/', '/assets/shark_4.png/']
+	var sources = ['/assets/shark_0.png', '/assets/shark_1.png', '/assets/shark_2.png', '/assets/shark_3.png', '/assets/shark_4.png']
 
 	canvas.height = height;
 	canvas.width = width;
-
-	function loadImages(sources) {
-		var images = {};
-		var numImages = sources.length;
-
-		_.each(sources, function (src) {
-			images[src] = new Image();
-			images[src].src = sources[src];
-		});
-
-		addSharks();
-	
-		paintScreen();
-	}
 
 	function Shark(x_prime, y_prime, img_src) {
 		var shark_img = new Image;
@@ -42,7 +28,6 @@ function sharks() {
 			that.width = shark_img.width;
 		}
 
-		shark_img.src = img_src;
 
 		this.draw = function () {
 			var scale = 0.005 * this.time;
@@ -57,6 +42,7 @@ function sharks() {
 			
 			ctx.drawImage(this.img, this.x - offset_x, this.y - offset_y, cur_width, cur_height);
 		}
+		shark_img.src = img_src;
 	} 
 
 	function makeShark(x_prime, y_prime, img_src) {
@@ -74,7 +60,6 @@ function sharks() {
 
 				shark.x_prime = x;
 				shark.y_prime = y;
-				shark.img = sources[randomInt(0, sources.length - 1)];
 				shark.time = 1;
 				shark.x = screen_center.x;
 				shark.y = screen_center.y;
@@ -104,5 +89,7 @@ function sharks() {
 		setTimeout(addSharks, randomInt(500, 2000));
 	}
 
-	loadImages(sources);
+	addSharks();
+	
+	paintScreen();
 }
