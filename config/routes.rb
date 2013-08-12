@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :need_drink do 
+    resources :options, :only => [:index]
+  end
+
   namespace :sharks do 
     resources :page, :only => [:index]
   end
