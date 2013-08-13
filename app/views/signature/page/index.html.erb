@@ -1,0 +1,10 @@
+<%= render 'signature/page/header' %>
+
+<canvas title="Draw your signature here"></canvas>
+
+<div id="control_container">
+	<div class="control"><label>Pen Color: </label><input value="000000" class="color {pickerPosition:'top'}"></div>
+	<div class="control"><label>Pen Size: </label><input value="5" class="size"></div>
+	<button class="btn" id="save" title="Click to download your signature as a .png file">Save</button>
+	<button class="btn" id="clear" title="Click to erase the canvas">Clear</button>
+</div>

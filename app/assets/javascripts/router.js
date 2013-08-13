@@ -63,7 +63,8 @@ $(document).ready(function () {
 		"cat_wall": catWall,
 		"word_cloud": wordCloud,
 		"sharks": sharks,
-		"need_drink": needDrink
+		"need_drink": needDrink,
+		"signature": signature
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
