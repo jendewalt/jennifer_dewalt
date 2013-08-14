@@ -1,0 +1,62 @@
+<%= render 'image_editor/page/header' %>
+
+<div id="control_container">
+	<ul>
+		<li>
+			<label>Brightness</label>
+			<button class="btn small bright" id="bright_up" data-value='1'>+</button>
+			<button class="btn small bright" id="bright_down" data-value='-1'>-</button>
+		</li>
+		<li>
+			<label>Red</label>
+			<button class="btn small rgba" id="red_up" data-color='red' data-value='1'>+</button>
+			<button class="btn small rgba" id="red_down" data-color='red' data-value='-1'>-</button>
+		</li>
+		<li>
+			<label>Green</label>
+			<button class="btn small rgba" id="green_up" data-color='green' data-value='1'>+</button>
+			<button class="btn small rgba" id="green_down" data-color='green' data-value='-1'>-</button>
+		</li>
+		<li>
+			<label>Blue</label>
+			<button class="btn small rgba" id="blue_up" data-color='blue' data-value='1'>+</button>
+			<button class="btn small rgba" id="blue_down" data-color='blue' data-value='-1'>-</button>
+		</li>
+		<li>
+			<label>Alpha</label>
+			<button class="btn small rgba" id="alpha_up" data-color='alpha' data-value='1'>+</button>
+			<button class="btn small rgba" id="alpha_down" data-color='alpha' data-value='-1'>-</button>
+		</li>
+		<li>
+			<label>Resize</label>
+			<div>Percent: <input type='text' class="resize" placeholder="0.5" title="Percentage should be entered as a decimal. E.g. Enter 50% as 0.5."></div>
+		</li>
+		<li>
+			<button class="btn large" id="grayscale" title="Filter image to grayscale.">Grayscale</button>
+		</li>
+		<li>
+			<button class="btn large" id="vintage" title="Filter image to vintage.">Vintage</button>
+		</li>
+		<li>
+			<button class="btn large state" id="save" title="Save your image as a .png file.">Save</button>
+		</li>
+		<li>
+			<button class="btn large state" id="reset" title="Reset image back to original.">Reset</button>
+		</li>
+		<li>
+			<button class="btn large state" id="clear" title="Erase the canvas completely.">Clear</button>
+		</li>
+	</ul>
+</div>
+
+<div id="canvas_container">
+	<canvas title="Drag your image here"></canvas>
+
+	<div class="modal">
+		<ul>
+			<p>Drag images from your computer here.</p>
+			<p>or</p>
+			<p>Browse files: <input type="file" id="image_loader" name="image_loader"/></p>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,161 @@
+body.image_editor_page_index {
+    $text_color: #282d33;
+    $main_font: sans-serif;
+    $header_links_color: $text_color;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 1px;
+    background-color: #aaa;
+    
+    header {
+    	margin-bottom: 30px;
+        padding: 10px 20px;
+        
+        background: #fc8a8a;
+        background: -moz-linear-gradient(-45deg, #fc8a8a 0%, #efa973 18%, #ffea82 32%, #a4ff77 51%, #80eefc 69%, #a7aaf9 86%, #f490b6 100%);
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fc8a8a), color-stop(18%,#efa973), color-stop(32%,#ffea82), color-stop(51%,#a4ff77), color-stop(69%,#80eefc), color-stop(86%,#a7aaf9), color-stop(100%,#f490b6));
+        background: -webkit-linear-gradient(-45deg, #fc8a8a 0%,#efa973 18%,#ffea82 32%,#a4ff77 51%,#80eefc 69%,#a7aaf9 86%,#f490b6 100%);
+        background: -o-linear-gradient(-45deg, #fc8a8a 0%,#efa973 18%,#ffea82 32%,#a4ff77 51%,#80eefc 69%,#a7aaf9 86%,#f490b6 100%);
+        background: -ms-linear-gradient(-45deg, #fc8a8a 0%,#efa973 18%,#ffea82 32%,#a4ff77 51%,#80eefc 69%,#a7aaf9 86%,#f490b6 100%);
+        background: linear-gradient(135deg, #fc8a8a 0%,#efa973 18%,#ffea82 32%,#a4ff77 51%,#80eefc 69%,#a7aaf9 86%,#f490b6 100%);
+    }
+
+    #logo a {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: $header_links_color;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 11px;
+        line-height: 20px;
+        text-decoration: none;
+        color: $header_links_color;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: $header_links_color;
+    }
+
+    #links_container a:hover {
+        color: $text_color;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    #canvas_container {
+    	position: relative;
+	    margin-left: 140px; 
+    	
+	    canvas {
+	        border: 1px solid rgba(0,0,0,0.45);
+	        background-color: #fff;
+	        box-shadow: 0 0 1px rgba(0,0,0,0.3);
+	        cursor: pointer;
+	    }
+    }
+
+    #control_container {
+    	position: absolute;
+    	left: 0;
+    	top: 70px;
+        padding: 10px 0;
+        border: 1px solid rgba(0,0,0,0.45);
+        background-color: #fff;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.45) inset;
+
+        ul {
+        	width: 120px;
+	        font-size: 11px;
+
+	        li {
+	        	padding: 5px;
+
+		        .control {
+		            display: block;
+		        }
+
+			    label {
+			    	display: block;
+			    	margin: 5px;
+			    	font-weight: bold;
+			    }
+
+			    input {
+			    	width:40px;
+			    }
+
+			    .small {
+			    	width: 24px;
+			    	line-height: 20px;
+			    	padding: 0;
+			    }
+
+			    .large {
+			    	width: 90px;
+			    }
+
+			    .state {
+			    	background-color: #ff8400;
+        			border-bottom: 1px solid #cc6a00;
+
+        			&:active {
+			            background-color: #cc6a00;
+			            border-top: 1px solid #ff8400;  
+			            border-bottom: none;
+            			box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;        
+			        }              
+			    }
+	        }
+        }
+    }
+
+    .btn {
+        border: none;
+        display: inline-block;
+        vertical-align: middle;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #275DBA;
+        color: #FFF;
+        font-size: 13px;
+        line-height: 26px;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        border-bottom: 1px solid #1C4285;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #1C4285;
+            border-top: 1px solid #275DBA;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+
+    .modal {
+    	position: absolute;
+    	top: 150px;
+    	left: 0;
+    	right: 0;
+
+		p {
+			color: #999;
+			line-height: 40px;
+		}
+    }
+}

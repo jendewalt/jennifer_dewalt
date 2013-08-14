@@ -1,0 +1,2 @@
+module ImageEditorPageHelper
+end
