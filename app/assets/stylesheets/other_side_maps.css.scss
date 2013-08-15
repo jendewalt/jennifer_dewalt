@@ -1,0 +1,129 @@
+body.other_side_maps_index {
+    $text_color: #282d33;
+    $main_font: Futura, "Trebuchet MS", Arial, sans-serif;
+    $header_links_color: $text_color;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 3px;
+    background-color: #676772;
+    text-shadow: 0px 1px 1px #80808c;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        opacity: 0;
+
+        a {
+            text-shadow: 0px 1px 1px #80808c;
+        }
+        
+        #logo a {
+            float: left;
+            line-height: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            color: $header_links_color;
+        }
+
+        #links_container {
+            float: right;
+        }
+
+        #links_container a {
+            font-size: 11px;
+            line-height: 20px;
+            text-decoration: none;
+            color: $header_links_color;
+            margin-left: 15px;
+        }
+
+        #links_container a:visited {
+            color: $header_links_color;
+        }
+
+        #links_container a:hover {
+            color: $text_color;
+        }
+    }
+
+    
+    #headlines {
+        height: 170px;
+        
+        h1 {
+            font-size: 100px;
+            line-height: 140px;
+            color: #fff;
+            text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 
+                         0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 
+                         0px 7px 0px #333, 0px 8px 7px #141437;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 40px;
+        }
+    }
+
+    form {
+        position: absolute;
+        width: 100%;
+        top: 300px;
+        z-index: 10;
+
+        #address_input {
+            width: 400px;
+            padding: 5px;
+            font-size: 16px;
+            color: $text_color;
+        }
+    }
+
+    .btn {
+        border: none;
+        display: inline-block;
+        vertical-align: top;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #13ada7;
+        color: #FFF;
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 30px;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        border-bottom: 1px solid #10918c;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #10918c;
+            border-top: 1px solid #13ada7;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+
+    #map_container {
+        opacity: 0;
+        height: 400px;
+        padding: 30px;
+
+        .map {
+            display: inline-block;
+            height: 400px;
+            width: 400px;
+            margin: 40px auto;
+            box-shadow: 0 0 2px rgba(0,0,0,0.3);
+        }
+    }
+
+    
+    .clear {
+        clear: both;
+    }
+}

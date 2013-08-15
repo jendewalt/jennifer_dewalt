@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :other_side do 
+    resources :maps, :only => [:index]
+  end
+
   namespace :image_editor do 
     resources :page, :only => [:index]
   end
