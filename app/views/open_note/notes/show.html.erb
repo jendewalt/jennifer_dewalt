@@ -1,0 +1,15 @@
+<%= render 'open_note/notes/header' %>
+
+<div id="container">
+	<div id="top_container">
+		<div id="url_text">This Open Note's unique URL is: <br>http://jenniferdewalt/open_note/notes/<%= @note.slug %></div>
+		<%= link_to "New Open Note", open_note_notes_path, :class => 'btn' %>
+	</div>
+
+	<%= form_for @note do |f| %>
+		<%= f.text_area :content, :class => "note_content", :value => @note.content, :title => "This is an Open Note. It is viewable and editable by anyone who has this Open Note's unique URL." %>
+		<%= f.submit "Update", :class => "btn" %>
+	<% end %>
+
+	<p>Open Notes are a place where you can write down thoughts, ideas and information to share with anyone. You can edit this Open Note and it can be viewed and edited by anyone you share the URL with.</p>
+</div>

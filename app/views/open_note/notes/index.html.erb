@@ -1,0 +1,13 @@
+<div id="container">
+	<div id="info_container">
+		<h1>Open Note</h1>
+	</div>
+
+	<%= form_for @note do |f| %>
+		<%= f.text_area :content, :class => "note_content", :placeholder => "Start your Open Note" %>
+		<%= f.submit "Create", :class => "btn" %>
+	<% end %>
+
+	<p>Open Note is a place where you can write down thoughts, ideas and information to share with anyone. Open Notes can be viewed and edited by anyone you share the URL with.</p>
+</div>
+<%= render 'open_note/notes/footer' %>

@@ -85,6 +85,8 @@ fishy_friend.png: fishy_friend-7314fbabd69fd584f6f4ada8289c37bb.png
 fishy_friend/index.png: fishy_friend-7314fbabd69fd584f6f4ada8289c37bb.png
 fishy_friend_right.png: fishy_friend_right-1d6a41ead81c2cca97668e0ffc4c6cb3.png
 fishy_friend_right/index.png: fishy_friend_right-1d6a41ead81c2cca97668e0ffc4c6cb3.png
+grey_stripe.png: grey_stripe-1d9851152dc1940bab47c1fdafc4ed50.png
+grey_stripe/index.png: grey_stripe-1d9851152dc1940bab47c1fdafc4ed50.png
 here_throbber.gif: here_throbber-12faade6317fe325c4c03e8341c6a8ff.gif
 here_throbber/index.gif: here_throbber-12faade6317fe325c4c03e8341c6a8ff.gif
 herringbone_03.png: herringbone_03-b642a8e4777034e6b1325c58ddc52ec8.png
@@ -161,12 +163,12 @@ zazam.png: zazam-db6091b35ea1d595558dfa3ee9ad2c14.png
 zazam/index.png: zazam-db6091b35ea1d595558dfa3ee9ad2c14.png
 zoom.png: zoom-cc03c1f274ad6ffcd6964d7bb0960abc.png
 zoom/index.png: zoom-cc03c1f274ad6ffcd6964d7bb0960abc.png
-application.js: application-1cbc833ecc3fb8cad75331b27d7434ed.js
-application/index.js: application-1cbc833ecc3fb8cad75331b27d7434ed.js
+application.js: application-e6e62a4efd070be03efe7ca5c2d3208b.js
+application/index.js: application-e6e62a4efd070be03efe7ca5c2d3208b.js
 helpers/application.js: helpers/application-4c749d00be3e691c1036a2107930a1a2.js
 helpers/application/index.js: helpers/application-4c749d00be3e691c1036a2107930a1a2.js
-application.css: application-69d860edbf1a06bc6b0b9ccd03e85113.css
-application/index.css: application-69d860edbf1a06bc6b0b9ccd03e85113.css
+application.css: application-52c22ffe00933a9044bccd4701bc5a53.css
+application/index.css: application-52c22ffe00933a9044bccd4701bc5a53.css
 big_word_list: big_word_list
 jscolor/demo.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
 jscolor/demo/index.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html

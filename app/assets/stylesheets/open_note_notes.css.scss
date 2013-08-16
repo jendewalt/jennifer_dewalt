@@ -1,0 +1,181 @@
+body.open_note_notes_index, body.open_note_notes_show {
+    $main_text_color: #282d33;
+    $light_text_color: #9b9da3;
+    $main_font: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    $display_font: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    $header_links_color: $main_text_color;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $main_text_color;
+    letter-spacing: 1px;
+    background-color: #fafafa;
+    
+    header, footer {
+        padding: 10px 20px;
+
+        a {
+	        color: $header_links_color;        	
+	        text-decoration: none;
+	        font-family: $main_font;
+	        text-shadow: 0 2px 3px rgba(255,255,255,0.5);
+        }
+	   
+	    #logo a {
+	        float: left;
+	        line-height: 20px;
+	        font-size: 16px;
+	        font-family: $display_font;
+	    }
+
+	    #links_container {
+	        float: right;
+	    }
+
+	    #links_container a {
+	        font-size: 11px;
+	        line-height: 20px;
+	        margin-left: 15px;
+	    }
+
+	    #links_container a:visited {
+	    }
+
+	    #links_container a:hover {
+	        color: $light_text_color;
+	    }
+    }
+    header {
+    	background-image: url('grey_stripe.png');
+    	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    footer {
+    	position: absolute;
+    	bottom:0;
+    	left: 0;
+    	right: 0;
+    	height: 20px;
+    }
+
+    #container {
+    	padding-bottom: 40px;
+    	padding-top: 30px;
+
+    	h1 {
+    		font-family: $display_font;
+    		font-size: 50px;
+    		padding: 14px;
+    		background-image: url('grey_stripe.png');
+    		box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    		text-shadow: 0 2px 3px rgba(255,255,255,0.5);
+    	}
+
+    	p {
+    		width: 500px;
+    		margin: 40px auto 20px;
+    		font-size: 13px;
+    		line-height: 18px;
+    		color: $light_text_color;
+    	}
+
+    }
+
+    .note_content {
+    	width: 500px;
+    	height: 300px;
+    	margin: 26px 0 20px;
+    	padding: 10px;
+    	font-family: $main_font;
+    	font-size: 14px;
+    	color: $main_text_color;
+    	border: none;
+    	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .btn {
+        display: block;
+        margin: auto;
+        padding: 0 10px;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        text-decoration: none;
+        color: #FFF;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        background-color: #3679D1;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        border: none;
+        border-bottom: 1px solid #164e97;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &:active {
+            background-color: #164e97;
+            border-top: 1px solid #3679D1;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+}
+
+body.open_note_notes_show {
+    $main_text_color: #282d33;
+    $light_text_color: #9b9da3;
+    $main_font: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    $display_font: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    $header_links_color: $main_text_color;
+
+    #container {
+    	padding-bottom: 0;
+		
+		#top_container {
+			position: relative;
+			width: 900px;
+			margin: 0 auto 20px;
+
+			a.btn {
+				position: absolute;
+				display: inline-block;
+				right: 0px;
+				margin-right: 20px;
+	        	padding: 0 7px;
+				font-size: 11px;
+		        line-height: 24px;
+				background-color: #565B6E;
+		        border-bottom: 1px solid #292c35;
+
+				&:active {
+		            background-color: #292c35;
+		            border-top: 1px solid #565B6E;
+		            border-bottom: none;
+		            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+		        }
+			}
+			
+			#url_text {
+				position: absolute;
+				top: 0;
+				width: 100%;
+				color: $light_text_color;
+				font-size: 13px;
+				line-height: 20px;
+			}
+		}
+
+		form {
+			margin: 50px auto 0;
+		}
+		p {
+			padding-bottom: 10px;
+		}
+    }
+
+
+}

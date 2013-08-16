@@ -66,7 +66,8 @@ $(document).ready(function () {
 		"need_drink": needDrink,
 		"signature": signature,
 		"image_editor": imageEditor,
-		"other_side": otherSide
+		"other_side": otherSide,
+		"open_note": openNote
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

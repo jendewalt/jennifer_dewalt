@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :open_note do 
+    resources :notes
+  end
+
   namespace :other_side do 
     resources :maps, :only => [:index]
   end
