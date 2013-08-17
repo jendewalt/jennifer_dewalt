@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :whats_my_ip do 
+    resources :page
+  end
+
   namespace :more_drop_shadow do 
     resources :page
   end

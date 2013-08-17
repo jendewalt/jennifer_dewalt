@@ -68,7 +68,8 @@ $(document).ready(function () {
 		"image_editor": imageEditor,
 		"other_side": otherSide,
 		"open_note": openNote,
-		"more_drop_shadow": moreDropShadow
+		"more_drop_shadow": moreDropShadow,
+		"whats_my_ip": whatsMyIp
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
