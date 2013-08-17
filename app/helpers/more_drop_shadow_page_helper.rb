@@ -1,0 +1,2 @@
+module MoreDropShadowPageHelper
+end

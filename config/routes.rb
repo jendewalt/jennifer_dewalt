@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :more_drop_shadow do 
+    resources :page
+  end
+
   namespace :open_note do 
     resources :notes
   end
