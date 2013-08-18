@@ -19,6 +19,7 @@ function elevationPage() {
 		path = [];
 		var start_loc = $('#start').val();
 		var end_loc = $('#end').val();
+
 		var locations = [
 			start_loc,
 			end_loc
@@ -45,7 +46,6 @@ function elevationPage() {
 				getLatLng(locations);
 			});
 		});
-
 	});
 
 	function getLatLng(locations) {
@@ -101,8 +101,8 @@ function elevationPage() {
 			return height - ((elev - low) / (high - low) * height);
 		});
 
-		$('#min').text('Min Elevation: ' + low.toFixed(2));
-		$('#max').text('Max Elevation: ' + high.toFixed(2));
+		$('#min').text('Min Elevation: ' + low.toFixed(2) + ' m');
+		$('#max').text('Max Elevation: ' + high.toFixed(2) + ' m');
 
 		drawPlotLine(0, adj_elev, 1);
 	}
