@@ -1,3 +1,21 @@
+<%= render 'elevation/page/header' %>
 
+<div id="wrapper">
+	<div id="form_container">
+		<h1>Elevations</h1>
+		<p>Enter two places to see a plot of the elevations between them.</p>
 
-<%= render 'elevation/page/footer' %>
+		<form>
+			<input class="input" id="start" type='text' placeholder="San Francisco, CA">
+			<input class="input" id="end" type='text' placeholder="New York, NY">
+			<input class="btn" type="submit" value="Search">
+		</form>
+
+	</div>
+</div>
+
+<div id="graph_container">
+	<div class="text" id="max"></div>
+	<canvas></canvas>
+	<div class="text" id="min"></div>
+</div>

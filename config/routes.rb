@@ -4,7 +4,7 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
-  namespace :whats_my_ip do 
+  namespace :elevation do 
     resources :page
   end
 

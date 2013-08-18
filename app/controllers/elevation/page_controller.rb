@@ -1,5 +1,5 @@
 class Elevation::PageController < ApplicationController
   def index
-    @title = "Elevation"
+    @title = "Elevations"
   end
 end
