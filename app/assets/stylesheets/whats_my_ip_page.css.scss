@@ -1,7 +1,7 @@
 body.whats_my_ip_page_index {
     $text_color: #282d33;
     $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    $header_links_color: #ccc;
+    $header_links_color: #eee;
 
     font-family: $main_font;
     text-align: center;
@@ -49,43 +49,29 @@ body.whats_my_ip_page_index {
 	    }
     }
 
-    h1 {
-    	font-size: 20px;
+    #container {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 110px;
+        margin-top: -65px;
+
+        h1 {
+        	font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 30px;
+        }
+
+        #ip_container {
+        	font-size: 60px;
+        	line-height: 60px;
+        }
     }
 
-    #ip_container {
-    	font-size: 50px;
-    	line-height: 100px;
-    }
 
 
     .clear {
         clear: both;
-    }
-
-    .btn {
-        border: none;
-        display: inline-block;
-        vertical-align: top;
-        font-family: Arial, sans-serif;
-        text-decoration: none;
-        letter-spacing: 1px;
-        cursor: pointer;
-        background-color: #565B6E;
-        color: #FFF;
-        font-size: 13px;
-        padding: 0 10px;
-        line-height: 30px;
-        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
-        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
-        border-bottom: 1px solid #292c35;
-        border-radius: 3px;
-
-        &:active {
-            background-color: #292c35;
-            border-top: 1px solid #565B6E;
-            border-bottom: none;
-            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
-        }
     }
 }
