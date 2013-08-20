@@ -71,7 +71,8 @@ $(document).ready(function () {
 		"more_drop_shadow": moreDropShadow,
 		"elevation": elevationPage,
 		"whats_my_ip": nothing,
-		"must_write": mustWrite
+		"must_write": mustWrite,
+		"blind": blind
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
