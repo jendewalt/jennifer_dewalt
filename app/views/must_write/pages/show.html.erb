@@ -1,0 +1,9 @@
+<%= render 'must_write/pages/header' %>
+
+<div class="container" id="show_container">
+	<%= form_for @page do |f| %>
+		<%= f.text_area :content, :class => "page_content", :value => @page.content %>
+	<% end %>
+
+	<button id="show_save" class="btn">Save</button>
+</div>

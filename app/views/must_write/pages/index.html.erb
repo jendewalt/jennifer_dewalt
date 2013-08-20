@@ -1,0 +1,15 @@
+<div class="container">
+	<div id="headline_container">
+		<h1>Must Write</h1>
+		<h2>Stay focused and get that writing done!</h2>
+		<p>Create a new Must Write page and get writing! Must Write will help you stay on task with gentle (and not so gentle) reminders to get back to work if you're slacking off.</p>
+
+		<p>Need to take a break? Must Write creates a special page link just for you. Just hit Save and bookmark the page. When your ready to get back to work, just come back to your special page and start writing again.</p>
+	</div>
+
+	<%= form_for @page do |f| %>
+		<%= f.submit "Start Writing", :class => "btn" %>
+	<% end %>
+</div>
+
+<%= render 'must_write/pages/footer' %>

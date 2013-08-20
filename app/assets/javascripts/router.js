@@ -70,7 +70,8 @@ $(document).ready(function () {
 		"open_note": openNote,
 		"more_drop_shadow": moreDropShadow,
 		"elevation": elevationPage,
-		"whats_my_ip": nothing
+		"whats_my_ip": nothing,
+		"must_write": mustWrite
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

@@ -1,0 +1,141 @@
+body.must_write_pages_index, body.must_write_pages_show {
+    $text_color: #282d33;
+    $main_font: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;;
+    $display_font: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    $header_links_color: $text_color;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 2px;
+    background-image: url('shl.png');
+
+    .btn {
+        border: none;
+        display: inline-block;
+        vertical-align: top;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #12aefc;
+        color: #FFF;
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 30px;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        border-bottom: 1px solid #0391d8;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #0391d8;
+            border-top: 1px solid #12aefc;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+    
+    header, footer {
+        padding: 10px 20px;
+
+        a {
+	        text-decoration: none;
+	        color: $header_links_color;        	
+        }
+	   
+	    #logo a {
+	        float: left;
+	        line-height: 20px;
+	        font-size: 14px;
+	        color: #fc1239;
+	        font-family: $display_font;
+	    }
+
+	    #links_container {
+	        float: right;
+	    }
+
+	    #links_container a {
+	        font-size: 11px;
+	        line-height: 20px;
+	        margin-left: 15px;
+	    }
+
+	    #links_container a:visited {
+	        color: $header_links_color;
+	    }
+
+	    #links_container a:hover {
+	        color: #12aefc;
+	    }
+    }
+
+    header {
+        margin-bottom: 30px;
+        background-color: rgba(0,0,0,0.05);
+        box-shadow: 0 1px 0 #fff;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    footer {
+    	position: absolute;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    }
+
+    .container {
+    	padding: 80px 0 40px;
+
+    	#headline_container {
+    		width: 800px;
+    		margin: auto;
+    		
+		    h1 {
+		    	color: #fc1239;
+		    	font-family: $display_font;
+		    	font-size: 80px;
+		    	text-shadow: 0 1px 0 #bf0222, 0 2px 0 #740114;
+		    }
+
+		    h2 {
+		    	font-size: 26px;
+		    	margin: 10px 0 30px;
+		    	line-height: 50px;
+		    	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+		    }
+
+		    p {
+		    	width: 700px;
+		    	margin: auto;
+		    	margin-bottom: 20px;
+		    	font-size: 15px;
+		    	line-height: 22px;
+		    }
+    	}
+
+	    .btn {
+	    	font-size: 16px;
+	    	line-height: 36px;
+	    	margin-top: 20px;
+	    }
+    }
+
+    #show_container {
+    	padding: 0;
+
+    	textarea {
+    		height: 500px;
+    		width: 500px;
+    		padding: 5px;
+    		border: none;
+    		box-shadow: 0 0 1px rgba(0,0,0,0.15), 0 0 2px rgba(0,0,0,0.1);
+    	}
+    }
+
+    .clear {
+        clear: both;
+    }
+}
