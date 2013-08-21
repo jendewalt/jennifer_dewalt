@@ -35,7 +35,6 @@ function mustWrite() {
 			});	
 		});
 
-		runMinder();
 
 		function runMinder() {
 			minder.time += 0.5;
@@ -56,5 +55,6 @@ function mustWrite() {
 			sound.stop();
 			runMinder();
 		}	
+		runMinder();
 	}
 }

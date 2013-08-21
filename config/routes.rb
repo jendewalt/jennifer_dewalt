@@ -4,8 +4,8 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
-  namespace :blind do 
-    resources :scores
+  namespace :boom do 
+    resources :page
   end
 
   namespace :must_write do 
