@@ -170,7 +170,7 @@ function colorPickerPage() {
 
 		$(div).append(close)
 			  .append(swatch)
-			  .append('<div class="swatch_info"><div class="label">RGB: ' +  color.r + ', ' + color.g + ', ' + color.g + '</div><div class="label">HEX: #' + rgbComponentToHex(color.r) + rgbComponentToHex(color.g) + rgbComponentToHex(color.b) + '</div>')
+			  .append('<div class="swatch_info"><div class="label">RGB: ' +  color.r + ', ' + color.g + ', ' + color.b + '</div><div class="label">HEX: #' + rgbComponentToHex(color.r) + rgbComponentToHex(color.g) + rgbComponentToHex(color.b) + '</div>')
 			  .prependTo('#palette_container');
 	};
 
