@@ -72,7 +72,8 @@ $(document).ready(function () {
 		"elevation": elevationPage,
 		"whats_my_ip": nothing,
 		"must_write": mustWrite,
-		"boom": boomPage
+		"boom": boomPage,
+		"color_picker": colorPickerPage
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

@@ -1,0 +1,175 @@
+body.color_picker_page_index {
+	$text_color: #282d33;
+	$main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	$display_font: "Arial Black", "Arial Bold", Gadget, sans-serif;
+	$header_links_color: $text_color;
+
+	font-family: $main_font;
+	text-align: center;
+	overflow-y: scroll;
+	color: $text_color;
+	letter-spacing: 1px;
+	background-image: url('paper_text.png');
+
+	header {
+	    padding: 10px 20px;
+	    margin-bottom: 30px;
+
+	    background: #fc8a8a;
+		background: -moz-linear-gradient(-45deg, #fc8a8a 0%, #efa973 18%, #ffea82 32%, #a4ff77 51%, #80eefc 69%, #a7aaf9 86%, #f490b6 100%);
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fc8a8a), color-stop(18%,#efa973), color-stop(32%,#ffea82), color-stop(51%,#a4ff77), color-stop(69%,#80eefc), color-stop(86%,#a7aaf9), color-stop(100%,#f490b6));
+		background: -webkit-linear-gradient(-45deg, #fc8a8a 0%,#efa973 18%,#ffea82 32%,#a4ff77 51%,#80eefc 69%,#a7aaf9 86%,#f490b6 100%);
+		background: -o-linear-gradient(-45deg, #fc8a8a 0%,#efa973 18%,#ffea82 32%,#a4ff77 51%,#80eefc 69%,#a7aaf9 86%,#f490b6 100%);
+		background: -ms-linear-gradient(-45deg, #fc8a8a 0%,#efa973 18%,#ffea82 32%,#a4ff77 51%,#80eefc 69%,#a7aaf9 86%,#f490b6 100%);
+		background: linear-gradient(135deg, #fc8a8a 0%,#efa973 18%,#ffea82 32%,#a4ff77 51%,#80eefc 69%,#a7aaf9 86%,#f490b6 100%);
+		
+		a {
+		    text-decoration: none;
+		    color: $header_links_color;
+		}
+		
+		#logo a {
+		    float: left;
+		    line-height: 20px;
+		    font-size: 14px;
+		    font-family: $display_font;
+		}
+
+		#links_container {
+		    float: right;
+		}
+
+		#links_container a {
+		    font-size: 11px;
+		    line-height: 20px;
+		    margin-left: 15px;
+		}
+
+		#links_container a:visited {
+		    color: $header_links_color;
+		}
+
+		#links_container a:hover {
+		    color: $text_color;
+		}
+	}
+
+	canvas {
+		display: inline-block;
+		vertical-align: bottom;
+		cursor: crosshair;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+
+	}
+
+	#color_info_container {
+		display: inline-block;
+		vertical-align: bottom;
+		margin: 0 10px;
+		padding: 16px;
+		background-color: rgba(255,255,255,0.9);
+		box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+
+		#swatch {
+			height: 100px;
+			width: 200px;
+			margin-bottom: 10px;
+			box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+			background-color: rgb(0,0,0);
+		}
+
+		table {
+			
+			td {
+				padding: 8px 10px;
+				text-align: right;
+
+				input {
+					border: none;
+					border-bottom: 1px solid rgba(0,0,0,0.15);
+					vertical-align: bottom;
+					font-size: 12px;
+					letter-spacing: 1px;
+				}
+			}
+		}
+	}
+
+	#palette_container {
+    	padding: 20px;
+    }
+
+    .swatch_container {
+    	position: relative;
+		display: inline-block;
+		margin: 10px 4px;
+		box-shadow: 0 0 3px rgba(0,0,0,0.35);
+
+		.close {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			padding: 5px;
+			font-size: 8px;
+			color: #151515;
+			text-shadow: -1px -1px 0 rgba(255,255,255,0.2);
+			z-index: 10;
+
+			&:hover {
+				color: #fff;
+				cursor: pointer;
+			}
+		}
+    	
+    	.swatch {
+    		height: 80px;
+    		width: 100%;
+    		border-radius: 3px 3px 0 0;
+    	}
+
+    	.swatch_info {
+    		padding: 10px;
+    		width: 170px;
+    		font-family: Tahoma, Verdana, Segoe, sans-serif;
+    		font-size: 12px;
+    		text-align: left;
+    		color: #555;
+    		background-color: #fff;
+
+    		.label {
+    			line-height: 22px;
+    		}
+    	}
+    }
+
+	.btn {
+	    border: none;
+	    display: inline-block;
+	    vertical-align: top;
+	    padding: 0 10px;
+	    margin-top: 20px; 
+	    line-height: 30px;
+	    letter-spacing: 1px;
+	    font-family: Arial, sans-serif;
+	    font-size: 13px;
+	    text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+	    color: #FFF;
+	    text-decoration: none;
+	    background-color: #143cff;
+	    box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	    border-bottom: 1px solid #0026e0;
+	    border-radius: 2px;
+	    cursor: pointer;
+
+	    &:active {
+	        background-color: #0026e0;
+	        border-top: 1px solid #143cff;
+	        border-bottom: none;
+	        box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+	    }
+	}
+
+	.clear {
+	    clear: both;
+	}
+}

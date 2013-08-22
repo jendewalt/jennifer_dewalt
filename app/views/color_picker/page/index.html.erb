@@ -1,0 +1,22 @@
+<%= render 'color_picker/page/header' %>
+
+<div id="picker_container">
+	<canvas></canvas>
+
+	<div id="color_info_container">
+		<div id="swatch"></div>
+
+		<table id="swatch_info">
+			<tr>
+				<td><label>RGB: </label><input id="rgb" type="text" value="0, 0, 0"></td>
+			</tr>
+			<tr>
+				<td><label>Hex: </label><input id="hex" type="text" value="000000"></td>
+			</tr>
+		</table>
+		
+		<button class="btn">Add to Palette</button>
+	</div>
+</div>
+
+<div id="palette_container"></div>

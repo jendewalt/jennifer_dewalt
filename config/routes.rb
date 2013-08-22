@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :color_picker do 
+    resources :page
+  end
+
   namespace :boom do 
     resources :page
   end
