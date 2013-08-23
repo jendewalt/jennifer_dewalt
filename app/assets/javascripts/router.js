@@ -73,7 +73,8 @@ $(document).ready(function () {
 		"whats_my_ip": nothing,
 		"must_write": mustWrite,
 		"boom": boomPage,
-		"color_picker": colorPickerPage
+		"color_picker": colorPickerPage,
+		"tweet_time": tweetTime
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

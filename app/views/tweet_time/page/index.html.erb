@@ -1,0 +1,18 @@
+<%= render 'tweet_time/page/header' %>
+
+<div id="form_container">
+	<form>
+		<input type="text" id="username_input" placeholder="Enter a username">
+		<input type="submit" class="btn">
+	</form>
+</div>
+
+<div id="container">
+	<h1>Enter a Twitter Username to see a graph of <br>
+		their tweets plotted by time posted.</h1>
+</div>
+
+<div id="canvas_container">
+	<canvas></canvas>
+	<div class='tweet'>Click on any dot to see it's tweet.</div>
+</div>
