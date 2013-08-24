@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :morse_coder do 
+    resources :page
+  end
+
   namespace :tweet_time do 
     resources :page
   end

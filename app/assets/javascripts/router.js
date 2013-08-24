@@ -74,7 +74,8 @@ $(document).ready(function () {
 		"must_write": mustWrite,
 		"boom": boomPage,
 		"color_picker": colorPickerPage,
-		"tweet_time": tweetTime
+		"tweet_time": tweetTime,
+		"morse_coder": morseCoder
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

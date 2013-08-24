@@ -1,0 +1,89 @@
+body.morse_coder_page_index {
+    $text_color: #282d33;
+    $display_font: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    $main_font: Geneva, Tahoma, Verdana, sans-serif;
+    $header_links_color: #555;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 1px;
+    background-color: #e4e1f8;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+
+    #links_container {
+        float: right;
+    }
+
+    #links_container a {
+        font-size: 11px;
+        line-height: 20px;
+        text-decoration: none;
+        color: $header_links_color;
+        margin-left: 15px;
+    }
+
+    #links_container a:visited {
+        color: $header_links_color;
+    }
+
+    #links_container a:hover {
+        color: $text_color;
+    }
+
+    h1 {
+    	font-size: 60px;
+    	letter-spacing: 2px;
+    	margin: 30px 0 40px;
+    	font-family: $display_font;
+    	color: #ff4700;
+    	text-shadow: 0px 1px 0px rgba(0,0,0,0.2), 0px 2px 0px rgba(0,0,0,0.15),0px 3px 0px rgba(0,0,0,0.1), 0px 4px 5px rgba(50,50,50,0.1);
+    }
+
+    #input {
+    	display: block;
+    	width: 500px;
+    	height: 300px;
+    	margin: auto;
+    	padding: 5px;
+    	font-size: 16px;
+    	font-family: $main_font;
+    	border: 1px solid #ccc;
+    	box-shadow: 0 0 3px rgba(0,0,0,0.3) inset;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .btn {
+        border: none;
+        display: block;
+        margin: 20px auto;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #ff4700;
+        color: #FFF;
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 30px;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        border-bottom: 1px solid #e03e00;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #e03e00;
+            border-top: 1px solid #ff4700;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+}
