@@ -54,6 +54,7 @@ GEM
       multipart-post (~> 1.2.0)
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
+    flickraw (0.9.6)
     hashie (2.0.5)
     highline (1.6.15)
     hike (1.2.1)
@@ -189,6 +190,7 @@ DEPENDENCIES
   capistrano
   devise
   ejs
+  flickraw
   instagram
   jbuilder
   jquery-rails

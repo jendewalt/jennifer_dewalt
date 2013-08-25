@@ -1,0 +1,16 @@
+<%= render 'ransom_note/page/header' %>
+
+<div id="form_container">
+	<h1>Enter your ransom note text</h1>
+	<form>
+		<input type="text" maxlength="255" id="note_text">
+		<input type="submit" value="Ransomize" class="btn">
+	</form>
+</div>
+
+<div id="note_container"></div>
+
+<div class="loading_container">
+	<p>Clipping out your letters. Please be patient.</p>
+	<img src="/images/throbber_7.gif" class="throbber">
+</div>

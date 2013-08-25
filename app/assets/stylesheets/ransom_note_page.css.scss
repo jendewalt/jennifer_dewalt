@@ -1,0 +1,129 @@
+body.ransom_note_page_index {
+    $text_color: #322f38;
+    $main_font: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+    $display_font: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+    $header_links_color: $text_color;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 1px;
+    background-color: #ededee;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 30px;
+
+        a {
+	        text-decoration: none;
+	        color: $header_links_color;
+        }
+        
+	    #logo a {
+	        float: left;
+	        line-height: 20px;
+	        font-size: 14px;
+	    }
+
+	    #links_container {
+	        float: right;
+	    }
+
+	    #links_container a {
+	        font-size: 11px;
+	        line-height: 20px;
+	        margin-left: 15px;
+	    }
+
+	    #links_container a:visited {
+	        color: $header_links_color;
+	    }
+
+	    #links_container a:hover {
+	        color: $text_color;
+	    }
+    }
+
+    h1 {
+    	font-family: $display_font;
+    	font-size: 30px;
+    	line-height: 40px;
+    }
+
+    form {
+    	padding: 20px;
+
+    	#note_text {
+    		width: 450px;
+    		padding: 5px;
+    		font-size: 16px;
+    		font-family: $main_font;
+    		color: $text_color;
+    		border: none;
+    		border-bottom: 1px solid rgba(0,0,0,0.4);
+    		background-color: #ededee;
+    	}
+    }
+
+    .loading_container {
+    	display: none;
+    	padding: 40px; 
+
+    	p {
+    		font-size: 13px;
+    		color: #ed3904;
+    		line-height: 20px;
+    	}
+
+    	.throbber {
+    		margin: 20px;
+    	}
+    }
+
+    #note_container {
+    	display: none;
+    	padding: 30px 60px;
+
+    	.word {
+    		float: left;
+    		margin-top: 20px;
+    	}
+
+    	.char {
+    		margin: 8px;
+    		height: 60px;
+    		width: 60px;
+    	}
+    }
+
+    .btn {
+        border: none;
+        display: inline-block;
+        vertical-align: bottom;
+        font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        letter-spacing: 2px;
+        cursor: pointer;
+        background-color: #ed3904;
+        color: #FFF;
+        font-size: 13px;
+        padding: 0 8px;
+        line-height: 30px;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        border-bottom: 1px solid #de3504;
+        border-radius: 0px;
+
+        &:active {
+            background-color: #de3504;
+            border-top: 1px solid #ed3904;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+}

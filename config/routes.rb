@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :ransom_note do 
+    resources :page
+  end
+
   namespace :morse_coder do 
     resources :page
   end

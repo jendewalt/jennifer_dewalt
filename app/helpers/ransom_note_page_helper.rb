@@ -1,0 +1,2 @@
+module RansomNotePageHelper
+end
