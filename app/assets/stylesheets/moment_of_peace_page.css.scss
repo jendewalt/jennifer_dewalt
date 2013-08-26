@@ -1,0 +1,150 @@
+body.moment_of_peace_page_index {
+    $text_color: #282d33;
+    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    $display_font: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    $header_links_color: #3f4ac7;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 1px;
+    background-color: #84b6fd;
+
+    .backdrop {
+    	position: absolute;
+    	top: 0;
+    	bottom:0;
+    	left:0;
+    	right:0;
+    	z-index: -1;
+    }
+
+    .b1 {
+    	background-image: -webkit-gradient(radial, 0% 100%, 0, 0% 100%, 494, color-stop(0%, rgba(15, 245, 245, 0.395)), color-stop(100%, rgba(12, 8, 155, 0.461)));
+		background-image: -webkit-radial-gradient(left bottom, 150% 141.42%, rgba(15, 245, 245, 0.395) 0%, rgba(12, 8, 155, 0.461) 100%);
+		background-image: -moz-radial-gradient(left bottom, 150% 141.42%, rgba(15, 245, 245, 0.395) 0%, rgba(12, 8, 155, 0.461) 100%);
+		background-image: -ms-radial-gradient(left bottom, 150% 141.42%, rgba(15, 245, 245, 0.395) 0%, rgba(12, 8, 155, 0.461) 100%);
+		background-image: -o-radial-gradient(left bottom, 150% 141.42%, rgba(15, 245, 245, 0.395) 0%, rgba(12, 8, 155, 0.461) 100%);
+		background-image: radial-gradient(150% 141.42% at left bottom, rgba(15, 245, 245, 0.395) 0%, rgba(12, 8, 155, 0.461) 100%);
+    }
+
+    .b2 {
+    	background-image: -webkit-gradient(radial, 0% 0%, 0, 0% 0%, 494, color-stop(0%, rgba(255, 255, 255, 0.802)), color-stop(100%, rgba(16, 62, 198, 0.806)));
+		background-image: -webkit-radial-gradient(left top, 150% 141.42%, rgba(255, 255, 255, 0.802) 0%, rgba(16, 62, 198, 0.806) 100%);
+		background-image: -moz-radial-gradient(left top, 150% 141.42%, rgba(255, 255, 255, 0.802) 0%, rgba(16, 62, 198, 0.806) 100%);
+		background-image: -ms-radial-gradient(left top, 150% 141.42%, rgba(255, 255, 255, 0.802) 0%, rgba(16, 62, 198, 0.806) 100%);
+		background-image: -o-radial-gradient(left top, 150% 141.42%, rgba(255, 255, 255, 0.802) 0%, rgba(16, 62, 198, 0.806) 100%);
+		background-image: radial-gradient(150% 141.42% at left top, rgba(255, 255, 255, 0.802) 0%, rgba(16, 62, 198, 0.806) 100%);
+    }
+    
+    header {
+        padding: 10px 20px;
+	    
+	    #links_container {
+	        float: right;
+	    }
+
+	    #links_container a {
+	        font-size: 11px;
+	        line-height: 20px;
+	        text-decoration: none;
+	        color: $header_links_color;
+	        margin-left: 15px;
+	    }
+
+	    #links_container a:visited {
+	        color: $header_links_color;
+	    }
+
+	    #links_container a:hover {
+	        color: $text_color;
+	    }
+    }
+
+    .start {
+    	margin-top: 40px;
+    	padding: 30px;
+
+    	.headline_container {
+    		border-bottom: 1px solid rgba(0,0,0,0.09);
+    	}
+
+    	h1 {
+    		font-family: $display_font;
+    		font-size: 40px;
+    		margin-bottom: 20px;
+    		color: #fff;
+    		text-shadow: 1px 1px 2px rgba(0,0,0,0.18);
+    	}
+
+    	p {
+    		font-size: 16px;
+    		line-height: 22px;
+    		color: #3f4ac7;
+    		margin-bottom: 20px;
+    	}
+
+    	.options_container {
+    		padding: 50px;
+    		border-top: 1px solid rgba(255,255,255,0.15);
+
+    		p {
+    			font-size: 16px;
+    		}
+
+    		.time_container {
+    			display: inline-block;
+    			height: 80px;
+    			width: 100px;
+    			margin: 10px 3px;
+    			border-radius: 3px;
+    			background-color: #fff;
+    			cursor: pointer;
+
+    			p {
+    				font-size: 18px;
+    				line-height: 80px;
+    			}
+    		}
+    	}
+    }
+
+    canvas {
+		display: none;
+		position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .btn {
+        border: none;
+        display: inline-block;
+        vertical-align: top;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #565B6E;
+        color: #FFF;
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 30px;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        border-bottom: 1px solid #292c35;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #292c35;
+            border-top: 1px solid #565B6E;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+}

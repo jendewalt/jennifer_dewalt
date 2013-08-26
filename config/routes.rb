@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :moment_of_peace do 
+    resources :page, :only => [:index]
+  end
+
   namespace :ransom_note do 
     resources :page
   end
