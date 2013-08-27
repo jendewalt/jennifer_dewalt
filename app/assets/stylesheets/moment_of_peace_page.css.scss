@@ -39,7 +39,9 @@ body.moment_of_peace_page_index {
     }
     
     header {
+        position: relative;
         padding: 10px 20px;
+        z-index: 100;
 	    
 	    #links_container {
 	        float: right;
@@ -116,6 +118,7 @@ body.moment_of_peace_page_index {
         top: 0;
         left: 0;
         right: 0;
+        z-index: 2;
     }
 
     .clear {

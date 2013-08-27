@@ -1,0 +1,35 @@
+<%= render 'pollsie/polls/header' %>
+
+<h2>Make a new poll to share with anyone!</h2>
+
+<div class="form_container">
+	<%= form_for @poll do |f| %>
+		<table>
+			<tr>
+				<td class"label"><%= f.label :question, 'Question: '%></td>
+				<td class"input"><%= f.text_field :question %></td>
+			</tr>
+			<tr>
+				<td class"label">Answer: </td>
+				<td class"input"><input type="text" name="answers[]" maxlength="255"></td>
+			</tr>
+			<tr>
+				<td class"label">Answer: </td>
+				<td class"input"><input type="text" name="answers[]" maxlength="255"></td>
+			</tr>
+			<tr>
+				<td class"label">Answer: </td>
+				<td class"input"><input type="text" name="answers[]" maxlength="255"></td>
+			</tr>
+			<tr>
+				<td class"label">Answer: </td>
+				<td class"input"><input type="text" name="answers[]" maxlength="255"></td>
+			</tr>
+			<tr>
+				<td class"label">Answer: </td>
+				<td class"input"><input type="text" name="answers[]" maxlength="255"></td>
+			</tr>
+		</table>
+		<p><%= f.submit "Create New Poll", :class => 'btn' %></p>
+	<% end %>
+</div>

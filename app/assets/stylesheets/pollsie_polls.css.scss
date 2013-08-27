@@ -1,0 +1,133 @@
+body.pollsie_polls_index, body.pollsie_polls_edit, body.pollsie_polls_show {
+    $text_color: #282d33;
+    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    $display_font: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
+    $header_links_color: #ff8b00;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 1px;
+    background-color: #e7faf5;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 20px;
+	    
+	    #logo a {
+	        float: left;
+	        line-height: 20px;
+	        font-size: 14px;
+	        text-decoration: none;
+	        color: $header_links_color;
+	        font-family: $display_font;
+	    }
+
+	    #links_container {
+	        float: right;
+	    }
+
+	    #links_container a {
+	        font-size: 11px;
+	        line-height: 20px;
+	        text-decoration: none;
+	        color: $header_links_color;
+	        margin-left: 15px;
+	    }
+
+	    #links_container a:visited {
+	        color: $header_links_color;
+	    }
+
+	    #links_container a:hover {
+	        color: $text_color;
+	    }
+    }
+
+    h2 {
+    	font-family: $display_font;
+    	font-size: 28px;
+    	margin: 20px;
+    	color: #1141e6;
+		text-shadow: -1px -1px 1px rgba(0,0,0,0.15);
+    }
+
+    h3 {
+    	margin: 20px;
+    	font-size: 15px;
+    	text-shadow: -1px -1px 0px rgba(0,0,0,0.08);
+    }
+
+    .form_container {
+
+    	table {
+    		margin: 45px auto;
+	    	padding: 20px;
+	    	background-color: #ff8b00;
+	    	border-radius: 5px;
+	    	box-shadow: 0 0 4px rgba(0,0,0,0.3);
+
+	    	td {
+	    		padding: 8px 4px;
+	    		font-size: 14px;
+	    		text-align: right;
+	    		color: #fff;
+	    		text-shadow: -1px -1px 1px rgba(0,0,0,0.15);
+
+	    		&.answer {
+	    			text-align: left;
+	    			font-size: 22px;
+
+	    			&.votes {
+	    				color: #1141e6;
+	    				font-size: 16px;
+	    				padding-right: 20px;
+	    			}
+	    		}
+	    	}
+
+	    	input {
+	    		width: 300px;
+	    		padding: 3px;
+	    		font-size: 16px;
+	    		text-align: left;
+
+	    		&.radio {
+	    			width: auto;
+	    			padding-right: 5px;
+	    		}
+	    	}
+    	}
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .btn {
+        border: none;
+        display: inline-block;
+        vertical-align: top;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #1141e6;
+        color: #FFF;
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 30px;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        border-bottom: 1px solid #0d31ad;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #0d31ad;
+            border-top: 1px solid #1141e6;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+}

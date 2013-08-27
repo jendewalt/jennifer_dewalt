@@ -1,0 +1,17 @@
+<%= render 'pollsie/polls/header' %>
+
+<h3>Current Poll Results For</h3>
+<h2><%= @poll.question %></h2>
+
+<div class="form_container">
+	<table>
+		<% @poll.pollsie_answers.each do |ans| %>
+	        <tr><td class='answer votes'><%= ans.votes %> <%= ans.votes == 1 ? 'vote' : 'votes' %></td><td class='answer'><%= ans.content %></td></tr>
+		<% end %>
+	</table>
+</div>
+
+<h3>Use this link to share this poll: <%= edit_pollsie_poll_url(@poll) %></h3>
+
+<%= link_to "Make a New Poll", pollsie_polls_path, :class => "btn" %>
+<%= link_to "Vote Again", edit_pollsie_poll_path(@poll), :class => "btn" %>

@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :pollsie do 
+    resources :polls
+  end
+
   namespace :moment_of_peace do 
     resources :page, :only => [:index]
   end

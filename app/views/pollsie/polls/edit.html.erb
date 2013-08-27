@@ -1,0 +1,14 @@
+<%= render 'pollsie/polls/header' %>
+
+<h2><%= @poll.question %></h2>
+
+<div class="form_container">
+	<%= form_for @poll do |f| %>
+		<table>
+			<% @poll.pollsie_answers.each do |ans| %>
+		        <tr><td><input type="radio" name="answer" value="<%= ans.id %>" class="radio"></td><td class='answer'><%= ans.content %></td></tr>
+			<% end %>
+	    </table>
+	    <input type="submit" value="Submit Vote" class="btn">
+	<% end %>
+</div>

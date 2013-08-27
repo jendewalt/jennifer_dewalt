@@ -1,3 +1,1 @@
-function seriousQuestion() {
-	;
-}
+function seriousQuestion() {}

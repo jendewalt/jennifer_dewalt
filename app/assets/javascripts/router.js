@@ -77,7 +77,8 @@ $(document).ready(function () {
 		"tweet_time": tweetTime,
 		"morse_coder": morseCoder,
 		"ransom_note": ransomNote,
-		"moment_of_peace": momentOfPeace
+		"moment_of_peace": momentOfPeace,
+		"pollsie": pollsie
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
