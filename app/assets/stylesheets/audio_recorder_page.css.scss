@@ -2,7 +2,7 @@ body.audio_recorder_page_index {
     $text_color: #1f2328;
     $main_font: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
     $display_font: Futura, "Trebuchet MS", Arial, sans-serif;;
-    $header_links_color: #ccc;
+    $header_links_color: $text_color;
 
     font-family: $main_font;
     text-align: center;
@@ -20,7 +20,7 @@ body.audio_recorder_page_index {
 	        line-height: 20px;
 	        font-size: 16px;
 	        text-decoration: none;
-	        color: #00c9ff;
+	        color: $text_color;
 	        font-family: $display_font;
 	        text-shadow:  -1px -1px 1px rgba(0, 0, 0, 0.1);
 	    }
