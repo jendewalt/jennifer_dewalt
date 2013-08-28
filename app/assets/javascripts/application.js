@@ -21,8 +21,8 @@
 //= require backbone
 //= require howler
 //= require kinetic
-//= require recorder
 //= require recorderWorker
+//= require recorder
 //= require jscolor/jscolor
 //= require analytics
 //= require_tree ./websites
