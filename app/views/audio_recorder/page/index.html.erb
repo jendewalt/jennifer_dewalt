@@ -1,0 +1,31 @@
+<%= render 'audio_recorder/page/header' %>
+
+<div id="container">
+	<div id="recording_container">
+		<div id="title_container">
+			<label>Title: </label>
+			<input type="text" id="title_input" value="my_recording" maxlength="60">
+		</div>
+
+		<div id="controls_container">
+			<div id="rec_light">
+				<div class="rec_light_bulb"></div>	
+			</div>
+
+			<button class='btn' id='start' disabled>Record</button>
+			<button class='btn' id='stop' disabled>Stop</button>
+		</div>
+	</div>
+
+	<h1>Recordings</h1>
+	<ul id="recordings_list"></ul>
+</div>
+
+<div id="replacement_container" style="display: none;">
+	<h1>Your browser doesn't support this app!</h1>
+	<p>Sorry about that. If you have Chrome you might want to give this page a try there. If you don't have Chrome, I highly recommend you check it out! It's a very nice browser.</p>
+	<p>In the meantime, here's an animal video! Enjoy!</p>
+
+	<iframe width="560" height="315" src="//www.youtube.com/embed/_vx1OVLX5Rc?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+

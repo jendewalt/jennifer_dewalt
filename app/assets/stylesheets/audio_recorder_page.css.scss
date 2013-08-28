@@ -1,0 +1,235 @@
+body.audio_recorder_page_index {
+    $text_color: #1f2328;
+    $main_font: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    $display_font: Futura, "Trebuchet MS", Arial, sans-serif;;
+    $header_links_color: #ccc;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 2px;
+    background-color: #63676f;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 20px;
+
+        #logo a {
+	        float: left;
+	        line-height: 20px;
+	        font-size: 16px;
+	        text-decoration: none;
+	        color: #00c9ff;
+	        font-family: $display_font;
+	        text-shadow:  -1px -1px 1px rgba(0, 0, 0, 0.1);
+	    }
+		  
+	    #links_container {
+	        float: right;
+	    }
+
+	    #links_container a {
+	        font-size: 11px;
+	        line-height: 20px;
+	        text-decoration: none;
+	        color: $header_links_color;
+	        margin-left: 15px;
+	    }
+
+	    #links_container a:visited {
+	        color: $header_links_color;
+	    }
+
+	    #links_container a:hover {
+	        color: $text_color;
+	    }
+    }
+
+    #recording_container {
+    	width: 500px;
+    	margin: 0 auto 40px;
+    	padding: 30px;
+    	background-color: #6d717a;
+    	border: 1px solid rgba(0,0,0,0.2);
+    	border-top: 1px solid rgba(255,255,255,0.15);
+    	box-shadow: 0 1px 2px rgba(0,0,0,0.12);
+
+    	#title_container {
+    		padding-bottom: 30px;
+
+    		label {
+    			font-size: 17px;
+    			color: $text_color;
+    			font-family: $display_font;
+    			text-shadow: 0px 1px 0px rgba(255,255,255,0.1);
+    		}
+
+    		input {
+    			width: 200px;
+    			padding: 6px;
+    			text-align: center;
+    			font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+    			font-size: 15px;
+    			letter-spacing: 2px;
+    			color: lime;
+    			text-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+    			background-color: rgba(0,0,0,0.5);
+    			border: none;
+    			border-bottom: 1px solid rgba(0,0,0,0.5);
+    			box-shadow: 0 0 2px rgba(0,0,0,0.2) inset;
+    		}
+    	}
+
+    	#controls_container {
+    		margin-top: 10px;
+
+    		* {
+    			display: inline-block;
+    			vertical-align: middle;
+    		}
+
+	    	#rec_light {
+	    		width: 50px;
+	    		height: 50px;
+	    		margin-right: 20px;
+	    		padding: 2px;
+	    		border-radius: 50%;
+	    		background-color: #222;
+	    		box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.3), 0px -1px 0 rgba(255, 255, 255, 0.13);
+
+	    		.rec_light_bulb {
+	    			width: 46px;
+	    			height: 46px;
+	    			margin:	2px auto;
+	    			border-radius: 50%;
+					box-shadow: 0 0 2px rgba(0,0,0,0.3);
+
+	    			background-image: -webkit-radial-gradient(center center, farthest-corner circle, #2e3756 0%, black 100%);
+					background-image: -moz-radial-gradient(center center, farthest-corner circle, #2e3756 0%, black 100%);
+					background-image: -ms-radial-gradient(center center, farthest-corner circle, #2e3756 0%, black 100%);
+					background-image: -o-radial-gradient(center center, farthest-corner circle, #2e3756 0%, black 100%);
+					background-image: radial-gradient(farthest-corner circle at center center, #2e3756 0%, black 100%);
+
+	    		}
+				
+				.recording {
+					box-shadow: 0 0 12px red;
+
+					background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 127, color-stop(0%, #ff0a27), color-stop(100%, #750009));
+					background-image: -webkit-radial-gradient(center center, farthest-corner, #ff0a27 0%, #750009 100%);
+					background-image: -moz-radial-gradient(center center, farthest-corner, #ff0a27 0%, #750009 100%);
+					background-image: -ms-radial-gradient(center center, farthest-corner, #ff0a27 0%, #750009 100%);
+					background-image: -o-radial-gradient(center center, farthest-corner, #ff0a27 0%, #750009 100%);
+					background-image: radial-gradient(farthest-corner at center center, #ff0a27 0%, #750009 100%);
+
+
+				}
+	    	}
+    	}
+    }
+
+    h1 {
+    	padding: 6px;
+    	font-family: $main_font;
+    	font-size: 18px;
+    	color: #bfc1c6;
+    	text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
+		box-shadow: 0 -1px 2px rgba(0,0,0,0.15);
+		border-top: 1px solid rgba(255,255,255,0.2);
+		background-color: #27282c;
+    }
+
+    li {
+    	padding: 15px;
+    	border-top: 1px solid rgba(0,0,0,0.15);
+    	border-bottom: 1px solid rgba(255,255,255,0.15);
+		background-color: rgba(255,255,255,0.35);
+
+		* {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+    	audio {
+    		transform: scale(0.8, 0.8);
+    		-ms-transform: scale(0.8, 0.8);
+    		-webkit-transform: scale(0.8, 0.8);
+    	}
+
+    	p {
+    		width: 250px;
+    		font-size: 13px;
+    		margin-right: 20px;
+    		white-space: -pre-wrap; 
+ 			white-space: -o-pre-wrap; 
+ 			word-wrap: break-word;
+    	}
+
+    	.btn {
+    		font-size: 11px;
+    		line-height: 24px;
+    		padding: 0 5px;
+    	}
+    }
+
+    #replacement_container {
+    	background-color: rgba(255,255,255,0.93);
+
+    	h1 {
+    		font-size: 30px;
+    		color: #fff;
+    		margin-bottom: 30px;
+    	}
+
+    	p {
+    		width: 500px;
+    		margin: auto;
+    		font-size: 14px;
+    		line-height: 26px;
+    		margin-bottom: 20px;
+    	}
+
+    	iframe {
+    		margin: 0px 0 100px;
+    	}
+    }
+
+    .btn {
+        border: none;
+        display: inline-block;
+        vertical-align: top;
+        font-family: $main_font;
+        text-decoration: none;
+        letter-spacing: 2px;
+        cursor: pointer;
+        background-color: #00c9ff;
+        color: $text_color;
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 30px;
+        text-shadow: 0 -1px 1px rgba(255,255,255,0.25);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        border-bottom: 1px solid #00a1cc;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #00a1cc;
+            border-top: 1px solid #00c9ff;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+
+        &:disabled {
+        	border-top: 1px solid #555;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset; 
+        	background-color: #bbb;
+        	color: #555;
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+}

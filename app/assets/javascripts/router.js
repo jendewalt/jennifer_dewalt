@@ -78,7 +78,8 @@ $(document).ready(function () {
 		"morse_coder": morseCoder,
 		"ransom_note": ransomNote,
 		"moment_of_peace": momentOfPeace,
-		"pollsie": pollsie
+		"pollsie": pollsie,
+		"audio_recorder": audioRecorder
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
