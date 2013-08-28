@@ -22,7 +22,6 @@
 //= require howler
 //= require kinetic
 //= require recorder
-//= require recorderWorker
 //= require jscolor/jscolor
 //= require analytics
 //= require_tree ./websites
