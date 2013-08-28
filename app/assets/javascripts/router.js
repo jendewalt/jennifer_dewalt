@@ -79,7 +79,8 @@ $(document).ready(function () {
 		"ransom_note": ransomNote,
 		"moment_of_peace": momentOfPeace,
 		"pollsie": pollsie,
-		"audio_recorder": audioRecorder
+		"audio_recorder": audioRecorder,
+		"salon": salonGalleries
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
