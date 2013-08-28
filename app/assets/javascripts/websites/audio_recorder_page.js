@@ -28,11 +28,9 @@ function audioRecorder() {
 				});
 			} else {
 				showReplacementPage();
-				alert('Sorry, your browser does not support this app.')
 			}
 		} catch (e) {
 			showReplacementPage();
-			alert('Sorry, your browser does not support this app.');
 		}
 	}
 
@@ -61,7 +59,6 @@ function audioRecorder() {
 
 	function startRecording() {
 		recorder && recorder.record();
-		// recorder.record();
 		$('#start').attr('disabled', true);
 		$('#stop').attr('disabled', false);
 
@@ -70,7 +67,6 @@ function audioRecorder() {
 
 	function stopRecording() {
 		recorder && recorder.stop();
-		// recorder.stop();
 		$('#stop').attr('disabled', true);
 		$('#start').attr('disabled', false);
 		$('.rec_light_bulb').removeClass('recording');
