@@ -9,7 +9,7 @@
 <a href="<%= salon_gallery_url(@gallery) %>" class="btn" id="save_btn">Finished Editing</a>
 <br class="clear">
 
-<div id="edit_photo_container">
+<div id="edit_photo_container" class="edit">
 	<% @gallery.salon_photos.each do |photo| %>
         <div class='photo'><%= image_tag photo.image.url(:thumb) %></div>
 	<% end %>

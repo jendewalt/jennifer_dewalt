@@ -1,8 +1,9 @@
 function salonGalleries() {
 	var body = $('body')[0];
 	var this_page = window.location.pathname.replace(/\/edit.*$/, '');
+	console.log
 
-	if ($('#edit_photo_container')) {
+	if ($('#edit_photo_container').length) {
 		body.addEventListener('dragover', function (e) {
 			e.preventDefault();
 		}, false);	
