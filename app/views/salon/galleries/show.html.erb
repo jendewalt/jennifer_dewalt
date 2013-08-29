@@ -1,0 +1,12 @@
+<%= render 'salon/galleries/header' %>
+
+<div id="title_container">
+	<h1><%= @gallery.title %></h1>
+	<p>This gallery's sharable URL is <%= salon_gallery_url(@gallery) %></p>
+</div>
+
+<div id="photo_container">
+	<% @gallery.salon_photos.each do |photo| %>
+        <div class='photo'><%= image_tag photo.image.url(:thumb) %></div>
+	<% end %>
+</div>

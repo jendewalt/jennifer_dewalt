@@ -1,2 +1,19 @@
 <%= render 'salon/galleries/header' %>
 
+<h1 id="index_logo">Salon</h1>
+
+<div id="info_container">
+	<h1>Create and share awesome photo galleries with anyone!</h1>
+
+	<p>Every gallery gets a unique URL that you can share with anyone. Enter a title to get started.</p>
+
+	<div id="title_input_container">
+		<%= form_for @gallery do |f| %>
+			<%= f.text_field :title, :class => "title_input", :maxlength => '255' %>
+			<button class="btn">Create</button>
+		<% end %>
+	</div>
+</div>
+<br class="clear">
+
+

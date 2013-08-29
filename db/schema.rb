@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130827025804) do
+ActiveRecord::Schema.define(:version => 20130828214231) do
 
   create_table "click_counter_buttons", :force => true do |t|
     t.integer  "clicks"
@@ -141,6 +141,27 @@ ActiveRecord::Schema.define(:version => 20130827025804) do
   add_index "postbored_sites", ["tag"], :name => "index_postbored_sites_on_postbored_sites_type"
   add_index "postbored_sites", ["user_id", "url"], :name => "index_postbored_sites_on_user_id_and_postbored_sites_url", :unique => true
   add_index "postbored_sites", ["user_id"], :name => "index_postbored_sites_on_user_id"
+
+  create_table "salon_galleries", :force => true do |t|
+    t.string   "slug"
+    t.string   "title"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "salon_galleries", ["slug"], :name => "index_salon_galleries_on_slug"
+
+  create_table "salon_photos", :force => true do |t|
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.integer  "salon_gallery_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  add_index "salon_photos", ["salon_gallery_id"], :name => "index_salon_photos_on_salon_gallery_id"
 
   create_table "serious_question_polls", :force => true do |t|
     t.integer  "this_votes"

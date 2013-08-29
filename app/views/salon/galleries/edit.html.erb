@@ -1,0 +1,20 @@
+<%= render 'salon/galleries/header' %>
+
+<div id="control_container">
+	<h1><%= @gallery.title %></h1>
+
+	<p>Drop your images anywhere to add them to the gallery.</p>
+
+</div>
+<a href="<%= salon_gallery_url(@gallery) %>" class="btn" id="save_btn">Finished Editing</a>
+<br class="clear">
+
+<div id="edit_photo_container">
+	<% @gallery.salon_photos.each do |photo| %>
+        <div class='photo'><%= image_tag photo.image.url(:thumb) %></div>
+	<% end %>
+</div>
+
+<div id="throbber">
+	<img src="/images/throbber_4.gif">
+</div>

@@ -1,45 +1,163 @@
-body.salon_galleries_index {
-    $text_color: #282d33;
-    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    $header_links_color: #ccc;
+body.salon_galleries_index, body.salon_galleries_edit, body.salon_galleries_show {
+    $text_color: #483f51;
+    $main_font: 'Varela Round', sans-serif;;
+    $header_links_color: #666;
 
     font-family: $main_font;
     text-align: center;
     overflow-y: scroll;
     color: $text_color;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    background-color: #897896;
+    box-shadow: 0px 10px 0px #fff inset, -0px -10px 0px #fff inset,
+    			10px 0px 0px #fff inset, -10px -0px 0px #fff inset;
     
     header {
         padding: 10px 20px;
-        margin-bottom: 30px;
+        background-color: #fff;
+	
+	    #logo a {
+	        float: left;
+	        line-height: 20px;
+	        font-size: 14px;
+	        text-decoration: none;
+	        color: $header_links_color;
+	    }
+
+	    #links_container {
+	        float: right;
+	    }
+
+	    #links_container a {
+	        font-size: 11px;
+	        line-height: 20px;
+	        text-decoration: none;
+	        color: $header_links_color;
+	        margin-left: 15px;
+	    }
+
+	    #links_container a:visited {
+	        color: $header_links_color;
+	    }
+
+	    #links_container a:hover {
+	        color: $text_color;
+	    }
     }
 
-    #logo a {
-        float: left;
-        line-height: 20px;
-        font-size: 14px;
-        text-decoration: none;
-        color: $header_links_color;
+    #index_logo {
+    	float: left;
+    	padding: 50px 25px 0px 80px;
+    	margin-right: 50px;
+    	font-size: 100px;
+    	color: #fff;
+    	text-shadow: 0 0 2px rgba(0,0,0,0.2);
     }
 
-    #links_container {
-        float: right;
+    #info_container {
+    	float: left;
+    	width: 400px;
+    	padding: 50px 80px;
+    	text-align: left;
+    	color: #fff;
+
+    	h1, p {
+    		white-space: -pre-wrap; 
+ 			white-space: -o-pre-wrap; 
+ 			word-wrap: break-word;    		
+    		text-shadow: 0 0 2px rgba(0,0,0,0.2);
+    	}
+
+    	h1 {
+    		margin-bottom: 50px;
+    		font-size: 34px;
+    		line-height: 40px;
+    	}
+
+    	p {
+    		font-size: 18px;
+    		line-height: 26px;
+    	}
     }
 
-    #links_container a {
-        font-size: 11px;
-        line-height: 20px;
-        text-decoration: none;
-        color: $header_links_color;
-        margin-left: 15px;
+    #title_input_container {
+    	padding: 50px 0;
+    	text-align: center;
+		margin: 0 10px;
+
+    	input {
+    		width: 300px;
+    		padding: 5px;
+    		font-size: 20px;
+    		font-family: $main_font;
+    		color: $text_color;
+    		text-align: center;
+    		border: none;
+    		border-radius: 3px;
+    	}
+
+    	.btn {
+    		margin-top: 10px;
+    	}
     }
 
-    #links_container a:visited {
-        color: $header_links_color;
+    #control_container, #title_container {
+    	padding: 14px;
+    	border-bottom: 1px solid rgba(255,255,255,0.2);
+    	box-shadow: 0 1px 0 rgba(0,0,0,0.18);
+    	margin: 0 10px;
+
+    	h1 {
+    		margin-bottom: 5px;
+    		font-size: 26px;
+    		line-height: 40px;
+    		color: #fff;
+    		text-shadow: 0 0 2px rgba(0,0,0,0.2);
+    	}
+
+		p {
+			display: inline-block;
+			vertical-align: bottom;
+			font-size: 13px;
+	 	}
     }
 
-    #links_container a:hover {
-        color: $text_color;
+ 	#save_btn {
+ 		float: right;
+ 		margin-right: 26px;
+ 		margin-top: 10px;
+ 	}
+
+    #edit_photo_container, #photo_container {
+    	padding: 20px;
+
+    	.photo {
+    		display: inline-block;
+    		vertical-align: top;
+    		height: 250px;
+    		width: 250px;
+    		margin: 3px 0;
+    		border: 3px solid #fff;
+    		background-image: url('shl.png');
+    	}
+    }
+
+    #throbber {
+    	display: none;
+    	position: fixed;
+    	top: 0;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	background-color: rgba(255,255,255,0.9);
+
+    	img {
+    		position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		margin-top: -50px;
+    		margin-left: -50px;
+    	}
     }
 
     .clear {
@@ -52,21 +170,21 @@ body.salon_galleries_index {
         vertical-align: top;
         font-family: Arial, sans-serif;
         text-decoration: none;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         cursor: pointer;
-        background-color: #565B6E;
-        color: #FFF;
+        background-color: #d4ced9;
+        color: #483f51;
         font-size: 13px;
         padding: 0 10px;
-        line-height: 30px;
+        line-height: 34px;
         text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
         box-shadow: 0 1px 1px rgba(0,0,0,0.5);
-        border-bottom: 1px solid #292c35;
+        border-bottom: 1px solid #bbb1c3;
         border-radius: 3px;
 
         &:active {
-            background-color: #292c35;
-            border-top: 1px solid #565B6E;
+            background-color: #bbb1c3;
+            border-top: 1px solid #d4ced9;
             border-bottom: none;
             box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
         }
