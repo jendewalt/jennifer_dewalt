@@ -132,6 +132,7 @@ body.salon_galleries_index, body.salon_galleries_edit, body.salon_galleries_show
     	padding: 20px;
 
     	.photo {
+            position: relative;
     		display: inline-block;
     		vertical-align: top;
     		height: 250px;
@@ -139,6 +140,15 @@ body.salon_galleries_index, body.salon_galleries_edit, body.salon_galleries_show
     		margin: 3px 0;
     		border: 3px solid #fff;
     		background-image: url('shl.png');
+
+            img {
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
     	}
     }
 
