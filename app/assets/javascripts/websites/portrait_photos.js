@@ -63,7 +63,7 @@ function portraitPhotos() {
 
 			new_image.onload = function () {
 				image_ctx.clearRect(0, 0, image_canvas.width, image_canvas.height);
-				// image_ctx.drawImage(base_image, 0, 0);
+				image_ctx.drawImage(base_image, 0, 0);
 				image_ctx.save();
 				image_ctx.globalAlpha = 0.5;
 				image_ctx.drawImage(new_image, 0, 0);
@@ -108,6 +108,6 @@ function portraitPhotos() {
 			alert("This app requires access to your camera.");
 		}
 
-		// base_image.src = $('#data-img').data('img');
+		base_image.src = $('#data-img').data('img');
 	}
 }
