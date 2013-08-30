@@ -9,7 +9,7 @@ function portraitPhotos() {
 		var scale_factor = 0.35;
 		var video = $('video')[0];
 		var photo_taken = false;
-		// var base_image = new Image();
+		var base_image = new Image();
 		var new_image = new Image();
 
 		video_canvas.width = image_canvas.width = width;
