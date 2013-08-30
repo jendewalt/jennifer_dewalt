@@ -1,17 +1,25 @@
-body.word_cloud_words_index {
-    $text_color: #282d33;
-    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    $header_links_color: #ccc;
+body.portrait_photos_index, body.portrait_photos_new, body.portrait_photos_show {
+    $blue: #1b49be;
+    $green: #15ad9f;
+    $orange: #ff8c00;
+    $black: #242628;
+    $display_text_color: $green;
+    $main_text_color: $black;
+    $display_font: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    $main_font: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    $header_links_color: $green;
 
     font-family: $main_font;
     text-align: center;
     overflow-y: scroll;
-    color: $text_color;
-    letter-spacing: 1px;
+    color: $main_text_color;
+    letter-spacing: 2px;
+    background-color: #fff;
     
     header {
         padding: 10px 20px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        background-color: $black;
 	   
 	    #logo a {
 	        float: left;
@@ -38,28 +46,180 @@ body.word_cloud_words_index {
 	    }
 
 	    #links_container a:hover {
-	        color: $text_color;
+	        color: white;
+	    }
+    }
+
+    #home_container {
+    	padding: 50px 20px; 
+
+    	.img_container {
+    		float: left;
+    		margin-left: 30px;
+    		margin-bottom: 50px;
+    		margin-right: 50px;
+
+    		img {
+    			border: 7px solid $green;
+    		}
+    	}
+
+    	#content_container {
+    		float: left;
+    		text-align: left;
+    		margin-left: 30px;
+
+    		h1 {
+    			margin-bottom: 30px;
+    			font-family: $display_font;
+    			font-size: 60px;
+    			font-weight: bold;
+    			color: $display_text_color;
+    			letter-spacing: 5px;
+    		} 
+
+    		ul {
+    			margin-bottom: 30px;
+	    		
+	    		li {
+    				padding-left: 30px;
+	    			font-size: 18px;
+	    			line-height: 40px;
+    				color: $main_text_color;
+	    		}
+    		}
+
+    		.btn {
+    			display: inline-block;
+    			margin-left: 30px;
+    		}
+    	}
+    }
+
+    .container {
+    	display: inline-block;
+    	vertical-align: top;
+    	margin: 0 10px; 
+
+    	.btn {
+    		font-size: 16px;
+    		line-height: 30px;
+    	}
+    }
+
+    #video_canvas_container {
+    	position: relative;
+
+    	#face_guide {
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    	}
+    }
+
+    .skip {
+    	display: block;
+   		margin: 30px 0 10px;
+    	font-size: 11px;
+    	color: #aaa;
+    	text-decoration: none;
+    }
+
+    #no_support {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	padding-top: 100px;
+    	background-color: rgba(255,255,255,0.95);
+
+    	h1 {
+    		font-size: 60px;
+    		font-family: $display_font;
+    		color: $display_text_color;
+    		margin-bottom: 30px;
+    	}
+
+    	p {
+    		line-height: 30px;
+    	}
+
+    	.btn {
+			display: inline-block;
+			margin-top: 40px;
+		}
+    }
+
+    #portrait_container {
+
+    	h1 {
+    			margin-bottom: 20px;
+    			font-family: $display_font;
+    			font-size: 20px;
+    			font-weight: bold;
+    			color: $display_text_color;
+    			letter-spacing: 5px;
+    		} 
+
+		img {
+			border: 7px solid $green;
+		}
+    }
+
+    .arrow_container {
+    	position: fixed;
+    	top: 50%;
+    	margin-top: -30px;
+    	cursor: pointer;
+
+    	width: 0; 
+		height: 0; 
+		border-top: 30px solid transparent;
+		border-bottom: 30px solid transparent; 
+
+    	&.left {
+    		left: 0;
+    		border-right:30px solid rgba(0,0,0,0.13);
+    		margin-left: 20px;
+    	}
+
+    	&.right {
+    		right: 0;
+    		border-left:30px solid rgba(0,0,0,0.13);  
+    		margin-right: 20px;
+    	}
+
+	    &:hover {
+
+	    	&.left {
+	    		border-right:30px solid $blue;    
+			}
+			&.right {
+				border-left:30px solid $blue;    
+			}
 	    }
     }
 
 
-    .clear {
-        clear: both;
+
+    canvas {
+    	display: block;
+    	border: 5px solid $green;
+    	margin-top: 10px;
     }
 
     .btn {
         border: none;
-        display: inline-block;
-        vertical-align: top;
-        font-family: Arial, sans-serif;
+        font-family: $display_font;
         text-decoration: none;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         cursor: pointer;
-        background-color: #565B6E;
+        background-color: $blue;
         color: #FFF;
-        font-size: 13px;
-        padding: 0 10px;
-        line-height: 30px;
+        font-size: 20px;
+        padding: 0 15px;
+        line-height: 38px;
         text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
         box-shadow: 0 1px 1px rgba(0,0,0,0.5);
         border-bottom: 1px solid #292c35;
@@ -67,9 +227,20 @@ body.word_cloud_words_index {
 
         &:active {
             background-color: #292c35;
-            border-top: 1px solid #565B6E;
+            border-top: 1px solid $blue;
             border-bottom: none;
             box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
         }
+
+        &:disabled {
+        	border-top: 1px solid #888;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset; 
+        	background-color: #bbb;
+        	color: #555;
+        }
+    }
+    .clear {
+        clear: both;
     }
 }

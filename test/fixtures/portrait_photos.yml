@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  image: 
+  updates: 1
+
+two:
+  image: 
+  updates: 1
