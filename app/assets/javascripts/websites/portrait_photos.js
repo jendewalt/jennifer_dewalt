@@ -25,7 +25,9 @@ function portraitPhotos() {
 		    video.play();
 		    $('#shoot_btn').attr('disabled', false);
 		    updateVideoCanvas();
-		  }, onDenial);
+		  }, function () {
+		  	alert("This app requires access to your camera.")
+		  });
 		} else {
 			$('#no_support').show();
 		}
@@ -102,10 +104,6 @@ function portraitPhotos() {
 				array.push(binary.charCodeAt(i));
 			}
 			return new Blob([new Uint8Array(array)], {type: 'image/png'});
-		}
-		
-		function onDenial() {
-			alert("This app requires access to your camera.");
 		}
 
 		base_image.src = $('#data-img').data('img');
