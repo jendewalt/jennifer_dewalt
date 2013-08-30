@@ -10,14 +10,3 @@
 	<canvas id="image_canvas"></canvas>
 </div>
 
-<%= link_to "Skip This Step", portrait_photo_path(@current_portrait[0].id), :title => "I'm a lame jerk and who doesn't want to participate.", :class => "skip" %>
-
-<video style="display: none;"></video>
-<div id="data-img" data-img='<%= request.base_url + @current_portrait[0].image.url(:large)%>'></div>
-
-<div id="no_support" style="display: none;">
-	<h1>SORRY!</h1>
-	<p>Looks like your browser doesn't support camera access.</p>
-	<p>No worries, though! You can still check out the present and past Portraits. </p>
-	<%= link_to "TO THE PORTRAITS", portrait_photo_path(@current_portrait[0].id), :class => 'btn' %>
-</div>
