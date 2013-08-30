@@ -11,10 +11,7 @@ class Portrait::PhotosController < ApplicationController
 
   def create
     photo = PortraitPhoto.create(:image => params[:image])
-
-    logger.debug('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
-    logger.debug(photo);
-
+    
     respond_to do |format|
       format.js { render :json => photo.id }
     end

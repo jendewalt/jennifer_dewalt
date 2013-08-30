@@ -31,5 +31,8 @@ class PortraitPhoto < ActiveRecord::Base
  
         self.image = data
       end
+      if self.image_file_size.nil? or self.image_content_type.nil?
+        return false
+      end
     end
 end
