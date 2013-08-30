@@ -1,5 +1,4 @@
 function portraitPhotos() {
-
 	if ($('#video_canvas').length) {
 		var video_canvas = $('#video_canvas')[0];
 		var video_ctx = video_canvas.getContext('2d');
