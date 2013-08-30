@@ -80,7 +80,8 @@ $(document).ready(function () {
 		"moment_of_peace": momentOfPeace,
 		"pollsie": pollsie,
 		"audio_recorder": audioRecorder,
-		"salon": salonGalleries
+		"salon": salonGalleries,
+		"portrait": portraitPhotos
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

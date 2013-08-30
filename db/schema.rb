@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130828214231) do
+ActiveRecord::Schema.define(:version => 20130829230455) do
 
   create_table "click_counter_buttons", :force => true do |t|
     t.integer  "clicks"
@@ -128,6 +128,15 @@ ActiveRecord::Schema.define(:version => 20130828214231) do
   end
 
   add_index "pollsie_polls", ["slug"], :name => "index_pollsie_polls_on_slug"
+
+  create_table "portrait_photos", :force => true do |t|
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
 
   create_table "postbored_sites", :force => true do |t|
     t.text     "url"

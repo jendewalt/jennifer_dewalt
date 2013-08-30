@@ -1,0 +1,16 @@
+<%= render 'portrait/photos/header' %>
+
+<div id="home_container">
+	<%= render 'portrait/photos/portrait_content' %>
+
+	<div id="content_container">
+		<h1>PORTRAIT</h1>
+		<ul>
+			<li>Step 1. Take your picture of your face.</li>
+			<li>Step 2. Add your picture to the Portrait.</li>
+			<li>Step 3. Be awesome!</li>
+		</ul>
+		<%= link_to "LET'S GET STARTED", new_portrait_photo_path, :class => 'btn' %>
+	</div>
+	<br class="clear">
+</div>

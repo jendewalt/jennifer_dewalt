@@ -191,12 +191,12 @@ zazam.png: zazam-db6091b35ea1d595558dfa3ee9ad2c14.png
 zazam/index.png: zazam-db6091b35ea1d595558dfa3ee9ad2c14.png
 zoom.png: zoom-cc03c1f274ad6ffcd6964d7bb0960abc.png
 zoom/index.png: zoom-cc03c1f274ad6ffcd6964d7bb0960abc.png
-application.js: application-32e6391b08dbec6aa0827b3b6855967d.js
-application/index.js: application-32e6391b08dbec6aa0827b3b6855967d.js
+application.js: application-1ec1107cc23834a379a22295a2962912.js
+application/index.js: application-1ec1107cc23834a379a22295a2962912.js
 helpers/application.js: helpers/application-4c749d00be3e691c1036a2107930a1a2.js
 helpers/application/index.js: helpers/application-4c749d00be3e691c1036a2107930a1a2.js
-application.css: application-d605d20eb7eb0e0d902f90a0fd0ff1a5.css
-application/index.css: application-d605d20eb7eb0e0d902f90a0fd0ff1a5.css
+application.css: application-f5b75180b6cb8abe0688bba1f3e12dd1.css
+application/index.css: application-f5b75180b6cb8abe0688bba1f3e12dd1.css
 big_word_list: big_word_list
 jscolor/demo.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
 jscolor/demo/index.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html

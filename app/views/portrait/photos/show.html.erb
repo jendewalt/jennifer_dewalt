@@ -1,0 +1,15 @@
+<%= render 'portrait/photos/header' %>
+
+<div id="portrait_container">
+	<h1 data-id='<%= @current_portrait.id %>'>PORTRAIT NUMBER <%= @current_portrait.id %></h1>
+	<%= render 'portrait/photos/portrait_content' %>
+</div>
+
+<% if @current_portrait.previous %>
+	<%= link_to "", @current_portrait.previous, :class => "arrow_container left"%>
+<% end %>
+
+<% if @current_portrait.next %>
+	<%= link_to "", @current_portrait.next, :class=>"arrow_container right"%>
+<% end %>
+
