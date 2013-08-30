@@ -47,6 +47,11 @@ function portraitPhotos() {
 			}
 		});
 
+		base_image.onload = function () {
+			image_ctx.clearRect(0, 0, image_canvas.width, image_canvas.height);
+			image_ctx.drawImage(base_image, 0, 0);
+		};
+
 		function updateVideoCanvas() {
 			if (video.videoWidth) {
 				var scale = image_canvas.height / video.videoHeight;
@@ -66,13 +71,29 @@ function portraitPhotos() {
 			new_image.onload = function () {
 				image_ctx.clearRect(0, 0, image_canvas.width, image_canvas.height);
 				image_ctx.drawImage(base_image, 0, 0);
-				image_ctx.save();
-				image_ctx.globalAlpha = 0.5;
-				image_ctx.drawImage(new_image, 0, 0);
-				image_ctx.restore();
+
+				var new_img_data = video_ctx.getImageData(0, 0, video_canvas.width, video_canvas.height);
+				var base_img_data = image_ctx.getImageData(0, 0, image_canvas.width, image_canvas.height);
+				blendImages(new_img_data, base_img_data);
 			}
 
 			new_image.src = url;
+		}
+
+		function blendImages(new_img, old_img) {
+			var new_data = new_img.data;
+			var old_data = old_img.data;
+			console.log(new_data[1], old_data[1])
+
+			for (var i = 0; i < new_data.length; i += 4) {
+				new_data[i] = (new_data[i] + old_data[i]) / 2;
+				new_data[i+1] = (new_data[i+1] + old_data[i+1]) / 2;
+				new_data[i+2] = (new_data[i+2] + old_data[i+2]) / 2;
+			}
+			console.log(new_data[1], old_data[1])
+
+			image_ctx.clearRect(0, 0, image_canvas.width, image_canvas.height);
+			image_ctx.putImageData(new_img, 0, 0);
 		}
 
 		function saveNewPortrait() {
