@@ -81,7 +81,8 @@ $(document).ready(function () {
 		"pollsie": pollsie,
 		"audio_recorder": audioRecorder,
 		"salon": salonGalleries,
-		"portrait": portraitPhotos
+		"portrait": portraitPhotos,
+		"letter_storm": letterStorm
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

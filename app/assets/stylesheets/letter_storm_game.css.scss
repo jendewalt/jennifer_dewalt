@@ -1,0 +1,149 @@
+body.letter_storm_game_index {
+	$navy: #0e1343;
+	$blue: #04acff;
+	$orange: #ff6600;
+    $text_color: $navy;
+    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    $display_font: Futura, "Trebuchet MS", Arial, sans-serif;
+    $header_links_color: #fff;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 2px;
+    
+    header {
+        padding: 10px 20px;
+        background-color: #75757d;
+	    
+	    #logo a {
+	        float: left;
+	        line-height: 20px;
+	        font-size: 14px;
+	        text-decoration: none;
+	        color: $header_links_color;
+	    }
+
+	    #links_container {
+	        float: right;
+	    }
+
+	    #links_container a {
+	        font-size: 11px;
+	        line-height: 20px;
+	        text-decoration: none;
+	        color: $header_links_color;
+	        margin-left: 15px;
+	    }
+
+	    #links_container a:visited {
+	        color: $header_links_color;
+	    }
+
+	    #links_container a:hover {
+	        color: $blue;
+	    }
+    }
+
+    .info {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	background-color: #fff;
+    	padding: 100px 50px;
+
+    	h1 {
+    		font-size: 50px;
+    		font-family: $display_font;
+    		color: $blue;
+    		margin-bottom: 30px;
+    	}
+
+    	p {
+    		font-size: 18px;
+    		line-height: 28px;
+    		margin-bottom: 10px;
+    	}
+
+    	ul {
+    		display: inline-block;
+    		margin: 20px;
+    		padding: 20px;
+    			text-align: left;
+
+    		h2 {
+    			font-family: $display_font;
+    			color: $orange;
+    			margin-bottom: 7px;
+    		}
+
+    		li {
+    			font-size: 11px;
+    			line-height: 18px;
+    		}
+       	}
+    }
+
+    #game_over {
+    	display: none;
+    	background-color: rgba(255,255,255,0.9);
+
+    	p {
+    		margin-bottom: 30px;
+    	}
+
+    	a {
+    		color: $orange;
+    	}
+    }
+
+    #status {
+    	display: none;
+    	padding-top: 180px;
+    	z-index: -1;
+    
+    	.correct {
+    		color: $blue;
+    	}
+    	.wrong {
+    		color: $orange;
+    	}
+    }
+
+    canvas {
+    	display: inline-block;
+    	vertical-align: bottom;
+    	background-color: rgba(255,255,255,0.6);
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .btn {
+        border: none;
+        font-family: $main_font;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: $blue;
+        color: #FFF;
+        font-size: 20px;
+        padding: 0 15px;
+        line-height: 38px;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        border-bottom: 1px solid #008bd0;
+        border-radius: 0;
+
+        &:active {
+            background-color: #008bd0;
+            border-top: 1px solid $blue;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+}

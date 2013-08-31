@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :letter_storm do 
+    resources :game
+  end
+
   namespace :portrait do 
     resources :photos
   end

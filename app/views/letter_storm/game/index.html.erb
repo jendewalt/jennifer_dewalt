@@ -1,0 +1,42 @@
+<%= render 'letter_storm/game/header' %>
+
+<div id="start" class="info">
+	<h1>LETTER STORM</h1>
+
+	<p>Catch the letters in order as they fall to form words.</p>
+	<p>Longer words are worth more points  <br>
+	   and give you bigger time boosts.</p>
+
+	<div>
+		<ul id="mouse">
+			<h2>Mouse Users</h2>
+			<li>Click the letters to catch them.</li>
+			<li>Click Submit to submit your word.</li>
+			<li>Click Clear to clear the letters.</li>
+		</ul>
+
+		<ul id="keyboard">
+			<h2>Keyboard Users</h2>
+			<li>Type the letters to catch them.</li>
+			<li>Use Enter to submit your word.</li>
+			<li>Use Spacebar to clear the letters.</li>
+		</ul>
+	</div>
+
+	<button class="btn" id="start_btn">Let's Play!</button>
+
+</div>
+
+<canvas></canvas>
+
+<div id="status" class="info">
+	<h1>CORRECT</h1>
+</div>
+
+<div id="game_over" class="info">
+	<h1>GAME OVER</h1>
+	<p></p>
+	<%= link_to "Play Again", letter_storm_game_index_path %>
+</div>
+
+<script type="text/javascript" src="/js/big_word_list.js"></script>
