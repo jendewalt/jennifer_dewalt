@@ -16,7 +16,7 @@ function lightsOn() {
 
 		if (input > 0) {
 			level = input;
-			grid_size += input;
+			grid_size += input - 1;
 			makeLights();
 		}
 		$('#start').fadeOut(500);
