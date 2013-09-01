@@ -1,0 +1,180 @@
+body.lights_on_game_index {
+	$green: #00ffe7;
+	$dark_gray: #494953;
+	$mid_gray: #9494a1;
+    $text_color: #313138;
+    $display_font: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    $header_links_color: $text_color;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 1px;
+    background-color: $mid_gray;
+    
+    header {
+    	position: relative;
+    	z-index: 10;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        background-color: #fff;
+
+        a {
+	        text-decoration: none;
+	        color: $header_links_color;        	
+        }
+	    
+	    #logo a {
+	        float: left;
+	        line-height: 20px;
+	        font-size: 14px;
+	        font-family: $display_font;
+	        letter-spacing: 2px;
+	    }
+
+	    #links_container {
+	        float: right;
+	    }
+
+	    #links_container a {
+	        font-size: 11px;
+	        line-height: 20px;
+	        margin-left: 15px;
+	    }
+
+	    #links_container a:visited {
+	        color: $header_links_color;
+	    }
+
+	    #links_container a:hover {
+	        color: $text_color;
+	    }
+    }
+
+    #wrapper {
+    	text-align: left;
+    	margin: auto;
+    }
+
+    #score {
+    	margin-bottom: 20px;
+    	font-family: $display_font;
+    }
+
+    #lights_container {
+    	position: relative;
+
+    	.light {
+    		position: absolute;
+    		height: 30px;
+    		width: 30px;
+    		border-radius: 50%;
+    		cursor: pointer;
+
+    		&.off {
+    			background-color: $dark_gray;
+    		}
+
+    		&.on {
+    			background-color: $green;
+    			box-shadow: 0 0 3px rgba(0, 255, 231, 1);
+    		}
+    	}
+    }
+
+    #win {
+    	display: none;
+    }
+
+    #start {
+    	h1 {
+    		margin-bottom: 20px;
+    	}
+
+    	#action_container {
+    		margin-top: 30px;
+
+    		p {
+    			display: inline-block;
+    			line-height: 18px;
+    			margin: 10px;
+    		}
+
+    		input {
+    			width: 40px;
+    			padding: 3px;
+    			margin-left: 5px;
+    			vertical-align: bottom;
+    			text-align: center;
+    			font-family: $main_font;
+    			font-size: 16px;
+    			border: none;
+    			border-bottom: 1px solid $dark_gray;
+    		}
+    	}
+    }
+
+    .modal {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	background-color: $mid_gray;
+
+    	.inner_modal {
+    		width: 550px;
+    		margin: 150px auto;
+    		padding: 30px;
+    		background-color: #fff; 
+    		border-radius: 5px;
+    		box-shadow: 0 0 3px rgba(0,0,0,0.2);
+
+    		h1 {
+    			font-family: $display_font;
+    			font-size: 32px;
+    			margin-bottom: 8px;
+    			line-height: 40px;
+    		}
+
+    		h2 {
+    			font-family: $display_font;
+    			font-size: 20px;
+    			margin-bottom: 20px;
+    			line-height: 30px;
+    		}
+    	}
+    }
+
+    .btn {
+        border: none;
+        display: inline-block;
+        vertical-align: top;
+        font-family: $display_font;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #00ccb9;
+        color: #00665d;
+        font-size: 16px;
+        padding: 0 10px;
+        line-height: 30px;
+        border-bottom: 3px solid #00b3a2;
+        border-left: 1px solid #00b3a2;
+        border-right: 1px solid #00b3a2;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #00b3a2;
+            border-top: 1px solid #00ccb9;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+}

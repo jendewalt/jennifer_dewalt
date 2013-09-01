@@ -1,0 +1,27 @@
+<%= render 'lights_on/game/header' %>
+
+<div id="wrapper">
+	<div id="score">Moves: 0</div>
+	<div id="lights_container"></div>
+</div>
+
+<div id='start' class="modal">
+	<div class="inner_modal">
+		<h1>Lights On</h1>
+		<p>Turn on all the lights in as few moves as possible.</p>
+		<div id="action_container">
+			<button id='start_btn' class='btn'>Start</button>
+			<p>or</p>
+			<button id='goto' class='btn'>Go to Level</button>
+			<input type="text">
+		</div>
+	</div>	
+</div>
+
+<div id='win' class="modal">
+	<div class="inner_modal">
+		<h1>All Lights On!</h1>
+		<h2></h2>
+		<p id="level"></p>
+	</div>	
+</div>
