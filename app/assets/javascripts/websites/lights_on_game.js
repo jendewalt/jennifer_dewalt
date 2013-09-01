@@ -11,11 +11,12 @@ function lightsOn() {
 	});
 
 	$('#goto').on('click', function () {
-		var input = $.trim($('input').val());
+		var input = Number($.trim($('input').val()));
+		console.log(input, grid_size, grid_size + input)
 
 		if (input > 0) {
 			level = input;
-			grid_size *= input;
+			grid_size += input;
 			makeLights();
 		}
 		$('#start').fadeOut(500);

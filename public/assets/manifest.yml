@@ -191,8 +191,8 @@ zazam.png: zazam-db6091b35ea1d595558dfa3ee9ad2c14.png
 zazam/index.png: zazam-db6091b35ea1d595558dfa3ee9ad2c14.png
 zoom.png: zoom-cc03c1f274ad6ffcd6964d7bb0960abc.png
 zoom/index.png: zoom-cc03c1f274ad6ffcd6964d7bb0960abc.png
-application.js: application-443a82734c423b68296e27388b128780.js
-application/index.js: application-443a82734c423b68296e27388b128780.js
+application.js: application-b384fa28da358030b47b83f834673d5a.js
+application/index.js: application-b384fa28da358030b47b83f834673d5a.js
 helpers/application.js: helpers/application-4c749d00be3e691c1036a2107930a1a2.js
 helpers/application/index.js: helpers/application-4c749d00be3e691c1036a2107930a1a2.js
 application.css: application-6c0b0385acc2e03164bc113cee97536e.css
