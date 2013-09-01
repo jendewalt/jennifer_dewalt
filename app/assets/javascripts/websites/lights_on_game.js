@@ -117,6 +117,7 @@ function lightsOn() {
 
 		$('#lights_container').html('');
 		$('#wrapper').css('width', size * grid_size);
+		$('#score').text('Moves: ' + moves);
 
 		_.each(_.range(grid_size * grid_size), function (num) {
 			lights.push(new Light(x, y, num));
