@@ -55,6 +55,7 @@ function whatDay() {
 		if (response.parse) {
 			var text = response.parse.text['*'].split('<ul>');
 			text = text[1].split('</ul>')[0];
+			text = text.replace(/\/wiki/g, 'http://en.wikipedia.org/wiki');
 			$('#events_container').html(text);
 		}
 
