@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :what_day do 
+    resources :page
+  end
+
   namespace :lights_on do 
     resources :game
   end

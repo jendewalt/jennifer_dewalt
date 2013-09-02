@@ -83,7 +83,8 @@ $(document).ready(function () {
 		"salon": salonGalleries,
 		"portrait": portraitPhotos,
 		"letter_storm": letterStorm,
-		"lights_on": lightsOn		
+		"lights_on": lightsOn,		
+		"what_day": whatDay		
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

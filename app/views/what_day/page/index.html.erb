@@ -1,0 +1,15 @@
+<%= render 'what_day/page/header' %>
+
+<form>
+	<label>Month: </label><input type="text" class="month">
+	<label>Day: </label><input type="text" class="date">
+	<label>Year: </label><input type="text" class="year">
+	<button class="btn">Get Day</button>
+</form>
+
+<div id="result" style="display:none;">
+	<div id="day_container"></div>
+
+	<h1>EVENTS ON THIS DATE</h1>
+	<ul id="events_container"></ul>
+</div>
