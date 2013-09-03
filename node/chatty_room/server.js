@@ -57,5 +57,5 @@ io.on('connection', function (socket) {
 });
 
 server.listen(app.get("port"), app.get('ipaddr'), function () {
-	console.log("Server up and running on" + app.get("ipaddr") + ":" + app.get("port"));
+	console.log("Server up and running on " + app.get("ipaddr") + ":" + app.get("port"));
 });
