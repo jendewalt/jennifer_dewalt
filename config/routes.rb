@@ -4,12 +4,16 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :color_walk do 
+    resources :game, :only => [:index]
+  end
+
   namespace :what_day do 
-    resources :page
+    resources :page, :only => [:index] 
   end
 
   namespace :lights_on do 
-    resources :game
+    resources :game, :only => [:index]
   end
 
   namespace :letter_storm do 

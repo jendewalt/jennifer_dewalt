@@ -1,0 +1,27 @@
+<%= render 'color_walk/game/header' %>
+
+
+<div id="wrapper">
+	<div id="gameboard"></div>
+</div>
+
+<div id="control_container">
+	<p class="btn moves score">0</p>
+
+</div>
+
+<div class="modal" id="start">
+	<div class="inner_modal">
+		<p class="close">X</p>
+		<h1>Color Walk</h1>
+		<p>You start in the upper left corner of the gameboard at the grey square. Use the buttons to take over neighboring squares of the same color. The goal is to clear the field in as few moves as possible.</p>
+	</div>
+</div>
+
+<div class="modal" id="game_over">
+	<div class="inner_modal">
+		<h1>Awesome!</h1>
+		<p>You cleared the field in <span class="score"></span> moves.</p>
+		<%= link_to "Play Again", color_walk_game_index_path %>
+	</div>
+</div>

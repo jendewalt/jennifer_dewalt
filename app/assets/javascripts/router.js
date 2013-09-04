@@ -84,7 +84,8 @@ $(document).ready(function () {
 		"portrait": portraitPhotos,
 		"letter_storm": letterStorm,
 		"lights_on": lightsOn,		
-		"what_day": whatDay		
+		"what_day": whatDay,
+		"color_walk": colorWalk		
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
