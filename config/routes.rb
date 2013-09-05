@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :commerce do 
+    resources :items, :only => [:index, :create]
+  end
+
   namespace :color_walk do 
     resources :game, :only => [:index]
   end
