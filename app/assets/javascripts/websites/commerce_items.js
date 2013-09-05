@@ -20,7 +20,7 @@ function commerce() {
 			dataType: 'json',
 			data: {keyword: keyword},
 			success: function (data) {
-				parseData(data);
+				checkData(data);
 			},
 			error: function () {
 				$('#loading').css('opacity', '0');
@@ -29,7 +29,7 @@ function commerce() {
 		});
 	}
 
-	function parseData(data) {
+	function checkData(data) {
 		products = data;
 
 		if (products[0].error != null) {
@@ -39,18 +39,18 @@ function commerce() {
 			$('#loading').css('opacity', '0');
 			alert('No results found.');
 		} else {
-			displayAProduct();
+			displayProducts();
 		}
 	}
 
-	function displayAProduct() {
+	function displayProducts() {
 		_.each(products, function (product) {
 			if (product.image) {
 				var available = product.availability == null ? 'unknown' :  product.availability;
 
 				$('<div>', {
 					class: 'product_container'
-				}).html('<img class="product_img" src='+ product.image +'><div class="availability">Available '+ available +'</div>'). prependTo('#item_container');
+				}).html('<div class="info"><p>' + product.title + '</p><a href="' + product.url + '"></a></div><img class="product_img" src='+ product.image +'><div class="availability">Available '+ available +'</div>'). prependTo('#item_container');
 			}
 		});
 

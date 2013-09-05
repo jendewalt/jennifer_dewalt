@@ -74,10 +74,14 @@ body.commerce_items_index {
     #item_container {
 
     	.product_container {
-    		border-top: 1px solid rgba(0,0,0,0.23);
-    		border-bottom: 1px solid rgba(0,0,0,0.08);
+            position: relative;
+            border-top: 1px solid rgba(0,0,0,0.23);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            background-color: white;
 
-    		img {
+            img {
+                position: relative;
+                z-index: 5;
     			padding: 16px 0;
     		}
 
@@ -85,6 +89,16 @@ body.commerce_items_index {
     			padding-bottom: 16px;
     			color: #ff9d43;
     		}
+
+            .info {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: -1;
+                font-size: 0;
+            }
     	}
     }
 
