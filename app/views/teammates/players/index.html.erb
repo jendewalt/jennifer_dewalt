@@ -1,0 +1,18 @@
+<%= render 'teammates/players/header' %>
+
+<%= link_to "Start Over", teammates_players_path, :class => 'btn', :id => 'start_over' %>
+<br class="clear">
+
+<div id="form_container">
+	<h1>TEAMMATES</h1>
+	<h2>Discover new Dribbble users and <br>
+	    see who is influencing whom.</h2>
+
+	<form>
+		<p>Enter a Dribbble username to start.</p>
+		<input id="username_input" type="text" value="dribbble">
+		<button class="submit btn">Submit</button>
+	</form>
+</div>
+
+<div id="teams_container"></div>

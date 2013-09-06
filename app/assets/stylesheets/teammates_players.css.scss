@@ -1,0 +1,203 @@
+body.teammates_players_index {
+	$dark_grey: #47474d;
+	$teal: #10cbbf;
+    $text_color: $dark_grey;
+    $display_font: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    $header_links_color: $teal;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 2px;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        background-color: $dark_grey;
+
+        a {
+            text-decoration: none;
+            color: $header_links_color;         
+        }
+        
+        #logo a {
+            float: left;
+            line-height: 20px;
+            font-size: 18px;
+            font-family: $display_font;
+        }
+
+        #links_container {
+            float: right;
+        }
+
+        #links_container a {
+            font-size: 11px;
+            line-height: 20px;
+            margin-left: 15px;
+        }
+
+        #links_container a:visited {
+            color: $header_links_color;
+        }
+
+        #links_container a:hover {
+            color: #fff;
+        }
+    }
+
+    #form_container {
+    	h1 {
+    		font-size: 60px;
+    		font-family: $display_font;
+    		color: $teal;
+    		margin-bottom: 12px;
+    	}
+
+    	h2 {
+    		margin-bottom: 40px;
+    		line-height: 28px;
+    		font-size: 22px;
+    		font-family: $display_font;
+    		color: $dark_grey;
+    	}
+
+    	form {
+    		padding: 40px;
+    		border: 5px solid $teal;
+    		width: 450px;
+    		margin: auto;
+    		border-radius: 10px;
+
+    		input {
+    			width:250px;
+    			padding: 6px;
+    			height: 22px;
+    			font-size: 26px;
+    			font-family: $display_font;
+    			text-align: center;
+    			color: $text_color;
+    			vertical-align: middle;
+    		}
+	    	
+	    	p {
+	    		font-size: 11px;
+	    		color: #888;
+	    		margin-bottom: 16px;
+	    	}
+    	}
+    }
+
+    #teams_container {
+    	display: none;
+    	height: 600px;
+
+	    .plot_container {
+	    	position: relative;
+	    	height: 480px;
+	    	width: 480px;
+	    	margin: 20px auto;
+
+	    	img {
+	    		cursor: pointer;
+	    	}
+
+		    .user_container.main {
+		    	position: absolute;
+		    	top: 50%;
+		    	left: 50%;
+		    	width: 200px;
+		    	height: 180px;
+		    	margin: -90px 0 0 -100px;
+
+		    	img {
+		    		border-radius: 10px;
+		    	}
+
+		    	a.username  {
+		    		line-height: 30px;
+		    		font-size: 14px;
+		    		text-decoration: none;
+		    		color: $text_color;
+		    		text-overflow: ellipsis;
+		    		white-space: nowrap;
+					overflow: hidden;
+
+					&:hover {
+			    		color: $teal;
+			    	}
+		    	}
+		    }
+
+		    .user_container.follower {
+		    	position: absolute;
+		    	width: 100px;
+		    	height: 90px;
+		    	margin: -45px 0 0 -50px;
+
+		    	img {
+		    		width: 100px;
+		    		height: 90px;
+		    		border-radius:50%;
+		    	}
+
+		    	a.username {
+		    		line-height: 30px;
+		    		font-size: 11px;
+		    		text-decoration: none;
+		    		color: $text_color;
+		    		text-overflow: ellipsis;
+		    		white-space: nowrap;
+					overflow: hidden;
+
+					&:hover {
+			    		color: $teal;
+			    	}
+		    	}
+		    }
+	    }
+    }
+
+
+    #start_over {
+    	display: none;
+    	float: right;
+    	margin: 0 20px;
+    	font-size: 13px;
+    	height: 26px;
+    	line-height: 26px;
+    }
+
+    .btn {
+    	height: 37px;
+        border: none;
+        display: inline-block;
+        vertical-align: middle;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #de2484;
+        color: #FFF;
+        font-size: 16px;
+        padding: 0 10px;
+        line-height: 37px;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+        border-bottom: 1px solid #b41b6a;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #b41b6a;
+            border-top: 1px solid #de2484;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.2) inset;              
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+}

@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :teammates do 
+    resources :players, :only => [:index, :create]
+  end
+
   namespace :commerce do 
     resources :items, :only => [:index, :create]
   end
