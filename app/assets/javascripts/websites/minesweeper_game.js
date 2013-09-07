@@ -1,7 +1,7 @@
 function minesweeper() {
 	var timer;
 	var clock;
-	var game = new Game(8, 3);
+	var game = new Game(8, 10);
 	var running = false;
 
 	game.init();
