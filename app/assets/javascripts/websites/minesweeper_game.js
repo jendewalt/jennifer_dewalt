@@ -95,9 +95,6 @@ function minesweeper() {
 					game.expose(n);
 				});			
 			}
-			console.log(exposed)
-			console.log(size * size - mines)
-			console.log('--------------------')
 
 			if (exposed == size * size - mines) {
 				gameOver('win');
