@@ -1,0 +1,23 @@
+<%= render 'minesweeper/game/header' %>
+
+<div id="container">
+	<div id="controls">
+		<div id="info">
+			<div id="mines"></div>
+			<div id="status" style='display:none;'></div>
+			<div id="timer">00:00</div>
+			<br class="clear">
+		</div>
+
+	</div>
+
+	<div id="game">
+		<div class="board"></div>
+	</div>
+
+	<div id="buttons">
+		<button id="easy" class="btn new_game" value="1">Easy</button>
+		<button id="med" class="btn new_game" value="2">Medium</button>
+		<button id="hard" class="btn new_game" value="3">Hard</button>
+	</div>
+</div>	

@@ -87,7 +87,8 @@ $(document).ready(function () {
 		"what_day": whatDay,
 		"color_walk": colorWalk,
 		"commerce": commerce,	
-		"teammates": teammates	
+		"teammates": teammates,
+		"minesweeper": minesweeper
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

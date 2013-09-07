@@ -4,8 +4,12 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :minesweeper do 
+    resources :game, :only => [:index]
+  end
+
   namespace :teammates do 
-    resources :players, :only => [:index, :create]
+    resources :players, :only => [:index]
   end
 
   namespace :commerce do 

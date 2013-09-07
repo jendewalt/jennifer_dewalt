@@ -1,0 +1,148 @@
+body.minesweeper_game_index {
+    $text_color: #181A1B;
+    $main_font: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    $light_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    $header_links_color: #ccc;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 2px;
+    background-color: #181A1B;
+    
+    header {
+        padding: 10px 20px;
+        font-family: $light_font;
+
+        a {
+            text-decoration: none;
+            color: $header_links_color;         
+        }
+        
+        #logo a {
+            float: left;
+            line-height: 20px;
+            font-size: 14px;
+        }
+
+        #links_container {
+            float: right;
+        }
+
+        #links_container a {
+            font-size: 11px;
+            line-height: 20px;
+            margin-left: 15px;
+        }
+
+        #links_container a:visited {
+            color: $header_links_color;
+        }
+
+        #links_container a:hover {
+            color: #13edc1;
+        }
+    }
+
+    #container {
+    	position: relative;
+    	margin: auto;
+    	color: #fcfcfc;
+    	font-family: $light_font;
+
+	    #controls {
+    		height: 34px;
+    		line-height: 34px;
+	    	padding: 10px 0;
+
+	    	#info {
+	    		width: 100%;
+		    	
+		    	#mines {
+		    		float: left;
+		    	}
+
+		    	#timer {
+		    		float: right;
+		    	}
+		    	#status {
+		    		display: inline-block;
+		    		font-size: 36px;
+		    		color: #13edc1;
+		    	}
+	    	}
+
+	    }
+
+	    #game {
+	    	border: 3px solid #444;
+		    
+		    .board {
+		    	margin: auto;
+		    	color: $text_color;
+		    	font-family: $main_font;
+
+		    	.square {
+		    		float: left;
+		    		height: 30px;
+		    		width: 30px;
+		    		background-color: #a0a3a3;
+		    		border: 3px solid #444;
+		    		cursor: pointer;
+		    	}
+		    	.exposed {
+		    		background-color: #fcfcfc;
+		    		line-height: 30px;
+		    		font-size: 13px;
+		    		cursor: default;
+		    	}
+
+		    	.flagged {
+		    		line-height: 30px;
+		    		font-size: 22px;
+		    	}
+
+		    	.mine {
+		    		background-color: #db2323;
+		    	}
+		    }
+	    }
+    }
+
+    #buttons {
+    	padding: 20px;
+    }
+
+
+
+    .btn {
+        display: inline-block;
+    	width: 80px;
+    	height: 32px;
+        line-height: 32px;
+        border: none;
+        vertical-align: top;
+        font-family: $light_font;
+        text-decoration: none;
+        letter-spacing: 1px;
+        background-color: #13edc1;
+        color: #07604e;
+        font-size: 13px;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 3px 0 #07604e;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:active {
+            background-color: #07604e;
+            box-shadow: 3px 0 0 #07604e;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;  
+            color: #021914;            
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+}
