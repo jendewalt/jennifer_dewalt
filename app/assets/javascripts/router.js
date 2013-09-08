@@ -88,7 +88,8 @@ $(document).ready(function () {
 		"color_walk": colorWalk,
 		"commerce": commerce,	
 		"teammates": teammates,
-		"minesweeper": minesweeper
+		"minesweeper": minesweeper,
+		"lunar_phase": lunarPhase
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

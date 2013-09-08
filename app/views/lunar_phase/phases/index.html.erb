@@ -1,0 +1,11 @@
+<%= render 'lunar_phase/phases/header' %>
+
+<h1>TONIGHT'S MOON</h1>
+
+<img src="" id="moon" title="Image is not exact.">
+
+<div id="container">
+	<h1 id="stage"></h1>
+	<p id="age" data-age="<%= @phase.moon_age %>" title="Moon age refers to day in lunar cycle.">Age of moon: <%= @phase.moon_age %></p>
+	<p id="percent" data-percent="<%= @phase.percent_illuminated %>">Percent Illuminated: <%= @phase.percent_illuminated %></p>
+</div>

@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :lunar_phase do 
+    resources :phases, :only => [:index]
+  end
+
   namespace :minesweeper do 
     resources :game, :only => [:index]
   end

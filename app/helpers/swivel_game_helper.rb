@@ -1,2 +1,0 @@
-module SwivelGameHelper
-end

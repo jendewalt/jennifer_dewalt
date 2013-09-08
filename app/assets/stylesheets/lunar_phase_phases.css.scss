@@ -1,0 +1,106 @@
+body.lunar_phase_phases_index {
+    $text_color: #968fa1;
+    $display_font: Futura, "Trebuchet MS", Arial, sans-serif;
+    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    $header_links_color: $text_color;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 1px;
+    background-color: #121114;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 30px;
+
+        a {
+            text-decoration: none;
+            color: $header_links_color;         
+        }
+        
+        #logo a {
+            float: left;
+            line-height: 20px;
+            font-size: 14px;
+        }
+
+        #links_container {
+            float: right;
+        }
+
+        #links_container a {
+            font-size: 11px;
+            line-height: 20px;
+            margin-left: 15px;
+        }
+
+        #links_container a:visited {
+            color: $header_links_color;
+        }
+
+        #links_container a:hover {
+            color: #968fa1;
+        }
+    }
+
+    h1 {
+    	font-family: $display_font;
+		font-size: 50px;
+		letter-spacing: 3px;
+    }
+
+    img {
+    	margin: 60px;
+    }
+
+    #container {
+
+    	h1 {
+    		margin-bottom: 30px;
+    		font-size: 20px;
+    		letter-spacing: 3px;
+    		text-transform: uppercase;
+    		color: #f1eff7;
+    	}
+
+    	p {
+    		display: inline-block;
+    		letter-spacing: 3px;
+    		font-size: 16px;
+    		margin: 0 15px;
+    	}
+    }
+
+
+    .btn {
+        border: none;
+        display: inline-block;
+        vertical-align: top;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #565B6E;
+        color: #FFF;
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 30px;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        border-bottom: 1px solid #292c35;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #292c35;
+            border-top: 1px solid #565B6E;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+}

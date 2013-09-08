@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-one:
-  x: 1.5
-  y: 1.5
-
-two:
-  x: 1.5
-  y: 1.5

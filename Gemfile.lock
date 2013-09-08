@@ -28,6 +28,7 @@ GEM
     activesupport (3.2.12)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    addressable (2.3.5)
     amazon-ecs (2.2.4)
       nokogiri (~> 1.4)
       ruby-hmac (~> 0.3)
@@ -61,6 +62,9 @@ GEM
     hashie (2.0.5)
     highline (1.6.15)
     hike (1.2.1)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     i18n (0.6.4)
     instagram (0.10.0)
       faraday (>= 0.7, < 0.9)
@@ -87,6 +91,7 @@ GEM
     mime-types (1.21)
     mini_portile (0.5.1)
     multi_json (1.7.2)
+    multi_xml (0.5.5)
     multipart-post (1.2.0)
     net-scp (1.1.0)
       net-ssh (>= 2.6.5)
@@ -189,6 +194,10 @@ GEM
       rack (>= 1.0.0)
     warden (1.2.1)
       rack (>= 1.0)
+    wunderground (1.1.0)
+      addressable
+      httparty (> 0.6.0)
+      json (> 1.4.0)
 
 PLATFORMS
   ruby
@@ -216,3 +225,4 @@ DEPENDENCIES
   twitter
   uglifier (>= 1.0.3)
   unicorn
+  wunderground

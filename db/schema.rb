@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130829230455) do
+ActiveRecord::Schema.define(:version => 20130908023506) do
 
   create_table "click_counter_buttons", :force => true do |t|
     t.integer  "clicks"
@@ -67,6 +67,13 @@ ActiveRecord::Schema.define(:version => 20130829230455) do
   end
 
   add_index "liquor_likes_liquors", ["liquor_likes_likes_count"], :name => "index_liquor_likes_liquors_on_liquor_likes_likes_count"
+
+  create_table "lunar_phase_phases", :force => true do |t|
+    t.integer  "moon_age"
+    t.integer  "percent_illuminated"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+  end
 
   create_table "make_a_dude_dudes", :force => true do |t|
     t.string   "name"

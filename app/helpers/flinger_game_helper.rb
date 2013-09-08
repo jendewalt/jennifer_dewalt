@@ -1,2 +1,0 @@
-module FlingerGameHelper
-end
