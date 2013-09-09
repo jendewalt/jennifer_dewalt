@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :mousing do 
+    resources :page, :only => [:index]
+  end
+
   namespace :lunar_phase do 
     resources :phases, :only => [:index]
   end
