@@ -90,7 +90,8 @@ $(document).ready(function () {
 		"teammates": teammates,
 		"minesweeper": minesweeper,
 		"lunar_phase": lunarPhase,
-		"mousing": mousingPage
+		"mousing": mousingPage,
+		"window": windowPage,
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

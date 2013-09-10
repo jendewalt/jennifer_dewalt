@@ -1,0 +1,94 @@
+body.window_page_index {
+    $text_color: #282d33;
+    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    $header_links_color: #ccc;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 1px;
+    background-color: #fafafa;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 5px;
+
+        a {
+            text-decoration: none;
+            color: $header_links_color;         
+        }
+        
+        #logo a {
+            float: left;
+            line-height: 20px;
+            font-size: 14px;
+        }
+
+        #links_container {
+            float: right;
+        }
+
+        #links_container a {
+            font-size: 11px;
+            line-height: 20px;
+            margin-left: 15px;
+        }
+
+        #links_container a:visited {
+            color: $header_links_color;
+        }
+
+        #links_container a:hover {
+            color: $text_color;
+        }
+    }
+
+    #container {
+    	padding-bottom: 30px;
+
+    	#window {
+	    	border: 15px solid #d3d3d3;
+	    	width: 520px; 
+	    	padding: 2px;
+	    	margin: auto;
+	    	background-color: #aaa;
+    		
+		    canvas {
+		    	display: block;
+		    	border: 10px solid #fff;
+		    }
+    	}
+    }
+   
+
+    .btn {
+        border: none;
+        display: block;
+        margin: 15px auto;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #27282b;
+        color: #FFF;
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 30px;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        border-bottom: 1px solid #030303;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #030303;
+            border-top: 1px solid #27282b;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+}

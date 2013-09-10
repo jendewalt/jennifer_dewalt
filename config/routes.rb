@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :window do 
+    resources :page, :only => [:index]
+  end
+
   namespace :mousing do 
     resources :page, :only => [:index]
   end

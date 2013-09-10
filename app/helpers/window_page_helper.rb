@@ -1,0 +1,2 @@
+module WindowPageHelper
+end
