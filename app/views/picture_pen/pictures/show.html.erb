@@ -1,0 +1,13 @@
+<%= render 'picture_pen/pictures/header' %>
+
+<div id="show_container">
+	<h1>LOOK AT THIS AWESOME MASTERPIECE!</h1>
+
+	<%= image_tag @picture.image.url(:large) %>
+
+	<h3>Share with anyone using this url: <%= picture_pen_picture_url(@picture) %></h3>
+
+	<%= link_to "Make A New Picture", new_picture_pen_picture_path %>
+	<%= link_to "Back To The Gallery", picture_pen_pictures_path %>
+
+</div>

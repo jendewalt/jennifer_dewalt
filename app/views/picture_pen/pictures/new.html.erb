@@ -1,0 +1,22 @@
+<%= render 'picture_pen/pictures/header' %>
+
+<div id="new_container">
+	<div id="control_container">
+		<div id="inputs">
+			<div id="color_picker" class="control">
+				<label>Pen Color: </label><input value="000000" class="color {pickerPosition:'top'}">
+			</div>
+			<div id="pen_size" class="control">
+				<label>Pen Size: </label><input value="5" class="size">
+			</div>
+		</div>
+
+		<div id="btn_container">
+			<button class="btn" id="clear_pen" title="Click to erase pen marks from image">Clear Pen</button>
+			<button class="btn" id="clear_all" title="Click to erase everything from the canvas">Erase All</button>
+			<button class="btn" id="download" title="Click to download your image">Download</button>
+			<button class="btn" id="save" title="Click to save your image to the website">Save to Picture Pen</button>
+		</div>
+	</div>
+	<canvas></canvas>
+</div>

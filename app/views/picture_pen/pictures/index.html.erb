@@ -1,0 +1,25 @@
+<%= render 'picture_pen/pictures/header' %>
+<div id="headline_container">
+	<div id="heads">
+		<h1>PICTURE PEN</h1>
+
+		<h2>Grab an image from your computer <br>
+		and scribble out a masterpiece!</h2>
+	</div>
+	
+	<%= link_to "Get Started!", new_picture_pen_picture_path, :class => "btn" %>
+	<br class="clear">
+</div>
+
+
+<div id="gallery">
+	<h3>RECENT PICTURE PEN MASTERPIECES</h3>
+
+	<% unless @pictures.count == 0 %>
+		<% @pictures.each do |pic| %>
+			<%= link_to picture_pen_picture_path(pic.slug) do %>
+				  <%= image_tag pic.image.url(:small) %>
+			<% end %>
+		<% end %>
+	<% end %>
+</div>

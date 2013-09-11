@@ -92,6 +92,7 @@ $(document).ready(function () {
 		"lunar_phase": lunarPhase,
 		"mousing": mousingPage,
 		"window": windowPage,
+		"picture_pen": picturePen
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

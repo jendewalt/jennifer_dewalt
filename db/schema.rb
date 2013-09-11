@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130908023506) do
+ActiveRecord::Schema.define(:version => 20130911031750) do
 
   create_table "click_counter_buttons", :force => true do |t|
     t.integer  "clicks"
@@ -106,6 +106,18 @@ ActiveRecord::Schema.define(:version => 20130908023506) do
   end
 
   add_index "open_note_notes", ["slug"], :name => "index_open_note_notes_on_slug"
+
+  create_table "picture_pen_pictures", :force => true do |t|
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.string   "slug"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  add_index "picture_pen_pictures", ["slug"], :name => "index_picture_pen_pictures_on_slug"
 
   create_table "pixshow_scraps", :force => true do |t|
     t.string   "photo_file_name"

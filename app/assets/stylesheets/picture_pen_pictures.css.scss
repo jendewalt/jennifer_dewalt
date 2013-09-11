@@ -1,0 +1,197 @@
+body.picture_pen_pictures_index, body.picture_pen_pictures_new, body.picture_pen_pictures_show {
+    $text_color: #6C737A;
+    $accent_color: #1abc9c;
+    $display_font: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    $header_links_color: #6C737A;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 2px;
+    
+    header {
+        padding: 10px 20px;
+        background-color: #24252C;
+
+        a {
+            text-decoration: none;
+            color: $header_links_color;         
+        }
+        
+        #logo a {
+            float: left;
+            line-height: 20px;
+            font-size: 14px;
+        }
+
+        #links_container {
+            float: right;
+        }
+
+        #links_container a {
+            font-size: 11px;
+            line-height: 20px;
+            margin-left: 15px;
+        }
+
+        #links_container a:visited {
+            color: $header_links_color;
+        }
+
+        #links_container a:hover {
+            color: $accent_color;
+        }
+    }
+
+    h1 {
+        font-size: 40px;
+        padding: 10px;
+        font-family: $display_font;
+        color: $accent_color;
+        line-height: 56px;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-family: $main_font;
+        line-height: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+        padding-top: 40px;
+        margin-bottom: 24px;
+        font-family: $display_font;
+        color: $accent_color;   
+        line-height: 30px;
+    }
+
+    #headline_container {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 30px;
+        padding-bottom: 40px;
+
+
+        #heads {
+
+        }
+
+
+        .btn {
+            font-size: 18px;
+            line-height: 36px;
+            height: 36px;
+        }
+
+    }
+
+    #gallery {
+        display: inline-block;
+        vertical-align: top;
+        width: 80%;
+        margin: auto;
+        border-top: 1px solid #CCD5DD;
+
+        a {
+            text-decoration: none;
+            margin: 2px;
+
+            img {
+
+            }
+        }
+    }
+
+    #show_container {
+        padding: 30px;
+
+        h1 {
+            padding: 0;
+            font-size: 36px;
+        }
+
+        img {
+            margin: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        h3 {
+            padding: 0 0 20px 0;
+            margin-bottom: 0;
+            font-family: $display_font;
+            font-size: 14px;
+            color: $text_color;
+            border-bottom: 1px solid #CCD5DD;
+        }
+
+        a {
+            display:inline-block;
+            color: $accent_color;
+            margin: 30px 10px;
+            font-size: 14px;
+        }
+    }
+
+    #new_container {
+
+        #control_container {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-top: 1px solid rgba(0,0,0,0.45);
+            border-bottom: 1px solid rgba(0,0,0,0.45);
+            background-color: #fff;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.45) inset;
+
+            #inputs, #btn_container {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            #inputs {
+                margin-right: 20px;
+            }
+
+            .control {
+                text-align: right;
+            }
+        }
+
+        canvas {
+            box-shadow: 0 0 3px rgba(0,0,0,0.2);
+        }
+    }
+
+    .btn {
+        border: none;
+        display: inline-block;
+        vertical-align: top;
+        font-family: $main_font;
+        text-decoration: none;
+        letter-spacing: 2px;
+        cursor: pointer;
+        background-color: $accent_color;
+        color: #0A4237;
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 30px;
+        box-shadow: 0 1px 1px #0A4237;
+        border-bottom: 1px solid #0A4237;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #0A4237;
+            border-top: 1px solid $accent_color;
+            border-bottom: none;
+            box-shadow: 0 0 1px #0A4237 inset;              
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+}
