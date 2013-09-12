@@ -1,5 +1,6 @@
 $(document).ready(function () {
 	var routes = {
+		"users": nothing,
 		"click_counter": clickCounter,
 		"one_page": onePage,
 		"make_a_dude": makeADude,
@@ -92,7 +93,8 @@ $(document).ready(function () {
 		"lunar_phase": lunarPhase,
 		"mousing": mousingPage,
 		"window": windowPage,
-		"picture_pen": picturePen
+		"picture_pen": picturePen,
+		"taste": nothing,
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

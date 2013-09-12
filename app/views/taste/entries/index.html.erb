@@ -1,0 +1,10 @@
+<%= render 'taste/entries/header' %>
+
+<% unless user_signed_in? %>
+	<div id="not_signed_in">
+		<h2>Your tasting notes will not be saved unless you first <%= link_to "sign in", new_user_session_path %>.</h2>
+	</div>
+<% end %>
+
+<%= tag('div', :id => 'data', :data => { :response => @entries }) %></div>
+<div id="<%= controller.controller_name + '_' + controller.action_name + '_' + 'container' %>"></div>

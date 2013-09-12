@@ -1,0 +1,40 @@
+<div>
+	<h1>Your Tasting Notes</h1>
+	<ul id="entries_list"></ul>
+</div>
+
+<form id="entry_form">
+	<h2>Add a new tasting notes entry</h2>
+	<div class="form_field" id="name_wrapper">
+		<label>Item Name: </label><input id="name_input" type="text" maxlength="250">
+	</div>
+
+	<div class="form_field" id="kind_wrapper">
+		<label>Type: </label><input id="kind_input" type="text" maxlength="250">
+	</div>
+
+	<div class="form_field" id="rating_wrapper">
+		<label>Rating: </label>
+		<select id="rating_input">
+			<option>0</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+	</div>
+
+	<div class="form_field" id="comments_wrapper">
+		<label>Notes: </label><textarea id="comments_input"></textarea>
+	</div>
+
+	<div class="form_field" id="image_wrapper">
+		<label>Upload an Image: </label><input id="image_input" type="file">
+	</div>
+
+	<div class="form_field" id="submit_wrapper">
+		<input class="btn" type="submit" val="Submit">
+	</div>
+
+</form>
