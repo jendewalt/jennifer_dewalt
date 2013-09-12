@@ -218,6 +218,11 @@ body.taste_entries_index {
 		}
     }
 
+    .notice {
+    	display: none;
+    	margin: -100px;
+    }
+
     .btn {
         border: none;
         display: inline-block;
