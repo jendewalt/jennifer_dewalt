@@ -10,20 +10,17 @@ var TasteEntriesIndexFormView = Backbone.View.extend({
 		var kind = e.target[1].value;
 		var rating = e.target[2].value;
 		var comments = e.target[3].value;
-		var image = e.target[4].value;
 
 		e.target[0].value = '';
 		e.target[1].value = '';
-		e.target[2].value = '';
+		e.target[2].value = '0';
 		e.target[3].value = '';
-		e.target[4].value = '';
 
 		var new_entry = new TasteEntry({
 			name: name,
 			kind: kind,
 			rating: rating,
-			comments: comments,
-			image: image
+			comments: comments
 		});
 
 		new_entry.save();

@@ -1,40 +1,38 @@
-<div>
-	<h1>Your Tasting Notes</h1>
-	<ul id="entries_list"></ul>
-</div>
-
 <form id="entry_form">
-	<h2>Add a new tasting notes entry</h2>
-	<div class="form_field" id="name_wrapper">
-		<label>Item Name: </label><input id="name_input" type="text" maxlength="250">
-	</div>
+	<h3>ADD A NEW ENTRY</h3>
 
-	<div class="form_field" id="kind_wrapper">
-		<label>Type: </label><input id="kind_input" type="text" maxlength="250">
-	</div>
+	<table>
+		<tr class="form_field" id="name_wrapper">
+			<td><label>Item Name: </label></td><td class="inputs"><input id="name_input" type="text" maxlength="250" placeholder="Tequila Esperanto"></td>
+		</tr>
 
-	<div class="form_field" id="rating_wrapper">
-		<label>Rating: </label>
-		<select id="rating_input">
-			<option>0</option>
-			<option>1</option>
-			<option>2</option>
-			<option>3</option>
-			<option>4</option>
-			<option>5</option>
-		</select>
-	</div>
+		<tr class="form_field" id="kind_wrapper">
+			<td><label>Type: </label></td><td class="inputs"><input id="kind_input" type="text" maxlength="250" placeholder="Reposado"></td>
+		</tr>
 
-	<div class="form_field" id="comments_wrapper">
-		<label>Notes: </label><textarea id="comments_input"></textarea>
-	</div>
+		<tr class="form_field" id="rating_wrapper">
+			<td><label>Rating: </label></td>
+			<td class="inputs"><select id="rating_input">
+				<option>0</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select></td>
+		</tr>
 
-	<div class="form_field" id="image_wrapper">
-		<label>Upload an Image: </label><input id="image_input" type="file">
-	</div>
+		<tr class="form_field" id="comments_wrapper">
+			<td><label class="notes">Notes: </label></td><td class="inputs"><textarea id="comments_input" placeholder="Lots of agave. Hints of orange peel and lime. Excellent for sipping!"></textarea></td>
+		</tr>
+	</table>
 
 	<div class="form_field" id="submit_wrapper">
 		<input class="btn" type="submit" val="Submit">
 	</div>
-
 </form>
+
+<div id="entries_container">
+	<ul id="entries_list"></ul>
+	<br class="clear">
+</div>

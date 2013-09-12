@@ -1,4 +1,10 @@
 <%= render 'taste/entries/header' %>
+<% unless @entries %>
+	<div id="empty_header">
+		<h1>Keep track of the things you like</h1>
+		<h1>and the things you don't</h1>
+	</div>
+<% end %>
 
 <% unless user_signed_in? %>
 	<div id="not_signed_in">

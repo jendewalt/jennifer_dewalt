@@ -1,17 +1,22 @@
 body.taste_entries_index {
-    $text_color: #282d33;
+	$blue: #1D818F;
+	$light_blue: #CBDCDF;
+	$orange: #FF8D60;
+    $text_color: #6b6b6b;
+    $display_font: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    $header_links_color: #ccc;
+    $header_links_color: #fff;
 
     font-family: $main_font;
     text-align: center;
     overflow-y: scroll;
     color: $text_color;
     letter-spacing: 1px;
+    background-color: $light_blue;
     
     header {
         padding: 10px 20px;
-        margin-bottom: 30px;
+        background-color: $blue;
 
         a {
             text-decoration: none;
@@ -20,8 +25,9 @@ body.taste_entries_index {
         
         #logo a {
             float: left;
-            line-height: 20px;
-            font-size: 14px;
+            line-height: 30px;
+            font-size: 22px;
+            font-family: $display_font; 
         }
 
         #links_container {
@@ -30,7 +36,7 @@ body.taste_entries_index {
 
         #links_container a {
             font-size: 11px;
-            line-height: 20px;
+            line-height: 30px;
             margin-left: 15px;
         }
 
@@ -43,6 +49,174 @@ body.taste_entries_index {
         }
     }
 
+    #empty_header {
+    	margin-bottom: 20px;
+    	padding-bottom: 14px;
+    	background-color: $blue;
+
+    	h1 {
+    		font-family: $display_font;
+    		font-size: 40px;
+    		color: white;
+    		line-height: 50px;
+    	}
+
+    	h2 {
+    		font-size: 16px;
+    		line-height: 30px;
+    	}
+    }
+
+    #not_signed_in {
+
+    	a {
+    		color: $blue;
+    	}
+    }
+
+
+    #entries_index_container {
+    	position: relative;
+    	padding: 0 20px;
+    	margin-top: 20px;
+    }
+
+    #entry_form {
+    	position: absolute;
+    	top: 10px;
+    	left: 30px;
+    	width: 300px;
+    	height: 300px;
+	    background-color: white;
+
+
+    	h3 {
+    		padding: 0 10px;
+			line-height: 30px;
+    		margin-bottom: 10px;
+    		font-family: $display_font;
+    		font-size: 16px;
+    		color: white;
+    		background-color: $orange;
+    	}
+
+    	table {
+    		padding: 0 10px;
+	    	
+	    	td {
+	    		text-align: right;
+	    		padding: 5px;
+
+	    		label {
+	    			font-size: 13px;
+	    		}
+
+	    		&.inputs {
+	    			text-align: left;
+	    		}
+
+	    		input {
+					width: 170px;
+					font-size: 13px;
+	    		}
+	    	}
+
+	    	#comments_wrapper {
+
+	    		td {
+	    			vertical-align: top;
+	    		}
+
+	    		textarea {
+	    			height: 90px;
+					width: 170px;
+					font-size: 13px;
+	    		}
+
+	    	}
+    	}
+
+    }
+
+    #entries_container {
+    	float: left;
+	    text-align: left;
+
+	    ul {
+	    	li {
+	    		position: relative;
+	    		display: inline-block;
+	    		vertical-align: top;
+	    		width: 300px;
+	    		height: 300px;
+	    		margin: 10px;
+	    		background-color: white;
+	    		overflow-y: auto;
+
+	    		&:hover {
+	    			.delete {
+	    				display: block;
+	    			}
+	    		}
+
+	    		.attr {
+	    			padding: 0 10px;
+	    			text-align: left;
+	    			line-height: 30px;
+
+					white-space: -pre-wrap; 
+					white-space: -o-pre-wrap; 
+					word-wrap: break-word;
+	    		}
+
+	    		.name {
+	    			margin-bottom: 5px;
+	    			font-family: $display_font;
+	    			font-size: 18px;
+	    			text-transform: uppercase;
+	    			background-color: $orange;
+	    			color: white;
+
+	    		}
+
+	    		.rating, .kind {
+	    			color: $blue;
+	    		}
+
+	    		.rating {
+	    			border-bottom: 1px solid $light_blue;
+	    			padding-bottom: 5px;
+	    			margin-bottom: 5px;
+	    		}
+
+	    		.label {
+					color: $orange;    			
+	    		}
+
+	    		.comments {
+	    			overflow-y: auto;
+	    			font-size: 13px;
+					line-height: 20px;
+	    		}
+
+	    		.delete {
+	    			display: none;
+					position: absolute;
+					top: 0;
+					right: 5px;
+					padding: 5px;
+					background-color: $orange;
+					line-height: 20px;
+					color: white;
+					cursor: pointer
+				}
+
+	    	}
+	    }
+		ul > li:first-child {
+			margin-left: 330px;
+		}
+    }
 
     .btn {
         border: none;
@@ -52,21 +226,18 @@ body.taste_entries_index {
         text-decoration: none;
         letter-spacing: 1px;
         cursor: pointer;
-        background-color: #565B6E;
+        background-color: $blue;
         color: #FFF;
         font-size: 13px;
         padding: 0 10px;
         line-height: 30px;
-        text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
-        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
-        border-bottom: 1px solid #292c35;
+        border-bottom: 1px solid #144F57;
         border-radius: 3px;
 
         &:active {
-            background-color: #292c35;
-            border-top: 1px solid #565B6E;
-            border-bottom: none;
-            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+            background-color: #144F57;
+            border-top: 1px solid $blue;
+            border-bottom: none;          
         }
     }
 

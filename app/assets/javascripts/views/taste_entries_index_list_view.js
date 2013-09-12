@@ -21,6 +21,6 @@ var TasteEntriesIndexListView = Backbone.View.extend({
 			model: entry
 		});
 
-		this.$el.append(entry_view.render().el);
+		this.$el.prepend(entry_view.render().el);
 	}
 });
