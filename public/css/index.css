@@ -9,6 +9,10 @@ a {
 	font-weight: bold;
 }
 
+a:visited {
+	color: #42006a;
+}
+
 h1 {
 	font-size: 90px;
 	color: #ff9933;

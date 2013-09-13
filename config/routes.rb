@@ -5,7 +5,7 @@ JenniferDewalt::Application.routes.draw do
   root :to => 'pages#home'
 
   namespace :audio_garden do 
-    resources :page, :only => [:index]
+    resources :gardens
   end
 
   namespace :taste do 

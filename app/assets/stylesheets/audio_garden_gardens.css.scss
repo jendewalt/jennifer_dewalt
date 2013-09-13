@@ -1,4 +1,4 @@
-body.audio_garden_page_index {
+body.audio_garden_gardens_index, body.audio_garden_gardens_show {
     $text_color: #282d33;
     $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     $header_links_color: #ccc;
@@ -49,6 +49,12 @@ body.audio_garden_page_index {
 
     canvas {
     	display: block;
+    	cursor: pointer;
+    	margin: auto;
+    }
+
+    #show {
+    	cursor: default;
     }
 
     #btn_container {
@@ -59,24 +65,25 @@ body.audio_garden_page_index {
 
     #info_container {
     	position: absolute;
-    	bottom: 10px;
-    	left: 10px;
+    	bottom: 5px;
+    	left: 5px;
     	text-align: left;
 		padding: 10px;
 		letter-spacing: 2px;
+		text-transform: uppercase;
 
     	#info {
     		display: none;
     		font-size: 13px;
     		color: rgba(255,255,255,0.7);
-    		line-height: 20px;
+    		line-height: 26px;
     		margin-bottom: 10px;
     	}
 
     	#tab {
     		font-family: Arial, sans-serif;
     		font-weight: bold;
-    		font-size: 16px;
+    		font-size: 13px;
     		line-height: 20px;
     		color: rgba(255,255,255,0.4);
 
@@ -93,7 +100,6 @@ body.audio_garden_page_index {
 	    		display: block;
 	    	}
     	}
-
     }
 
     .btn {

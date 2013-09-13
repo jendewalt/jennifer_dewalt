@@ -1,0 +1,13 @@
+<%= render 'audio_garden/gardens/header' %>
+
+<div id="info_container">
+	<div id="info">
+		<h1>THIS IS A HANDCRAFTED AUDIO GARDEN</h1>
+		<p>Share this Audio Garden using this url: <%= audio_garden_garden_url(@garden) %></p>
+		<p><%= link_to "Make your own Audio Garden", audio_garden_gardens_path %></p>
+	</div>
+	<p id="tab">What's This?</p>
+</div>
+
+<canvas id="show" data-garden="<%= @garden.garden %>"></canvas>
+
