@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :audio_garden do 
+    resources :page, :only => [:index]
+  end
+
   namespace :taste do 
     resources :entries
   end
