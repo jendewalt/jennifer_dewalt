@@ -1,12 +1,15 @@
 var BbRouter = Backbone.Router.extend({
 	routes: {
-		'todo/todos': 'index',
-		'taste/entries': 'index'
+		'todo/todos': 'todo_index',
+		'taste/entries': 'taste_index'
 	},
 
-	index: function () {
+	todo_index: function () {
 		var todoTodosIndexView = new TodoTodosIndexView({ el: '#todos_index_container' });
-		var tasteEntriesIndexView = new TasteEntriesIndexView({ el: '#entries_index_container' });
+	},
+
+	taste_index: function () {
+		var tasteEntriesIndexView = new TasteEntriesIndexView({ el: '#entries_index_container' });		
 	}
 });
 

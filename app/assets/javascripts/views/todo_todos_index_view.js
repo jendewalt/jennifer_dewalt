@@ -21,5 +21,4 @@ var TodoTodosIndexView = Backbone.View.extend({
 		this.$el.html('');
 		this.$el.html(render('todo_todos/index', {}));
 	}
-
 });
