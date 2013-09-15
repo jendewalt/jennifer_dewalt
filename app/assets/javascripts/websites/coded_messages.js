@@ -49,27 +49,6 @@ function codedMessages() {
 		canvas.width = width;
 		canvas.height = height;
 
-		_.each(message.split(''), function (char) {
-			columns.push(new Column(pos_x, char));
-			pos_x += column_spacing;
-		});
-
-		paintScreen();
-
-		$('canvas').on('click', function (e) {
-			var mouse_x = e.pageX - canvas.offsetLeft;
-
-			_.each(columns, function (col) {
-				if (mouse_x > col.x && mouse_x < col.x + col.width && !col.rotating) {
-					col.rotate();
-				}
-			});
-		});
-
-		$('#solve').on('click', checkGuess);
-
-		$('body').disableSelection();
-
 		function paintScreen() {
 			ctx.beginPath();
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -159,5 +138,25 @@ function codedMessages() {
 				alert('NOPE! ' + guess.join('') + ' is not the correct answer.');
 			}
 		}
+		_.each(message.split(''), function (char) {
+			columns.push(new Column(pos_x, char));
+			pos_x += column_spacing;
+		});
+
+		paintScreen();
+
+		$('canvas').on('click', function (e) {
+			var mouse_x = e.pageX - canvas.offsetLeft;
+
+			_.each(columns, function (col) {
+				if (mouse_x > col.x && mouse_x < col.x + col.width && !col.rotating) {
+					col.rotate();
+				}
+			});
+		});
+
+		$('#solve').on('click', checkGuess);
+
+		$('body').disableSelection();
 	}
 }
