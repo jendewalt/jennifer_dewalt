@@ -1,0 +1,23 @@
+<%= render 'coded/messages/header' %>
+
+<div id="heading">
+	<h1>MAKE A SECRET MESSAGE PUZZLE</h1>
+	<p>Enter short word or phrase and a hint and Coded will <br>
+	   turn it into a puzzle you can share with anyone!</p>
+</div>
+
+<div id="container">
+	<%= form_for @message, :html => {:id => "message_form"} do |f| %>
+		<table>
+			<tr>
+				<td><label>Hint: </label></td><td><%= f.text_field :title, :id => 'title_input', :class => 'field', :maxlength => 255 %><td>
+			</tr>
+
+			<tr>
+				<td><label>Message: </label></td><td><input id='message_input' class='field' maxlength='40' %></td>
+			</tr>
+		</table>
+		<%= f.text_field :message, :id => 'message', :class => 'field', :maxlength => 50, :hidden => true %>
+		<%= f.submit :value => 'Submit', :class => "btn" %>
+	<% end %>
+</div>

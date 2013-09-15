@@ -96,7 +96,8 @@ $(document).ready(function () {
 		"picture_pen": picturePen,
 		"taste": nothing,
 		"audio_garden": audioGarden,
-		"assault": assault
+		"assault": assault,
+		"coded": codedMessages
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

@@ -1,0 +1,25 @@
+<%= render 'coded/messages/header' %>
+<h1><%= @message.title %></h1>
+
+<div id="canvas_container">
+	<canvas></canvas>
+</div>
+
+<button id="solve" class="btn">SOLVE</button>
+
+<div id="info_container">
+	<div id="info">
+		<div id="directions">
+			<p>Your mission is to discover the secret message in the box above.</p>
+			<p>Click the column to rotate the characters.</p>
+			<p>When you think you have correct message in the green box<br> 
+			   click SOLVE to see if you're right.</p>
+		</div>
+
+		<p>Share this Coded Message using the url: <%= coded_message_url(@message) %></p>
+		<p><%= link_to "Make your own Coded Message", coded_messages_path %></p>
+	</div>
+	<p id="tab">?</p>
+</div>
+
+<div id="message" data-message="<%= @message.message %>" hidden></div>

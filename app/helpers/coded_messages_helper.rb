@@ -1,0 +1,2 @@
+module CodedMessagesHelper
+end

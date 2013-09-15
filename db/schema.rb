@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130913073546) do
+ActiveRecord::Schema.define(:version => 20130914221613) do
 
   create_table "audio_garden_gardens", :force => true do |t|
     t.text     "garden"
@@ -27,6 +27,16 @@ ActiveRecord::Schema.define(:version => 20130913073546) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "coded_messages", :force => true do |t|
+    t.string   "slug"
+    t.string   "message"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "title"
+  end
+
+  add_index "coded_messages", ["slug"], :name => "index_coded_messages_on_slug"
 
   create_table "glob_glob_globs", :force => true do |t|
     t.string   "name"

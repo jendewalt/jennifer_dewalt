@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :coded do 
+    resources :messages
+  end
+
   namespace :assault do 
     resources :page, :only => [:index]
   end
