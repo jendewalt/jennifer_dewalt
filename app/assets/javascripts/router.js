@@ -97,7 +97,8 @@ $(document).ready(function () {
 		"taste": nothing,
 		"audio_garden": audioGarden,
 		"assault": assault,
-		"coded": codedMessages
+		"coded": codedMessages,
+		"polychrome": polychrome
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

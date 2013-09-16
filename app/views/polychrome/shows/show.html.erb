@@ -1,0 +1,13 @@
+<%= render 'polychrome/shows/header' %>
+
+<div id="show_data_show" data-show='<%= @show.show_data %>' hidden='true'></div>
+
+<div id="info_container">
+	<div id="info">
+		<h1>This is a handmade Polychrome Color Show.</h1>
+		<p>Share this Polychrome Color Show using this url: <br>
+		   <%= polychrome_show_url(@show) %></p>
+		<p><%= link_to "Make your own Polychrome Color Show", polychrome_shows_path %></p>
+	</div>
+	<p id="tab" class="show">?</p>
+</div>

@@ -1,0 +1,244 @@
+body.polychrome_shows_index, body.polychrome_shows_show {
+    $text_color: #32343a;
+    $main_font: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    $header_links_color: rgba(0,0,0,0.4);
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 1px;
+    background: #D8D8D8;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 30px;
+
+        a {
+            text-decoration: none;
+            color: $header_links_color;         
+        }
+        
+        #logo a {
+            float: left;
+            line-height: 20px;
+            font-size: 14px;
+        }
+
+        #links_container {
+            float: right;
+        }
+
+        #links_container a {
+            font-size: 11px;
+            line-height: 20px;
+            margin-left: 15px;
+        }
+
+        #links_container a:visited {
+            color: $header_links_color;
+        }
+
+        #links_container a:hover {
+            color: #4A2FB3;
+        }
+    }
+
+    #headlines {
+    	text-align: left;
+    	padding: 30px;
+    	background: #000;
+
+    	h1 {
+    		font-size: 40px;
+    		line-height: 50px;
+    		text-transform: uppercase;
+    		color: white;
+    	}
+
+    	h2 {
+    		font-size: 20px;
+    		text-transform: uppercase;
+    		color: #868997;
+    	}
+    }
+
+	#control_container {
+    	text-align: right;	
+    	padding: 20px;
+	}
+
+	#swatch_container {
+		padding: 0 20px 40px;
+	    .swatch {
+			position: relative;
+			display: inline-block;
+			margin: 10px 6px;
+	    	
+	    	.swatch_color {
+	    		height: 80px;
+	    		width: 100%;
+	    		cursor: pointer;
+	    	}
+
+	    	.swatch_info {
+	    		padding: 10px;
+	    		width: 170px;
+	    		font-family: Tahoma, Verdana, Segoe, sans-serif;
+	    		font-size: 12px;
+	    		text-align: left;
+	    		color: #555;
+	    		background-color: #fff;
+
+	    		input {
+	    			display: block;
+	    		}
+
+	    		label {
+	    			display: block;
+	    			line-height: 22px;
+	    		}
+	    	}
+
+	    	.close {
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				padding: 5px;
+				font-size: 8px;
+				color: #151515;
+				text-shadow: -1px -1px 0 rgba(255,255,255,0.2);
+				z-index: 10;
+
+				&:hover {
+					color: #fff;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+   
+    #preview_container {
+    	display: none;
+    	position: absolute;
+    	top: 0;
+    	left:0;
+    	right:0;
+    	bottom:0;
+    	z-index: 100;
+    	background-color: white;
+
+    	.btn {
+    		margin-top: 50px;
+    		width: auto;
+    	}
+    }
+
+    #info_container {
+    	position: absolute;
+    	bottom: 0px;
+    	left: 0px;
+    	text-align: left;
+		padding: 10px 20px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		z-index: 50;
+
+    	#info {
+    		display: none;
+    		font-size: 13px;
+    		color: white;
+    		line-height: 26px;
+    		margin-bottom: 10px;
+    	}
+
+    	#tab {
+    		font-family: Arial, sans-serif;
+    		font-weight: bold;
+    		font-size: 18px;
+    		line-height: 20px;
+    		color: rgba(0,0,0,0.25);
+
+    		&:hover {
+    			color: white;
+    			cursor: pointer;
+    		}
+    	}
+
+    	a {
+    		color: white;
+    	}
+
+    	&:hover {
+	    	background-color: rgba(0,0,0,0.3);
+    		
+	    	& #info {
+	    		display: block;
+	    	}
+    	}
+    }
+
+    .btn {
+    	height: 30px;
+    	width: 110px;
+    	text-transform: uppercase;
+        border: none;
+        display: inline-block;
+        vertical-align: top;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #4A2FB3;
+        color: #FFF;
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 30px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        border-bottom: 3px solid #241657;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #241657;
+            border-top: 1px solid #4A2FB3;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 20px;
+        height: 20px;
+	   
+	    #links_container {
+	        float: right;
+	    }
+
+	    #links_container a {
+	        font-size: 11px;
+	        line-height: 20px;
+	        text-decoration: none;
+	        color: $header_links_color;
+	        margin-left: 15px;
+	    }
+
+	    #links_container a:visited {
+	        color: $header_links_color;
+	    }
+
+	    #links_container a:hover {
+	        color: #4A2FB3;
+	    }
+    }
+
+
+
+}

@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :polychrome do 
+    resources :shows
+  end
+
   namespace :coded do 
     resources :messages
   end

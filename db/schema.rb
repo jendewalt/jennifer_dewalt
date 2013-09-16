@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130914221613) do
+ActiveRecord::Schema.define(:version => 20130916010522) do
 
   create_table "audio_garden_gardens", :force => true do |t|
     t.text     "garden"
@@ -166,6 +166,15 @@ ActiveRecord::Schema.define(:version => 20130914221613) do
   end
 
   add_index "pollsie_polls", ["slug"], :name => "index_pollsie_polls_on_slug"
+
+  create_table "polychrome_shows", :force => true do |t|
+    t.string   "slug"
+    t.text     "show_data"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "polychrome_shows", ["slug"], :name => "index_polychrome_shows_on_slug"
 
   create_table "portrait_photos", :force => true do |t|
     t.string   "image_file_name"

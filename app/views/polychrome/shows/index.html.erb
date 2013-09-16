@@ -1,0 +1,32 @@
+<div id="headlines">
+	<h1>Polychrome</h1>
+	<h2>Color show maker</h2>
+</div>
+
+<div id="control_container">
+	<%= form_for @show, :html => {:id => "show_form"} do |f| %>
+		<%= f.text_field :show_data, :id => 'show', :class => 'field', :maxlength => 50, :hidden => true %>
+		<%= f.submit :value => 'Add Color', :class => "btn", :id => "add" %>
+		<%= f.submit :value => 'Preview', :class => "btn", :id => "preview" %>
+		<%= f.submit :value => 'Save Show', :class => "btn", :id => "save" %>
+	<% end %>
+</div>
+
+<div id="swatch_container"></div>
+
+<div id='preview_container'>
+	<button id="back" class='btn'>Back to Show Editor</button>
+</div>
+
+<div id="info_container">
+	<div id="info">
+		<p>Choose colors using the swatch's color picker.</p>
+		<p>Enter the amount of time for the color to be displayed in seconds.</p>
+		<p>Use the ADD COLOR button to add more swatches.</p>
+		<p>Use PREVIEW to see a preview of your show.</p>
+		<p>Use SAVE SHOW to save your show with a unique URL.</p>
+	</div>
+	<p id="tab">?</p>
+</div>
+
+<%= render 'polychrome/shows/footer' %>
