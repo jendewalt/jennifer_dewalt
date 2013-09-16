@@ -134,6 +134,8 @@ function polychrome() {
 	function saveShow(swatches) {
 		var data = formatShowData(swatches);
 
+		$('#throbber').show();
+
 		$.ajax({
 			url: "/polychrome/shows",
 			type: "POST",
@@ -143,6 +145,7 @@ function polychrome() {
 				window.location = '/polychrome/shows/' + data;
 			},
 			error: function (xhr, status) {
+				$('#throbber').hide();
 				alert('There was a problem with your request. Please try again.');
 			}
 		});
