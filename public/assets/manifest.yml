@@ -311,8 +311,8 @@ application.js: application-e5d1c41189b5479248d190a715de36b3.js
 application/index.js: application-e5d1c41189b5479248d190a715de36b3.js
 helpers/application.js: helpers/application-4c749d00be3e691c1036a2107930a1a2.js
 helpers/application/index.js: helpers/application-4c749d00be3e691c1036a2107930a1a2.js
-application.css: application-907b830313b488fbadc610710e9a3d1d.css
-application/index.css: application-907b830313b488fbadc610710e9a3d1d.css
+application.css: application-1c69792987266d44025aa2190769b5f4.css
+application/index.css: application-1c69792987266d44025aa2190769b5f4.css
 big_word_list: big_word_list
 jscolor/demo.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
 jscolor/demo/index.html: jscolor/demo-3a29b9aa791f12f735a2915ae0fbbe06.html
