@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :electro_bounce do 
+    resources :page
+  end
+
   namespace :polychrome do 
     resources :shows
   end

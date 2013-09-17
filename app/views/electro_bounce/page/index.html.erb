@@ -1,0 +1,41 @@
+<%= render 'electro_bounce/page/header' %>
+
+<canvas></canvas>
+
+<div id="control_container">
+
+	<table>
+		<tr class="control">
+			<td class="right"><label>RESET: </label></td>
+			<td><button id="reset" class="btn">RESET</button></td>
+		</tr>
+
+		<tr class="control">
+			<td class="right"><label>NODE SPEED: </label></td>
+			<td><button id="speed_inc" class="speed btn">&#x25B2</button>
+				<button id="speed_dec" class="speed btn">&#x25BC</button></td>
+		</tr>
+
+		<tr class="control">
+			<td class="right"><label>NODE DISTANCE: </label></td>
+			<td><button id="dist_inc" class="dist btn">&#x25B2</button>
+				<button id="dist_dec" class="dist btn">&#x25BC</button></td>
+		</tr>
+		
+		<tr class="control">
+			<td class="right"><label>LINE WIDTH: </label></td>
+			<td><button id="width_inc" class="width btn">&#x25B2</button>
+				<button id="width_dec" class="width btn">&#x25BC</button></td>
+		</tr>
+
+		<tr class="control">
+			<td class="right"><label>COLOR TOGGLE: </label></td>
+			<td><button id="color_toggle" class="color btn">GO MONO</button></td>
+		</tr>
+			
+		<tr class="control" id="color_picker">
+			<td class="right"><label>MONO COLOR: </label></td>
+			<td><input type="text" id="cp" class="color picker" value="FFFFFF"></td>
+		</tr>
+	</table>
+</div>

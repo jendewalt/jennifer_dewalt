@@ -1,0 +1,117 @@
+body.electro_bounce_page_index {
+    $text_color: #fff;
+    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    $header_links_color: #666;
+
+    font-family: $main_font;
+    text-align: center;
+    color: $text_color;
+    letter-spacing: 1px;
+    background-color: black;
+    
+    header {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	z-index: 10;
+        padding: 10px 20px;
+
+        a {
+            text-decoration: none;
+            color: $header_links_color;         
+        }
+        
+        #logo a {
+            float: left;
+            line-height: 20px;
+            font-size: 14px;
+        }
+
+        #links_container {
+            float: right;
+        }
+
+        #links_container a {
+            font-size: 11px;
+            line-height: 20px;
+            margin-left: 15px;
+        }
+
+        #links_container a:visited {
+            color: $header_links_color;
+        }
+
+        #links_container a:hover {
+            color: lime;
+        }
+    }
+
+    canvas {
+    	display: block;
+    }
+
+    #control_container {
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	padding: 20px;
+    	text-align: left;
+    	z-index: 50;
+    	background-color: rgba(0,0,0,0.8);
+
+    	.control {
+
+    		td {
+	    		padding: 5px 10px;
+	    		font-size: 13px; 
+
+	  			label, .btn, input {
+	  				display: inline-block;
+	        		vertical-align: bottom;
+	  			}
+
+	  			.right {
+	  				text-align: right;
+	  			}
+
+	  			#color_toggle {
+	  				width: 90px;
+	  				padding: 0;
+	  			}
+    		}
+
+    	}
+
+		#color_picker {
+			display: none;
+        	vertical-align: bottom;
+		}
+    }
+
+    .btn {
+    	height: 20px;
+        border: none;
+        font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #339e7c;
+        color: #0e2a21;
+        font-size: 13px;
+        padding: 0 8px;
+        line-height: 20px;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #0e2a21;
+        	color: #000;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+}

@@ -98,7 +98,8 @@ $(document).ready(function () {
 		"audio_garden": audioGarden,
 		"assault": assault,
 		"coded": codedMessages,
-		"polychrome": polychrome
+		"polychrome": polychrome,
+		"electro_bounce": electroBounce
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();
