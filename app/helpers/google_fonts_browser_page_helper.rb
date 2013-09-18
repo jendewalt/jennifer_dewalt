@@ -1,0 +1,2 @@
+module GoogleFontsBrowserPageHelper
+end

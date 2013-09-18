@@ -4,8 +4,12 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :gfboom do 
+    resources :page, :only => [:index]
+  end
+
   namespace :electro_bounce do 
-    resources :page
+    resources :page, :only => [:index]
   end
 
   namespace :polychrome do 
