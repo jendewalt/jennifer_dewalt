@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130916010522) do
+ActiveRecord::Schema.define(:version => 20130919021341) do
 
   create_table "audio_garden_gardens", :force => true do |t|
     t.text     "garden"
@@ -197,6 +197,12 @@ ActiveRecord::Schema.define(:version => 20130916010522) do
   add_index "postbored_sites", ["tag"], :name => "index_postbored_sites_on_postbored_sites_type"
   add_index "postbored_sites", ["user_id", "url"], :name => "index_postbored_sites_on_user_id_and_postbored_sites_url", :unique => true
   add_index "postbored_sites", ["user_id"], :name => "index_postbored_sites_on_user_id"
+
+  create_table "quick_compliments_compliments", :force => true do |t|
+    t.text     "message"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "salon_galleries", :force => true do |t|
     t.string   "slug"

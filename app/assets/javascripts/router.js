@@ -100,7 +100,8 @@ $(document).ready(function () {
 		"coded": codedMessages,
 		"polychrome": polychrome,
 		"electro_bounce": electroBounce,
-		"gfboom": googleFontsBrowser
+		"gfboom": googleFontsBrowser,
+		"quick_compliments": quickCompliments
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

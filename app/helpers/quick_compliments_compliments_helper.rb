@@ -1,0 +1,2 @@
+module QuickComplimentsComplimentsHelper
+end

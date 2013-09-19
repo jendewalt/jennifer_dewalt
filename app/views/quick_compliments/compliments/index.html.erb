@@ -1,0 +1,20 @@
+<%= render 'quick_compliments/compliments/header' %>
+
+<% if flash[:created] %>
+	<div class="created"><%= flash[:created] %></div>
+<% end %>
+
+<div id="compliment_container">
+	<% unless @compliment.nil? %>
+		<%= @compliment.message %>
+	<% end %>
+</div>
+
+<div id="form_container">
+	<h2>Doesn't this compliment make you feel better?</h2>
+	<h2>Why not return the favor and give a compliment!</h2>
+	<%= form_for @new_compliment do |f| %>
+		<%= f.text_field :message, :id => 'message_input', :placeholder => 'Say something nice!', :maxlength => 255 %>
+		<%= f.submit :value => 'Submit', :class => "btn" %>
+	<% end %>
+</div>

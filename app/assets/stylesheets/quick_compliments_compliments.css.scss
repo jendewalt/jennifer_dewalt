@@ -1,0 +1,143 @@
+body.quick_compliments_compliments_index {
+    $text_color: white;
+    $main_font: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    $header_links_color: rgba(0,0,0,0.4);
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 2px;
+    
+    header {
+        padding: 10px 20px;
+        margin-bottom: 50px;
+
+        a {
+            text-decoration: none;
+            color: $header_links_color;         
+        }
+        
+        #logo a {
+            float: left;
+            line-height: 20px;
+            font-size: 14px;
+        }
+
+        #links_container {
+            float: right;
+        }
+
+        #links_container a {
+            font-size: 11px;
+            line-height: 20px;
+            margin-left: 15px;
+        }
+
+        #links_container a:visited {
+            color: $header_links_color;
+        }
+
+        #links_container a:hover {
+            color: white;
+        }
+    }
+
+    #compliment_container {
+    	padding: 50px;
+    	white-space: -pre-wrap; 
+   		white-space: -o-pre-wrap; 
+   		word-wrap: break-word;
+   		font-size: 72px;
+   		line-height: 78px;
+    }
+
+    #form_container {
+    	padding: 50px;
+
+    	h2 {
+    		font-size: 16px;
+    		line-height: 20px;
+    		text-transform: uppercase;
+    		margin-bottom: 10px;
+    	}
+
+    	form {
+    		margin: 20px 0 5px;
+
+    		#message_input {
+    			width: 400px;
+    			margin: 0;
+    			padding: 5px;
+    			font-size: 16px;
+    			color: #2d2e36;
+    		}
+    	}
+    }
+
+
+  	.created {
+		font-size: 13px;
+		line-height: 16px;
+		text-transform: uppercase;
+	}
+
+    .btn {
+    	height: 32px;
+    	text-transform: uppercase;
+        border: none;
+        display: inline-block;
+        vertical-align: top;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;;
+        text-decoration: none;
+        letter-spacing: 2px;
+        cursor: pointer;
+        background-color: #393846;
+        color: #FFF;
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 32px;
+        border-bottom: 3px solid #232325;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #232325;
+            border-top: 1px solid #393846;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 20px;
+        height: 20px;
+	   
+	    #links_container {
+	        float: right;
+	    }
+
+	    #links_container a {
+	        font-size: 11px;
+	        line-height: 20px;
+	        text-decoration: none;
+	        color: $header_links_color;
+	        margin-left: 15px;
+	    }
+
+	    #links_container a:visited {
+	        color: $header_links_color;
+	    }
+
+	    #links_container a:hover {
+	        color: #4A2FB3;
+	    }
+    }
+}

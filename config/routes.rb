@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :quick_compliments do 
+    resources :compliments, :only => [:index, :create]
+  end
+
   namespace :gfboom do 
     resources :page, :only => [:index]
   end
