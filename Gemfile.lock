@@ -82,6 +82,9 @@ GEM
       jquery-rails
       railties (>= 3.1.0)
     json (1.7.7)
+    kaminari (0.14.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     kgio (2.8.0)
     libv8 (3.11.8.13)
     mail (2.4.4)
@@ -212,6 +215,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   jquery-ui-rails
+  kaminari
   oj
   omniauth
   paperclip (~> 3.0)

@@ -7,7 +7,6 @@
 	<%= link_to "Make A New Palette", new_chromatones_palette_path, :class => 'btn' %>
 </div>
 
-
 <div id="recent_palettes">
 	<h2>Recent Palettes</h2>
 	<% unless @palettes.nil? %>
@@ -22,6 +21,7 @@
 			<% end %>
 		<% end %>
 	<% end %>
+	<%= paginate @palettes %>
 </div>
 
 <%= render 'chromatones/palettes/footer' %>

@@ -1,7 +1,7 @@
 class Chromatones::PalettesController < ApplicationController
   def index
     @title = "Chromatones"
-    @palettes = ChromatonesPalette.limit(20).order('created_at DESC')
+    @palettes = ChromatonesPalette.order('created_at DESC').page(params[:page]).per(10)
   end
 
   def create
@@ -11,9 +11,9 @@ class Chromatones::PalettesController < ApplicationController
 
     unless data.length == 0
       data.each do |obj|
-        if obj[:title] && !obj[:title].blank?
+        if obj[:title] && !obj[:title].blank? && obj[:title].length < 100
           title = obj[:title]
-        elsif obj[:name] && !obj[:name].blank?
+        elsif obj[:name] && !obj[:name].blank? && obj[:name].length < 100
           name = obj[:name] 
         end
       end

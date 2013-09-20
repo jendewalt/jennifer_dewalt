@@ -98,6 +98,14 @@ body.chromatones_palettes_index, body.chromatones_palettes_show, body.chromatone
 				}
 			}
 		}
+
+		.pagination {
+			padding: 20px;
+
+			.page.current {
+				color: $blue;
+			}
+		}
 	}
 
 	#swatch_container_new, #swatch_container_show, .palette_container {
@@ -325,16 +333,16 @@ body.chromatones_palettes_index, body.chromatones_palettes_show, body.chromatone
 	        font-size: 11px;
 	        line-height: 20px;
 	        text-decoration: none;
-	        color: $header_links_color;
+	        color: $text_color;
 	        margin-left: 15px;
 	    }
 
 	    #links_container a:visited {
-	        color: $header_links_color;
+	        color: $text_color;
 	    }
 
 	    #links_container a:hover {
-	        color: #4A2FB3;
+	        color: $blue;
 	    }
     }
 }

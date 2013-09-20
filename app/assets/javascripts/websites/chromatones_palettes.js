@@ -14,7 +14,6 @@ function chromatones() {
 			if (colors.length > 10) {
 				$(palette).append('<div class="more">and ' + (colors.length - 10) + ' more colors.</div>')
 			}
-
 		});
 	}
 
@@ -123,34 +122,42 @@ function chromatones() {
 	function formatPaletteData(swatches) {
 		var title = $.trim($('#title').val());
 		var name = $.trim($('#name').val());
-		var palette = _.map(swatches, function (swatch) {
-			return {
-				color: swatch.color,
-			};
-		});
 
-		palette.push({title: title});
-		palette.push({name: name});
-		return palette;		
+		if (title.length > 100 || name.length > 100) {
+			alert('Character limit for title and name is 100.');
+		} else {
+			var palette = _.map(swatches, function (swatch) {
+				return {
+					color: swatch.color,
+				};
+			});
+
+			palette.push({title: title});
+			palette.push({name: name});
+			return palette;					
+		}
 	}
 
 	function savePalette(swatches) {
 		var data = formatPaletteData(swatches);
+			console.log(data)
 
-		$('#throbber').show();
+		if (data) {
+			$('#throbber').show();
 
-		$.ajax({
-			url: "/chromatones/palettes",
-			type: "POST",
-			data: {colors: data},
-			dataType: 'json',
-			success: function (data) {
-				window.location = '/chromatones/palettes/';
-			},
-			error: function (xhr, status) {
-				$('#throbber').hide();
-				alert('There was a problem with your request. Please try again.');
-			}
-		});
+			$.ajax({
+				url: "/chromatones/palettes",
+				type: "POST",
+				data: {colors: data},
+				dataType: 'json',
+				success: function (data) {
+					window.location = '/chromatones/palettes/';
+				},
+				error: function (xhr, status) {
+					$('#throbber').hide();
+					alert('There was a problem with your request. Please try again.');
+				}
+			});
+		}
 	}
 }

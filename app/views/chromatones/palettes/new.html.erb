@@ -9,11 +9,11 @@
 
 		<table>
 			<tr>
-				<td><label>Title: </label></td><td><%= f.text_field :title, :id => 'title', :class => 'field', :maxlength => 50, :value => 'An Awesome Palette' %></td>
+				<td><label>Title: </label></td><td><%= f.text_field :title, :id => 'title', :class => 'field', :maxlength => 100, :value => 'An Awesome Palette' %></td>
 			</tr>
 
 			<tr>
-				<td><label>Made By: </label></td><td><%= f.text_field :name, :id => 'name', :class => 'field', :maxlength => 50, :value => 'Someone' %></td> 
+				<td><label>Made By: </label></td><td><%= f.text_field :name, :id => 'name', :class => 'field', :maxlength => 100, :value => 'Someone' %></td> 
 			</tr>
 		</table>
 	<% end %>
@@ -23,5 +23,4 @@
 
 <div id="throbber">
 	<p>SAVING</p>
-	<img src="/images/throbber_0.gif">
 </div>
