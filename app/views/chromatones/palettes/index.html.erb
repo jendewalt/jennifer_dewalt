@@ -1,0 +1,27 @@
+<div id="headlines">
+	<h1>Chromatones</h1>
+	<h2>Create and share awesome color schemes</h2>
+</div>
+
+<div id="control_container">
+	<%= link_to "Make A New Palette", new_chromatones_palette_path, :class => 'btn' %>
+</div>
+
+
+<div id="recent_palettes">
+	<h2>Recent Palettes</h2>
+	<% unless @palettes.nil? %>
+		<% @palettes.each do |palette| %>
+			<%= link_to palette do %>
+				<div class="palette_container" data-colors="<%= palette.colors %>">
+					<div class="palette_info">
+						<h1><%= palette.title %></h1>
+						<p>Made by: <%= palette.name %></p>
+					</div>
+				</div>
+			<% end %>
+		<% end %>
+	<% end %>
+</div>
+
+<%= render 'chromatones/palettes/footer' %>

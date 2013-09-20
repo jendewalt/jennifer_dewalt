@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :chromatones do 
+    resources :palettes
+  end
+
   namespace :quick_compliments do 
     resources :compliments, :only => [:index, :create]
   end

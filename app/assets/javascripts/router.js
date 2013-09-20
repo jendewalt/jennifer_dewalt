@@ -101,7 +101,8 @@ $(document).ready(function () {
 		"polychrome": polychrome,
 		"electro_bounce": electroBounce,
 		"gfboom": googleFontsBrowser,
-		"quick_compliments": quickCompliments
+		"quick_compliments": quickCompliments,
+		"chromatones": chromatones
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

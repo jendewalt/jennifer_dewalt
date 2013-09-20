@@ -1,0 +1,13 @@
+<%= render 'chromatones/palettes/header' %>
+
+<div id="palette_data" data-palette='<%= @palette.colors %>' hidden='true'></div>
+
+<div id="control_container">
+	<%= link_to "Make A New Palette", new_chromatones_palette_path, :class => 'btn' %>
+</div>
+
+<div id="palette_container_show">
+	<h1><%= @palette.title %></h1>
+	<p>Made by: <%= @palette.name %></p>
+	<div id="swatch_container_show"></div>
+</div>

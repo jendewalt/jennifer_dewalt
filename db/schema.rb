@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130919021341) do
+ActiveRecord::Schema.define(:version => 20130919214051) do
 
   create_table "audio_garden_gardens", :force => true do |t|
     t.text     "garden"
@@ -21,6 +21,14 @@ ActiveRecord::Schema.define(:version => 20130919021341) do
   end
 
   add_index "audio_garden_gardens", ["slug"], :name => "index_audio_garden_gardens_on_slug"
+
+  create_table "chromatones_palettes", :force => true do |t|
+    t.string   "title"
+    t.string   "name"
+    t.text     "colors"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "click_counter_buttons", :force => true do |t|
     t.integer  "clicks"

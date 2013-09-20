@@ -1,0 +1,27 @@
+<%= render 'chromatones/palettes/header' %>
+
+<div id="form_container">
+	<%= form_for @palette, :html => {:id => "palette_form"} do |f| %>
+		<%= f.text_field :colors, :id => 'palette_colors', :class => 'field', :hidden => true %>
+
+		<%= f.submit :value => 'Add Color', :class => "btn", :id => "add" %>
+		<%= f.submit :value => 'Save Palette', :class => "btn", :id => "save" %>
+
+		<table>
+			<tr>
+				<td><label>Title: </label></td><td><%= f.text_field :title, :id => 'title', :class => 'field', :maxlength => 50, :value => 'An Awesome Palette' %></td>
+			</tr>
+
+			<tr>
+				<td><label>Made By: </label></td><td><%= f.text_field :name, :id => 'name', :class => 'field', :maxlength => 50, :value => 'Someone' %></td> 
+			</tr>
+		</table>
+	<% end %>
+</div>
+
+<div id="swatch_container_new"></div>
+
+<div id="throbber">
+	<p>SAVING</p>
+	<img src="/images/throbber_0.gif">
+</div>
