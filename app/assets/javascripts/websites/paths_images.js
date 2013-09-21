@@ -93,6 +93,7 @@ function pathsImages() {
 	});
 
 	$('#clear').on('click', function () {
+		ctx.globalAlpha = 1;
 		ctx.fillStyle = 'white';
 		ctx.fillRect(0,0,canvas.width,canvas.height);
 	});
