@@ -1,0 +1,56 @@
+<%= render 'paths/images/header' %>
+
+<div id="control_container">
+	<table>
+		<tr class="control" id="phrase">
+			<td class="right"><label>TEXT: </label></td>
+			<td></td>
+			<td><input type="text" id="text" value="The quick brown fox jumps over the lazy dog."></td>
+		</tr>
+
+		<tr class="control" id="color_picker">
+			<td class="right"><label>COLOR: </label></td>
+			<td></td>
+			<td><input type="text" id="cp" class="color picker" value="000000"></td>
+		</tr>
+		
+		<tr class="control">
+			<td class="right"><label>FONT: </label></td>
+			<td></td>
+			<td><select id="font" name="font">
+					<option value="serif">Serif</option>
+					<option value="sans-serif">Sans-Serif</option>
+					<option value="monospace">Monospace</option>
+				</select>
+			</td>
+		</tr>
+		
+		<tr class="control">
+			<td class="right"><label>SIZE: </label></td>
+			<td id="cur_size">5</td>
+			<td><button id="size_inc" class="size btn">&#x25B2</button>
+				<button id="size_dec" class="size btn">&#x25BC</button></td>
+		</tr>
+
+		<tr class="control">
+			<td class="right"><label>OPACITY: </label></td>
+			<td id="cur_opacity">1.00</td>
+			<td><button id="opacity_inc" class="opacity btn">&#x25B2</button>
+				<button id="opacity_dec" class="opacity btn">&#x25BC</button></td>
+		</tr>
+
+		<tr class="control">
+			<td class="right"><label>CLEAR: </label></td>
+			<td></td>
+			<td><button id="clear" class="btn">CLEAR</button></td>
+		</tr>
+
+		<tr class="control">
+			<td class="right"><label>SAVE: </label></td>
+			<td></td>
+			<td><button id="save" class="btn">SAVE</button></td>
+		</tr>
+	</table>
+</div>
+
+<canvas></canvas>

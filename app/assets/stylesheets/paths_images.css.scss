@@ -1,0 +1,115 @@
+body.paths_images_index {
+    $text_color: white;
+    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    $header_links_color: #ccc;
+
+    font-family: $main_font;
+    text-align: center;
+    overflow-y: scroll;
+    color: $text_color;
+    letter-spacing: 1px;
+    
+    header {
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+
+        a {
+            text-decoration: none;
+            color: $header_links_color;         
+        }
+
+        #links_container {
+            float: right;
+        }
+
+        #links_container a {
+            font-size: 11px;
+            line-height: 20px;
+            margin-left: 15px;
+        }
+
+        #links_container a:visited {
+            color: $header_links_color;
+        }
+
+        #links_container a:hover {
+            color: $text_color;
+        }
+    }
+
+    canvas {
+    	display: block;
+    	vertical-align: bottom;
+    	cursor: pointer;
+    }
+
+    #control_container {
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	padding: 8px;
+    	text-align: left;
+    	z-index: 50;
+    	background-color: rgba(0,0,0,0.7);
+
+    	.control {
+  			.right {
+  				text-align: right;
+  				vertical-align: middle;
+  			}
+
+    		td {
+	    		padding: 5px 10px;
+	    		font-size: 13px; 
+  				vertical-align: middle;
+
+	  			label, .btn, input {
+	  				display: inline-block;
+	        		vertical-align: bottom;
+	  			}
+
+
+	  			#color_toggle {
+	  				width: 90px;
+	  				padding: 0;
+	  			}
+    		}
+
+    	}
+
+		#color_picker {
+        	vertical-align: bottom;
+		}
+    }
+
+    .btn {
+        border: none;
+        display: inline-block;
+        vertical-align: top;
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background-color: #1FC2A8;
+        color: #FFF;
+        font-size: 13px;
+        padding: 0 8px;
+        line-height: 20px;
+        border-bottom: 1px solid #0A4743;
+        border-radius: 3px;
+
+        &:active {
+            background-color: #0A4743;
+            border-top: 1px solid #1FC2A8;
+            border-bottom: none;
+            box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+}

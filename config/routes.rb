@@ -4,6 +4,10 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  namespace :paths do 
+    resources :images, :only => [:index]
+  end
+
   namespace :chromatones do 
     resources :palettes
   end
