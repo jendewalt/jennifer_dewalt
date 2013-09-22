@@ -32,12 +32,21 @@ app.post('/node/chatty_room/message', function (request, response) {
 });
 
 app.get('/node/talking_dude', function (request, response) {
-	if (fs.existsSync('./talking_dude_message.txt')) {
-    	app.locals.talking_dude_message = fs.readFileSync('./talking_dude_message.txt');
-    } else {
-    	app.locals.talking_dude_message = "Hello! I'm Little Dude!";
-    }
-	response.render("talking_dude/index");
+	fs.exists('./talking_dude_message.txt', function (exists) { 
+		if (exists) {
+    		fs.readFile('./talking_dude_message.txt', function (err, data) {
+    			if (err) {
+    				app.locals.talking_dude_message = "Hello! I'm Little Dude!";
+    			} else {
+    				app.locals.talking_dude_message = data;
+    			}
+				response.render("talking_dude/index");
+    		});
+		} else {
+    		app.locals.talking_dude_message = "Hello! I'm Little Dude!";
+			response.render("talking_dude/index");
+		}
+    });
 });
 
 app.post('/node/talking_dude/message', function (request, response) {
