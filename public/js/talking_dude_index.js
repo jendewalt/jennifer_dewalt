@@ -1,6 +1,6 @@
 $(document).on('ready', function () {
 	var serverBaseUrl = document.domain;
-	var talking_dude = io.connect(serverBaseUrl + '/talking_dude');
+	var talking_dude = io.connect(serverBaseUrl + '/node/talking_dude');
 
 	$('form').on('submit', function (e) {
 		e.preventDefault();
@@ -22,7 +22,7 @@ $(document).on('ready', function () {
 	});
 
 	function sendMessage(message) {
-		$.post('/talking_dude/message', {
+		$.post('/node/talking_dude/message', {
 			message: message
 		});
 	}
