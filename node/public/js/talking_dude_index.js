@@ -1,6 +1,6 @@
 $(document).on('ready', function () {
 	var serverBaseUrl = document.domain;
-	var talking_dude = io.connect(serverBaseUrl + '/node/talking_dude');
+	var talking_dude = io.connect(serverBaseUrl + '/node/talking_dude', {resource: 'node/socket.io'});
 
 	$('form').on('submit', function (e) {
 		e.preventDefault();

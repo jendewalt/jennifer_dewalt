@@ -1,6 +1,6 @@
 $(document).on('ready', function () {
 	var serverBaseUrl = document.domain;
-	var chatty_room = io.connect(serverBaseUrl + '/node/chatty_room');
+	var chatty_room = io.connect(serverBaseUrl + '/node/chatty_room', {resource: 'node/socket.io'});
 	var sessionId = '';
 
 	$('form').on('submit', function (e) {
