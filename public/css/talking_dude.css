@@ -1,0 +1,369 @@
+body {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    overflow-y: scroll;
+    color: #333;
+    letter-spacing: 2px;
+    background-color: #fff;
+    color: #444;
+}
+    
+header {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+#logo {
+    float: left;
+    line-height: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #444;
+}
+
+#links_container {
+    float: right;
+}
+
+#links_container a {
+    font-size: 11px;
+    line-height: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #444;
+}
+
+#links_container a:visited {
+    color: #444;
+}
+
+#links_container a:hover {
+    color: lime;
+}
+
+#talking_dude_container {
+	position: relative;
+	width: 560px;
+	margin: auto;
+}
+
+#speech_wrapper {
+	padding-left: 200px;
+}
+
+blockquote {
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 40px;
+	-webkit-margin-end: 40px;
+}
+
+.oval {
+	position: relative;
+	width: 270px;
+	padding: 50px 46px;
+	margin: 1em auto 42px;
+	text-align: center;
+	color: #FFF;
+	background: #5A8F00;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#B8DB29), to(#5A8F00));
+	background: -moz-linear-gradient(#b8db29, #5a8f00);
+	background: -o-linear-gradient(#b8db29, #5a8f00);
+	background: linear-gradient(#B8DB29, #5A8F00);
+	-webkit-border-top-left-radius: 220px 120px;
+	-webkit-border-top-right-radius: 220px 120px;
+	-webkit-border-bottom-right-radius: 220px 120px;
+	-webkit-border-bottom-left-radius: 220px 120px;
+	-moz-border-radius: 220px / 120px;
+	border-radius: 50%;
+
+	white-space: -pre-wrap; 
+	white-space: -o-pre-wrap; 
+	word-wrap: break-word;
+}
+
+.oval:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	bottom: -30px;
+	right: 50%;
+	height: 30px;
+	border-right: 60px solid #5A8F00;
+	background: #5A8F00;
+	-webkit-border-bottom-right-radius: 80px 50px;
+	-moz-border-radius-bottomright: 80px 50px;
+	border-bottom-right-radius: 80px 50px;
+	-webkit-transform: translate(0, -2px);
+	-moz-transform: translate(0, -2px);
+	-ms-transform: translate(0, -2px);
+	-o-transform: translate(0, -2px);
+	transform: translate(0, -2px);
+}
+
+.oval:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	bottom: -30px;
+	right: 50%;
+	width: 60px;
+	height: 30px;
+	background: #FFF;
+	-webkit-border-bottom-right-radius: 40px 50px;
+	-moz-border-radius-bottomright: 40px 50px;
+	border-bottom-right-radius: 40px 50px;
+	-webkit-transform: translate(-30px, -2px);
+	-moz-transform: translate(-30px, -2px);
+	-ms-transform: translate(-30px, -2px);
+	-o-transform: translate(-30px, -2px);
+	transform: translate(-30px, -2px);
+}
+
+.oval p {
+	line-height: 20px;
+}
+
+#dude_container {
+	position: relative;
+	height: 200px;
+	width: 500px;
+
+	margin-bottom: 30px;	
+}
+
+#face {
+	position: absolute;
+	top: 50px;
+	left: 175px;
+	width: 150px;
+	height: 80px;	
+}
+
+#eyes_container {
+	text-align: center;
+}
+
+.eyeball {
+	position: relative;
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+	margin: 0 8px;
+	border-radius: 50%;
+	border: 2px solid #1a1a1a;
+	border-right: 3px solid #1a1a1a;
+	border-left: 1px solid #1a1a1a;
+	background-color: #FFFFFA;
+
+	transform: rotate(35deg);
+	-ms-transform: rotate(35deg);
+	-webkit-transform: rotate(35deg);
+}
+
+.mouth {
+	position: absolute;
+}
+
+.smile {
+	bottom: 30px;
+	left: 25px;
+	height: 20px;
+	width: 100px;
+	border-bottom: 5px solid #1a1a1a;
+	border-radius: 50%;
+
+	transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	-webkit-transform: rotate(-5deg);
+}
+
+.head {
+	position: absolute;
+	top: 0;
+	left: 160px;
+	height: 150px;
+	width: 180px;
+	border-bottom: 4px solid #1a1a1a;
+	border-right: 5px solid #1a1a1a;
+	border-top: 1px solid #1a1a1a;
+	border-left: 2px solid #1a1a1a;
+	border-radius: 50%;
+	background-color: #FFFFFA;
+	z-index: -1;
+}
+
+.arm {
+	position: absolute;
+	height: 3px;
+	width: 35px;
+	background-color: #1a1a1a;
+}
+
+#arm_left {
+	top: 40%;
+	left: -35px;
+
+	transform: rotate(13deg);
+	-ms-transform: rotate(13deg);
+	-webkit-transform: rotate(13deg);
+}
+#arm_right {
+	top: 50%;
+	right: -35px;
+
+	transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+}
+
+.hand {
+	position: absolute;
+	top: -2px;
+}
+
+#hand_left {
+	top: 4px;
+	left: -12px;
+}
+#hand_right {
+	right: -12px;
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+
+.finger {
+	height: 2px;
+	width: 15px;
+	margin: -3px; 
+	background-color: #1a1a1a;
+}
+
+#f1 {
+	transform: rotate(40deg) translateY(-8px);
+	-ms-transform: rotate(40deg) translateY(-8px);
+	-webkit-transform: rotate(40deg) translateY(-8px);
+}
+
+#f3 {
+	transform: rotate(-40deg) translateY(8px);
+	-ms-transform: rotate(-40deg) translateY(8px);
+	-webkit-transform: rotate(-40deg) translateY(8px);
+}
+
+.leg {
+	position: absolute;
+	bottom: -40px;
+	width: 3px;
+	height: 40px;
+	background-color: #1a1a1a;
+}
+
+#leg_left {
+	left: 38%; 
+}
+#leg_right {
+	right: 32%;
+
+	transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg); 
+}
+
+.foot {
+	position: absolute;
+	bottom: -10px;
+	left: -20px;
+	height: 7px;
+	width: 25px;
+	border: 3px solid #1a1a1a;
+	border-left: 1px solid #1a1a1a;
+	border-top: 2px solid #1a1a1a;
+	border-radius: 50%;
+}
+
+#foot_right {
+	left: -5px; 
+}
+
+#message_form {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+#outgoing_message {
+	width: 300px;
+	vertical-align: middle;
+	font-size: 16px;
+	padding: 3px 6px;
+	color: #444;
+}
+
+#info_container {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	text-align: left;
+	padding: 10px 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	z-index: 50;
+}
+
+#info {
+	display: none;
+	font-size: 13px;
+	color: #fff;
+	line-height: 26px;
+	margin-bottom: 10px;
+}
+
+#tab {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	color: rgba(0,0,0,0.3);
+}
+
+#info_container:hover {
+	color: #fff;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.8);
+}
+
+#info_container:hover > #info {
+	display: block;
+}
+
+.btn {
+	vertical-align: middle;
+    border: none;
+    height: 28px;
+    padding: 0 10px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #ff6c00;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 28px;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 1px #cc5600;
+    border-bottom: 1px solid #cc5600;
+    border-radius: 3px;
+}
+
+.btn:active {
+    background-color: #e66100;
+    border-top: 1px solid #ff6c00;
+    border-bottom: none;
+    box-shadow: 0 0 1px rgba(0,0,0,0.5) inset;              
+}
+
+.clear {
+    clear: both;
+}

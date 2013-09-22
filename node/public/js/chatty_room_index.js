@@ -1,6 +1,6 @@
 $(document).on('ready', function () {
 	var serverBaseUrl = document.domain;
-	var socket = io.connect(serverBaseUrl, {resource: 'chatty_room/socket.io'});
+	var chatty_room = io.connect(serverBaseUrl + '/chatty_room');
 	var sessionId = '';
 
 	$('form').on('submit', function (e) {
@@ -15,38 +15,42 @@ $(document).on('ready', function () {
 	});
 
 	$('#name').on('blur', function () {
-		socket.emit('nameChange', {
+		chatty_room.emit('nameChange', {
 			id: sessionId,
 			name: $('#name').val()
 		});
 	});
 
-	socket.on('connect', function () {
-		sessionId = socket.socket.sessionid;
-		socket.emit('newUser', {
+	chatty_room.on('connect', function () {
+		sessionId = chatty_room.socket.sessionid;
+		chatty_room.emit('newUser', {
 			id: sessionId, name: $('#name').val()
 		});
 	});
 
-	socket.on('newConnection', function (data) {
+	chatty_room.on('newConnection', function (data) {
 		updateParticipants(data.participants);
 	});
 
-	socket.on('userDisconnected', function (data) {
+	chatty_room.on('userDisconnected', function (data) {
 		$('#' + data.id).remove();
 	});
 
-	socket.on('nameChanged', function (data) {
+	chatty_room.on('nameChanged', function (data) {
+
+		console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@')
+		console.log('name changed')
+		console.log(data)
 		$('#' + data.id).html(data.name + ' ' + (data.id === sessionId ? '(You)' : ''));
 	});
 
-	socket.on('incomingMessage', function (data) {
+	chatty_room.on('incomingMessage', function (data) {
 		var message = data.message;
 		var name = data.name;
 		$('<li>').html('<h3>' + name + '</h3>' + message).prependTo('#messages');
 	});
 
-	socket.on('error', function (reason) {
+	chatty_room.on('error', function (reason) {
 		alert('Unable to connect: ' + reason );
 	});
 
