@@ -12,7 +12,7 @@ function talking_dude_post(request, response, io) {
 		return response.json(400, {error: "Message is invalid"});
 	}
 
-	io.of('/talking_dude').emit("incomingMessage", {message: message});
+	io.of('/node/talking_dude').emit("incomingMessage", {message: message});
 
 	response.json(200, {message: "Message received"});
 

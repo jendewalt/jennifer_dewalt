@@ -14,24 +14,24 @@ app.set('view engine', "ejs");
 app.use(express.static("public", __dirname + "/public"));
 app.use(express.bodyParser());
 
-var chat = io.of('/chatty_room').on('connection', function (socket) {
+var chat = io.of('/node/chatty_room').on('connection', function (socket) {
 	chatty_room.chatty_room_io(socket, io, chat);
 });
 
-var dude = io.of('/talking_dude').on('connection', function (socket) {
+var dude = io.of('/node/talking_dude').on('connection', function (socket) {
 	talking_dude.talking_dude_io(socket, io, dude);
 });
 
 
-app.get('/chatty_room', function (request, response) {
+app.get('/node/chatty_room', function (request, response) {
 	response.render("chatty_room/index");
 });
 
-app.post('/chatty_room/message', function (request, response) {
+app.post('/node/chatty_room/message', function (request, response) {
 	chatty_room.chatty_room_post(request, response, io);
 });
 
-app.get('/talking_dude', function (request, response) {
+app.get('/node/talking_dude', function (request, response) {
 	if (fs.existsSync('./talking_dude_message.txt')) {
     	app.locals.talking_dude_message = fs.readFileSync('./talking_dude_message.txt');
     } else {
@@ -40,7 +40,7 @@ app.get('/talking_dude', function (request, response) {
 	response.render("talking_dude/index");
 });
 
-app.post('/talking_dude/message', function (request, response) {
+app.post('/node/talking_dude/message', function (request, response) {
 	talking_dude.talking_dude_post(request, response, io);
 });
 

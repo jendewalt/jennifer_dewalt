@@ -35,7 +35,7 @@ function chatty_room_post(request, response, io) {
 
 	var name = sanitizer.sanitize(request.body.name);
 
-	io.of('/chatty_room').emit("incomingMessage", {message: message, name: name});
+	io.of('/node/chatty_room').emit("incomingMessage", {message: message, name: name});
 
 	response.json(200, {message: "Message received"});
 }

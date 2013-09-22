@@ -1,6 +1,6 @@
 $(document).on('ready', function () {
 	var serverBaseUrl = document.domain;
-	var chatty_room = io.connect(serverBaseUrl + '/chatty_room');
+	var chatty_room = io.connect(serverBaseUrl + '/node/chatty_room');
 	var sessionId = '';
 
 	$('form').on('submit', function (e) {
@@ -37,10 +37,6 @@ $(document).on('ready', function () {
 	});
 
 	chatty_room.on('nameChanged', function (data) {
-
-		console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@')
-		console.log('name changed')
-		console.log(data)
 		$('#' + data.id).html(data.name + ' ' + (data.id === sessionId ? '(You)' : ''));
 	});
 
@@ -64,7 +60,7 @@ $(document).on('ready', function () {
 	}
 
 	function sendMessage(name, message) {
-		$.post('/chatty_room/message', {
+		$.post('/node/chatty_room/message', {
 			name: name,
 			message: message
 		});
