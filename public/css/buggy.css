@@ -1,0 +1,89 @@
+body {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #8f8f8f;
+}
+    
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+    padding: 10px 20px;
+}
+
+#logo {
+    float: left;
+    line-height: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+#links_container {
+    float: right;
+}
+
+#links_container a {
+    font-size: 11px;
+    line-height: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+#links_container a:visited {
+    color: #8f8f8f;
+}
+
+#links_container a:hover {
+    color: lime;
+}
+
+canvas {
+	display: block;
+    cursor: pointer;
+    margin: auto;
+}
+
+#info_container {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	text-align: left;
+	padding: 10px 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	z-index: 50;
+}
+
+#info {
+	display: none;
+	font-size: 13px;
+	color: #fff;
+	line-height: 26px;
+	margin-bottom: 10px;
+}
+
+#tab {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	color: rgba(0,0,0,0.3);
+}
+
+#info_container:hover {
+	color: #fff;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.8);
+}
+
+#info_container:hover > #info {
+	display: block;
+}
+
+.clear {
+    clear: both;
+}
