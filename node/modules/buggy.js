@@ -28,7 +28,7 @@ function buggy_io(socket, io, buggy) {
 		bug.x = x;
 		bug.y = y;
 		bug.color = color
-		buggy.emit('attributeChanged', {id: id, x: x, y: y, color: color});
+		this.broadcast.emit('attributeChanged', {id: id, x: x, y: y, color: color});
 	});
 
 	socket.on('disconnect', function () {

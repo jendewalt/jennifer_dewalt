@@ -90,7 +90,7 @@ $(document).on('ready', function () {
 			var y = Number(participant.y) ? Number(participant.y) : canvas.height / 2;
 
 			if (!match) {
-				bugs.push(new Bug(x, y, participant.id));
+				bugs.push(new Bug(x, y, participant.id, participant.color));
 			}
 		});
 	}
@@ -112,14 +112,14 @@ $(document).on('ready', function () {
 		setTimeout(emitUpdate, 200);
 	}
 
-	function Bug(x, y, id) {
+	function Bug(x, y, id, color) {
 		this.id = id;
 		this.xf = x;
 		this.yf = y;
 		this.x = x;
 		this.y = y;
 		this.radius = 10;
-		this.color = '#222222';
+		this.color = color ? color : '#222222';
 		this.legsIn = Math.round(Math.random());
 
 		this.draw = function () {
