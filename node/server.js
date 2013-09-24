@@ -7,6 +7,7 @@ var fs = require('fs');
 var chatty_room = require('./modules/chatty_room.js');
 var talking_dude = require('./modules/talking_dude.js');
 var buggy = require('./modules/buggy.js');
+var color_jam = require('./modules/color_jam.js');
 
 app.set('ipaddr', "127.0.0.1");
 app.set("port", 8888);
@@ -25,6 +26,10 @@ var dude = io.of('/node/talking_dude').on('connection', function (socket) {
 
 var bug = io.of('/node/buggy').on('connection', function (socket) {
 	buggy.buggy_io(socket, io, bug);
+});
+
+var jam = io.of('/node/color_jam').on('connection', function (socket) {
+	color_jam.color_jam_io(socket, io, jam);
 });
 
 // CHATTY ROOM
@@ -69,6 +74,12 @@ app.get('/node/buggy', function (request, response) {
 
 app.post('/node/buggy/message', function (request, response) {
 	buggy.buggy_post(request, response, io);
+});
+
+// COLOR JAM
+
+app.get('/node/color_jam', function (request, response) {
+	response.render("color_jam/index");
 });
 
 
