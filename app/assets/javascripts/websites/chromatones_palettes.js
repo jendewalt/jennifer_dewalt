@@ -140,7 +140,6 @@ function chromatones() {
 
 	function savePalette(swatches) {
 		var data = formatPaletteData(swatches);
-			console.log(data)
 
 		if (data) {
 			$('#throbber').show();

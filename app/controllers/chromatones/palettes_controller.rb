@@ -8,6 +8,7 @@ class Chromatones::PalettesController < ApplicationController
     data = params['colors'] ? params['colors'].map{ |k,v| v} : []
     title = 'An Awesome Palette'
     name = 'Someone'
+    palette = 
 
     unless data.length == 0
       data.each do |obj|
@@ -17,10 +18,11 @@ class Chromatones::PalettesController < ApplicationController
           name = obj[:name] 
         end
       end
-
       colors = data.reject { |obj| obj[:title] || obj[:name] }
     end
 
+    colors = colors ? colors : [];
+    
     palette = ChromatonesPalette.create(:colors => colors.to_json, :name => name, :title => title)
     
     respond_to do |format|
