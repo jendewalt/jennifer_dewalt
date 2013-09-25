@@ -8,6 +8,7 @@ var chatty_room = require('./modules/chatty_room.js');
 var talking_dude = require('./modules/talking_dude.js');
 var buggy = require('./modules/buggy.js');
 var color_jam = require('./modules/color_jam.js');
+var one_drawing = require('./modules/one_drawing.js');
 
 app.set('ipaddr', "127.0.0.1");
 app.set("port", 8888);
@@ -30,6 +31,10 @@ var bug = io.of('/node/buggy').on('connection', function (socket) {
 
 var jam = io.of('/node/color_jam').on('connection', function (socket) {
 	color_jam.color_jam_io(socket, io, jam);
+});
+
+var drawing = io.of('/node/one_drawing').on('connection', function (socket) {
+	one_drawing.one_drawing_io(socket, io, drawing);
 });
 
 // CHATTY ROOM
@@ -80,6 +85,30 @@ app.post('/node/buggy/message', function (request, response) {
 
 app.get('/node/color_jam', function (request, response) {
 	response.render("color_jam/index");
+});
+
+// ONE DRAWING
+
+app.get('/node/one_drawing', function (request, response) {
+	fs.exists('./one_drawing_url.txt', function (exists) { 
+		if (exists) {
+    		fs.readFile('./one_drawing_url.txt', function (err, data) {
+    			if (err) {
+    				app.locals.one_drawing_url = '';
+    			} else {
+    				app.locals.one_drawing_url = data;
+    			}
+				response.render("one_drawing/index");
+    		});
+		} else {
+    		app.locals.one_drawing_url = '';
+			response.render("one_drawing/index");
+		}
+	});
+});
+
+app.post('/node/one_drawing/url', function (request, response) {
+	one_drawing.one_drawing_post(request, response, io);
 });
 
 
