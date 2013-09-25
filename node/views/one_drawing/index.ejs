@@ -27,31 +27,36 @@
     <br class="clear">
   </header>
 
-  <div id="control_wrapper">
-    <div id="control_container">
-      <p class="opts">TOOLBOX</p>
-      <div class="opts" id="functions">
-        <button class="small btn brush" disabled title="Paintbrush"><img class="brush"></button>
-        <button class="small btn erase" title="Eraser"><img class="erase"></button>
-        <button class="small btn eyedrop" title="Eyedropper"><img class="eyedrop"></button>
-      </div>
-      
-      <div class="opts right">
-        <label>COLOR: </label><input value="000000" class="color">
-      </div>
-      <div class="opts right">
-        <label>SIZE: </label><input value="8" class="size">
+  <div id="main_wrapper">
+    <div id="control_wrapper">
+      <div id="control_container">
+        <p class="opts">TOOLBOX</p>
+        <div class="opts" id="functions">
+          <button class="small btn brush" disabled title="Paintbrush"><img class="brush"></button>
+          <button class="small btn erase" title="Eraser"><img class="erase"></button>
+          <button class="small btn eyedrop" title="Eyedropper"><img class="eyedrop"></button>
+        </div>
+        
+        <div class="opts right">
+          <label>COLOR: </label><input value="000000" class="color" autocomplete='off'>
+        </div>
+        <div class="opts right">
+          <label>OPACITY: </label><input value="1" class="opacity" autocomplete='off'>
+        </div>      
+        <div class="opts right">
+          <label>SIZE: </label><input value="8" class="size" autocomplete='off'>
+        </div>
+
+        <button class="btn save opts" title="Save and upload drawing.">SAVE</button>
       </div>
 
-      <button class="btn save opts" title="Save and upload drawing.">SAVE</button>
+      <p id="saved_msg">SAVED!</p>
     </div>
+    
+    <canvas data-url="<%= one_drawing_url %>"></canvas>
 
-    <p id="saved_msg">SAVED!</p>
+    <br class="clear">
   </div>
-  
-  <canvas data-url="<%= one_drawing_url %>"></canvas>
-
-  <br class="clear">
 
   <div id="info_container">
     <div id="info">
