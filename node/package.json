@@ -4,6 +4,8 @@
 		"ejs": "0.8.4",
 		"socket.io": "0.9.12",
 		"underscore": "*",
-		"sanitizer": "0.0.15"
+		"sanitizer": "0.0.15",
+		"ntwitter": "*",
+		"cron": "*"
 	}
 }

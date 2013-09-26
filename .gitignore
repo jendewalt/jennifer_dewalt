@@ -38,3 +38,4 @@
 /config/unicorn.god
 /config/unicorn.rb
 /config/unicorn_local.rb
+/node/modules/how_were_feeling.js

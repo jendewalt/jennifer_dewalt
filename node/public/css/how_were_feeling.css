@@ -1,0 +1,185 @@
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #000;
+    background-color: #000c1c;
+}
+    
+header {
+    padding: 30px 20px 20px;
+    background-color: white;
+    border-bottom: 1px solid #008aff;
+}
+
+#logo a {
+    line-height: 36px;
+    font-size: 36px;
+    text-decoration: none;
+    color: #008aff;
+    text-transform: uppercase;
+}
+
+#wrapper {
+	padding-bottom: 33px;
+}
+
+#stats_container {
+	padding: 20px;
+	background-color: white;
+}
+
+.stats {
+	display: inline-block;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin: 0 30px;
+}
+
+#last_update {
+	text-transform: uppercase;
+	color: #717175;
+	padding: 20px;
+}
+
+#info_container {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	text-align: left;
+	padding: 10px 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	z-index: 50;
+}
+
+#info {
+	display: none;
+	font-size: 13px;
+	color: #555;
+	line-height: 26px;
+	margin-bottom: 10px;
+}
+
+#tab {
+	display: block;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	color: #008aff;
+	cursor: pointer;
+}
+
+#info_container:hover {
+	color: #555;
+	border-radius: 0 5px 0 0;
+	background-color: rgba(255,255,255,0.93);
+
+}
+
+#info_container:hover > #info {
+	display: block;
+}
+#info_container:hover > #tab {
+	display: none;
+}
+
+ul {
+	padding: 20px;
+}
+
+li {
+	position: relative;
+	display: inline-block;
+	height: 120px;
+	width: 120px;
+	margin: 10px;
+}
+
+.circle {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	z-index: 2;
+	opacity: 0.75;
+}
+
+.keyword {
+	position: relative;
+	line-height: 120px;
+	z-index: 3;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.glow {
+	-webkit-animation: glow 0.5s linear;
+	-moz-animation: glow 0.5s linear;
+	-ms-animation: glow 0.5s linear;
+	-o-animation: glow 0.5s linear;
+	animation: glow 0.5s linear;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 33px;
+}
+
+#links_container {
+	text-align: right;
+	padding: 10px 20px;
+	font-size: 13px;
+}
+
+#links_container a {
+	text-decoration: none;
+	color: #aaa;
+	margin-left: 15px;
+}
+
+#links_container a:visited {
+	color: #aaa;
+}
+
+#links_container a:hover {
+	color: #008aff;
+}
+
+@-webkit-keyframes glow {
+	0% {box-shadow: 0 0 15px rgba(255,255,255,1); opacity: 1}
+	10% {box-shadow: 0 0 15px rgba(255,255,255,1); opacity: 1}
+	100% {box-shadow: 0 0 15px rgba(255,255,255,0); opacity: 0.75;}
+}
+@-moz-keyframes glow {
+	0% {box-shadow: 0 0 15px rgba(255,255,255,1); opacity: 1}
+	10% {box-shadow: 0 0 15px rgba(255,255,255,1); opacity: 1}
+	100% {box-shadow: 0 0 15px rgba(255,255,255,0); opacity: 0.75;}
+}
+@-ms-keyframes glow {
+	0% {box-shadow: 0 0 15px rgba(255,255,255,1); opacity: 1}
+	10% {box-shadow: 0 0 15px rgba(255,255,255,1); opacity: 1}
+	100% {box-shadow: 0 0 15px rgba(255,255,255,0); opacity: 0.75;}
+}
+@-o-keyframes glow {
+	0% {box-shadow: 0 0 15px rgba(255,255,255,1); opacity: 1}
+	10% {box-shadow: 0 0 15px rgba(255,255,255,1); opacity: 1}
+	100% {box-shadow: 0 0 15px rgba(255,255,255,0); opacity: 0.75;}
+}
+@keyframes glow {
+	0% {box-shadow: 0 0 15px rgba(255,255,255,1); opacity: 1}
+	10% {box-shadow: 0 0 15px rgba(255,255,255,1); opacity: 1}
+	100% {box-shadow: 0 0 15px rgba(255,255,255,0); opacity: 0.75;}
+}
