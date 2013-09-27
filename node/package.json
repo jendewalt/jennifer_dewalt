@@ -7,6 +7,6 @@
 		"sanitizer": "0.0.15",
 		"ntwitter": "*",
 		"cron": "*",
-		"canvas": "*"
+		"canvas": "1.0.4"
 	}
 }
