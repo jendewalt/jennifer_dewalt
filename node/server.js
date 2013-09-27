@@ -10,6 +10,7 @@ var buggy = require('./modules/buggy.js');
 var color_jam = require('./modules/color_jam.js');
 var one_drawing = require('./modules/one_drawing.js');
 var how_were_feeling = require('./modules/how_were_feeling.js');
+var all_draw = require('./modules/all_draw.js');
 
 app.set('ipaddr', "127.0.0.1");
 app.set("port", 8888);
@@ -40,6 +41,10 @@ var drawing = io.of('/node/one_drawing').on('connection', function (socket) {
 
 var feeling = io.of('/node/how_were_feeling').on('connection', function (socket) {
 	how_were_feeling.how_were_feeling_io(socket, io, feeling);
+});
+
+var canvas = io.of('/node/all_draw').on('connection', function (socket) {
+	all_draw.all_draw_io(socket, io, canvas);
 });
 
 // CHATTY ROOM
@@ -120,6 +125,26 @@ app.post('/node/one_drawing/url', function (request, response) {
 
 app.get('/node/how_were_feeling', function (request, response) {
 	how_were_feeling.how_were_feeling_get(request, response)
+});
+
+// ALL DRAW
+
+app.get('/node/all_draw', function (request, response) {
+	fs.exists('./all_draw_url.txt', function (exists) { 
+		if (exists) {
+    		fs.readFile('./all_draw_url.txt', function (err, data) {
+    			if (err) {
+    				app.locals.all_draw_url = '';
+    			} else {
+    				app.locals.all_draw_url = data;
+    			}
+				response.render("all_draw/index");
+    		});
+		} else {
+    		app.locals.all_draw_url = '';
+			response.render("all_draw/index");
+		}
+	});
 });
 
 
