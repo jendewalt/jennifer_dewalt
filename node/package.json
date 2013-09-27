@@ -6,6 +6,7 @@
 		"underscore": "*",
 		"sanitizer": "0.0.15",
 		"ntwitter": "*",
-		"cron": "*"
+		"cron": "*",
+		"canvas": "*"
 	}
 }

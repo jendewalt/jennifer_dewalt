@@ -130,7 +130,21 @@ app.get('/node/how_were_feeling', function (request, response) {
 // ALL DRAW
 
 app.get('/node/all_draw', function (request, response) {
-	response.render("all_draw/index");
+	fs.exists('./all_draw_url.txt', function (exists) { 
+		if (exists) {
+    		fs.readFile('./all_draw_url.txt', function (err, data) {
+    			if (err) {
+    				app.locals.all_draw_url = '';
+    			} else {
+    				app.locals.all_draw_url = data;
+    			}
+				response.render("all_draw/index");
+    		});
+		} else {
+    		app.locals.all_draw_url = '';
+			response.render("all_draw/index");
+		}
+	});
 });
 
 
