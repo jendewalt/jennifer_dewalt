@@ -7,6 +7,7 @@ var fs = require('fs');
 
 function all_draw_io(socket, io, canvas) {
 	socket.on('newPoints', function (data) {
+		sanitizer.sanitize(data)
 		this.broadcast.emit('newPoints', data);
 		drawPoints(data.points, data.color, data.size, data.opacity);
 	});

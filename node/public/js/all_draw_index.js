@@ -25,6 +25,9 @@ $(document).on('ready', function () {
 	var img_url = $(canvas).data('url');
 	var mouse = {};
 
+	canvas.tool = 'brush';
+	canvas.tracking = true;
+
 	hiddenCanvas.height = canvas.height = height;
 	hiddenCanvas.width = canvas.width = width;
 
@@ -42,7 +45,6 @@ $(document).on('ready', function () {
 	}
 
 	all_draw.on('newPoints', function (data) {
-		console.log(data);
 		drawPoints(data.points, data.color, data.size, data.opacity);
 		hidden_ctx.clearRect(0, 0, canvas.width, canvas.height);
 		hidden_ctx.drawImage(canvas, 0, 0);
@@ -53,19 +55,29 @@ $(document).on('ready', function () {
 		trackCursor();
 
 		$(canvas).on('mousedown', function (e) {
-			points.push({
-				x: e.pageX - canvas.offsetLeft,
-				y: e.pageY - canvas.offsetTop
-			});
-			this.drawing = true;
-			drawPoints(points, cur_color, cur_size, cur_opacity);			
+			if (canvas.tracking) {
+				points.push({
+					x: e.pageX - canvas.offsetLeft,
+					y: e.pageY - canvas.offsetTop
+				});
+				this.drawing = true;
+				drawPoints(points, cur_color, cur_size, cur_opacity);
+			}	
+		});
+
+		$(canvas).on('click', function (e) {
+			mouse.x = e.pageX - canvas.offsetLeft;
+			mouse.y = e.pageY - canvas.offsetTop;
+			if (!canvas.tracking) {
+				getCanvasColor();
+			}
 		});
 		
 		$(canvas).on('mousemove', function (e) {
 			mouse.x = e.pageX - canvas.offsetLeft;
 			mouse.y = e.pageY - canvas.offsetTop;
 
-			if (this.drawing) {
+			if (this.drawing && canvas.tracking) {
 				points.push({
 					x: mouse.x,
 					y: mouse.y
@@ -76,17 +88,19 @@ $(document).on('ready', function () {
 		});
 
 		$(canvas).on('mouseup', function (e) {
-			all_draw.emit('newPoints', {
-				points: points,
-				color: cur_color,
-				size: cur_size,
-				opacity: cur_opacity 
-			});
+			if (canvas.tracking) {
+				all_draw.emit('newPoints', {
+					points: points,
+					color: cur_color,
+					size: cur_size,
+					opacity: cur_opacity 
+				});
 
-			points = [];
-			hidden_ctx.clearRect(0, 0, canvas.width, canvas.height);
-			hidden_ctx.drawImage(canvas, 0, 0);
-			this.drawing = false;
+				points = [];
+				hidden_ctx.clearRect(0, 0, canvas.width, canvas.height);
+				hidden_ctx.drawImage(canvas, 0, 0);
+				this.drawing = false;
+			}
 		});
 
 		$('.small.btn').on('click', function () {
@@ -165,14 +179,13 @@ $(document).on('ready', function () {
 			ctx.lineWidth = size;
 	    	ctx.lineCap = 'round';
 			ctx.stroke();			
-		}
-		
+		}		
 		ctx.closePath();
 		ctx.restore();
 	}
 
 	function trackCursor() {
-		if (!canvas.drawing) {
+		if (!canvas.drawing && canvas.tracking) {
 			ctx.clearRect(0,0,canvas.width, canvas.height);
 			ctx.beginPath();
 			ctx.drawImage(hiddenCanvas, 0, 0);
@@ -193,6 +206,18 @@ $(document).on('ready', function () {
 		}
 		setTimeout(trackCursor, 40);
 	}
+
+	function getCanvasColor() {
+		var imageData = ctx.getImageData(mouse.x, mouse.y, 1, 1);
+		var color = imageData.data;
+
+		$('.color')[0].color.fromString(rgbComponentToHex(color[0]) + rgbComponentToHex(color[1]) + rgbComponentToHex(color[2]));
+	}
+
+	function rgbComponentToHex(c) {
+    	var hex = c.toString(16);
+    	return hex.length == 1 ? "0" + hex : hex;
+    }
 
 	image.src = img_url;
 });

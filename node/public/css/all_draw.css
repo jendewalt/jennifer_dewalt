@@ -7,7 +7,6 @@ body {
 }
     
 header {
-	margin-bottom: 30px;
     padding: 10px 20px;
     background-color: white;
 }
@@ -40,40 +39,28 @@ header {
     color: #008aff;
 }
 
-#main_wrapper {
-	width: 1240px;
-}
-
 canvas {
-	float: left;
-	display: inline-block;
+	display: block;
 	cursor: none;
 	background-color: #fff;
-}
-
-#control_wrapper {
-	float: left;
-	display: inline-block;
-	margin: 0 30px;	
+	margin: 20px auto;
 }
 
 #control_container {
-	padding: 0 20px 10px;
-	border: 6px solid #9eabb0;
+	padding: 14px 5px;
+	border-bottom: 6px solid #9eabb0;
+	border-top: 6px solid #9eabb0;
 	font-size: 13px;
 	background-color: white;
-}
-
-#control_container p {
-	padding: 8px;
-	border-bottom: 1px solid rgba(0,0,0,0.3);
-	font-size: 13px;
+	min-width: 800px;
 }
 
 .opts {
-	display: block;
-	margin-bottom: 10px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 0 10px;
 }
+
 .right {
 	text-align: right;
 }
@@ -87,7 +74,7 @@ canvas {
 .btn.small {
 	width: 40px;
 	height: 40px;
-	margin: 10px 5px;
+	margin: 0 5px;
 	border-bottom: 2px solid #02569E;
 }
 
@@ -155,8 +142,7 @@ button.eyedrop:disabled {
 #info_container:hover {
 	color: #555;
 	border-radius: 0 5px 0 0;
-	background-color: rgba(255,255,255,0.8);
-
+	background-color: rgba(255,255,255,0.93);
 }
 
 #info_container:hover > #info {
@@ -170,7 +156,7 @@ button.eyedrop:disabled {
 .btn {
     border: none;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
     height: 28px;
     margin-top: 10px;
     padding: 0 10px;
