@@ -346,11 +346,11 @@ $(document).on('ready', function () {
 		}
 	}
 
-	bacon_full.src = '/images/bacon_full.png';
-	bacon_top_left.src = '/images/bacon_1.png';
-	bacon_top_right.src = '/images/bacon_2.png';
-	bacon_bottom_left.src = '/images/bacon_3.png';
-	bacon_bottom_right.src = '/images/bacon_4.png';
+	bacon_full.src = '/images/hw_bacon_full.png';
+	bacon_top_left.src = '/images/hw_bacon_1.png';
+	bacon_top_right.src = '/images/hw_bacon_2.png';
+	bacon_bottom_left.src = '/images/hw_bacon_3.png';
+	bacon_bottom_right.src = '/images/hw_bacon_4.png';
 
 	function randomColor() {
 		return '#' + Math.random().toString(16).slice(2, 8);
