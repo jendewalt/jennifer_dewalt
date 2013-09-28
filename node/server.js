@@ -11,6 +11,7 @@ var color_jam = require('./modules/color_jam.js');
 var one_drawing = require('./modules/one_drawing.js');
 var how_were_feeling = require('./modules/how_were_feeling.js');
 var all_draw = require('./modules/all_draw.js');
+var hello_world = require('./modules/hello_world.js');
 
 app.set('ipaddr', "127.0.0.1");
 app.set("port", 8888);
@@ -45,6 +46,10 @@ var feeling = io.of('/node/how_were_feeling').on('connection', function (socket)
 
 var canvas = io.of('/node/all_draw').on('connection', function (socket) {
 	all_draw.all_draw_io(socket, io, canvas);
+});
+
+var hello = io.of('/node/hello_world').on('connection', function (socket) {
+	hello_world.hello_world_io(socket, io, hello);
 });
 
 // CHATTY ROOM
@@ -147,6 +152,15 @@ app.get('/node/all_draw', function (request, response) {
 	});
 });
 
+// HELLO WORLD
+
+app.get('/node/hello_world', function (request, response) {
+	response.render("hello_world/index");
+});
+
+app.post('/node/hello_world/message', function (request, response) {
+	hello_world.hello_world_post(request, response, io);
+});
 
 // ----------------------------------------------------
 
