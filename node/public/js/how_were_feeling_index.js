@@ -49,7 +49,7 @@ $(document).on('ready', function () {
 
 	average = average / total * 100;
 
-	$('#average_positive').text('Positivity: ' + Math.round(average) + '%');
+	$('#average_positive').text('Positivity Rating: ' + Math.round(average) + '%');
 
 	$('li').on('mouseenter', function () {
 		var count = $(this).find('.circle').data('count');
@@ -61,27 +61,30 @@ $(document).on('ready', function () {
 	});
 
 	how_were_feeling.on('data', function (data) {
-		var total = data.total;
-		average = 0;
-		for (var key in data.keywords) {
-			var circle = $('.circle[data-keyword="' + key + '"]');
-			var old_total = circle.data('count');
-			var new_total = data.keywords[key];
+		if (data.data) {
+			data = data.data;
+			var total = data.total;
+			average = 0;
+			for (var key in data.keywords) {
+				var circle = $('.circle[data-keyword="' + key + '"]');
+				var old_total = circle.data('count');
+				var new_total = data.keywords[key];
 
-			average += keywords[key].score * new_total;
+				average += keywords[key].score * new_total;
 
-			if (old_total < new_total) {
-				flashCircle(circle);
+				if (old_total < new_total) {
+					flashCircle(circle);
+				}
+
+				$(circle).data('count', new_total);
 			}
 
-			$(circle).data('count', new_total);
+			average = average / total * 100;
+
+			$('#average_positive').text('Positivity Rating: ' + Math.round(average) + '%');
+			$('#total').text('Total Tweets: ' + total);
+			$('#last_update').text('Last Update: ' + new Date().toTimeString());
 		}
-
-		average = average / total * 100;
-
-		$('#average_positive').text('Positivity Rating: ' + Math.round(average) + '%');
-		$('#total').text('Total Tweets: ' + total);
-		$('#last_update').text('Last Update: ' + new Date().toTimeString());
 	});
 
 	function flashCircle(circle) {
