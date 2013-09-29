@@ -101,7 +101,6 @@ $(document).on('ready', function () {
 	});
 
 	hello_world.on('error', function (reason) {
-		alert('Unable to connect: ' + reason );
 	});
 
 	function sendMessage(message) {

@@ -18,7 +18,6 @@ $(document).on('ready', function () {
 	});
 
 	talking_dude.on('error', function (reason) {
-		alert('Unable to connect: ' + reason );
 	});
 
 	function sendMessage(message) {

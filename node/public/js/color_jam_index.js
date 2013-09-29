@@ -103,7 +103,6 @@ $(document).on('ready', function () {
 	});
 
 	color_jam.on('error', function (reason) {
-		alert('Unable to connect: ' + reason );
 	});
 
 	function paintScreen() {

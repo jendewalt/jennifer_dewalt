@@ -79,7 +79,6 @@ $(document).on('ready', function () {
 	});
 
 	buggy.on('error', function (reason) {
-		alert('Unable to connect: ' + reason );
 	});
 
 	function updateParticipants(participants) {

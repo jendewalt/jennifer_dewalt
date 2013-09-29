@@ -47,7 +47,6 @@ $(document).on('ready', function () {
 	});
 
 	chatty_room.on('error', function (reason) {
-		alert('Unable to connect: ' + reason );
 	});
 
 	function updateParticipants(participants) {
