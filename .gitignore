@@ -38,7 +38,7 @@
 /config/unicorn.god
 /config/unicorn.rb
 /config/unicorn_local.rb
-/node/modules/how_were_feeling.js
+/config/twitter.json
 /node/talking_dude_message.txt
 /node/one_drawing_url.txt
 /node/all_draw_url.txt

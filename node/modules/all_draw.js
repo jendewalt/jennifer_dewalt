@@ -22,7 +22,7 @@ function drawPoints(points, color, size, opacity) {
 		ctx.arc(points[0].x, points[0].y, size/ 2, 0, Math.PI * 2);
 		ctx.fillStyle = color;
 		ctx.fill();
-	} else {
+	} else if (points.length > 1) {
 		ctx.moveTo(points[0].x, points[0].y);
 		for (i = 1; i < points.length - 2; i++) {
 			var new_x = (points[i].x + points[i + 1].x) / 2;
