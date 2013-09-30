@@ -25,10 +25,13 @@ function buggy_io(socket, io, buggy) {
 		y = Number(y) ? y : 50;
 
 		var bug = _.findWhere(participants, {id: socket.id});
-		bug.x = x;
-		bug.y = y;
-		bug.color = color
-		this.broadcast.emit('attributeChanged', {id: id, x: x, y: y, color: color});
+
+		if (bug) {
+			bug.x = x;
+			bug.y = y;
+			bug.color = color
+			this.broadcast.emit('attributeChanged', {id: id, x: x, y: y, color: color});
+		}
 	});
 
 	socket.on('disconnect', function () {
