@@ -16,8 +16,12 @@ function chatty_room_io(socket, io, chat) {
 		var id = sanitizer.sanitize(data.id);
 		var name = sanitizer.sanitize(data.name);
 
-		_.findWhere(participants, {id: socket.id}).name = name;
-		chat.emit('nameChanged', {id: id, name: name});
+		var participant = _.findWhere(participants, {id: socket.id});
+
+		if (participant) {
+			participant.name = name;
+			chat.emit('nameChanged', {id: id, name: name});
+		}
 	});
 
 	socket.on('disconnect', function () {
