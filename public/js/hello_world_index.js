@@ -91,8 +91,9 @@ $(document).on('ready', function () {
 				this.y += 3;
 				if (this.y > canvas.height + 30) {
 					phrases = _.reject(phrases, function (other_phrase) {
+						console.log(phrases.length)
 						return this == other_phrase;
-					});
+					}, this);
 				}
 			}
 		}
