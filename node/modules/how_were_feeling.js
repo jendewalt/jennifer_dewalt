@@ -3,6 +3,7 @@ var _ = require("underscore");
 var twitter = require('ntwitter');
 var cronJob = require('cron').CronJob;
 var fs = require('fs');
+var util = require('util');
 var events = require('events');
 var eventEmitter = new events.EventEmitter();
 var emotionKeywords = ['#amazed', '#angry', '#annoyed', '#awesome', '#awkward', '#bored', 
@@ -72,9 +73,15 @@ function how_were_feeling_get(request, response) {
 
 function how_were_feeling_io(socket, io, feeling) {
 	feeling.emit('data', { data: emotionList });
-
-	eventEmitter.on('update', function () {
+	
+	function sendOutData () {
 		feeling.emit('data', { data: emotionList });		
+	}
+
+	eventEmitter.on('update', sendOutData);
+	
+	socket.on('disconnect', function () {
+		eventEmitter.removeListener('update', sendOutData);
 	});
 }
 
