@@ -63,8 +63,6 @@ new cronJob('0 0 0 * * *', function () {
     _.each(emotionKeywords, function(keyword) { 
     	emotionList.keywords[keyword] = 0; 
     });
-
-    feeling.emit('data', emotionList);
 }, null, true);
 
 function how_were_feeling_get(request, response) {
