@@ -76,7 +76,7 @@ function how_were_feeling_io(socket, io, feeling) {
 		feeling.emit('data', { data: emotionList });		
 	}
 
-	eventEmitter.on('update', sendOutData);
+	eventEmitter.once('update', sendOutData);
 	
 	socket.on('disconnect', function () {
 		eventEmitter.removeListener('update', sendOutData);

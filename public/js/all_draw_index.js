@@ -155,7 +155,6 @@ $(document).on('ready', function () {
 		});
 	}
 
-
 	function drawPoints(points, color, size, opacity) {
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		ctx.drawImage(hiddenCanvas, 0, 0);
@@ -169,7 +168,7 @@ $(document).on('ready', function () {
 			ctx.fill();
 		} else {
 			ctx.moveTo(points[0].x, points[0].y);
-			for (i = 1; i < points.length - 2; i++) {
+			for (var i = 1; i < points.length - 2; i++) {
 				var new_x = (points[i].x + points[i + 1].x) / 2;
 				var new_y = (points[i].y + points[i + 1].y) / 2;
 				ctx.quadraticCurveTo(points[i].x, points[i].y, new_x, new_y);
