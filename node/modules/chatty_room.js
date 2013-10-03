@@ -9,7 +9,8 @@ function chatty_room_io(socket, io, chat) {
 		var name = sanitizer.sanitize(data.name);
 
 		participants.push({id: id, name: name});
-		chat.emit('newConnection', {participants: participants});
+		this.broadcast.emit('newConnection', {participants: participants});
+		this.emit('newConnection', {participants: participants});
 	});
 
 	socket.on('nameChange', function (data) {
@@ -20,13 +21,14 @@ function chatty_room_io(socket, io, chat) {
 
 		if (participant) {
 			participant.name = name;
-			chat.emit('nameChanged', {id: id, name: name});
+			this.broadcast.emit('nameChanged', {id: id, name: name});
+			this.emit('nameChanged', {id: id, name: name});
 		}
 	});
 
 	socket.on('disconnect', function () {
 		participants = _.without(participants, _.findWhere(participants, {id: socket.id}));
-		chat.emit('userDisconnected', {id: socket.id, sender:"system"});
+		this.broadcast.emit('userDisconnected', {id: socket.id, sender:"system"});
 	});
 }
 

@@ -12,7 +12,7 @@ function color_jam_io(socket, io, color_jam) {
 		y = Number(y) ? y : 50;
 
 		participants.push({id: id, x: x, y: y});
-		color_jam.emit('newConnection', {participants: participants});
+		this.emit('newConnection', {participants: participants});
 	});
 
 	socket.on('tilePlay', function (data) {
@@ -33,7 +33,7 @@ function color_jam_io(socket, io, color_jam) {
 
 	socket.on('disconnect', function () {
 		participants = _.without(participants, _.findWhere(participants, {id: socket.id}));
-		color_jam.emit('userDisconnected', {id: socket.id, sender:"system"});
+		this.emit('userDisconnected', {id: socket.id, sender:"system"});
 	});
 }
 

@@ -13,6 +13,32 @@ var how_were_feeling = require('./modules/how_were_feeling.js');
 var all_draw = require('./modules/all_draw.js');
 var hello_world = require('./modules/hello_world.js');
 
+var memwatch = require('memwatch');
+var util = require('util');
+var _ = require('underscore');
+
+// var hd = new memwatch.HeapDiff();
+// var diff;
+// setTimeout(function () {
+// 	memwatch.gc
+// 	diff = hd.end();
+
+// 	_.each(diff.change.details, function (obj) {
+// 		console.log(util.inspect(obj));
+// 	});
+// }, 90000);
+
+memwatch.gc();
+
+memwatch.on('stats', function(stats) {
+	console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
+	console.log(stats);
+});
+
+setInterval(function () {
+	memwatch.gc();
+}, 5000);
+
 app.set('ipaddr', "127.0.0.1");
 app.set("port", 8888);
 app.set("views", __dirname + "/views");

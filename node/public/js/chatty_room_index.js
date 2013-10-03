@@ -30,6 +30,7 @@ $(document).on('ready', function () {
 
 	chatty_room.on('newConnection', function (data) {
 		updateParticipants(data.participants);
+		console.log('connection')
 	});
 
 	chatty_room.on('userDisconnected', function (data) {

@@ -12,7 +12,8 @@ function buggy_io(socket, io, buggy) {
 		y = Number(y) ? y : 50;
 
 		participants.push({id: id, x: x, y: y});
-		buggy.emit('newConnection', {participants: participants});
+		this.broadcast.emit('newConnection', {participants: participants});
+		this.emit('newConnection', {participants: participants});
 	});
 
 	socket.on('attributeChange', function (data) {
@@ -36,7 +37,7 @@ function buggy_io(socket, io, buggy) {
 
 	socket.on('disconnect', function () {
 		participants = _.without(participants, _.findWhere(participants, {id: socket.id}));
-		buggy.emit('userDisconnected', {id: socket.id, sender:"system"});
+		this.broadcast.emit('userDisconnected', {id: socket.id, sender:"system"});
 	});
 }
 

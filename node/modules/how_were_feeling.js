@@ -40,7 +40,8 @@ function createStream(t) {
 	});	
 }
 
-fs.readFile('../../../shared/config/twitter.json', function (err, data) {
+fs.readFile('../config/twitter.json', function (err, data) {
+// fs.readFile('../../../shared/config/twitter.json', function (err, data) {
 	var t;
 	if (!err) {
 		var auth = JSON.parse(data);
@@ -70,13 +71,13 @@ function how_were_feeling_get(request, response) {
 }
 
 function how_were_feeling_io(socket, io, feeling) {
-	feeling.emit('data', { data: emotionList });
+	socket.emit('data', { data: emotionList });
 	
 	function sendOutData () {
-		feeling.emit('data', { data: emotionList });		
+		socket.emit('data', { data: emotionList });		
 	}
 
-	eventEmitter.once('update', sendOutData);
+	eventEmitter.on('update', sendOutData);
 	
 	socket.on('disconnect', function () {
 		eventEmitter.removeListener('update', sendOutData);

@@ -50,7 +50,6 @@ $(document).on('ready', function () {
 		hidden_ctx.drawImage(canvas, 0, 0);
 	});
 
-
 	function initCanvas() {
 		trackCursor();
 
