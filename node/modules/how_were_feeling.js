@@ -40,8 +40,7 @@ function createStream(t) {
 	});	
 }
 
-fs.readFile('../config/twitter.json', function (err, data) {
-// fs.readFile('../../../shared/config/twitter.json', function (err, data) {
+fs.readFile('../../../shared/config/twitter.json', function (err, data) {
 	var t;
 	if (!err) {
 		var auth = JSON.parse(data);
