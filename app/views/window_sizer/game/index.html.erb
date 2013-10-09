@@ -1,0 +1,32 @@
+<%= render 'window_sizer/game/header' %>
+
+<div class="modal" id="start_container">
+	<div class="inner_modal" >
+		<h1>Are You a Window Master?</h1>
+
+		<p>How many times can you resize the browser window to fit the colored area before time runs out?</p>
+
+		<button id="start">Start</button>
+	</div>
+</div>
+
+<div class="modal" id="end_container">
+	<div class="inner_modal" >
+		<h1>Times Up!</h1>
+
+		<div id="final_score"></div>
+	</div>
+</div>
+
+<div id="game_container">
+
+	<div id="info_container">
+		<div id="score">Resizes: 0</div>
+
+		<div id="timer">
+			<div id="progress_bar"></div>
+		</div>
+	</div>		
+
+	<div id="target_area"></div>
+</div>
