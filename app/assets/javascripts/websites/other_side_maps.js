@@ -23,10 +23,15 @@ function otherSide() {
 	function getLocations(address) {
 		geocoder.geocode( {'address': address}, function (results, status) {
 			if (status == google.maps.GeocoderStatus.OK) {
-				var lat = results[0].geometry.location.lb;
-				var lng = results[0].geometry.location.mb;
+				var input_location = results[0].geometry.location;
+				var lat = input_location.lat();
+				var lng = input_location.lng();
 
-				var input_location = new google.maps.LatLng(lat, lng);
+				// var lat = results[0].geometry.location.lb;
+				// var lng = results[0].geometry.location.mb;
+
+				// var input_location = new google.maps.LatLng(lat, lng);
+				// var other_location = new google.maps.LatLng(lat * -1, lng > 0 ? (180 - lng) * -1 : 180 - Math.abs(lng));
 				var other_location = new google.maps.LatLng(lat * -1, lng > 0 ? (180 - lng) * -1 : 180 - Math.abs(lng));
 
 				if (first) {

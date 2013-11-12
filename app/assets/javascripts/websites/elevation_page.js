@@ -52,7 +52,8 @@ function elevationPage() {
 		_.each(locations, function (loc, i) {
 			geocoder.geocode( {'address': loc}, function (results, status) {
 				if (status == google.maps.GeocoderStatus.OK) {
-					var latlng = new google.maps.LatLng(results[0].geometry.location.lb, results[0].geometry.location.mb);
+					// var latlng = new google.maps.LatLng(results[0].geometry.location.lb, results[0].geometry.location.mb);
+					var latlng = results[0].geometry.location;
 					path.push(latlng);
 
 					if (i == 0){
