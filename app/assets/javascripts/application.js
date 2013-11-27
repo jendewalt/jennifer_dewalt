@@ -26,7 +26,7 @@
 //= require d3
 //= require rickshaw
 //= require analytics
-//= require ./websites/bitcoin_charts
+//= require_tree ./websites
 //= require my_functions
 //= require router
 //= require_tree ./models
