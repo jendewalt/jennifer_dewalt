@@ -1,0 +1,2 @@
+module BitcoinChartsHelper
+end

@@ -10,5 +10,5 @@
  *
  *= require_self
  *= require reset
- *= require_tree .
+ *= require bitcoin_charts
  */
