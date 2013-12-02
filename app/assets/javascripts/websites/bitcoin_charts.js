@@ -36,7 +36,7 @@ function bitcoinCharts() {
     function showBlockInfo (block) {
         $('.hash').html('Hash: ' + block.hash);
         $('.height').html('Height:' + block.height);
-        $('.time').html('Time:' + new Date(block.time));
+        $('.time').html('Time:' + new Date(block.time * 1000));
         $('.main_chain').html('Main Chain:' + block.main_chain);
     }
 
