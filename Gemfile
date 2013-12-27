@@ -52,5 +52,3 @@ gem "flickraw"
 gem "amazon-ecs"
 gem "wunderground"
 gem "kaminari"
-
-gem 'rest-client'

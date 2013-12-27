@@ -41,6 +41,9 @@ function createStream(t) {
 }
 
 fs.readFile('../../../shared/config/twitter.json', function (err, data) {
+// fs.readFile('../config/twitter.json', function (err, data) {
+	console.log('err')
+	console.log(err)
 	var t;
 	if (!err) {
 		var auth = JSON.parse(data);

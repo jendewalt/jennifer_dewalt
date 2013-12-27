@@ -103,8 +103,7 @@ $(document).ready(function () {
 		"gfboom": googleFontsBrowser,
 		"quick_compliments": quickCompliments,
 		"chromatones": chromatones,
-		"paths": pathsImages,
-		"bitcoin": bitcoinCharts
+		"paths": pathsImages
 	};
 	var route = window.location.pathname.replace(/^\//, '').replace(/\/.*/, '');
 	routes[route]();

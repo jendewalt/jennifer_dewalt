@@ -157,8 +157,6 @@ GEM
       vegas (~> 0.1.2)
     resque-lock-timeout (0.4.1)
       resque (>= 1.8.0)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
     ruby-hmac (0.4.0)
     sass (3.2.7)
     sass-rails (3.2.6)
@@ -226,7 +224,6 @@ DEPENDENCIES
   redis
   resque
   resque-lock-timeout
-  rest-client
   sass-rails (~> 3.2.3)
   therubyracer
   twitter

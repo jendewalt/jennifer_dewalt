@@ -23,8 +23,6 @@
 //= require kinetic
 //= require recorder
 //= require jscolor/jscolor
-//= require d3
-//= require rickshaw
 //= require analytics
 //= require_tree ./websites
 //= require my_functions

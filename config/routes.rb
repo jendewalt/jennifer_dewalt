@@ -4,10 +4,6 @@ JenniferDewalt::Application.routes.draw do
 
   root :to => 'pages#home'
 
-  namespace :bitcoin do 
-    resources :charts
-  end
-
   namespace :paths do 
     resources :images, :only => [:index]
   end
