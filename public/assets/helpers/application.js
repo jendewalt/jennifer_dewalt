@@ -1,1 +1,4 @@
-function render(e,t){return JST["templates/"+e](t)};
+function render(template_path, data){
+	return JST['templates/' + template_path](data);
+}
+;
