@@ -23,7 +23,6 @@ _.each(emotionKeywords, function (keyword) {
 });
 
 var connected_sockets = []; 
-var path = require('path')
 
 // var auth = JSON.parse(fs.readFileSync('../config/twitter.json'));
 var auth = JSON.parse(fs.readFileSync('../config/twitter.json'));
