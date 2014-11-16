@@ -14,7 +14,8 @@ var all_draw = require('./modules/all_draw.js');
 var hello_world = require('./modules/hello_world.js');
 
 app.set('ipaddr', "127.0.0.1");
-app.set("port", 8888);
+app.set("port", 8000);
+// app.set("port", 8888);
 app.set("views", __dirname + "/views");
 app.set('view engine', "ejs");
 app.use(express.static("public", __dirname + "/public"));
