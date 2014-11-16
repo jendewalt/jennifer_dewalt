@@ -16,14 +16,14 @@ $(document).on('ready', function () {
 					'#depressed': { color: '#4b5a63', score: 0 },
 					'#elated': { color: '#f57b43', score: 1 },
 					'#excited': { color: '#fdc72b', score: 1 },
+					'#grumpy': { color: '#5aa88f', score: 0 },
 					'#happy': { color: '#f03a57', score: 1 },
-					'#helpless': { color: '#5aa88f', score: 0 },
 					'#hopeful': { color: '#2fb5dd', score: 1 },
 					'#hurt': { color: '#9d002e', score: 0 },
 					'#jealous': { color: '#007a42', score: 0 },
 					'#joyful': { color: '#ffdd60', score: 1 },
+					'#like': { color: '#fbb5bf', score: 1 },
 					'#lonely': { color: '#4b768a', score: 0 },
-					'#love': { color: '#fbb5bf', score: 1 },
 					'#neat': { color: '#ed3913', score: 1 },
 					'#nervous': { color: '#899a19', score: 0 },
 					'#proud': { color: '#7a2985', score: 1 },
@@ -39,6 +39,7 @@ $(document).on('ready', function () {
 				};
 
 	_.each($('.circle'), function (circle) {
+		console.log($(circle).data('keyword'));
 		var count = $(circle).data('count');
 		var keyword = $(circle).data('keyword');
 		average += keywords[keyword].score * count;
