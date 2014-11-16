@@ -44,27 +44,27 @@ stream.on('tweet', function (tweet) {
 });
 
 stream.on('disconnect', function (msg) {
-    fs.appendFile('./log/node_err.log', msg + "\n", function () {
+    fs.appendFile('../log/twitter.log', msg + "\n", function () {
         console.log(msg);
     });
 });
 stream.on('warning', function (msg) {
-    fs.appendFile('./log/node_err.log', msg + "\n", function () {
+    fs.appendFile('../log/twitter.log', msg + "\n", function () {
         console.log(msg);
     });
 });
 stream.on('error', function (msg) {
-    fs.appendFile('./log/node_err.log', msg + "\n", function () {
+    fs.appendFile('../log/twitter.log', msg + "\n", function () {
         console.log(msg);
     });
 });
 stream.on('reconnect', function (msg) {
-    fs.appendFile('./log/node_err.log', msg + "\n", function () {
+    fs.appendFile('../log/twitter.log', msg + "\n", function () {
         console.log(msg);
     });
 });
 stream.on('limit', function (msg) {
-    fs.appendFile('./log/node_err.log', msg + "\n", function () {
+    fs.appendFile('../log/twitter.log', msg + "\n", function () {
         console.log(msg);
     });
 });
