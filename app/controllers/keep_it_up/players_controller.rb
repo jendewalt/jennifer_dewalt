@@ -2,7 +2,7 @@ class KeepItUp::PlayersController < ApplicationController
   def index
     @title = 'Keep It Up'
     @player = KeepItUpPlayer.new
-    @leaders = KeepItUpPlayer.find(:all, :order => 'score DESC', :limit => 10)
+    @leaders = KeepItUpPlayer.find(:all, :order => 'score DESC NULLS LAST', :limit => 10)
   end
 
   def create   

@@ -1,7 +1,11 @@
+# [11/15/2014] I added pagination to view all of the Little Dudes :)
+# To see the original code from 180 Websites, check out 
+# commit bc9bb05faa08fb6e49cbcfb8fceee3bb46b600cc
+
 class MakeADude::DudesController < ApplicationController
   def index
     @title = "Make A Dude"
-    @dudes = MakeADudeDude.limit(100).order('created_at DESC')
+    @dudes = MakeADudeDude.order('created_at DESC').page(params[:page]).per(100)
   end
 
   def new 

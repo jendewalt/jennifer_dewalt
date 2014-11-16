@@ -1,8 +1,12 @@
+# [11/15/2014] I added pagination so the data will actually return :)
+# To see the original code from 180 Websites, check out 
+# commit bc9bb05faa08fb6e49cbcfb8fceee3bb46b600cc
+
 class KingOfComments::CommentsController < ApplicationController
   def index
     @title = 'King of the Comments'
     @comment = KingOfCommentsComment.new
-    @comments = KingOfCommentsComment.order('votes DESC')
+    @comments = KingOfCommentsComment.order('votes DESC').page(params[:page]).per(30)
   end
 
   def create

@@ -1,9 +1,14 @@
+<!-- [11/15/2014] I added pagination to view all of the Little Dudes :)
+     To see the original code from 180 Websites, check out 
+     commit bc9bb05faa08fb6e49cbcfb8fceee3bb46b600cc -->
+
 <%= render 'make_a_dude/dudes/header' %>
 
 <div id='button_container'>
 	<div class="btn"><%= link_to('Make A Dude', new_make_a_dude_dude_path) %></div>
 </div>
 
+<%= paginate @dudes %>
 <div id="container">
 
 <% @dudes.each do |dude| %>
@@ -50,3 +55,4 @@
 <% end %>
 <br class="clear">
 </div>
+<%= paginate @dudes %>

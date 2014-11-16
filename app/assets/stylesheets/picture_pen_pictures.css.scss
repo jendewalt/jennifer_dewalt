@@ -10,6 +10,19 @@ body.picture_pen_pictures_index, body.picture_pen_pictures_new, body.picture_pen
     overflow-y: scroll;
     color: $text_color;
     letter-spacing: 2px;
+
+    a {
+    text-decoration: none;
+    color: #2c3e50;
+    }
+
+    .pagination {
+        padding: 20px;
+
+        .page.current {
+            color: #3498db;
+        }
+    }
     
     header {
         padding: 10px 20px;

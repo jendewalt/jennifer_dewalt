@@ -13,7 +13,6 @@ class RansomNote::PageController < ApplicationController
         char = char.downcase
         if valid_chars.include? char
             list = flickr.groups.pools.getPhotos(:group_id => '27034531@N00', :tags => char)
-
             image = list[rand(list.length - 1)]
             farm_id = image['farm'].to_s
             server_id = image['server'].to_s

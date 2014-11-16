@@ -14,6 +14,19 @@ body.pixshow_scraps_index {
         text-shadow: 0 0 1px rgba(0,0,0,0.2);
     }
 
+    a {
+        text-decoration: none;
+        color: #2c3e50;
+    }
+
+    .pagination {
+        padding: 20px;
+
+        .page.current {
+            color: #3498db;
+        }
+    }
+
     #logo {
         float: left;
         line-height: 20px;

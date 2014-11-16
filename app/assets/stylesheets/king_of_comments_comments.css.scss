@@ -197,6 +197,19 @@ body.king_of_comments_comments_index {
 		color: #3498db;
 	}
 
+	a {
+		text-decoration: none;
+		color: #2c3e50;
+	}
+
+	.pagination {
+		padding: 20px;
+
+		.page.current {
+			color: #3498db;
+		}
+	}
+
 	.clear {
 		clear: both;
 	}

@@ -286,4 +286,16 @@ body.make_a_dude_dudes_index, body.make_a_dude_dudes_new {
 		}
 	}
 
+	a {
+    text-decoration: none;
+    color: #2c3e50;
+	}
+
+	.pagination {
+	    padding: 20px;
+
+	    .page.current {
+	        color: #3498db;
+	    }
+	}
 }
