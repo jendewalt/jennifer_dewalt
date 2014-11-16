@@ -25,7 +25,7 @@ _.each(emotionKeywords, function (keyword) {
 var connected_sockets = []; 
 
 // var auth = JSON.parse(fs.readFileSync('../config/twitter.json'));
-var auth = JSON.parse(fs.readFileSync('../../../shared/config/twitter.json');
+var auth = JSON.parse(fs.readFileSync('../../../shared/config/twitter.json'));
 var twitter = new twit(auth);
 var stream = twitter.stream('statuses/filter', { track: emotionKeywords })
 
