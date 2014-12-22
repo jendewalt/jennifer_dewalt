@@ -39,7 +39,6 @@ $(document).on('ready', function () {
 				};
 
 	_.each($('.circle'), function (circle) {
-		console.log($(circle).data('keyword'));
 		var count = $(circle).data('count');
 		var keyword = $(circle).data('keyword');
 		average += keywords[keyword].score * count;
