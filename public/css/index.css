@@ -57,3 +57,47 @@ h1 {
 .day_lable {
 	margin-right: 10px;
 }
+
+/* 
+	This styling was added for the header and about page on 12/30/14. 
+	I preserved all of the original code above - forgive any weirdness below :)
+*/
+
+header {
+	text-align: right;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+nav a {
+	margin-left: 10px;
+	font-weight: normal;
+	color: #5f5f5f;
+	text-decoration: none;
+}
+
+#about h3 {
+	text-align: center;
+	font-size: 34px;
+	line-height: 54px;
+	color: #ff9933;
+
+}
+
+#about #content {
+	width: 80%;
+	max-width: 750px;
+	margin: auto; 
+}
+
+#content a {
+	text-decoration: none;
+	color: #1770C7;
+}
+
+#about #logo {
+	float: none;
+	display: block;
+	text-align: center;
+	margin: 70px auto;
+}
