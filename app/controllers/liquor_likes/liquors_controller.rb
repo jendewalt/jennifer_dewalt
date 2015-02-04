@@ -1,9 +1,13 @@
+#  [1/3/2015] I added pagination to combat link juicing spammers :)
+#  To see the original code from 180 Websites, check out 
+#  commit bc9bb05faa08fb6e49cbcfb8fceee3bb46b600cc
+
 class LiquorLikes::LiquorsController < ApplicationController
 
   def index
     @title = 'Liquor Likes'
     @user = current_user
-    @liquors = LiquorLikesLiquor.order('liquor_likes_likes_count DESC NULLS LAST')
+    @liquors = LiquorLikesLiquor.order('liquor_likes_likes_count DESC NULLS LAST').page(params[:page]).per(100)
   end
 
   def new

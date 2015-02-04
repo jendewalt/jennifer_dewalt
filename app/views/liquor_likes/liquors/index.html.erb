@@ -1,3 +1,7 @@
+<!-- [1/3/2015] I added pagination to combat link juicing spammers :)
+     To see the original code from 180 Websites, check out 
+     commit bc9bb05faa08fb6e49cbcfb8fceee3bb46b600cc -->
+
 <%= render 'liquor_likes/liquors/header' %>
 
 <div id='button_container'>
@@ -30,4 +34,5 @@
 		<% end %>
 		<tr><td></td><td></td><td></td><td></td></tr>
 	</table>
+	<%= paginate @liquors %>
 </div>
