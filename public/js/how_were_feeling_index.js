@@ -39,7 +39,6 @@ $(document).on('ready', function () {
 				};
 
 	_.each($('.circle'), function (circle) {
-		console.log($(circle).data('keyword'));
 		var count = $(circle).data('count');
 		var keyword = $(circle).data('keyword');
 		average += keywords[keyword].score * count;
@@ -91,7 +90,7 @@ $(document).on('ready', function () {
 	function flashCircle(circle) {
 		circle.removeClass('glow');
 		circle.addClass('glow');
-				
+
 		setTimeout(function () {
 			circle.removeClass('glow');
 		}, 500);
