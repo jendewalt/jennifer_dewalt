@@ -15,7 +15,9 @@ $(document).ready(function () {
 		for (var i = 0; i < 10; i++) {
 			bubbles.push(new Bubble());
 		}
-		$('#sound').html("<embed src='audio/bubbles.wav' hidden=true autostart=true loop=false>");
+		// [Bug fix: 03.11.2015] Original code was prompting for download.
+		// $('#sound').html("<embed src='audio/bubbles.wav' hidden=true autostart=true loop=false>");
+		document.getElementById('sound').innerHTML="<audio autoplay><source src='audio/bubbles.wav' type='audio/wav'></audio>";
 
 	})
 
@@ -44,7 +46,9 @@ $(document).ready(function () {
 		this.size = Math.random() * 60 + 5;
 
 		this.pop = function (i) {
-			$('#sound').html("<embed src='audio/pop.wav' hidden=true autostart=true loop=false>");
+			// [Bug fix: 03.11.2015] Original code was prompting for download.
+			// $('#sound').html("<embed src='audio/pop.wav' hidden=true autostart=true loop=false>");
+			document.getElementById('sound').innerHTML="<audio autoplay><source src='audio/pop.wav' type='audio/wav'></audio>";
 			bubbles[i] = new Bubble();
 		}
 	};
@@ -62,7 +66,7 @@ $(document).ready(function () {
 			ctx.beginPath();
 			ctx.arc(b.x, b.y, b.size, 0, Math.PI * 2);
 			ctx.fill();
-			
+
 			if (b.y < 0 - b.size * 2) {
 				bubbles[i] = new Bubble;
 			}
