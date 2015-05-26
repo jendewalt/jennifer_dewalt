@@ -3,7 +3,7 @@ body.hollywood_sign_index {
     text-align: center;
     background-color: #111;
     overflow-y: scroll;
-    
+
     header {
         padding: 5px 20px 0;
         margin-bottom: 20px;
@@ -66,7 +66,7 @@ body.hollywood_sign_index {
     }
 
     .pointer {
-    	cursor: pointer;        
+    	cursor: pointer;
     }
 
     #l0 {
@@ -142,21 +142,19 @@ body.hollywood_sign_index {
 	50% {-o-transform: translateY(-6px);}
 	100% {-o-transform: translateY(0);}
 }
-keyframes wave {
+@keyframes wave {
 	0% {transform: translateY(0);}
 	50% {transform: translateY(-6px);}
 	100% {transform: translateY(0);}
 }
 
-
 @-webkit-keyframes dangle {
-
-	0% { -webkit-transform: rotate(0); 
-		 -webkit-transform-origin: bottom left; -webkit-animation-timing-function: ease-in-out; z-index: 50; }	
-	10% { -webkit-transform: rotate(220deg); 
-		  -webkit-transform-origin: bottom left; -webkit-animation-timing-function: ease-in-out; }	
+	0% { -webkit-transform: rotate(0);
+		 -webkit-transform-origin: bottom left; -webkit-animation-timing-function: ease-in-out; z-index: 50; }
+	10% { -webkit-transform: rotate(220deg);
+		  -webkit-transform-origin: bottom left; -webkit-animation-timing-function: ease-in-out; }
 	20% { -webkit-transform: rotate(100deg);
-		  -webkit-transform-origin: bottom left; -webkit-animation-timing-function: ease-in-out; }	
+		  -webkit-transform-origin: bottom left; -webkit-animation-timing-function: ease-in-out; }
 	30% { -webkit-transform: rotate(190deg);
 	 	  -webkit-transform-origin: bottom left; -webkit-animation-timing-function: ease-in-out; }
 	50% { -webkit-transform: translateY(1800px); }
@@ -164,13 +162,12 @@ keyframes wave {
 }
 
 @-moz-keyframes dangle {
-
-	0% { -moz-transform: rotate(0); 
-		 -moz-transform-origin: bottom left; -moz-animation-timing-function: ease-in-out; z-index: 50; }	
-	10% { -moz-transform: rotate(220deg); 
-		  -moz-transform-origin: bottom left; -moz-animation-timing-function: ease-in-out; }	
+	0% { -moz-transform: rotate(0);
+		 -moz-transform-origin: bottom left; -moz-animation-timing-function: ease-in-out; z-index: 50; }
+	10% { -moz-transform: rotate(220deg);
+		  -moz-transform-origin: bottom left; -moz-animation-timing-function: ease-in-out; }
 	20% { -moz-transform: rotate(100deg);
-		  -moz-transform-origin: bottom left; -moz-animation-timing-function: ease-in-out; }	
+		  -moz-transform-origin: bottom left; -moz-animation-timing-function: ease-in-out; }
 	30% { -moz-transform: rotate(190deg);
 	 	  -moz-transform-origin: bottom left; -moz-animation-timing-function: ease-in-out; }
 	50% { -moz-transform: translateY(1800px); }
@@ -178,13 +175,12 @@ keyframes wave {
 }
 
 @-ms-keyframes dangle {
-
-	0% { -ms-transform: rotate(0); 
-		 -ms-transform-origin: bottom left; -ms-animation-timing-function: ease-in-out; z-index: 50; }	
-	10% { -ms-transform: rotate(220deg); 
-		  -ms-transform-origin: bottom left; -ms-animation-timing-function: ease-in-out; }	
+	0% { -ms-transform: rotate(0);
+		 -ms-transform-origin: bottom left; -ms-animation-timing-function: ease-in-out; z-index: 50; }
+	10% { -ms-transform: rotate(220deg);
+		  -ms-transform-origin: bottom left; -ms-animation-timing-function: ease-in-out; }
 	20% { -ms-transform: rotate(100deg);
-		  -ms-transform-origin: bottom left; -ms-animation-timing-function: ease-in-out; }	
+		  -ms-transform-origin: bottom left; -ms-animation-timing-function: ease-in-out; }
 	30% { -ms-transform: rotate(190deg);
 	 	  -ms-transform-origin: bottom left; -ms-animation-timing-function: ease-in-out; }
 	50% { -ms-transform: translateY(1800px); }
@@ -192,27 +188,25 @@ keyframes wave {
 }
 
 @-o-keyframes dangle {
-
-	0% { -o-transform: rotate(0); 
-		 -o-transform-origin: bottom left; -o-animation-timing-function: ease-in-out; z-index: 50; }	
-	10% { -o-transform: rotate(220deg); 
-		  -o-transform-origin: bottom left; -o-animation-timing-function: ease-in-out; }	
+	0% { -o-transform: rotate(0);
+		 -o-transform-origin: bottom left; -o-animation-timing-function: ease-in-out; z-index: 50; }
+	10% { -o-transform: rotate(220deg);
+		  -o-transform-origin: bottom left; -o-animation-timing-function: ease-in-out; }
 	20% { -o-transform: rotate(100deg);
-		  -o-transform-origin: bottom left; -o-animation-timing-function: ease-in-out; }	
+		  -o-transform-origin: bottom left; -o-animation-timing-function: ease-in-out; }
 	30% { -o-transform: rotate(190deg);
 	 	  -o-transform-origin: bottom left; -o-animation-timing-function: ease-in-out; }
 	50% { -o-transform: translateY(1800px); }
 	100% { -o-transform: translateY(0px); }
 }
 
-keyframes dangle {
-
-	0% { transform: rotate(0); 
-		 transform-origin: bottom left; animation-timing-function: ease-in-out; z-index: 50; }	
-	10% { transform: rotate(220deg); 
-		  transform-origin: bottom left; animation-timing-function: ease-in-out; }	
+@keyframes dangle {
+	0% { transform: rotate(0);
+		 transform-origin: bottom left; animation-timing-function: ease-in-out; z-index: 50; }
+	10% { transform: rotate(220deg);
+		  transform-origin: bottom left; animation-timing-function: ease-in-out; }
 	20% { transform: rotate(100deg);
-		  transform-origin: bottom left; animation-timing-function: ease-in-out; }	
+		  transform-origin: bottom left; animation-timing-function: ease-in-out; }
 	30% { transform: rotate(190deg);
 	 	  transform-origin: bottom left; animation-timing-function: ease-in-out; }
 	50% { transform: translateY(1800px); }

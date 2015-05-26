@@ -38,17 +38,17 @@ gem 'resque', :require => "resque/server"
 gem 'resque-lock-timeout'
 
 # Deploy with Capistrano
-gem 'capistrano'
+gem 'capistrano', "2.14.2"
 
 # To use debugger
 # gem 'debugger'
 
 gem "paperclip", "~> 3.0"
-gem "devise"
+gem "devise", "2.2.4"
 gem "omniauth"
-gem "twitter"
+gem "twitter", "4.8.1"
 gem "instagram"
-gem "flickraw"
-gem "amazon-ecs"
-gem "wunderground"
-gem "kaminari"
+gem "flickraw", "0.9.8"
+gem "amazon-ecs", "2.2.4"
+gem "wunderground", "1.1.0"
+gem "kaminari", "0.14.1"
