@@ -217,6 +217,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   kaminari (= 0.14.1)
+  kgio (= 2.9.3)
   oj
   omniauth
   paperclip (~> 3.0)

@@ -23,6 +23,8 @@
 # Ignore all .orig files
 *.orig
 
+*.log
+
 # Ignore all of the config directory
 /config/environments
 /config/initializers
