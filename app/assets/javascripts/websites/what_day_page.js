@@ -24,9 +24,9 @@ function whatDay() {
 		var req_date = {
 			month: Number($.trim($('form .month').val())) - 1,
 			date: Number($.trim($('form .date').val())),
-			year: Number($.trim($('form .year').val()))			
+			year: Number($.trim($('form .year').val()))
 		}
-		
+
 		if (isNaN(req_date.month) || isNaN(req_date.date) || isNaN(req_date.year)) {
 			req_date.month = today.month;
 			req_date.date = today.date;
@@ -46,16 +46,16 @@ function whatDay() {
 	});
 
 	function getWikiEvents(page) {
-		$.getJSON("http://en.wikipedia.org//w/api.php?action=parse&format=json&page=" + page + "&prop=text&section=1&callback=?", function (data) { 
-			wikipediaPageResult(data) 
+		$.getJSON("https://en.wikipedia.org//w/api.php?action=parse&format=json&page=" + page + "&prop=text&section=1&callback=?", function (data) {
+			wikipediaPageResult(data)
 		});
-	} 
+	}
 
 	function wikipediaPageResult(response) {
 		if (response.parse) {
 			var text = response.parse.text['*'].split('<ul>');
 			text = text[1].split('</ul>')[0];
-			text = text.replace(/\/wiki/g, 'http://en.wikipedia.org/wiki');
+			text = text.replace(/\/wiki/g, 'https://en.wikipedia.org/wiki');
 			$('#events_container').html(text);
 		}
 

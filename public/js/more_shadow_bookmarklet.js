@@ -1,12 +1,12 @@
 (function () {
-	if (!($ = window.jQuery)) {  
-	    script = document.createElement( 'script' );  
-	    script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';   
-	    script.onload = addMoreShadow;  
-	    document.body.appendChild(script);  
-	}   
-	else {  
-	    addMoreShadow();  
+	if (!($ = window.jQuery)) {
+	    script = document.createElement( 'script' );
+	    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
+	    script.onload = addMoreShadow;
+	    document.body.appendChild(script);
+	}
+	else {
+	    addMoreShadow();
 	}
 
 	function addMoreShadow() {
@@ -19,11 +19,11 @@
 
 		$('*').on('click', function (e) {
 			e.stopPropagation();
-		
+
 			var cur_box_shadow = $(this).css('box-shadow').split('px');
 			var box_blur = cur_box_shadow[cur_box_shadow.length - 3];
 			var box_spread = cur_box_shadow[cur_box_shadow.length - 2];
-			
+
 			var cur_text_shadow = $(this).css('text-shadow').split('px');
 			var text_blur = 2;
 			var text_vertical = cur_text_shadow[cur_text_shadow.length - 3];
@@ -33,7 +33,7 @@
 				'text-shadow': 'rgba(0, 0, 0, 0.5) 0px ' + (parseInt(text_vertical) + 1) + 'px ' + (parseInt(text_blur) + 1) + 'px'
 			});
 		});
-	} 
+	}
 
 	function showShadowNotice() {
 		notice_html = '<h1>More Drop Shadow Enabled!</h1><p>Click any element to add more drop shadow.</p>';

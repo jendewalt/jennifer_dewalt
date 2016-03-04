@@ -56,7 +56,7 @@ function photobooth() {
 		    countdown();
 		  }, onDenial);
 		}
-	} 	
+	}
 
 	function updateVidCanvas() {
 		processVideoFrame();
@@ -74,11 +74,11 @@ function photobooth() {
 			}
 			if (vid_canvas.height != video.videoHeight * scale_factor) {
 				vid_canvas.height = video.videoHeight * scale_factor;
-				final_canvas.height = video.videoHeight * scale_factor * 4;		
-			}	
+				final_canvas.height = video.videoHeight * scale_factor * 4;
+			}
 		}
 		vid_ctx.drawImage(video, 0, 0, vid_canvas.width, vid_canvas.height);
-	}		
+	}
 
 	function countdown() {
 		if (count >= 0) {
@@ -97,7 +97,7 @@ function photobooth() {
 		var image = new Image();
 
 		image.onload = function () {
-			final_ctx.drawImage(image, 0, cur_y); 
+			final_ctx.drawImage(image, 0, cur_y);
 			cur_y += image.height;
 			num_photos += 1;
 		};

@@ -13,8 +13,9 @@
 
 			<div class="site_container">
 				<div class="site">
-					<div class="title"><%= link_to(site.title, site.url) %></div>
-					<div class="url"><%= link_to(site.url, site.url) %></div>
+					<!-- [Update 03.03.2016] Added nofollows to dejuice link spammers -->
+					<div class="title"><%= link_to(site.title, site.url, :rel => 'nofollow') %></div>
+					<div class="url"><%= link_to(site.url, site.url, :rel => 'nofollow') %></div>
 				</div>
 
 				<div class="sub_container">

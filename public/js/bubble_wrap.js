@@ -23,13 +23,17 @@ $(document).ready(function () {
             .on('click', function () {
                 $(this).hide();
                 $('#' + this.id + 'pop').show();
-                $('#sound').html("<embed src='audio/pop.wav' hidden=true autostart=true loop=false>");
+                // [Bug fix: 03.03.2016] Original code was prompting for download.
+                // $('#sound').html("<embed src='audio/pop.wav' hidden=true autostart=true loop=false>");
+                document.getElementById('sound').innerHTML="<audio autoplay><source src='audio/pop.wav' type='audio/wav'></audio>";
             })
             .on('mouseover', function () {
                 if (super_mode) {
                     $(this).hide();
                     $('#' + this.id + 'pop').show();
-                    $('#sound').html("<embed src='audio/pop.wav' hidden=true autostart=true loop=false>");
+                    // [Bug fix:033.1162015] Original code was prompting for download.
+                    // $('#sound').html("<embed src='audio/pop.wav' hidden=true autostart=true loop=false>");
+                    document.getElementById('sound').innerHTML="<audio autoplay><source src='audio/pop.wav' type='audio/wav'></audio>";
                 }
             });
 
@@ -74,6 +78,6 @@ $(document).ready(function () {
         $('.popped').hide();
         $('.bubble').show();
     })
-    
-    $('body').disableSelection();        
+
+    $('body').disableSelection();
 });

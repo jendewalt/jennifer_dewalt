@@ -5,7 +5,7 @@ $(document).ready(function () {
 		h = 300,
 		num_clocks = 4,
 		clock_to_adjust,
-		centers = [{x: w/8, y: h/2}, {x: w/8*3, y: h/2}, 
+		centers = [{x: w/8, y: h/2}, {x: w/8*3, y: h/2},
 				   {x: w/8*5, y: h/2}, {x: w/8*7, y: h/2}]
 		clocks = [];
 
@@ -27,8 +27,8 @@ $(document).ready(function () {
 		_.each(clocks, function (c) {
 			makeClock(c);
 		});
-		
-		setTimeout(drawClocks, 500);	
+
+		setTimeout(drawClocks, 500);
 	};
 
 	function Clock(x, y) {
@@ -92,7 +92,7 @@ $(document).ready(function () {
 		var theta = 0,
 			x, y;
 
-		for(var i=4; i<=16; i++){  
+		for(var i=4; i<=16; i++){
 			theta = theta + (30 * Math.PI / 180);
 
 			x = c.x + c.r*0.75 * Math.cos(theta);
@@ -116,12 +116,12 @@ $(document).ready(function () {
     		x, y;
 
 	    for(var i=0; i<60; i++){
-	      
+
 	      theta = theta + (6 * Math.PI / 180);
-	     
+
 	      x = c.x + (c.r*0.93) * Math.cos(theta);
 	      y = c.y + (c.r*0.93) * Math.sin(theta);
-	      
+
 	      ctx.beginPath();
 	      ctx.fillStyle = '#1dc69f';
 	      ctx.arc(x, y, 1, 0, Math.PI * 2, true);
@@ -130,17 +130,17 @@ $(document).ready(function () {
 	    }
 	}
 
-	function makeHourHand(c) { 
+	function makeHourHand(c) {
     	var theta = (30 * Math.PI / 180);
     	var x = c.x + c.r*0.45 * Math.cos((c.hour + (c.min/60) + (c.sec/3600)) * theta - Math.PI/2);
     	var y = c.y + c.r*0.45 * Math.sin((c.hour + (c.min/60) + (c.sec/3600)) * theta - Math.PI/2);
 
-    	ctx.beginPath();  
+    	ctx.beginPath();
     	ctx.strokeStyle = '#1dc69f';
-   		ctx.lineWidth = 3;  
-    	ctx.moveTo(c.x,c.y); 
-    	ctx.lineTo(x,y);  
-    	ctx.stroke(); 
+   		ctx.lineWidth = 3;
+    	ctx.moveTo(c.x,c.y);
+    	ctx.lineTo(x,y);
+    	ctx.stroke();
     	ctx.closePath();
     }
 
@@ -150,12 +150,12 @@ $(document).ready(function () {
     	var y = c.y + c.r*0.84 * Math.sin((c.min + (c.sec/60)) * theta - Math.PI/2);
 
     	ctx.strokeStyle = '#1dc69f';
-   		ctx.lineWidth = 3;  
-    	ctx.beginPath();  
-    	ctx.moveTo(c.x,c.y);  
-    	ctx.lineTo(x,y);  
+   		ctx.lineWidth = 3;
+    	ctx.beginPath();
+    	ctx.moveTo(c.x,c.y);
+    	ctx.lineTo(x,y);
     	ctx.stroke();
-    	ctx.closePath(); 
+    	ctx.closePath();
     }
 
     function makeSecHand(c) {
@@ -164,16 +164,16 @@ $(document).ready(function () {
     	var y = c.y + c.r*0.84 * Math.sin(c.sec * theta - Math.PI/2);
 
     	ctx.strokeStyle = '#0d5645';
-   		ctx.lineWidth = 2;  
-    	ctx.beginPath();  
-    	ctx.moveTo(c.x,c.y);  
-    	ctx.lineTo(x,y);  
-    	ctx.stroke(); 
+   		ctx.lineWidth = 2;
+    	ctx.beginPath();
+    	ctx.moveTo(c.x,c.y);
+    	ctx.lineTo(x,y);
+    	ctx.stroke();
     	ctx.closePath();
 
-    	ctx.beginPath();  
+    	ctx.beginPath();
     	ctx.fillStyle = '#d3d1d5';
-    	ctx.arc(c.x, c.y, 5, 0, 2 * Math.PI);  
+    	ctx.arc(c.x, c.y, 5, 0, 2 * Math.PI);
     	ctx.fill();
     	ctx.closePath();
     }
@@ -193,15 +193,15 @@ $(document).ready(function () {
 			alert('Time keeps on tickin\'...');;
 		} else {
 			$.ajax({
-				url: 'http://api.worldweatheronline.com/free/v1/tz.ashx?q='+ query +'&format=json&key=yg8stkf5b8tpzg68ejpxnzt2',
+				url: 'https://api.worldweatheronline.com/free/v1/tz.ashx?q='+ query +'&format=json&key=yg8stkf5b8tpzg68ejpxnzt2',
 				dataType: 'jsonp',
 				success: function (data, status) {
 					checkIfError(data, obj.data('clock'));
 				}
 			});
-		}	
+		}
 	};
-		
+
     function adjustOffset(req_time, num) {
     	var local_time = new Date();
 

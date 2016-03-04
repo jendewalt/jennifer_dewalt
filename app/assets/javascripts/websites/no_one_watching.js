@@ -17,7 +17,7 @@ function noOneWatching() {
 		  navigator.getUserMedia({audio: false, video: true}, function(stream) {
 		    video.src = window.URL.createObjectURL(stream);
 		  }, onDenial);
-		} 		
+		}
 	};
 
 	function flashMessageIn() {

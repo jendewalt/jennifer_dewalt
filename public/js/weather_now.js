@@ -25,15 +25,15 @@ $(document).ready(function () {
 			$('#desc').text('Nothingness has no temperature.');
 			$('body').css('background-color', '#f7f7f7');
 		} else {
-			script.src = 'http://api.worldweatheronline.com/free/v1/weather.ashx?q=' + query + '&format=json&callback=getData&key=j8xvysb7t9jp2dvw7pwcbgs3';
+			script.src = 'https://api.worldweatheronline.com/free/v1/weather.ashx?q=' + query + '&format=json&callback=getData&key=j8xvysb7t9jp2dvw7pwcbgs3';
 			script.id = 'api_call'
 			document.body.appendChild(script);
-		}	
+		}
 
 		script = null;
 		$('#api_call').remove();
 		script = document.createElement('script');
-	
+
 	});
 });
 
@@ -78,6 +78,6 @@ var getData = function (data) {
 			$('body').css('background', colors[11]);
 		} else if (temp >= 110) {
 			$('body').css('background', colors[12]);
-		}		
+		}
 	}
 };
