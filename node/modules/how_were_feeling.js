@@ -43,32 +43,6 @@ stream.on('tweet', function (tweet) {
     }
 });
 
-stream.on('disconnect', function (msg) {
-    fs.appendFile('../log/twitter.log', JSON.stringify(msg) + "\n", function () {
-        console.log(JSON.stringify(msg));
-    });
-});
-stream.on('warning', function (msg) {
-    fs.appendFile('../log/twitter.log', JSON.stringify(msg) + "\n", function () {
-        console.log(JSON.stringify(msg));
-    });
-});
-stream.on('error', function (msg) {
-    fs.appendFile('../log/twitter.log', JSON.stringify(msg) + "\n", function () {
-        console.log(JSON.stringify(msg));
-    });
-});
-stream.on('reconnect', function (msg) {
-    fs.appendFile('../log/twitter.log', JSON.stringify(msg) + "\n", function () {
-        console.log(JSON.stringify(msg));
-    });
-});
-stream.on('limit', function (msg) {
-    fs.appendFile('../log/twitter.log', JSON.stringify(msg) + "\n", function () {
-        console.log(JSON.stringify(msg));
-    });
-});
-
 function how_were_feeling_get(request, response) {
     response.render("how_were_feeling/index", { data: emotionList });
 }
