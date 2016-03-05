@@ -1,6 +1,6 @@
 function teammates() {
 	var users = [];
-	
+
 	$('form').on('submit', function (e) {
 		e.preventDefault();
 		var username = $.trim($('#username_input').val());
@@ -13,26 +13,58 @@ function teammates() {
 		getUserData(username);
 	});
 
+	// [Updated 03.04.2016] Dribbble changed their API so this code needed a bit of reworking to function.
+	// I tried my best to keep the spirit of the original code. The bulk of the original code is commented below
 	function getUserData(user) {
 		var username = user.username ? user.username : user;
 		var success = false;
+		var access_token = '3286164f6a2e77ae32e79e2e8f03f383aa9e616914fd8697da6ce67f93b778e7';
+		var followers;
+		var count = 0;
+		users = [];
 
-		$.getJSON('http://api.dribbble.com/players/' + username + '/shots/following?per_page=10&callback=?', function (data) {
-			var followers = data.shots;
+		$.getJSON('http://api.dribbble.com/v1/users/' + username + '/followers?access_token=' + access_token + '&per_page=10&callback=?', function (data) {
+			followers = data.data;
 
-			if (users.length == 0) {
-				$.getJSON('http://api.dribbble.com/players/' + username + '/shots?per_page=1&callback=?', function (data) {
-					success = true;
-					formatUserData(followers, data.shots[0]);
+			followers.forEach(function (follower) {
+				$.getJSON('http://api.dribbble.com/v1/users/' + follower.follower.username + '/shots?access_token=' + access_token + '&per_page=1&callback=?', function (data) {
+					var shot = data.data[0];
+					if (shot) {
+						follower.shot = shot;
+					} else {
+						followers.splice(followers.indexOf(follower), 1);
+					}
+					checkSendToFormat();
 				});
-			} else {
-				success = true;
-				users = [];
-				user.user_type = 'main';
-				users.push(user);
-				formatUserData(followers);
-			}
+			});
 		});
+
+		function checkSendToFormat() {
+			count += 1;
+			if (count === followers.length) {
+				$.getJSON('http://api.dribbble.com/v1/users/' + username + '?access_token=' + access_token + '&per_page=1&callback=?', function (data) {
+					success = true;
+					formatUserData(followers, data.data);
+				});
+			}
+		}
+
+		// $.getJSON('http://api.dribbble.com/players/' + username + '/shots/following?per_page=10&callback=?', function (data) {
+		// 	var followers = data.shots;
+
+		// 	if (users.length == 0) {
+		// 		$.getJSON('http://api.dribbble.com/players/' + username + '/shots?per_page=1&callback=?', function (data) {
+		// 			success = true;
+		// 			formatUserData(followers, data.shots[0]);
+		// 		});
+		// 	} else {
+		// 		success = true;
+		// 		users = [];
+		// 		user.user_type = 'main';
+		// 		users.push(user);
+		// 		formatUserData(followers);
+		// 	}
+		// });
 
 		setTimeout(function () {
 			if (!success) {
@@ -54,13 +86,22 @@ function teammates() {
 		displayUsers();
 	}
 
-	function extractUserData(user, type) { 
+	function extractUserData(user, type) {
 		var user_obj = {}
-		user_obj.image_url = user.image_teaser_url;
-		user_obj.shot_url = user.url;
-		user_obj.username = user.player.username;
-		user_obj.user_url = user.player.url;
-		user_obj.user_type = type;
+
+		if (type == 'main') {
+			user_obj.image_url = user.avatar_url;
+			user_obj.shot_url = user.html_url;
+			user_obj.username = user.username;
+			user_obj.user_url = user.html_url;
+			user_obj.user_type = type;
+		} else {
+			user_obj.image_url = user.shot.images.teaser;
+			user_obj.shot_url = user.shot.html_url;
+			user_obj.username = user.follower.username;
+			user_obj.user_url = user.follower.html_url;
+			user_obj.user_type = type;
+		}
 
 		users.push(user_obj);
 	}

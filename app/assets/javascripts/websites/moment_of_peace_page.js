@@ -16,6 +16,9 @@ function momentOfPeace() {
 	makeBubbles(canvas.width / 50);
 	paintScreen();
 
+	// sound.onend(function () { console.log('end') })
+	// sound.onplay(function () { console.log('play') })
+
 	$('.time_container').on('click', function () {
 		var time = this.id;
 		sound.fadeIn(0.7, 1000);
@@ -65,7 +68,7 @@ function momentOfPeace() {
 			this.vx = randomFloat(-0.7, 0.7);
 			this.vy = randomFloat(0.2, 1.5);
 			this.opactity = randomFloat(0.05, 0.2)
-			this.color = 'rgba(255, 255, 255, ';			
+			this.color = 'rgba(255, 255, 255, ';
 		}
 
 		this.draw = function () {
@@ -86,8 +89,8 @@ function momentOfPeace() {
 			this.y += this.vy;
 			this.radius += 0.02;
 
-			if (this.x > canvas.width + this.radius || 
-			    this.x < 0 - this.radius || 
+			if (this.x > canvas.width + this.radius ||
+			    this.x < 0 - this.radius ||
 				this.y > canvas.height + this.radius) {
 				this.init();
 			}
