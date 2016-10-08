@@ -7,7 +7,7 @@
     "ntwitter": "*",
     "sanitizer": "0.0.15",
     "socket.io": "0.9.12",
-    "twit": "^1.1.18",
+    "twit": "^2.2.5",
     "underscore": "*"
   }
 }
