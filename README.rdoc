@@ -1,3 +1,4 @@
-Hi! I'm Jennifer Dewalt and I taught myself to code by making 180 websites in 180 days.
-
+Hi! I'm Jennifer Dewalt and I believe that we learn by practice. 
+I taught myself to code by making 180 websites in 180 days.
+The only thing which makes you perfet is practice .
 You can check out the project at https://jenniferdewalt.com.
